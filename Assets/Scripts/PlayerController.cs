@@ -21,12 +21,16 @@ public class PlayerController : MonoBehaviour
     public Vector3 velocity;
 
     float temp_Guncooldown;
+
+    public AudioClip Sound_Gunshot;
+    AudioSource audioSource;
     
     
     // Start is called before the first frame update
     void Awake()
     {
         transform.tag = "Player";
+        audioSource = GetComponent<AudioSource>();
     }
 
 
@@ -76,8 +80,15 @@ public class PlayerController : MonoBehaviour
         {
             temp_Guncooldown = 0.4f;
 
-            Debug.DrawRay(transform.position - Vector3.forward, aimDirection, Color.yellow, 0.1f);
-            
+            audioSource.PlayOneShot(Sound_Gunshot);
+
+            Debug.DrawRay(transform.position - Vector3.forward, aimDirection * 99, Color.yellow, 0.1f);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, aimDirection, 99);
+
+            if (hit.transform != null && hit.transform.tag == "GameController")
+            {
+                hit.transform.GetComponent<ZombieController>().OnDeath();
+            }
         }
 
     }

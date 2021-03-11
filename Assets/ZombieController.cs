@@ -20,6 +20,7 @@ public class ZombieController : MonoBehaviour
     public Vector3 velocity;
 
     PlayerController player;
+    bool isDead = false;
 
     public List<PlayerPathNode> playerPathNodes = new List<PlayerPathNode>();
 
@@ -39,6 +40,7 @@ public class ZombieController : MonoBehaviour
 
     void Start()
     {
+        transform.tag = "GameController";
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
@@ -48,9 +50,19 @@ public class ZombieController : MonoBehaviour
        
     }
 
+    public void OnDeath()
+    {
+        isDead = true;
+        transform.eulerAngles = new Vector3(0, 0, 90);
+        GetComponent<Collider2D>().enabled = false;
+    }
+
 
     void FixedUpdate()
     {
+        if (isDead)
+            return;
+
         Vector2 directionToPlayer = (player.transform.position - transform.position);
         float distanceToPlayer = directionToPlayer.magnitude;
 
