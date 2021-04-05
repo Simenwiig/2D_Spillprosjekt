@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
 
     public float moveSpeed = 2f;
     public float sprintSpeedModifier = 2f;
+    public bool usePixelPerfect = true;
 
     [Header("Attributes")]
 
@@ -19,6 +20,7 @@ public class PlayerController : MonoBehaviour
     public float smellLevel;
     public float speedLevel { get { return velocity.magnitude; } }
     public Vector3 velocity;
+    public Vector3 truePosition;
 
     float temp_Guncooldown;
 
@@ -48,9 +50,21 @@ public class PlayerController : MonoBehaviour
         Aim();
 
         Resources();
+        if (usePixelPerfect)
+        {
+            truePosition += velocity * Time.fixedDeltaTime;
 
+            Vector2 pixelPosition = Vector2.zero;
 
-        transform.position += velocity * Time.fixedDeltaTime;
+            float ratio = 1 / 32;
+
+            pixelPosition.x = Mathf.Round(truePosition.x * 32) / 32;
+            pixelPosition.y = Mathf.Round(truePosition.y * 32) / 32;
+
+            transform.position = pixelPosition;
+        }
+        else
+            transform.position += velocity * Time.fixedDeltaTime;
     }
 
     void Walk()
