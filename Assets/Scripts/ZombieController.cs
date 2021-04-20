@@ -12,6 +12,7 @@ public class ZombieController : MonoBehaviour
     [Header("Settings")]
     public float patrolSpeed = 1f;
     public float chaseSpeed = 2f;
+    public float attackReach = 0.5f;
 
     public float detection_HearingRadius = 10f;
     public float detection_SightRadius = 10f;
@@ -70,7 +71,7 @@ public class ZombieController : MonoBehaviour
         if (isDead)
             return;
 
-        Vector2 directionToPlayer = (player.transform.position - transform.position);
+        Vector3 directionToPlayer = (player.transform.position - transform.position);
         float distanceToPlayer = directionToPlayer.magnitude;
 
         bool isWithinRange = distanceToPlayer < Mathf.Max(detection_SightRadius, detection_SightRadius);
@@ -161,9 +162,13 @@ public class ZombieController : MonoBehaviour
                 behavior = BehaviorState.Chasing;
             }
         }
-    }
 
-    public void MoveTo(Vector3 targetPosition)
+
+        if (distanceToPlayer <= attackReach)
+            player.HurtPlayer(35, directionToPlayer.normalized * 1);
+				}
+
+				public void MoveTo(Vector3 targetPosition)
     {
         velocity = (targetPosition - transform.position).normalized * chaseSpeed;
     }
