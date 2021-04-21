@@ -4,18 +4,20 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    AudioSource audioSource;
+    Animator animator;
 
+    float temp_Guncooldown;
 
-    [Header("Settings")]
+    public bool isDead { get { return healthLevel <= 0; } }
+
+				[Header("Settings")]
     public float moveSpeed = 2f;
     public float sprintSpeedModifier = 2f;
-    public bool usePixelPerfect = true;
     public float damageCooldown = 1f;
     float damageTimer;
 
-
     [Header("Attributes")]
-
     public float healthLevel = 100;
     public float hungerLevel = 100;
     public float thirstLevel = 100;
@@ -24,48 +26,21 @@ public class PlayerController : MonoBehaviour
     public Vector3 velocity;
     public Vector3 truePosition;
 
-     public bool isDead { get { return healthLevel <= 0; } }
+    [Header("Melee Weapon")]
+    public float Melee_Damage = 55;
+    public float Melee_AttackSpeed = 1;
+    public float Melee_Reach = 0.5f;
 
-    float temp_Guncooldown;
-
+    [Header("Ranged Weapon")]
+    public float Ranged_Damage = 55;
+    public float Ranged_AttackSpeed = 1;
     public AudioClip Sound_Gunshot;
-    AudioSource audioSource;
-    Animator animator;
 
-    
-
-    // Start is called before the first frame update
     void Awake()
     {
         transform.tag = "Player";
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
-    }
-
-    public void HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
-    {
-        if (isDead || damageTimer > 0)
-            return;
-
-        damageTimer = damageCooldown;
-        healthLevel -= damage;
-
-        if (isDead)
-        {
-            damageTimer = 99999999;
-        }
-
-        velocity += knockBack;
-
-        Debug.Log("Bonk");
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-
     }
 
     void FixedUpdate()
@@ -77,21 +52,8 @@ public class PlayerController : MonoBehaviour
         Aim();
 
         Resources();
-        if (usePixelPerfect)
-        {
-            truePosition += velocity * Time.fixedDeltaTime;
-
-            Vector2 pixelPosition = Vector2.zero;
-
-            float ratio = 1 / 32;
-
-            pixelPosition.x = Mathf.Round(truePosition.x * 32) / 32;
-            pixelPosition.y = Mathf.Round(truePosition.y * 32) / 32;
-
-            transform.position = pixelPosition;
-        }
-        else
-            transform.position += velocity * Time.fixedDeltaTime;
+       
+        transform.position += velocity * Time.fixedDeltaTime;
     }
 
     void Walk()
@@ -110,28 +72,20 @@ public class PlayerController : MonoBehaviour
 
             if(horizontal != 0)
                 GetComponent<SpriteRenderer>().flipX = horizontal < 0;
-
-              
-
         }
     }
-
-  
 
     void Aim()
     {
         int vertical = (Input.GetKey(KeyCode.UpArrow) ? 1 : 0) + (Input.GetKey(KeyCode.DownArrow) ? -1 : 0);
         int horizontal = (Input.GetKey(KeyCode.RightArrow) ? 1 : 0) + (Input.GetKey(KeyCode.LeftArrow) ? -1 : 0);
 
-  
-
         Vector2 aimDirection = (Vector2.up * vertical + Vector2.right * horizontal).normalized;
-
-        bool pullTrigger = aimDirection.magnitude > 0;
+        bool isAttacking = aimDirection.magnitude > 0;
 
         temp_Guncooldown -= Time.deltaTime;
 
-        if (pullTrigger && temp_Guncooldown < 0)
+        if (isAttacking && temp_Guncooldown < 0)
         {
             temp_Guncooldown = 0.4f;
 
@@ -145,7 +99,6 @@ public class PlayerController : MonoBehaviour
                 hit.transform.GetComponent<ZombieController>().OnDeath();
             }
         }
-
     }
 
     void Resources()
@@ -173,15 +126,22 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
-    void Animations()
+    public void HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
     {
-        bool isWalking = speedLevel > 0;
-        bool isRunning = speedLevel > moveSpeed;
+        if (isDead || damageTimer > 0)
+            return;
 
+        damageTimer = damageCooldown;
+        healthLevel -= damage;
 
+        if (isDead)
+        {
+            damageTimer = 99999999;
+        }
 
+        velocity += knockBack;
+
+        Debug.Log("Bonk");
 
     }
-
 }

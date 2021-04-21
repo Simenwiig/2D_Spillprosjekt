@@ -48,6 +48,7 @@ public class ZombieController : MonoBehaviour
     {
         transform.tag = "GameController";
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
     }
 
     // Update is called once per frame
@@ -66,7 +67,11 @@ public class ZombieController : MonoBehaviour
 
     void FixedUpdate()
     {
-
+        if(player == null)
+								{
+            Debug.LogError("Advarsel: Zombiene kan ikke finne spilleren, når det ikke er noen spiller i Scenen.");
+            return;
+								}
 
         if (isDead)
             return;
