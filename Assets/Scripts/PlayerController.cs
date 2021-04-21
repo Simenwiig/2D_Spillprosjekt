@@ -72,8 +72,6 @@ public class PlayerController : MonoBehaviour
 
             if(horizontal != 0)
                 GetComponent<SpriteRenderer>().flipX = horizontal < 0;
-            else
-                GetComponent<SpriteRenderer>().flipX = false;
         }
     }
 
