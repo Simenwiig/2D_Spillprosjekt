@@ -1,0 +1,1176 @@
+fileFormatVersion: 2
+guid: 1da78b00f9eb88445820c0e07fd20ad4
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7499523498931417642
+    second: Parking_Lot_sprites_0
+  - first:
+      213: -2661974200124337585
+    second: Parking_Lot_sprites_1
+  - first:
+      213: 1463377224792326353
+    second: Parking_Lot_sprites_2
+  - first:
+      213: 388125490528595220
+    second: Parking_Lot_sprites_3
+  - first:
+      213: -7967979661782753154
+    second: Parking_Lot_sprites_4
+  - first:
+      213: -4881055710484060995
+    second: Parking_Lot_sprites_5
+  - first:
+      213: 4210449689152016319
+    second: Parking_Lot_sprites_6
+  - first:
+      213: 3776777945044827440
+    second: Parking_Lot_sprites_7
+  - first:
+      213: 5624347783466110590
+    second: Parking_Lot_sprites_8
+  - first:
+      213: 381603457874178604
+    second: Parking_Lot_sprites_9
+  - first:
+      213: -1710887141218223022
+    second: Parking_Lot_sprites_10
+  - first:
+      213: -7681845395921690099
+    second: Parking_Lot_sprites_11
+  - first:
+      213: 2940648613975967467
+    second: Parking_Lot_sprites_12
+  - first:
+      213: -3275249913491624602
+    second: Parking_Lot_sprites_13
+  - first:
+      213: 499390554556366320
+    second: Parking_Lot_sprites_14
+  - first:
+      213: 3504718351957974893
+    second: Parking_Lot_sprites_15
+  - first:
+      213: 5581666853012685781
+    second: Parking_Lot_sprites_16
+  - first:
+      213: 8415318555061124541
+    second: Parking_Lot_sprites_17
+  - first:
+      213: -6750384717388023953
+    second: Parking_Lot_sprites_18
+  - first:
+      213: -2810397800585253543
+    second: Parking_Lot_sprites_19
+  - first:
+      213: -4016476043599400949
+    second: Parking_Lot_sprites_20
+  - first:
+      213: 8310563004425932270
+    second: Parking_Lot_sprites_21
+  - first:
+      213: 8966374945518579304
+    second: Parking_Lot_sprites_22
+  - first:
+      213: 7810702722584453252
+    second: Parking_Lot_sprites_23
+  - first:
+      213: 9184567648518980245
+    second: Parking_Lot_sprites_24
+  - first:
+      213: -556079660398075360
+    second: Parking_Lot_sprites_25
+  - first:
+      213: -1104617001611538947
+    second: Parking_Lot_sprites_26
+  - first:
+      213: -8366792332489142180
+    second: Parking_Lot_sprites_27
+  - first:
+      213: 8952956103400045198
+    second: Parking_Lot_sprites_28
+  - first:
+      213: 4679478978660222065
+    second: Parking_Lot_sprites_29
+  - first:
+      213: -3539850542860665532
+    second: Parking_Lot_sprites_30
+  - first:
+      213: -2433020192976830262
+    second: Parking_Lot_sprites_31
+  - first:
+      213: 6280457844639490139
+    second: Parking_Lot_sprites_32
+  - first:
+      213: -6951844129023237937
+    second: Parking_Lot_sprites_33
+  - first:
+      213: -5874556895507527264
+    second: Parking_Lot_sprites_34
+  - first:
+      213: 7959072161768526565
+    second: Parking_Lot_sprites_35
+  - first:
+      213: 5132863337250125701
+    second: Parking_Lot_sprites_36
+  - first:
+      213: -2208117553444329143
+    second: Parking_Lot_sprites_37
+  - first:
+      213: 629791940162286803
+    second: Parking_Lot_sprites_38
+  - first:
+      213: 7830399090049570062
+    second: Parking_Lot_sprites_39
+  - first:
+      213: 8201811373211920593
+    second: Parking_Lot_sprites_40
+  - first:
+      213: 4238701285696777461
+    second: Parking_Lot_sprites_41
+  - first:
+      213: 1195091348322868221
+    second: Parking_Lot_sprites_42
+  - first:
+      213: -3270617692399332379
+    second: Parking_Lot_sprites_43
+  - first:
+      213: 7688417899177994816
+    second: Parking_Lot_sprites_44
+  - first:
+      213: 5927174514791257604
+    second: Parking_Lot_sprites_45
+  - first:
+      213: 3815603926206426506
+    second: Parking_Lot_sprites_46
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 484
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6dd8f75ac175ce790800000000000000
+      internalID: -7499523498931417642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 485
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4295589194ce0bd0800000000000000
+      internalID: -2661974200124337585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 480
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d0c42825d5fe4410800000000000000
+      internalID: 1463377224792326353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 482
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d2b37c316e26500800000000000000
+      internalID: 388125490528595220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 481
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d3de1e78fc96430800000000000000
+      internalID: 3776777945044827440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 481
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ec0ce8282bd0e40800000000000000
+      internalID: 5624347783466110590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 482
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22b6a7b25abb4500800000000000000
+      internalID: 381603457874178604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 481
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25c77e0b535b148e0800000000000000
+      internalID: -1710887141218223022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 482
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be6484d85584fc820800000000000000
+      internalID: 2940648613975967467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 429
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66de3b38e89fb82d0800000000000000
+      internalID: -3275249913491624602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_14
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 422
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fd748040113ee600800000000000000
+      internalID: 499390554556366320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 422
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f5f36b5c243a030800000000000000
+      internalID: 3504718351957974893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_16
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 420
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3c46c0e60167d40800000000000000
+      internalID: 5581666853012685781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_17
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 426
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbdfb2ab3a739c470800000000000000
+      internalID: 8415318555061124541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 426
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f677cd65dd0d152a0800000000000000
+      internalID: -6750384717388023953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 428
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95da39a27167ff8d0800000000000000
+      internalID: -2810397800585253543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_20
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 421
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b00346c815c9248c0800000000000000
+      internalID: -4016476043599400949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_21
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 397
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eed8f42750d055370800000000000000
+      internalID: 8310563004425932270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_22
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 325
+        width: 7
+        height: 75
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ee89ec186fe6c70800000000000000
+      internalID: 8966374945518579304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_23
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 337
+        width: 17
+        height: 47
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 480a2d94eb0356c60800000000000000
+      internalID: 7810702722584453252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_24
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 592c4894d93267f70800000000000000
+      internalID: 9184567648518980245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022272fbe786848f0800000000000000
+      internalID: -556079660398075360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_26
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfd461680bc9ba0f0800000000000000
+      internalID: -1104617001611538947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_27
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c50d588e3be23eb80800000000000000
+      internalID: -8366792332489142180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_28
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8a33d8242a4f3c70800000000000000
+      internalID: 8952956103400045198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_29
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17443f09659d0f040800000000000000
+      internalID: 4679478978660222065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_30
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 263
+        width: 128
+        height: 73
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44df0daafacefdec0800000000000000
+      internalID: -3539850542860665532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_31
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 320
+        width: 14
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac08342760d2c3ed0800000000000000
+      internalID: -2433020192976830262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b506d88622ba82750800000000000000
+      internalID: 6280457844639490139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_33
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc06fabd896168f90800000000000000
+      internalID: -6951844129023237937
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9c376d0a1697ea0800000000000000
+      internalID: -5874556895507527264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 288
+        width: 22
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e2d9ef46fd447e60800000000000000
+      internalID: 7959072161768526565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_36
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5877b6992089b3740800000000000000
+      internalID: 5132863337250125701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_37
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 178
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94965a4c8c03b51e0800000000000000
+      internalID: -2208117553444329143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_38
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 180
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4f6cbce687db800800000000000000
+      internalID: 629791940162286803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_39
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 181
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0552f33c7a2bac60800000000000000
+      internalID: 7830399090049570062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_40
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 119
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d82e072dffa2d170800000000000000
+      internalID: 8201811373211920593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_41
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 122
+        width: 90
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fca2fa9c54e2da30800000000000000
+      internalID: 4238701285696777461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_42
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 56
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfb5deadf31d59010800000000000000
+      internalID: 1195091348322868221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_43
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 16
+        width: 56
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e31e68898e6c92d0800000000000000
+      internalID: -3270617692399332379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_44
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 16
+        width: 56
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04a6245285fb2ba60800000000000000
+      internalID: 7688417899177994816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_45
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 56
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40691e351dd814250800000000000000
+      internalID: 5927174514791257604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parking_Lot_sprites_46
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 16
+        width: 56
+        height: 91
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8dae111e8fb3f430800000000000000
+      internalID: 3815603926206426506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
