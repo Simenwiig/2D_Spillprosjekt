@@ -149,5 +149,7 @@ public class PlayerController : MonoBehaviour
 
         Debug.Log("Zombie Hit player.");
 
+  
+
     }
 }

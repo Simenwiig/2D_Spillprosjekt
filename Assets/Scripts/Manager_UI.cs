@@ -35,7 +35,7 @@ public class Manager_UI : MonoBehaviour
         UI_Bar_Hunger.fillAmount = player.hungerLevel / 100;
         UI_Bar_Thirst.fillAmount = player.thirstLevel / 100;
 
-        if (gameIsOver)
+        if (gameIsOver || player.isDead)
             GameOver(!player.isDead);
     }
 
