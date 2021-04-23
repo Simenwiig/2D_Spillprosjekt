@@ -31,10 +31,15 @@ public class PlayerController : MonoBehaviour
     public float Melee_AttackSpeed = 1;
     public float Melee_Reach = 0.5f;
 
+
+
     [Header("Ranged Weapon")]
     public float Ranged_Damage = 55;
     public float Ranged_AttackSpeed = 1;
     public AudioClip Sound_Gunshot;
+
+    [Header("Inventory")]
+    public bool haveCrowbar = false;
 
     void Awake()
     {
@@ -106,8 +111,8 @@ public class PlayerController : MonoBehaviour
         bool isWalking = speedLevel > 0;
         bool isRunning = speedLevel > moveSpeed;
 
-        float drainRate = 1 * Time.fixedDeltaTime * (isWalking ? 2 : 1);
-        float healthRegenRate = 1 * Time.fixedDeltaTime * (isWalking ? 0.66f : 1);
+        float drainRate = 1f/4 * Time.fixedDeltaTime * (isWalking ? 2 : 1);
+        float healthRegenRate = 1f/4 * Time.fixedDeltaTime * (isWalking ? 0.66f : 1);
 
         if (hungerLevel > 0)
             hungerLevel -= drainRate;
@@ -119,7 +124,7 @@ public class PlayerController : MonoBehaviour
         else
             healthLevel -= drainRate * 1.33f;
 
-        if (damageTimer < 0 && hungerLevel > 0 && thirstLevel > 0)
+        if (damageTimer < 0 && hungerLevel > 0 && thirstLevel > 0 && healthLevel < 100)
         {
             healthLevel += healthRegenRate;
             hungerLevel -= healthRegenRate;

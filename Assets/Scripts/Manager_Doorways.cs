@@ -9,6 +9,7 @@ public class Manager_Doorways : MonoBehaviour
     public struct Doorway
     {
         public bool isLocked;
+        public bool isOneWay;
         [Header("Scene switching Doorways")]
         public bool doorSwitchesScene;
         public string sceneName;
@@ -46,6 +47,9 @@ public class Manager_Doorways : MonoBehaviour
                 if (Vector2.Dot(player.velocity, directionToDoorway) > 0)
                     player.transform.position = doorways[i].Enterance2;
 
+                if(doorways[i].isOneWay)
+                        doorways[i].isLocked = true;
+
                 if (doorways[i].doorSwitchesScene)
                     SceneManager.LoadScene(doorways[i].sceneName);
 
@@ -56,10 +60,18 @@ public class Manager_Doorways : MonoBehaviour
                 Vector3 directionToDoorway = ((Vector3)doorways[i].Enterance2) - player.transform.position;
 
                 if (Vector2.Dot(player.velocity, directionToDoorway) > 0)
+                {
                     player.transform.position = doorways[i].Enterance1;
 
-                if (doorways[i].doorSwitchesScene)
-                    SceneManager.LoadScene(doorways[i].sceneName);
+                    if(doorways[i].isOneWay)
+                        doorways[i].isLocked = true;
+																				
+
+                    if (doorways[i].doorSwitchesScene)
+                        SceneManager.LoadScene(doorways[i].sceneName);
+                }
+
+               
             }
         }
     }

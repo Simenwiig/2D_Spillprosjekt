@@ -32,7 +32,7 @@ public class Manager_Button : MonoBehaviour
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Hub_prototype");
+        SceneManager.LoadScene("Parkeringshus");
 
     }
 }
