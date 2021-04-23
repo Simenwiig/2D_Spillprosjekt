@@ -27,12 +27,20 @@ public class Manager_Button : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            #if UNITY_EDITOR
+                UnityEditor.EditorApplication.isPlaying = false;
+            #else
+                Application.Quit();
+            #endif
+
+        }
     }
 
     public void StartGame()
     {
-        SceneManager.LoadScene("Parkeringshus");
+        SceneManager.LoadScene("Hub_prototype");
 
     }
 }
