@@ -69,7 +69,13 @@ public class Item : MonoBehaviour
                 return;
             }
 
-            
+            if (itemName == "ParkKey")
+            {
+                player.haveParkKey = true;
+
+                return;
+            }
+
         }
 
        if (DoorIndexToUnlock != -1)
@@ -82,7 +88,7 @@ public class Item : MonoBehaviour
     public void BreakObject()
     {
 
-        if (!player.haveCrowbar)
+        if (player.haveCrowbar && itemName == "Crate" || player.haveParkKey && itemName == "ParkGate" )
             return;
 
         transform.parent = player.transform;

@@ -40,6 +40,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Inventory")]
     public bool haveCrowbar = false;
+    public bool haveParkKey = false;
 
     void Awake()
     {
