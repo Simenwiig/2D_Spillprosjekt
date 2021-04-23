@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Manager_UI : MonoBehaviour
 {
@@ -45,7 +46,12 @@ public class Manager_UI : MonoBehaviour
 
         UI_Screen_GameOver.color = new Color(0, 0, 0,  1- (gameOverFadeTimer / gameOverFadeDuration));
 
-      //  UI_Screen_GameOver.CrossFadeColor(new Color(1,1,1,255), gameOverFadeDuration, false, true);
+        //  UI_Screen_GameOver.CrossFadeColor(new Color(1,1,1,255), gameOverFadeDuration, false, true);
+
+        if (gameOverFadeTimer < 0)
+        {
+            SceneManager.LoadScene("StartMenu");
+        }
 
 
     }
