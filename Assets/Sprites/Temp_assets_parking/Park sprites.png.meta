@@ -1,0 +1,444 @@
+fileFormatVersion: 2
+guid: 4dcb99c4001fb1a479da9e16ac7838f6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5629602068560226123
+    second: Park sprites_0
+  - first:
+      213: 7042899084217246229
+    second: Park sprites_1
+  - first:
+      213: 274943533745276195
+    second: Park sprites_2
+  - first:
+      213: -6127409735860554430
+    second: Park sprites_3
+  - first:
+      213: 2713124690283950519
+    second: Park sprites_4
+  - first:
+      213: 7445207356951439778
+    second: Park sprites_5
+  - first:
+      213: -6194699669415116286
+    second: Park sprites_6
+  - first:
+      213: 4524198649343363084
+    second: Park sprites_7
+  - first:
+      213: -5628645661711392541
+    second: Park sprites_8
+  - first:
+      213: 737933064879265649
+    second: Park sprites_9
+  - first:
+      213: -6460909451647745094
+    second: Park sprites_10
+  - first:
+      213: 409222819511359491
+    second: Park sprites_11
+  - first:
+      213: 6136484058966979026
+    second: Park sprites_12
+  - first:
+      213: -5297285946784209093
+    second: Park sprites_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Park sprites_0
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 193
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b472653214d502e40800000000000000
+      internalID: 5629602068560226123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 200
+        width: 15
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51261b7f6676db160800000000000000
+      internalID: 7042899084217246229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 209
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3258d2eefabc0d300800000000000000
+      internalID: 274943533745276195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_3
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 200
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 245f2c44f4117faa0800000000000000
+      internalID: -6127409735860554430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_4
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 207
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b177b3f784f6a520800000000000000
+      internalID: 2713124690283950519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_5
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 207
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a9273e05a0b25760800000000000000
+      internalID: 7445207356951439778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_6
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 13
+        width: 133
+        height: 135
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 202484ab871080aa0800000000000000
+      internalID: -6194699669415116286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 143
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c08c96b83be29ce30800000000000000
+      internalID: 4524198649343363084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_8
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 134
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e0262fa79803e1b0800000000000000
+      internalID: -5628645661711392541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_9
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 125
+        width: 47
+        height: 54
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 177d428763aad3a00800000000000000
+      internalID: 737933064879265649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 84
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab38298c51d3656a0800000000000000
+      internalID: -6460909451647745094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_11
+      rect:
+        serializedVersion: 2
+        x: 226
+        y: 96
+        width: 23
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30855f67cf9dda500800000000000000
+      internalID: 409222819511359491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_12
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 33
+        width: 35
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d1f2983dbb292550800000000000000
+      internalID: 6136484058966979026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Park sprites_13
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 32
+        width: 35
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3722446f724c76b0800000000000000
+      internalID: -5297285946784209093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
