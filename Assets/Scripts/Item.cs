@@ -8,6 +8,11 @@ public class Item : MonoBehaviour
 
     float shrinkagePercentage = 1;
 
+
+    public int DoorIndexToUnlock = -1;
+
+    public Manager_Doorways manager_DoorWay;
+
     PlayerController player;
     void Start()
     {
@@ -44,5 +49,13 @@ public class Item : MonoBehaviour
         isCarried = true;
 
         GameObject.Destroy(gameObject, despawnTime);
+
+
+        if (DoorIndexToUnlock == -1)
+            return;
+
+        manager_DoorWay.doorways[DoorIndexToUnlock].isLocked = false;
+        
+        
 				}
 }

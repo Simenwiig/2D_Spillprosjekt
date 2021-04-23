@@ -6,9 +6,15 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/StartMenu.unity
+    guid: 5d6603b5337b3854bbb9ccb73106752b
+  - enabled: 1
     path: Assets/Scenes/Prototype_Scene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
     path: Assets/Scenes/Prototype_PoliceStation.unity
     guid: c4c907eb0a8b40e4fbafc8f51e76ca8f
+  - enabled: 1
+    path: Assets/Scenes/Hub_prototype.unity
+    guid: a96925b1b02c8b34b96a8d547664f2c0
   m_configObjects: {}
