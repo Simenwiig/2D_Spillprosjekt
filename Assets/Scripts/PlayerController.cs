@@ -31,10 +31,15 @@ public class PlayerController : MonoBehaviour
     public float Melee_AttackSpeed = 1;
     public float Melee_Reach = 0.5f;
 
+
+
     [Header("Ranged Weapon")]
     public float Ranged_Damage = 55;
     public float Ranged_AttackSpeed = 1;
     public AudioClip Sound_Gunshot;
+
+    [Header("Inventory")]
+    public bool haveCrowbar = false;
 
     void Awake()
     {
