@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7195067311785230323}
   - component: {fileID: 7195067311785230322}
   - component: {fileID: 7195067311785230325}
-  - component: {fileID: 7195067311785230324}
+  - component: {fileID: 1942765494898771893}
   m_Layer: 0
   m_Name: Prefab_Zombie
   m_TagString: Untagged
@@ -122,7 +122,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0, y: 0}
   m_Size: {x: 0.57, y: 1}
   m_Direction: 0
---- !u!114 &7195067311785230324
+--- !u!114 &1942765494898771893
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7195067311785230327}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d809110bc5ec0fc48a5d39d9dc52f8cb, type: 3}
+  m_Script: {fileID: 11500000, guid: de25bef96166522478a3c3c64898535e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   patrolSpeed: 1
@@ -140,8 +140,8 @@ MonoBehaviour:
   detection_HearingRadius: 10
   detection_SightRadius: 10
   investigationDuration: 10
-  trackLostChance: 5
+  trackLostChance: 15
   behavior: 0
-  healthLevel: 36
+  healthLevel: 0
   velocity: {x: 0, y: 0, z: 0}
   playerTrail: []
