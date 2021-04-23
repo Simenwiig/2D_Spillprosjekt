@@ -147,7 +147,7 @@ public class PlayerController : MonoBehaviour
 
         velocity += knockBack;
 
-        Debug.Log("Bonk");
+        Debug.Log("Zombie Hit player.");
 
     }
 }

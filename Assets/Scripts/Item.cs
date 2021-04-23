@@ -21,6 +21,8 @@ public class Item : MonoBehaviour
 
     public string itemName = "";
 
+    public Manager_UI manager_UI;
+
     PlayerController player;
     void Start()
     {
@@ -88,22 +90,28 @@ public class Item : MonoBehaviour
     public void BreakObject()
     {
 
-        if (player.haveCrowbar && itemName == "Crate" || player.haveParkKey && itemName == "ParkGate" )
-            return;
+        if ((player.haveCrowbar && itemName == "Crate") || (player.haveParkKey && itemName == "ParkDoor"))
+        {
 
-        transform.parent = player.transform;
+            transform.parent = player.transform;
 
-        transform.localPosition = Vector2.up * 1;
+            transform.localPosition = Vector2.up * 1;
 
-        isCarried = true;
+            isCarried = true;
 
-        GameObject.Destroy(gameObject, despawnTime);
+            GameObject.Destroy(gameObject, despawnTime);
 
-        GetComponent<Collider2D>().isTrigger = true;
+            GetComponent<Collider2D>().isTrigger = true;
 
 
-        gameObject.AddComponent<AudioSource>().PlayOneShot(breakCrate);
+            gameObject.AddComponent<AudioSource>().PlayOneShot(breakCrate);
 
+            if (itemName == "ParkDoor")
+            {
+                manager_UI.GameOver(true);
+                manager_UI.gameOverFadeDuration *= 5;
+            }
+         }
     }
 }
 

@@ -16,6 +16,7 @@ public class Manager_UI : MonoBehaviour
     public Image UI_Bar_Thirst;
 
     public Image UI_Screen_GameOver;
+    public Image UI_Victory;
 
     PlayerController player;
 
@@ -34,17 +35,20 @@ public class Manager_UI : MonoBehaviour
         UI_Bar_Hunger.fillAmount = player.hungerLevel / 100;
         UI_Bar_Thirst.fillAmount = player.thirstLevel / 100;
 
-        if (gameIsOver || player.isDead)
-            GameOver();
+        if (gameIsOver)
+            GameOver(!player.isDead);
     }
 
-    public void GameOver()
+    public void GameOver(bool playerWon = false)
     {
         gameIsOver = true;
 
         gameOverFadeTimer -= Time.fixedDeltaTime;
 
-        UI_Screen_GameOver.color = new Color(0, 0, 0,  1- (gameOverFadeTimer / gameOverFadeDuration));
+        UI_Screen_GameOver.color = new Color(0, 0, 0,  1f - (gameOverFadeTimer / gameOverFadeDuration));
+
+        if(playerWon)
+            UI_Victory.color = new Color(1, 1, 1, 1f -(gameOverFadeTimer / gameOverFadeDuration));
 
         //  UI_Screen_GameOver.CrossFadeColor(new Color(1,1,1,255), gameOverFadeDuration, false, true);
 
@@ -55,4 +59,5 @@ public class Manager_UI : MonoBehaviour
 
 
     }
+
 }
