@@ -111,8 +111,8 @@ public class PlayerController : MonoBehaviour
         bool isWalking = speedLevel > 0;
         bool isRunning = speedLevel > moveSpeed;
 
-        float drainRate = 1f/4 * Time.fixedDeltaTime * (isWalking ? 2 : 1);
-        float healthRegenRate = 1f/4 * Time.fixedDeltaTime * (isWalking ? 0.66f : 1);
+        float drainRate = 1f/20 * Time.fixedDeltaTime * (isWalking ? 2 : 1);
+        float healthRegenRate = 1f/20 * Time.fixedDeltaTime * (isWalking ? 0.66f : 1);
 
         if (hungerLevel > 0)
             hungerLevel -= drainRate;

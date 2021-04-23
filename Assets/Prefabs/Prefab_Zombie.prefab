@@ -136,7 +136,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   patrolSpeed: 1
   chaseSpeed: 2
-  attackReach: 1
+  attackReach: 0.7
   detection_HearingRadius: 10
   detection_SightRadius: 10
   investigationDuration: 10
