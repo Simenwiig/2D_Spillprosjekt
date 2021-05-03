@@ -104,15 +104,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 2
   sprintSpeedModifier: 2
-  usePixelPerfect: 0
   damageCooldown: 1
+  controlType: 0
+  deadZone: 0.2
   healthLevel: 100
   hungerLevel: 100
   thirstLevel: 100
   smellLevel: 0
   velocity: {x: 0, y: 0, z: 0}
   truePosition: {x: 0, y: 0, z: 0}
-  Sound_Gunshot: {fileID: 8300000, guid: 45be08638b71ce945994ddb349f013b6, type: 3}
+  Melee_Damage: 55
+  Melee_AttackSpeed: 1
+  Melee_Reach: 0.5
+  Ranged_Damage: 55
+  Ranged_AttackSpeed: 1
+  Sound_Gunshot: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
+  haveCrowbar: 0
+  haveParkKey: 0
 --- !u!50 &4593550359035177618
 Rigidbody2D:
   serializedVersion: 4
@@ -291,7 +299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   doorways:
-  - Enterance1: {x: 5.45, y: 6.14}
+  - isLocked: 0
+    isOneWay: 0
+    doorSwitchesScene: 0
+    sceneName: 
+    Enterance1: {x: 5.45, y: 6.14}
     Enterance2: {x: 34.35, y: 5.41}
 --- !u!1 &4593550359100176757
 GameObject:

@@ -67,13 +67,18 @@ public class Manager_UI : MonoBehaviour
     /// returns the relative direction from the controlPad to pixelCordinates
    public static Vector3 StickController(Image stick, Image stickCircle, Vector2 pixelCordinates, bool isHeldDown, Camera camera)
     {
-        float stickRange = 50;
+        float stickRange = 100;
 
         Vector3 position = pixelCordinates - (Vector2)stick.rectTransform.position;
+
+        if (position.magnitude > stickRange * 2.5)
+            position = Vector3.zero;
+
+
         stickCircle.rectTransform.position = stick.rectTransform.position + position.normalized * Mathf.Min(position.magnitude, stickRange);
 
         Debug.DrawRay(stick.rectTransform.position, position, Color.red, Time.fixedDeltaTime);
 
-        return position;
+        return position.normalized * Mathf.Min(position.magnitude, stickRange) / stickRange;
     }
 }

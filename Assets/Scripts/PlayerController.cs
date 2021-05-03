@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+
+    public enum ControlType
+    {Mouse, TouchScreen }
+
     AudioSource audioSource;
     Animator animator;
     Camera camera;
@@ -19,6 +23,8 @@ public class PlayerController : MonoBehaviour
     public float sprintSpeedModifier = 2f;
     public float damageCooldown = 1f;
     float damageTimer;
+    public ControlType controlType = ControlType.Mouse;
+    public float deadZone = 0.10f;
 
     [Header("Attributes")]
     public float healthLevel = 100;
@@ -55,46 +61,64 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        Vector2 movementDirection = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, Camera.main);
-        bool isMoving = movementDirection.magnitude > 0;
+        Vector2 leftStick = Vector2.zero;
+        Vector2 rightStick = Vector2.zero;
+   
+        if (controlType == ControlType.Mouse)
+        {
+            rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
+         // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
 
-        Vector2 attackDirection = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, Camera.main);
-        bool isAttacking = attackDirection.magnitude > 0;
 
-        Walk();
-        Aim();
+        }
+        else if (controlType == ControlType.TouchScreen)
+        {
+            rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
+            leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
+        }
+
+
+        Walk(leftStick);
+
+        Aim(rightStick);
+
         Resources();
 
         transform.position += velocity * Time.fixedDeltaTime;
         damageTimer -= Time.fixedDeltaTime;
     }
 
-    void Walk()
+    void Walk(Vector2 moveDirection)
     {
-        int vertical = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
-        int horizontal = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
+        if (controlType == ControlType.Mouse)
+        {
+            moveDirection.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
+            moveDirection.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
 
-        velocity = (Vector2.up * vertical + Vector2.right * horizontal).normalized * moveSpeed;
+            moveDirection.Normalize();
+        }
+
+
+        if (moveDirection.magnitude > deadZone) // Have I decided to move?
+            velocity = (Vector2.up * moveDirection.y + Vector2.right * moveDirection.x) * moveSpeed;
+        else
+            velocity = Vector3.zero;
 
         if(animator != null)
 								{
-            animator.SetBool("isWalkingUp", vertical > 0);
-            animator.SetBool("isWalkingDown", vertical < 0);
+            animator.SetBool("isWalkingUp", moveDirection.y > 0);
+            animator.SetBool("isWalkingDown", moveDirection.y < 0);
 
-            animator.SetBool("isWalkingSideways", horizontal != 0);
+            animator.SetBool("isWalkingSideways", moveDirection.x != 0);
 
-            if(horizontal != 0)
-                GetComponent<SpriteRenderer>().flipX = horizontal < 0;
+            if(moveDirection.x != 0)
+                GetComponent<SpriteRenderer>().flipX = moveDirection.x < 0;
         }
     }
 
-    void Aim()
+    void Aim(Vector2 attackDiretion)
     {
-        int vertical = (Input.GetKey(KeyCode.UpArrow) ? 1 : 0) + (Input.GetKey(KeyCode.DownArrow) ? -1 : 0);
-        int horizontal = (Input.GetKey(KeyCode.RightArrow) ? 1 : 0) + (Input.GetKey(KeyCode.LeftArrow) ? -1 : 0);
-
-        Vector2 aimDirection = (Vector2.up * vertical + Vector2.right * horizontal).normalized;
-        bool isAttacking = aimDirection.magnitude > 0;
+        bool isAttacking = attackDiretion.magnitude > deadZone;
 
         temp_Guncooldown -= Time.deltaTime;
 
@@ -104,8 +128,8 @@ public class PlayerController : MonoBehaviour
 
             audioSource.PlayOneShot(Sound_Gunshot);
 
-            Debug.DrawRay(transform.position - Vector3.forward, aimDirection * 99, Color.yellow, 0.1f);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, aimDirection, 99);
+            Debug.DrawRay(transform.position - Vector3.forward, attackDiretion.normalized * 99, Color.yellow, 0.1f);
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, 99);
 
             if (hit.transform != null && hit.transform.tag == "GameController")
             {
