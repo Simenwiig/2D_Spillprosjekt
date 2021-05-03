@@ -50,6 +50,12 @@ public class PlayerController : MonoBehaviour
     public bool haveCrowbar = false;
     public bool haveParkKey = false;
 
+    [Header("Audio Clips")]
+    public AudioClip[] Footstep;
+    public AudioClip[] MeleeAttack;
+    public AudioClip[] Hurt;
+    public AudioClip[] Death;
+
     void Awake()
     {
         transform.tag = "Player";

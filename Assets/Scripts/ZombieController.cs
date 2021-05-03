@@ -9,6 +9,9 @@ public class ZombieController : MonoBehaviour
         Idle, Chasing, Searching
     }
 
+
+    public List<PlayerPathNode> playerTrail = new List<PlayerPathNode>();
+
     [Header("Settings")]
     public float patrolSpeed = 1f;
     public float chaseSpeed = 2f;
@@ -26,10 +29,16 @@ public class ZombieController : MonoBehaviour
     public float healthLevel;
     public Vector3 velocity;
 
+    [Header("Audio Clips")]
+    public AudioClip[] Idle;
+    public AudioClip[] Footstep;
+    public AudioClip[] Attack;
+    public AudioClip[] Hurt;
+    public AudioClip[] Death;
+
     PlayerController player;
     bool isDead = false;
 
-    public List<PlayerPathNode> playerTrail = new List<PlayerPathNode>();
 
     [System.Serializable]
     public struct PlayerPathNode
@@ -158,7 +167,7 @@ public class ZombieController : MonoBehaviour
             {
                 playerTrail.Clear();
                 behavior = BehaviorState.Idle;
-                Debug.Log("Lost Track of Player");
+                Debug.Log("Lost Track of Player.");
             }
 
             if(canSeeYou)
@@ -167,7 +176,6 @@ public class ZombieController : MonoBehaviour
                 behavior = BehaviorState.Chasing;
             }
         }
-
 
         if (distanceToPlayer <= attackReach)
             player.HurtPlayer(35, directionToPlayer.normalized * 1);
