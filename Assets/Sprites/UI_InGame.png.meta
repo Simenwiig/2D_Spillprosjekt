@@ -1,7 +1,40 @@
 fileFormatVersion: 2
 guid: 11544810bd3621c419c25320ffb5b990
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 679381236401819250
+    second: UI_InGame_Health
+  - first:
+      213: 4745014530213226620
+    second: UI_InGame_Stick_Circle
+  - first:
+      213: -6126445136048440299
+    second: UI_InGame_Hunger
+  - first:
+      213: 3893196708279367184
+    second: UI_InGame_3
+  - first:
+      213: -3768830048572972620
+    second: UI_InGame_4
+  - first:
+      213: -8601843502872775060
+    second: UI_InGame_Water
+  - first:
+      213: 7524162596532836479
+    second: UI_InGame_6
+  - first:
+      213: -8120178539992785364
+    second: UI_InGame_Settings
+  - first:
+      213: 2022349108826108654
+    second: UI_InGame_Stick
+  - first:
+      213: 8174622242211671233
+    second: UI_InGame_Punch
+  - first:
+      213: 3780890839957945066
+    second: UI_InGame_Firearm
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +74,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -101,7 +134,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: UI_InGame_Health
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 95
+        width: 30
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ecbce82a5ad6900800000000000000
+      internalID: 679381236401819250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Hunger
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 93
+        width: 32
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51cb9e9ab9e7afaa0800000000000000
+      internalID: -6126445136048440299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Water
+      rect:
+        serializedVersion: 2
+        x: 137
+        y: 93
+        width: 27
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6634cd98ec10a880800000000000000
+      internalID: -8601843502872775060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Settings
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 66
+        width: 21
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2edaf2f3a45f4f80800000000000000
+      internalID: -8120178539992785364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Stick
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 3
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee27863bcc3d01c10800000000000000
+      internalID: 2022349108826108654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Punch
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 9
+        width: 25
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cca8084e97127170800000000000000
+      internalID: 8174622242211671233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Firearm
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 23
+        width: 26
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aeab83adf2c687430800000000000000
+      internalID: 3780890839957945066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_InGame_Stick_Circle
+      rect:
+        serializedVersion: 2
+        x: 51
+        y: 12
+        width: 19
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c782d67339da9d140800000000000000
+      internalID: 4745014530213226620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

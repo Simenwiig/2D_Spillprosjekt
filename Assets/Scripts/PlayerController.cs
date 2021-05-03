@@ -6,6 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     AudioSource audioSource;
     Animator animator;
+    Camera camera;
+
+    Manager_UI manager_UI;
 
     float temp_Guncooldown;
 
@@ -32,7 +35,6 @@ public class PlayerController : MonoBehaviour
     public float Melee_Reach = 0.5f;
 
 
-
     [Header("Ranged Weapon")]
     public float Ranged_Damage = 55;
     public float Ranged_AttackSpeed = 1;
@@ -47,19 +49,24 @@ public class PlayerController : MonoBehaviour
         transform.tag = "Player";
         audioSource = GetComponent<AudioSource>();
         animator = GetComponent<Animator>();
+        camera = GetComponentInChildren<Camera>();
+        manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
     }
 
     void FixedUpdate()
     {
-        damageTimer -= Time.fixedDeltaTime;
+        Vector2 movementDirection = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, Camera.main);
+        bool isMoving = movementDirection.magnitude > 0;
+
+        Vector2 attackDirection = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, Camera.main);
+        bool isAttacking = attackDirection.magnitude > 0;
 
         Walk();
-
         Aim();
-
         Resources();
-       
+
         transform.position += velocity * Time.fixedDeltaTime;
+        damageTimer -= Time.fixedDeltaTime;
     }
 
     void Walk()
@@ -147,9 +154,6 @@ public class PlayerController : MonoBehaviour
 
         velocity += knockBack;
 
-        Debug.Log("Zombie Hit player.");
-
-  
-
+        Debug.Log("SLAP! A Zombie hit the player.");
     }
 }

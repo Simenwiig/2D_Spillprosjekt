@@ -6,6 +6,9 @@ using UnityEngine.SceneManagement;
 
 public class Manager_UI : MonoBehaviour
 {
+    PlayerController player;
+    bool gameIsOver = false;
+
     [Header("Settings")]
     public float gameOverFadeDuration = 3f;
     float gameOverFadeTimer = 3f;
@@ -18,13 +21,16 @@ public class Manager_UI : MonoBehaviour
     public Image UI_Screen_GameOver;
     public Image UI_Victory;
 
-    PlayerController player;
-
-    bool gameIsOver = false;
+    [Header("Interface Elements")]
+    public Image LeftStick;
+    public Image LeftStick_Dot;
+    public Image RightStick;
+    public Image RightStick_Dot;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+
         gameOverFadeTimer = gameOverFadeDuration;
     }
 
@@ -56,8 +62,18 @@ public class Manager_UI : MonoBehaviour
         {
             SceneManager.LoadScene("StartMenu");
         }
-
-
     }
 
+    /// returns the relative direction from the controlPad to pixelCordinates
+   public static Vector3 StickController(Image stick, Image stickCircle, Vector2 pixelCordinates, bool isHeldDown, Camera camera)
+    {
+        float stickRange = 50;
+
+        Vector3 position = pixelCordinates - (Vector2)stick.rectTransform.position;
+        stickCircle.rectTransform.position = stick.rectTransform.position + position.normalized * Mathf.Min(position.magnitude, stickRange);
+
+        Debug.DrawRay(stick.rectTransform.position, position, Color.red, Time.fixedDeltaTime);
+
+        return position;
+    }
 }
