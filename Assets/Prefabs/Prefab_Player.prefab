@@ -87,7 +87,7 @@ SpriteRenderer:
   m_Size: {x: 0.8125, y: 0.875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &4593550359035177621
@@ -121,6 +121,10 @@ MonoBehaviour:
   Sound_Gunshot: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
   haveCrowbar: 0
   haveParkKey: 0
+  Footstep: []
+  MeleeAttack: []
+  Hurt: []
+  Death: []
 --- !u!50 &4593550359035177618
 Rigidbody2D:
   serializedVersion: 4
@@ -277,7 +281,7 @@ Animator:
   m_GameObject: {fileID: 4593550359035177628}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: da6be2effb5f0e540a43044fff328b1f, type: 2}
+  m_Controller: {fileID: 9100000, guid: d136ab2f9d2b62f448f4895b9cad6b5b, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
