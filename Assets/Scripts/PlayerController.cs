@@ -114,7 +114,7 @@ public class PlayerController : MonoBehaviour
 
         if (isAttacking && temp_Guncooldown < 0)
         {
-            temp_Guncooldown = 0.4f;
+            temp_Guncooldown = Ranged_AttackSpeed;
 
             audioSource.PlayOneShot(Sound_Gunshot);
 
@@ -170,7 +170,7 @@ public class PlayerController : MonoBehaviour
         if (isAttacking)
             moveDirection = attackDiretion;
 
-        if (!isAttacking && temp_Guncooldown > 0)
+        if (!isAttacking && temp_Guncooldown > Ranged_AttackSpeed - 0.3f)
             return;  // If I stop attacking, I won't automatically transition back to the correct idle animation. This hack makes it registrer as not attacking before it registrer as not moving, fixing the problem.
 
         bool isMoving = moveDirection.magnitude > deadZone;

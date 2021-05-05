@@ -10,6 +10,8 @@ public class ZombieController : MonoBehaviour
     }
 
 
+    Animator animator;
+
     public List<PlayerPathNode> playerTrail = new List<PlayerPathNode>();
 
     [Header("Settings")]
@@ -58,6 +60,7 @@ public class ZombieController : MonoBehaviour
         transform.tag = "GameController";
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -71,6 +74,8 @@ public class ZombieController : MonoBehaviour
         isDead = true;
         transform.eulerAngles = new Vector3(0, 0, 90);
         GetComponent<Collider2D>().enabled = false;
+
+        animator.SetBool("isDead", true);
     }
 
 
@@ -95,9 +100,8 @@ public class ZombieController : MonoBehaviour
 
         bool canSeeYou = Physics2D.Raycast(transform.position, directionToPlayer.normalized, detection_SightRadius).transform == player.transform;
 
+        MovePosition();
 
-        transform.position += velocity * Time.fixedDeltaTime;
-        velocity = Vector3.zero;
 
         if (canSeeYou && behavior != BehaviorState.Chasing)
             behavior = BehaviorState.Chasing;
@@ -108,7 +112,8 @@ public class ZombieController : MonoBehaviour
 
             if (randomTwitch)
             {
-                velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f))*2;
+                
+                MoveTo(transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f) ).normalized * 1);
             }
 
             if (canSeeYou)
@@ -184,5 +189,27 @@ public class ZombieController : MonoBehaviour
 				public void MoveTo(Vector3 targetPosition)
     {
         velocity = (targetPosition - transform.position).normalized * chaseSpeed;
+
+     
+    }
+
+    public void MovePosition()
+    {
+        transform.position += velocity * Time.fixedDeltaTime;
+
+        if (animator != null)
+        {
+            bool isMoving = velocity.magnitude > 0;
+            bool isMovingVertically = Mathf.Abs(velocity.y) >= Mathf.Abs(velocity.x);
+
+            animator.SetBool("isWalkingUp", isMoving && isMovingVertically && velocity.y > 0);
+            animator.SetBool("isWalkingDown", isMoving && isMovingVertically && velocity.y < 0);
+            animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
+
+            if (isMoving)
+                GetComponentInChildren<SpriteRenderer>().flipX = velocity.x < 0;
+        }
+
+        velocity = Vector3.zero;
     }
 }
