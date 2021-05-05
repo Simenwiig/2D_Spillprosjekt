@@ -59,14 +59,33 @@ MonoBehaviour:
   smellLevel: 0
   velocity: {x: 0, y: 0, z: 0}
   truePosition: {x: 0, y: 0, z: 0}
-  Melee_Damage: 55
-  Melee_AttackSpeed: 1
-  Melee_Reach: 0.5
-  Ranged_Damage: 55
-  Ranged_AttackSpeed: 3
-  Sound_Gunshot: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
   haveCrowbar: 0
   haveParkKey: 0
+  weapons:
+  - name: Unarmed
+    canBeUsed: 0
+    damage: 34
+    knockBack: 4
+    attacksPerSecond: 1
+    range: 1
+    sound: {fileID: 0}
+    cooldown: 0
+  - name: Crowbar
+    canBeUsed: 0
+    damage: 51
+    knockBack: 4
+    attacksPerSecond: 1
+    range: 1
+    sound: {fileID: 0}
+    cooldown: 0
+  - name: Pistol
+    canBeUsed: 1
+    damage: 100
+    knockBack: 4
+    attacksPerSecond: 1
+    range: 99
+    sound: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
+    cooldown: 0
   Footstep: []
   MeleeAttack: []
   Hurt: []

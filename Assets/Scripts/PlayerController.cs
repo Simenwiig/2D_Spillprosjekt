@@ -8,6 +8,22 @@ public class PlayerController : MonoBehaviour
     public enum ControlType
     {Mouse, TouchScreen }
 
+    [System.Serializable]
+    public class WeaponStat
+    {
+        public string name = "unnamed";
+        public bool canBeUsed;
+        public int damage = 34;
+        public float knockBack = 1;
+        public float attacksPerSecond = 1;
+        public float range = 10;
+        public AudioClip sound;
+
+        [HideInInspector]
+        public float cooldown;
+    }
+
+
     AudioSource audioSource;
     Animator animator;
     Camera camera;
@@ -35,20 +51,10 @@ public class PlayerController : MonoBehaviour
     public Vector3 velocity;
     public Vector3 truePosition;
 
-    [Header("Melee Weapon")]
-    public float Melee_Damage = 55;
-    public float Melee_AttackSpeed = 1;
-    public float Melee_Reach = 0.5f;
-
-
-    [Header("Ranged Weapon")]
-    public float Ranged_Damage = 55;
-    public float Ranged_AttackSpeed = 1;
-    public AudioClip Sound_Gunshot;
-
     [Header("Inventory")]
     public bool haveCrowbar = false;
     public bool haveParkKey = false;
+    public WeaponStat[] weapons;
 
     [Header("Audio Clips")]
     public AudioClip[] Footstep;
@@ -110,17 +116,21 @@ public class PlayerController : MonoBehaviour
     {
         bool isAttacking = attackDiretion.magnitude > deadZone;
 
-        temp_Guncooldown -= Time.deltaTime;
+        WeaponStat currentWeapon = weapons[2];
 
-        if (isAttacking && temp_Guncooldown < 0)
+        currentWeapon.cooldown += Time.fixedDeltaTime;
+
+        print(currentWeapon.cooldown);
+
+        if (isAttacking && currentWeapon.cooldown > (1f / currentWeapon.attacksPerSecond))
         {
-            temp_Guncooldown = Ranged_AttackSpeed;
+            currentWeapon.cooldown = 0;
 
-            audioSource.PlayOneShot(Sound_Gunshot);
+            audioSource.PlayOneShot(currentWeapon.sound);
 
-            Debug.DrawRay(transform.position - Vector3.forward, attackDiretion.normalized * 99, Color.yellow, 0.1f);
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, 99);
+            Debug.DrawRay(transform.position - Vector3.forward, attackDiretion.normalized * currentWeapon.range, Color.yellow, 0.1f);
 
+            RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, currentWeapon.range);
             if (hit.transform != null && hit.transform.tag == "GameController")
             {
                 hit.transform.GetComponent<ZombieController>().OnDeath();
@@ -170,7 +180,7 @@ public class PlayerController : MonoBehaviour
         if (isAttacking)
             moveDirection = attackDiretion;
 
-        if (!isAttacking && temp_Guncooldown > Ranged_AttackSpeed - 0.3f)
+        if (!isAttacking && temp_Guncooldown < 0.3f)
             return;  // If I stop attacking, I won't automatically transition back to the correct idle animation. This hack makes it registrer as not attacking before it registrer as not moving, fixing the problem.
 
         bool isMoving = moveDirection.magnitude > deadZone;
