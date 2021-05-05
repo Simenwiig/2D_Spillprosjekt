@@ -72,7 +72,6 @@ public class ZombieController : MonoBehaviour
     public void OnDeath()
     {
         isDead = true;
-        transform.eulerAngles = new Vector3(0, 0, 90);
         GetComponent<Collider2D>().enabled = false;
 
         animator.SetBool("isDead", true);
