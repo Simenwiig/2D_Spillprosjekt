@@ -60,7 +60,7 @@ public class PlayerController : MonoBehaviour
     {
         transform.tag = "Player";
         audioSource = GetComponent<AudioSource>();
-        animator = GetComponent<Animator>();
+        animator = GetComponentInChildren<Animator>();
         camera = GetComponentInChildren<Camera>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
     }
@@ -110,15 +110,17 @@ public class PlayerController : MonoBehaviour
         else
             velocity = Vector3.zero;
 
-        if(animator != null)
-								{
-            animator.SetBool("isWalkingUp", moveDirection.y > 0);
-            animator.SetBool("isWalkingDown", moveDirection.y < 0);
+        if (animator != null)
+        {
+            bool isMoving = moveDirection.magnitude > deadZone;
+            bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
 
-            animator.SetBool("isWalkingSideways", moveDirection.x != 0);
+            animator.SetBool("isWalkingUp", isMoving && isMovingVertically && moveDirection.y > 0);
+            animator.SetBool("isWalkingDown", isMoving && isMovingVertically && moveDirection.y < 0);
+            animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
 
-            if(moveDirection.x != 0)
-                GetComponent<SpriteRenderer>().flipX = moveDirection.x < 0;
+            if(isMoving)
+                GetComponentInChildren<SpriteRenderer>().flipX = moveDirection.x < 0;
         }
     }
 
