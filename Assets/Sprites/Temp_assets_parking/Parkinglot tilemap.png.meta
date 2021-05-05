@@ -1,0 +1,1884 @@
+fileFormatVersion: 2
+guid: c74cf5e9ec7f70246acd8bfccc38df7c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2762620427453644352
+    second: Parkinglot tilemap_0
+  - first:
+      213: 8084944378662160459
+    second: Parkinglot tilemap_1
+  - first:
+      213: 3235114847559363230
+    second: Parkinglot tilemap_2
+  - first:
+      213: -3209892729919004060
+    second: Parkinglot tilemap_3
+  - first:
+      213: -6242702287421039725
+    second: Parkinglot tilemap_7
+  - first:
+      213: -6627948550540066399
+    second: Parkinglot tilemap_8
+  - first:
+      213: -4811446477303520309
+    second: Parkinglot tilemap_9
+  - first:
+      213: -8970253650245896420
+    second: Parkinglot tilemap_10
+  - first:
+      213: -4200538753637872466
+    second: Parkinglot tilemap_12
+  - first:
+      213: -8368569411052553121
+    second: Parkinglot tilemap_13
+  - first:
+      213: 4215849578061204649
+    second: Parkinglot tilemap_14
+  - first:
+      213: -8504742030419941316
+    second: Parkinglot tilemap_15
+  - first:
+      213: -5102531845149450050
+    second: Parkinglot tilemap_16
+  - first:
+      213: -323127137891640408
+    second: Parkinglot tilemap_17
+  - first:
+      213: 3861312364999753512
+    second: Parkinglot tilemap_18
+  - first:
+      213: -6616651597896897281
+    second: Parkinglot tilemap_19
+  - first:
+      213: -3490762346701804230
+    second: Parkinglot tilemap_20
+  - first:
+      213: -3382749607326859013
+    second: Parkinglot tilemap_21
+  - first:
+      213: -2605636958659713607
+    second: Parkinglot tilemap_22
+  - first:
+      213: 525691289350641495
+    second: Parkinglot tilemap_23
+  - first:
+      213: 1143829463746670727
+    second: Parkinglot tilemap_24
+  - first:
+      213: 8557277677744862485
+    second: Parkinglot tilemap_25
+  - first:
+      213: 1019389167968142099
+    second: Parkinglot tilemap_26
+  - first:
+      213: -5188122193270944808
+    second: Parkinglot tilemap_27
+  - first:
+      213: -2681737587767215865
+    second: Parkinglot tilemap_28
+  - first:
+      213: 3378126060696850051
+    second: Parkinglot tilemap_29
+  - first:
+      213: -7841946116106788259
+    second: Parkinglot tilemap_30
+  - first:
+      213: 3648991473764402859
+    second: Parkinglot tilemap_31
+  - first:
+      213: 4106556987345992325
+    second: Parkinglot tilemap_32
+  - first:
+      213: 3438032907277999735
+    second: Parkinglot tilemap_33
+  - first:
+      213: 8434574528675236527
+    second: Parkinglot tilemap_34
+  - first:
+      213: 1145453832131191868
+    second: Parkinglot tilemap_35
+  - first:
+      213: -3176061141245061151
+    second: Parkinglot tilemap_36
+  - first:
+      213: 8173698531298769759
+    second: Parkinglot tilemap_37
+  - first:
+      213: 5287424591770775339
+    second: Parkinglot tilemap_38
+  - first:
+      213: 4764088467556987554
+    second: Parkinglot tilemap_39
+  - first:
+      213: 5896730889171571395
+    second: Parkinglot tilemap_40
+  - first:
+      213: 4861529509089236701
+    second: Parkinglot tilemap_41
+  - first:
+      213: 2431600732329514766
+    second: Parkinglot tilemap_42
+  - first:
+      213: -6203650177450209354
+    second: Parkinglot tilemap_43
+  - first:
+      213: 989876109724484451
+    second: Parkinglot tilemap_44
+  - first:
+      213: 2550119216666780591
+    second: Parkinglot tilemap_45
+  - first:
+      213: -542195701019872459
+    second: Parkinglot tilemap_46
+  - first:
+      213: 6661754302377302666
+    second: Parkinglot tilemap_47
+  - first:
+      213: -4374816918102692570
+    second: Parkinglot tilemap_48
+  - first:
+      213: -2304628380840199966
+    second: Parkinglot tilemap_49
+  - first:
+      213: 9190937692494968427
+    second: Parkinglot tilemap_50
+  - first:
+      213: 1185827191666140166
+    second: Parkinglot tilemap_51
+  - first:
+      213: 3460222959681499168
+    second: Parkinglot tilemap_52
+  - first:
+      213: -1780480873444989930
+    second: Parkinglot tilemap_53
+  - first:
+      213: 7841863137019166198
+    second: Parkinglot tilemap_54
+  - first:
+      213: 6884218984831593338
+    second: Parkinglot tilemap_55
+  - first:
+      213: -444031532390114642
+    second: Parkinglot tilemap_56
+  - first:
+      213: 3513064764221514540
+    second: Parkinglot tilemap_57
+  - first:
+      213: 4934094960660130763
+    second: Parkinglot tilemap_58
+  - first:
+      213: 7849712321750164338
+    second: Parkinglot tilemap_59
+  - first:
+      213: -6608406182492715040
+    second: Parkinglot tilemap_60
+  - first:
+      213: 1391489757422455915
+    second: Parkinglot tilemap_61
+  - first:
+      213: -8718822067190316062
+    second: Parkinglot tilemap_62
+  - first:
+      213: 1932322495671664723
+    second: Parkinglot tilemap_63
+  - first:
+      213: 161774625773885451
+    second: Parkinglot tilemap_64
+  - first:
+      213: -6370367259385705848
+    second: Parkinglot tilemap_65
+  - first:
+      213: -8163131939023615902
+    second: Parkinglot tilemap_66
+  - first:
+      213: 4031984267333347220
+    second: Parkinglot tilemap_67
+  - first:
+      213: -1200755487878877089
+    second: Parkinglot tilemap_68
+  - first:
+      213: 3346263568243853593
+    second: Parkinglot tilemap_69
+  - first:
+      213: -5455681920943634128
+    second: Parkinglot tilemap_70
+  - first:
+      213: 7613670102711902186
+    second: Parkinglot tilemap_71
+  - first:
+      213: 3495902770536641525
+    second: Parkinglot tilemap_72
+  - first:
+      213: -954630057169916389
+    second: Parkinglot tilemap_73
+  - first:
+      213: 2422574871285361239
+    second: Parkinglot tilemap_4
+  - first:
+      213: -8471172754579259483
+    second: Parkinglot tilemap_5
+  - first:
+      213: -1302087491579405202
+    second: Parkinglot tilemap_6
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Parkinglot tilemap_0
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 484
+        width: 26
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ebc9b44acc65620800000000000000
+      internalID: 2762620427453644352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_1
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 485
+        width: 26
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4803f6931e733070800000000000000
+      internalID: 8084944378662160459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_2
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 480
+        width: 23
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9a2e5040df65ec20800000000000000
+      internalID: 3235114847559363230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_3
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 482
+        width: 27
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 462a112a19b2473d0800000000000000
+      internalID: -3209892729919004060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_7
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 481
+        width: 25
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39b10c748577d59a0800000000000000
+      internalID: -6242702287421039725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_8
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 481
+        width: 21
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a18e7fd8ebc404a0800000000000000
+      internalID: -6627948550540066399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_9
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 482
+        width: 17
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc3e488cbee4a3db0800000000000000
+      internalID: -4811446477303520309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_10
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 481
+        width: 22
+        height: 29
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1731ffd4d1438380800000000000000
+      internalID: -8970253650245896420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_12
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 482
+        width: 15
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eac072c4240b4b5c0800000000000000
+      internalID: -4200538753637872466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_13
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 429
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c3300957edcdb80800000000000000
+      internalID: -8368569411052553121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_14
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 422
+        width: 14
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ac81decad4b18a30800000000000000
+      internalID: 4215849578061204649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_15
+      rect:
+        serializedVersion: 2
+        x: 89
+        y: 422
+        width: 29
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c382c72fe2619f980800000000000000
+      internalID: -8504742030419941316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_16
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 420
+        width: 27
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb0afba325a2039b0800000000000000
+      internalID: -5102531845149450050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_17
+      rect:
+        serializedVersion: 2
+        x: 215
+        y: 426
+        width: 21
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ab1ea08495048bf0800000000000000
+      internalID: -323127137891640408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_18
+      rect:
+        serializedVersion: 2
+        x: 265
+        y: 426
+        width: 24
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82f32aa4323269530800000000000000
+      internalID: 3861312364999753512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_19
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 428
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffca5d0ad6eec24a0800000000000000
+      internalID: -6616651597896897281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_20
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 421
+        width: 48
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3da789f3225e8fc0800000000000000
+      internalID: -3490762346701804230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_21
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 397
+        width: 15
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0c03b972f0e01d0800000000000000
+      internalID: -3382749607326859013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_22
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 350
+        width: 17
+        height: 34
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b56579cdfae6dbd0800000000000000
+      internalID: -2605636958659713607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75713434171ab4700800000000000000
+      internalID: 525691289350641495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780fe3646d2bfdf00800000000000000
+      internalID: 1143829463746670727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_25
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 515bc52a5be81c670800000000000000
+      internalID: 8557277677744862485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_26
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3134f9c1c09952e00800000000000000
+      internalID: 1019389167968142099
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_27
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dbc3c26a561008b0800000000000000
+      internalID: -5188122193270944808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_28
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70972545fdd88cad0800000000000000
+      internalID: -2681737587767215865
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_29
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e435e01c381ee20800000000000000
+      internalID: 3378126060696850051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_30
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5263b94e8fcb2390800000000000000
+      internalID: -7841946116106788259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_31
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba608268962d3a230800000000000000
+      internalID: 3648991473764402859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_32
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58af7a092db6df830800000000000000
+      internalID: 4106556987345992325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_33
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e9864b6b856bf20800000000000000
+      internalID: 3438032907277999735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faace3578d0ad0570800000000000000
+      internalID: 8434574528675236527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_35
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 240
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c342ac2013875ef00800000000000000
+      internalID: 1145453832131191868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_36
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 285
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e79a23383d5ce3d0800000000000000
+      internalID: -3176061141245061151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_37
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 318
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bf133128fce6170800000000000000
+      internalID: 8173698531298769759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_38
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 318
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f6929f6a4b06940800000000000000
+      internalID: 5287424591770775339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_39
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 285
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2f44358317d1240800000000000000
+      internalID: 4764088467556987554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_40
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 285
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c21521608565d150800000000000000
+      internalID: 5896730889171571395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_41
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 288
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6d75eb45f977340800000000000000
+      internalID: 4861529509089236701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_42
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 288
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07941e9bf7ceb120800000000000000
+      internalID: 2431600732329514766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_43
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 254
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bf8a4e280538e9a0800000000000000
+      internalID: -6203650177450209354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_44
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 254
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36306c3c31fbcbd00800000000000000
+      internalID: 989876109724484451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_45
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 254
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3225c9ae7d36320800000000000000
+      internalID: 2550119216666780591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_46
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 254
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53377f1f1ebb978f0800000000000000
+      internalID: -542195701019872459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_47
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 251
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8a11261e3e437c50800000000000000
+      internalID: 6661754302377302666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_48
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 251
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62dae1711378943c0800000000000000
+      internalID: -4374816918102692570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_49
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 253
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e87cb4b2b05400e0800000000000000
+      internalID: -2304628380840199966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_50
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 178
+        width: 90
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6639e9b225cc8f70800000000000000
+      internalID: 9190937692494968427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_51
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 180
+        width: 90
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 604624c4c87e47010800000000000000
+      internalID: 1185827191666140166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_52
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 181
+        width: 90
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0207773e27e250030800000000000000
+      internalID: 3460222959681499168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_53
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 119
+        width: 90
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6142fe834167a47e0800000000000000
+      internalID: -1780480873444989930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_54
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 122
+        width: 90
+        height: 16
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fdf143a9f4e3dc60800000000000000
+      internalID: 7841863137019166198
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_55
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 16
+        width: 56
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7b23ea41b8a98f50800000000000000
+      internalID: 6884218984831593338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_56
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 16
+        width: 56
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaa90d28cab76d9f0800000000000000
+      internalID: -444031532390114642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_57
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 16
+        width: 56
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c236d504ac9e0c030800000000000000
+      internalID: 3513064764221514540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_58
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 16
+        width: 56
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb213a893d697440800000000000000
+      internalID: 4934094960660130763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_59
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 16
+        width: 56
+        height: 32
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 273ecee54c7cfec60800000000000000
+      internalID: 7849712321750164338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_60
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 240
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7c60107993a44a0800000000000000
+      internalID: -6608406182492715040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_61
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 240
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c82cbdf809f4310800000000000000
+      internalID: 1391489757422455915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_62
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 240
+        width: 32
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e3c8413685800780800000000000000
+      internalID: -8718822067190316062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_63
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 194
+        width: 90
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350810a621df0da10800000000000000
+      internalID: 1932322495671664723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_64
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 196
+        width: 90
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b089cee3a2dbe3200800000000000000
+      internalID: 161774625773885451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_65
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 197
+        width: 90
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a498faab8e797a0800000000000000
+      internalID: -6370367259385705848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_66
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 135
+        width: 90
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2680ad760cab6be80800000000000000
+      internalID: -8163131939023615902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_67
+      rect:
+        serializedVersion: 2
+        x: 257
+        y: 138
+        width: 90
+        height: 27
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4972e5a245c74f730800000000000000
+      internalID: 4031984267333347220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_68
+      rect:
+        serializedVersion: 2
+        x: 358
+        y: 48
+        width: 56
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f50f0e2ee3f065fe0800000000000000
+      internalID: -1200755487878877089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_69
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 48
+        width: 56
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 919810e6cf0507e20800000000000000
+      internalID: 3346263568243853593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_70
+      rect:
+        serializedVersion: 2
+        x: 188
+        y: 48
+        width: 56
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03942a6c2368944b0800000000000000
+      internalID: -5455681920943634128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_71
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 48
+        width: 56
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aef97259e9039a960800000000000000
+      internalID: 7613670102711902186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_72
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 48
+        width: 56
+        height: 59
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3f3273c01f38030800000000000000
+      internalID: 3495902770536641525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_73
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 337
+        width: 17
+        height: 13
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1ee976550970c2f0800000000000000
+      internalID: -954630057169916389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_4
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 352
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75a60c49207be9120800000000000000
+      internalID: 2422574871285361239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_5
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aff55c0349507a80800000000000000
+      internalID: -8471172754579259483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Parkinglot tilemap_6
+      rect:
+        serializedVersion: 2
+        x: 323
+        y: 386
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c1eed335e0eede0800000000000000
+      internalID: -1302087491579405202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
