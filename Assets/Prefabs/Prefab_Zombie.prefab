@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7195067311785230322}
   - component: {fileID: 7195067311785230325}
   - component: {fileID: 1942765494898771893}
+  - component: {fileID: 6645586032759294962}
   m_Layer: 0
   m_Name: Prefab_Zombie
   m_TagString: Untagged
@@ -74,12 +75,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 2973161019514295033, guid: 0fb44e75ba005154892437ab9433ce78, type: 3}
+  m_Sprite: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.8125, y: 0.875}
+  m_Size: {x: 0.625, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -134,6 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de25bef96166522478a3c3c64898535e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerTrail: []
   patrolSpeed: 1
   chaseSpeed: 2
   attackReach: 0.7
@@ -144,4 +146,27 @@ MonoBehaviour:
   behavior: 0
   healthLevel: 0
   velocity: {x: 0, y: 0, z: 0}
-  playerTrail: []
+  Idle: []
+  Footstep: []
+  Attack: []
+  Hurt: []
+  Death: []
+--- !u!95 &6645586032759294962
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195067311785230327}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: aaacaef2daef0e9488065a7d76b19a6c, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

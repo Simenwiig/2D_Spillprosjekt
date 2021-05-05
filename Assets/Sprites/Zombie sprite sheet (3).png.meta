@@ -703,10 +703,10 @@ TextureImporter:
       name: Zombie sprite sheet (3)_35
       rect:
         serializedVersion: 2
-        x: 47
+        x: 34
         y: 32
-        width: 18
-        height: 20
+        width: 44
+        height: 37
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -721,34 +721,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie sprite sheet (3)_36
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 51
-        width: 18
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2b685e85940b95540800000000000000
-      internalID: 4997219090614814386
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zombie sprite sheet (3)_37
       rect:
         serializedVersion: 2
-        x: 103
+        x: 80
         y: 32
-        width: 18
-        height: 20
+        width: 64
+        height: 21
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -763,33 +742,12 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie sprite sheet (3)_38
-      rect:
-        serializedVersion: 2
-        x: 126
-        y: 35
-        width: 18
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67f5a72036b41b2a0800000000000000
-      internalID: -6723509880072020106
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zombie sprite sheet (3)_39
       rect:
         serializedVersion: 2
-        x: 176
+        x: 156
         y: 33
-        width: 21
+        width: 67
         height: 22
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -805,34 +763,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Zombie sprite sheet (3)_40
-      rect:
-        serializedVersion: 2
-        x: 205
-        y: 33
-        width: 18
-        height: 18
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6b7e8b7e03ce84200800000000000000
-      internalID: 164641081189263286
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Zombie sprite sheet (3)_41
       rect:
         serializedVersion: 2
-        x: 264
+        x: 238
         y: 32
-        width: 39
-        height: 18
+        width: 65
+        height: 19
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
