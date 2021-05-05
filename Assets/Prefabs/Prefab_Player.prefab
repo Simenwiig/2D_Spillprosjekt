@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4593550359035177619}
   - component: {fileID: 4593550359035177621}
   - component: {fileID: 4593550359035177618}
-  - component: {fileID: 4593550359035177631}
   - component: {fileID: 4593550359035177630}
+  - component: {fileID: 1763072514}
   m_Layer: 0
   m_Name: Prefab_Player
   m_TagString: Untagged
@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 2
+  friction: 15
   sprintSpeedModifier: 2
   damageCooldown: 1
   controlType: 0
@@ -111,22 +112,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!70 &4593550359035177631
-CapsuleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4593550359035177628}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.57, y: 1}
-  m_Direction: 0
 --- !u!82 &4593550359035177630
 AudioSource:
   m_ObjectHideFlags: 0
@@ -223,6 +208,22 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!58 &1763072514
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4593550359035177628}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.30449343}
+  serializedVersion: 2
+  m_Radius: 0.19550657
 --- !u!1 &4593550359100176757
 GameObject:
   m_ObjectHideFlags: 0

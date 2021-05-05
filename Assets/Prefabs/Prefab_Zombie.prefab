@@ -84,8 +84,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerTrail: []
-  patrolSpeed: 1
-  chaseSpeed: 2
+  moveSpeed: 0.2
+  chaseSpeed: 2.1
+  friction: 8
   attackReach: 0.7
   detection_HearingRadius: 10
   detection_SightRadius: 10

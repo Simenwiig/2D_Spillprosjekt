@@ -9,14 +9,18 @@ public class ZombieController : MonoBehaviour
         Idle, Chasing, Searching
     }
 
+ 
 
     Animator animator;
+    Vector3 moveDirection;
 
     public List<PlayerPathNode> playerTrail = new List<PlayerPathNode>();
 
     [Header("Settings")]
-    public float patrolSpeed = 1f;
-    public float chaseSpeed = 2f;
+    public float moveSpeed = 0.25f;
+    public float chaseSpeed = 5;
+    public float friction = 15f;
+
     public float attackReach = 0.5f;
 
     public float detection_HearingRadius = 10f;
@@ -97,9 +101,11 @@ public class ZombieController : MonoBehaviour
         if (!isWithinRange)
             return;
 
+        MovePosition();
+
         bool canSeeYou = Physics2D.Raycast(transform.position, directionToPlayer.normalized, detection_SightRadius).transform == player.transform;
 
-        MovePosition();
+
 
 
         if (canSeeYou && behavior != BehaviorState.Chasing)
@@ -107,13 +113,9 @@ public class ZombieController : MonoBehaviour
 
         if (behavior == BehaviorState.Idle)
         {
-            bool randomTwitch = Random.Range(0, 1 / Time.fixedDeltaTime) < 1;
-
-            if (randomTwitch)
-            {
-                
-                MoveTo(transform.position + new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f) ).normalized * 1);
-            }
+            if (Random.Range(0, 3 / Time.fixedDeltaTime) < 1)
+                velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
+            
 
             if (canSeeYou)
                 behavior = BehaviorState.Chasing;
@@ -128,7 +130,7 @@ public class ZombieController : MonoBehaviour
 
             if (canSeeYou)
             {
-                MoveTo(player.transform.position);
+                MoveTowardsLocation(player.transform.position);
             }
             else if (!canSeeYou) // Reduant statement, but makes it more readable
             {
@@ -147,8 +149,8 @@ public class ZombieController : MonoBehaviour
 																				}
                 }
 
-                
-                MoveTo(playerTrail[0].playerLocation);
+
+                MoveTowardsLocation(playerTrail[0].playerLocation);
 
                 if(Vector2.Distance(playerTrail[0].playerLocation, transform.position) < 0.1f)
                     behavior = BehaviorState.Searching;
@@ -163,7 +165,7 @@ public class ZombieController : MonoBehaviour
             playerTrail.Add(new PlayerPathNode(player.transform, canSeeYou));
 
 
-            MoveTo(playerTrail[0].playerLocation);
+            MoveTowardsLocation(playerTrail[0].playerLocation);
             playerTrail.RemoveAt(0);
 
             bool lostTrack = Random.Range(0, trackLostChance / Time.fixedDeltaTime) < 1;
@@ -185,20 +187,25 @@ public class ZombieController : MonoBehaviour
             player.HurtPlayer(35, directionToPlayer.normalized * 1);
 				}
 
-				public void MoveTo(Vector3 targetPosition)
+				public void MoveTowardsLocation(Vector3 targetPosition)
     {
-        velocity = (targetPosition - transform.position).normalized * chaseSpeed;
-
-     
+        moveDirection = (targetPosition - transform.position).normalized * moveSpeed;
     }
+
+
 
     public void MovePosition()
     {
+
+        float frictionStep = friction * Time.fixedDeltaTime;
+        velocity -= velocity * frictionStep;
+        velocity += moveDirection.normalized * (behavior == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
+
         transform.position += velocity * Time.fixedDeltaTime;
 
         if (animator != null)
         {
-            bool isMoving = velocity.magnitude > 0;
+            bool isMoving = velocity.magnitude > 0.1f;
             bool isMovingVertically = Mathf.Abs(velocity.y) >= Mathf.Abs(velocity.x);
 
             animator.SetBool("isWalkingUp", isMoving && isMovingVertically && velocity.y > 0);
@@ -208,7 +215,5 @@ public class ZombieController : MonoBehaviour
             if (isMoving)
                 GetComponentInChildren<SpriteRenderer>().flipX = velocity.x < 0;
         }
-
-        velocity = Vector3.zero;
     }
 }

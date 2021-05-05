@@ -3537,6 +3537,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1763072514, guid: a9a242facfa457147942b6df082ddf13, type: 3}
+      propertyPath: m_Radius
+      value: 0.25966036
+      objectReference: {fileID: 0}
+    - target: {fileID: 1763072514, guid: a9a242facfa457147942b6df082ddf13, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.24033964
+      objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -3580,18 +3588,6 @@ PrefabInstance:
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593550359035177621, guid: a9a242facfa457147942b6df082ddf13, type: 3}
-      propertyPath: weapons.Array.data[0].damage
-      value: 34
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593550359035177621, guid: a9a242facfa457147942b6df082ddf13, type: 3}
-      propertyPath: weapons.Array.data[1].damage
-      value: 51
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593550359035177621, guid: a9a242facfa457147942b6df082ddf13, type: 3}
-      propertyPath: weapons.Array.data[2].damage
-      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177628, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_Name

@@ -29,13 +29,11 @@ public class PlayerController : MonoBehaviour
     Camera camera;
 
     Manager_UI manager_UI;
-
-    float temp_Guncooldown;
-
     public bool isDead { get { return healthLevel <= 0; } }
 
 				[Header("Settings")]
     public float moveSpeed = 2f;
+    public float friction = 1f;
     public float sprintSpeedModifier = 2f;
     public float damageCooldown = 1f;
     float damageTimer;
@@ -106,10 +104,12 @@ public class PlayerController : MonoBehaviour
 
     void Walk(Vector2 moveDirection)
     {
-        if (moveDirection.magnitude > deadZone) // Have I decided to move?
-            velocity = (Vector2.up * moveDirection.y + Vector2.right * moveDirection.x) * moveSpeed;
-        else
-            velocity = Vector3.zero;   
+        if (moveDirection.magnitude < deadZone)
+            moveDirection = Vector2.zero;
+
+        float frictionStep = friction * Time.fixedDeltaTime;
+        velocity -= velocity * frictionStep;
+        velocity += (Vector3)moveDirection * moveSpeed * frictionStep;
     }
 
     void Aim(Vector2 attackDiretion)
@@ -119,8 +119,6 @@ public class PlayerController : MonoBehaviour
         WeaponStat currentWeapon = weapons[2];
 
         currentWeapon.cooldown += Time.fixedDeltaTime;
-
-        print(currentWeapon.cooldown);
 
         if (isAttacking && currentWeapon.cooldown > (1f / currentWeapon.attacksPerSecond))
         {
@@ -180,8 +178,8 @@ public class PlayerController : MonoBehaviour
         if (isAttacking)
             moveDirection = attackDiretion;
 
-        if (!isAttacking && temp_Guncooldown < 0.3f)
-            return;  // If I stop attacking, I won't automatically transition back to the correct idle animation. This hack makes it registrer as not attacking before it registrer as not moving, fixing the problem.
+      //  if (!isAttacking)
+      //      return;  // If I stop attacking, I won't automatically transition back to the correct idle animation. This hack makes it registrer as not attacking before it registrer as not moving, fixing the problem.
 
         bool isMoving = moveDirection.magnitude > deadZone;
         bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
