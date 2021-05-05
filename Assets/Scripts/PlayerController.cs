@@ -73,9 +73,11 @@ public class PlayerController : MonoBehaviour
         if (controlType == ControlType.Mouse)
         {
             rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
-         // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
+            // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
 
-
+            leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
+            leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
+            leftStick.Normalize();
         }
         else if (controlType == ControlType.TouchScreen)
         {
@@ -88,6 +90,8 @@ public class PlayerController : MonoBehaviour
 
         Aim(rightStick);
 
+        Animations(leftStick, rightStick);
+
         Resources();
 
         transform.position += velocity * Time.fixedDeltaTime;
@@ -96,32 +100,10 @@ public class PlayerController : MonoBehaviour
 
     void Walk(Vector2 moveDirection)
     {
-        if (controlType == ControlType.Mouse)
-        {
-            moveDirection.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
-            moveDirection.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
-
-            moveDirection.Normalize();
-        }
-
-
         if (moveDirection.magnitude > deadZone) // Have I decided to move?
             velocity = (Vector2.up * moveDirection.y + Vector2.right * moveDirection.x) * moveSpeed;
         else
-            velocity = Vector3.zero;
-
-        if (animator != null)
-        {
-            bool isMoving = moveDirection.magnitude > deadZone;
-            bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
-
-            animator.SetBool("isWalkingUp", isMoving && isMovingVertically && moveDirection.y > 0);
-            animator.SetBool("isWalkingDown", isMoving && isMovingVertically && moveDirection.y < 0);
-            animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
-
-            if(isMoving)
-                GetComponentInChildren<SpriteRenderer>().flipX = moveDirection.x < 0;
-        }
+            velocity = Vector3.zero;   
     }
 
     void Aim(Vector2 attackDiretion)
@@ -169,6 +151,37 @@ public class PlayerController : MonoBehaviour
             healthLevel += healthRegenRate;
             hungerLevel -= healthRegenRate;
         }
+    }
+
+    void Animations(Vector2 moveDirection, Vector2 attackDiretion)
+    {
+        if (animator == null)
+        {
+            Debug.LogError("There is no Animator attached to this object.");
+            return;
+        }
+
+        bool isAttacking = attackDiretion.magnitude > deadZone;
+
+        animator.SetBool("isShootingPistol", isAttacking && true);
+        animator.SetBool("isSwingingCrowbar", isAttacking && false);
+        animator.SetBool("isSwingingUnarmed", isAttacking && false);
+
+        if (isAttacking)
+            moveDirection = attackDiretion;
+
+        if (!isAttacking && temp_Guncooldown > 0)
+            return;  // If I stop attacking, I won't automatically transition back to the correct idle animation. This hack makes it registrer as not attacking before it registrer as not moving, fixing the problem.
+
+        bool isMoving = moveDirection.magnitude > deadZone;
+        bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
+
+        animator.SetBool("isWalkingUp", isMoving && isMovingVertically && moveDirection.y > 0);
+        animator.SetBool("isWalkingDown", isMoving && isMovingVertically && moveDirection.y < 0);
+        animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
+
+        if (isMoving)
+            GetComponentInChildren<SpriteRenderer>().flipX = moveDirection.x < 0;
     }
 
     public void HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
