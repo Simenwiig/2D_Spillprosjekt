@@ -544,6 +544,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230327, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_Name
       value: Prefab_Zombie (3)
@@ -994,6 +1010,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230327, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_Name
       value: Prefab_Zombie (2)
@@ -1153,6 +1185,22 @@ PrefabInstance:
     - target: {fileID: 7195067311785230320, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230327, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_Name
@@ -2330,6 +2378,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230327, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_Name
       value: Prefab_Zombie (1)
@@ -3256,13 +3320,29 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 4593550359035177616, guid: a9a242facfa457147942b6df082ddf13, type: 3}
+      propertyPath: m_Size.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593550359035177616, guid: a9a242facfa457147942b6df082ddf13, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593550359035177616, guid: a9a242facfa457147942b6df082ddf13, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 9117694719037400086, guid: 7395b95a895564a4db77a65eaad54c72, type: 3}
+    - target: {fileID: 4593550359035177616, guid: a9a242facfa457147942b6df082ddf13, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.34573865
+      value: -9.58
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3302,7 +3382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177621, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: controlType
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177621, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: Ranged_AttackSpeed
@@ -3364,6 +3444,22 @@ PrefabInstance:
     - target: {fileID: 7195067311785230320, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.x
+      value: 0.625
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Size.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
+    - target: {fileID: 7195067311785230323, guid: b718a41b641041d4ba2aabff98906410, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230327, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_Name
