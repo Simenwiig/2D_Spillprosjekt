@@ -52,7 +52,7 @@ MonoBehaviour:
   friction: 15
   sprintSpeedModifier: 2
   damageCooldown: 1
-  controlType: 0
+  controlType: 1
   deadZone: 0.2
   healthLevel: 100
   hungerLevel: 100
@@ -221,9 +221,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.30449343}
+  m_Offset: {x: 0, y: -0.21219063}
   serializedVersion: 2
-  m_Radius: 0.19550657
+  m_Radius: 0.28780937
 --- !u!1 &4593550359100176757
 GameObject:
   m_ObjectHideFlags: 0
