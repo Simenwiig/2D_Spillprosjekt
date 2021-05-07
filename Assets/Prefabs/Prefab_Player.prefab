@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4593550359035177621}
   - component: {fileID: 4593550359035177618}
   - component: {fileID: 4593550359035177630}
-  - component: {fileID: 1763072514}
+  - component: {fileID: 8815782882207614634}
   m_Layer: 0
   m_Name: Prefab_Player
   m_TagString: Untagged
@@ -48,11 +48,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7558f945e8a2b54bb9555ea58157e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentWeapon:
+    name: unnamed
+    isUnlocked: 0
+    damage: 34
+    knockBack: 1
+    attacksPerSecond: 1
+    range: 10
+    sound: {fileID: 0}
+    cooldown: 0
   moveSpeed: 2
-  friction: 15
+  friction: 10
   sprintSpeedModifier: 2
   damageCooldown: 1
-  controlType: 1
+  controlType: 0
   deadZone: 0.2
   healthLevel: 100
   hungerLevel: 100
@@ -64,7 +73,7 @@ MonoBehaviour:
   haveParkKey: 0
   weapons:
   - name: Unarmed
-    canBeUsed: 0
+    isUnlocked: 0
     damage: 34
     knockBack: 4
     attacksPerSecond: 1
@@ -72,7 +81,7 @@ MonoBehaviour:
     sound: {fileID: 0}
     cooldown: 0
   - name: Crowbar
-    canBeUsed: 0
+    isUnlocked: 0
     damage: 51
     knockBack: 4
     attacksPerSecond: 1
@@ -80,15 +89,14 @@ MonoBehaviour:
     sound: {fileID: 0}
     cooldown: 0
   - name: Pistol
-    canBeUsed: 1
+    isUnlocked: 1
     damage: 100
     knockBack: 4
     attacksPerSecond: 1
     range: 99
     sound: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
     cooldown: 0
-  Footstep: []
-  MeleeAttack: []
+  Footsteps: []
   Hurt: []
   Death: []
 --- !u!50 &4593550359035177618
@@ -208,8 +216,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!58 &1763072514
-CircleCollider2D:
+--- !u!70 &8815782882207614634
+CapsuleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -221,9 +229,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.21219063}
-  serializedVersion: 2
-  m_Radius: 0.28780937
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 1}
+  m_Direction: 0
 --- !u!1 &4593550359100176757
 GameObject:
   m_ObjectHideFlags: 0
@@ -411,7 +419,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 10
+  m_SortingOrder: 0
   m_Sprite: {fileID: 9117694719037400086, guid: 7395b95a895564a4db77a65eaad54c72, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

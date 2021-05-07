@@ -66,7 +66,8 @@ public class Item : MonoBehaviour
         {
             if (itemName == "Crowbar")
             {
-                player.haveCrowbar = true;
+                player.weapons[1].isUnlocked = true;
+                player.currentWeapon = player.weapons[1];
 
                 return;
             }
@@ -90,7 +91,7 @@ public class Item : MonoBehaviour
     public void BreakObject()
     {
 
-        if ((player.haveCrowbar && itemName == "Crate") || (player.haveParkKey && itemName == "ParkDoor"))
+        if ((player.weapons[1].isUnlocked && itemName == "Crate") || (player.haveParkKey && itemName == "ParkDoor"))
         {
 
             transform.parent = player.transform;
@@ -113,6 +114,7 @@ public class Item : MonoBehaviour
             }
          }
     }
+
 }
 
 
