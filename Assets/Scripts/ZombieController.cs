@@ -184,7 +184,7 @@ public class ZombieController : MonoBehaviour
         }
 
         if (distanceToPlayer <= attackReach)
-            player.HurtPlayer(35, directionToPlayer.normalized * 1);
+            player.HurtPlayer(35, directionToPlayer.normalized * 5);
 				}
 
 				public void MoveTowardsLocation(Vector3 targetPosition)

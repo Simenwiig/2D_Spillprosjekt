@@ -26,12 +26,18 @@ public class Manager_UI : MonoBehaviour
     public Image LeftStick_Dot;
     public Image RightStick;
     public Image RightStick_Dot;
+    public Button Button_Melee;
+    public Button Button_Ranged;
 
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         gameOverFadeTimer = gameOverFadeDuration;
+
+
+        Button_Melee.onClick.AddListener(SwitchingToMelee);
+        Button_Ranged.onClick.AddListener(SwitchingToFireArm);
     }
 
     // Update is called once per frame
@@ -80,5 +86,31 @@ public class Manager_UI : MonoBehaviour
         Debug.DrawRay(stick.rectTransform.position, position, Color.red, Time.fixedDeltaTime);
 
         return position.normalized * Mathf.Min(position.magnitude, stickRange) / stickRange;
+    }
+
+
+
+    void SwitchingToMelee()
+    {
+        Button_Melee.interactable = false;
+        Button_Ranged.interactable = true;
+
+        if (player.weapons[1].isUnlocked)
+
+            player.currentWeapon = player.weapons[1];
+        else
+            player.currentWeapon = player.weapons[0];
+
+    }
+
+    void SwitchingToFireArm()
+    {
+        if (!player.weapons[2].isUnlocked)
+            return;
+
+        Button_Melee.interactable = true;
+        Button_Ranged.interactable = false;
+
+        player.currentWeapon = player.weapons[2];
     }
 }

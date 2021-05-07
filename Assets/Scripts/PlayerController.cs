@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     public class WeaponStat
     {
         public string name = "unnamed";
-        public bool canBeUsed;
+        public bool isUnlocked;
         public int damage = 34;
         public float knockBack = 1;
         public float attacksPerSecond = 1;
@@ -27,6 +27,10 @@ public class PlayerController : MonoBehaviour
     AudioSource audioSource;
     Animator animator;
     Camera camera;
+    float footStepCooldown;
+
+    [HideInInspector]
+    public WeaponStat currentWeapon;
 
     Manager_UI manager_UI;
     public bool isDead { get { return healthLevel <= 0; } }
@@ -50,13 +54,11 @@ public class PlayerController : MonoBehaviour
     public Vector3 truePosition;
 
     [Header("Inventory")]
-    public bool haveCrowbar = false;
     public bool haveParkKey = false;
     public WeaponStat[] weapons;
 
     [Header("Audio Clips")]
-    public AudioClip[] Footstep;
-    public AudioClip[] MeleeAttack;
+    public AudioClip[] Footsteps;
     public AudioClip[] Hurt;
     public AudioClip[] Death;
 
@@ -67,6 +69,8 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         camera = GetComponentInChildren<Camera>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+
+        currentWeapon = weapons[0];
     }
 
     void FixedUpdate()
@@ -90,6 +94,8 @@ public class PlayerController : MonoBehaviour
         }
 
 
+       
+
         Walk(leftStick);
 
         Aim(rightStick);
@@ -110,13 +116,24 @@ public class PlayerController : MonoBehaviour
         float frictionStep = friction * Time.fixedDeltaTime;
         velocity -= velocity * frictionStep;
         velocity += (Vector3)moveDirection * moveSpeed * frictionStep;
+
+        float speed = velocity.magnitude;
+
+        footStepCooldown -= Time.fixedDeltaTime;
+
+        if (speed > 0.1f && footStepCooldown < 0)
+        {
+            footStepCooldown = 0.5f;
+
+            PlayAudiClipFromArray(Footsteps);
+        }
     }
 
     void Aim(Vector2 attackDiretion)
     {
         bool isAttacking = attackDiretion.magnitude > deadZone;
 
-        WeaponStat currentWeapon = weapons[2];
+       
 
         currentWeapon.cooldown += Time.fixedDeltaTime;
 
@@ -131,7 +148,14 @@ public class PlayerController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, currentWeapon.range);
             if (hit.transform != null && hit.transform.tag == "GameController")
             {
-                hit.transform.GetComponent<ZombieController>().OnDeath();
+                ZombieController zombie = hit.transform.GetComponent<ZombieController>();
+
+                zombie.healthLevel -= currentWeapon.damage;
+
+                zombie.velocity = attackDiretion.normalized * currentWeapon.knockBack;
+
+                if (zombie.healthLevel < 1)
+                    zombie.OnDeath();
             }
         }
     }
@@ -169,11 +193,13 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
+        animator.SetBool("isTrulyWalking", moveDirection.magnitude > deadZone);
+
         bool isAttacking = attackDiretion.magnitude > deadZone;
 
-        animator.SetBool("isShootingPistol", isAttacking && true);
-        animator.SetBool("isSwingingCrowbar", isAttacking && false);
-        animator.SetBool("isSwingingUnarmed", isAttacking && false);
+        animator.SetBool("isShootingPistol", isAttacking && currentWeapon.name == "Pistol");
+        animator.SetBool("isSwingingCrowbar", isAttacking && currentWeapon.name == "Crowbar");
+        animator.SetBool("isSwingingUnarmed", isAttacking && currentWeapon.name == "Unarmed");
 
         if (isAttacking)
             moveDirection = attackDiretion;
@@ -203,10 +229,25 @@ public class PlayerController : MonoBehaviour
         if (isDead)
         {
             damageTimer = 99999999;
+            PlayAudiClipFromArray(Death);
         }
+        else
+            PlayAudiClipFromArray(Hurt);
 
-        velocity += knockBack;
+        velocity = knockBack;
+
+       
 
         Debug.Log("SLAP! A Zombie hit the player.");
+    }
+
+    void PlayAudiClipFromArray(AudioClip[] audioArray)
+    {
+        if (audioArray.Length == 0)
+            return;
+
+        int index = Random.Range(0, audioArray.Length);
+
+        audioSource.PlayOneShot(audioArray[index]);
     }
 }
