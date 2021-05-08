@@ -85,7 +85,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTrail: []
   moveSpeed: 0.2
-  chaseSpeed: 2.1
+  chaseSpeed: 1.7
   friction: 8
   attackReach: 0.7
   detection_HearingRadius: 10
@@ -95,11 +95,17 @@ MonoBehaviour:
   behavior: 0
   healthLevel: 0
   velocity: {x: 0, y: 0, z: 0}
-  Idle: []
+  Idle:
+  - {fileID: 8300000, guid: a5d4551a3b80d6b4bb534f7ae6aa26ea, type: 3}
+  - {fileID: 8300000, guid: 1e1e91f7afa0fcd4eb404ebdcd583866, type: 3}
   Footstep: []
-  Attack: []
-  Hurt: []
-  Death: []
+  Attack:
+  - {fileID: 8300000, guid: 085dd60eb924aed4aadc8223f71f6153, type: 3}
+  Hurt:
+  - {fileID: 8300000, guid: c789d619111d46e47bc668f64adaa7fa, type: 3}
+  - {fileID: 8300000, guid: 34454f365cc27984f80afe0a214395f0, type: 3}
+  Death:
+  - {fileID: 8300000, guid: 18c4642905cf5dc4a93f8583ae06268b, type: 3}
 --- !u!1 &7510445949573038303
 GameObject:
   m_ObjectHideFlags: 0
