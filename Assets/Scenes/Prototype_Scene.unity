@@ -2203,11 +2203,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230320, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.29
+      value: -4.993
       objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230320, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.04
+      value: 0.26
       objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230320, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3636,11 +3636,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.93
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3673,10 +3673,6 @@ PrefabInstance:
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4593550359035177621, guid: a9a242facfa457147942b6df082ddf13, type: 3}
-      propertyPath: weapons.Array.data[0].isUnlocked
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177628, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_Name

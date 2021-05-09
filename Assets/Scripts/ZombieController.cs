@@ -9,8 +9,6 @@ public class ZombieController : MonoBehaviour
         Idle, Chasing, Searching
     }
 
- 
-
     Animator animator;
     Vector3 moveDirection;
 
@@ -42,8 +40,13 @@ public class ZombieController : MonoBehaviour
     public AudioClip[] Hurt;
     public AudioClip[] Death;
 
+    [Header("UI")]
+    public SpriteRenderer HealthBar_Full;
+
     PlayerController player;
+    AudioSource audioSource;
     bool isDead = false;
+    float damageTimer;
 
 
     [System.Serializable]
@@ -65,22 +68,10 @@ public class ZombieController : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         animator = GetComponentInChildren<Animator>();
+        audioSource = GetComponent<AudioSource>();
+
+        HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-       
-    }
-
-    public void OnDeath()
-    {
-        isDead = true;
-        GetComponent<Collider2D>().enabled = false;
-
-        animator.SetBool("isDead", true);
-    }
-
 
     void FixedUpdate()
     {
@@ -90,8 +81,11 @@ public class ZombieController : MonoBehaviour
             return;
 								}
 
+        MovePosition();
+
         if (isDead)
             return;
+
 
         Vector3 directionToPlayer = (player.transform.position - transform.position);
         float distanceToPlayer = directionToPlayer.magnitude;
@@ -101,7 +95,7 @@ public class ZombieController : MonoBehaviour
         if (!isWithinRange)
             return;
 
-        MovePosition();
+        damageTimer -= Time.fixedDeltaTime;
 
         bool canSeeYou = Physics2D.Raycast(transform.position, directionToPlayer.normalized, detection_SightRadius).transform == player.transform;
 
@@ -114,7 +108,11 @@ public class ZombieController : MonoBehaviour
         if (behavior == BehaviorState.Idle)
         {
             if (Random.Range(0, 3 / Time.fixedDeltaTime) < 1)
+            {
                 velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
+
+                PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+            }
             
 
             if (canSeeYou)
@@ -184,7 +182,10 @@ public class ZombieController : MonoBehaviour
         }
 
         if (distanceToPlayer <= attackReach)
+        {
             player.HurtPlayer(35, directionToPlayer.normalized * 5);
+            PlayerController.PlayAudioClipFromArray(Attack, audioSource);
+        }
 				}
 
 				public void MoveTowardsLocation(Vector3 targetPosition)
@@ -196,14 +197,15 @@ public class ZombieController : MonoBehaviour
 
     public void MovePosition()
     {
-
         float frictionStep = friction * Time.fixedDeltaTime;
         velocity -= velocity * frictionStep;
-        velocity += moveDirection.normalized * (behavior == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
+        
+        if(!isDead)
+          velocity += moveDirection.normalized * (behavior == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
 
         transform.position += velocity * Time.fixedDeltaTime;
 
-        if (animator != null)
+        if (animator != null && damageTimer < 0)
         {
             bool isMoving = velocity.magnitude > 0.1f;
             bool isMovingVertically = Mathf.Abs(velocity.y) >= Mathf.Abs(velocity.x);
@@ -215,5 +217,37 @@ public class ZombieController : MonoBehaviour
             if (isMoving)
                 GetComponentInChildren<SpriteRenderer>().flipX = velocity.x < 0;
         }
+    }
+
+    public void HurtZombie(float damage, Vector3 knockBack)
+    {
+        if (damageTimer > 0)
+            return;
+
+        healthLevel -= damage;
+        velocity = knockBack;
+
+        damageTimer = 0.5f;
+       
+        if (healthLevel <= 0)
+        {
+            isDead = true;
+            GetComponent<Collider2D>().enabled = false;
+
+            animator.SetBool("isDead", true);
+        }
+
+        if (HealthBar_Full != null)
+        {
+            float healthPercentage = healthLevel / 100;
+
+            HealthBar_Full.transform.localScale = new Vector2(healthPercentage, 1f);
+            HealthBar_Full.color = new Color(1 - healthPercentage, healthPercentage, 0);
+
+            HealthBar_Full.transform.parent.gameObject.SetActive(healthLevel != 100 && !isDead);
+        }
+
+        if(damage > 0)
+            PlayerController.PlayAudioClipFromArray( isDead ? Death : Hurt, audioSource);
     }
 }

@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-
     public enum ControlType
     {Mouse, TouchScreen }
 
@@ -23,7 +22,6 @@ public class PlayerController : MonoBehaviour
         public float cooldown;
     }
 
-
     AudioSource audioSource;
     Animator animator;
     Camera camera;
@@ -39,7 +37,6 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 2f;
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
-    public float damageCooldown = 1f;
     float damageTimer;
     public ControlType controlType = ControlType.Mouse;
     public float deadZone = 0.10f;
@@ -83,9 +80,12 @@ public class PlayerController : MonoBehaviour
             rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
             // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
 
+
             leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
             leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
             leftStick.Normalize();
+
+            Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
         }
         else if (controlType == ControlType.TouchScreen)
         {
@@ -93,13 +93,8 @@ public class PlayerController : MonoBehaviour
             leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
         }
 
-
-       
-
         Walk(leftStick);
-
         Aim(rightStick);
-
         Animations(leftStick, rightStick);
 
         Resources();
@@ -125,16 +120,13 @@ public class PlayerController : MonoBehaviour
         {
             footStepCooldown = 0.5f;
 
-            PlayAudiClipFromArray(Footsteps);
+            PlayAudioClipFromArray(Footsteps, audioSource);
         }
     }
 
     void Aim(Vector2 attackDiretion)
     {
         bool isAttacking = attackDiretion.magnitude > deadZone;
-
-       
-
         currentWeapon.cooldown += Time.fixedDeltaTime;
 
         if (isAttacking && currentWeapon.cooldown > (1f / currentWeapon.attacksPerSecond))
@@ -147,16 +139,7 @@ public class PlayerController : MonoBehaviour
 
             RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, currentWeapon.range);
             if (hit.transform != null && hit.transform.tag == "GameController")
-            {
-                ZombieController zombie = hit.transform.GetComponent<ZombieController>();
-
-                zombie.healthLevel -= currentWeapon.damage;
-
-                zombie.velocity = attackDiretion.normalized * currentWeapon.knockBack;
-
-                if (zombie.healthLevel < 1)
-                    zombie.OnDeath();
-            }
+                hit.transform.GetComponent<ZombieController>().HurtZombie(currentWeapon.damage, attackDiretion.normalized * currentWeapon.knockBack);
         }
     }
 
@@ -223,16 +206,16 @@ public class PlayerController : MonoBehaviour
         if (isDead || damageTimer > 0)
             return;
 
-        damageTimer = damageCooldown;
+        damageTimer = 0.5f; // The brief invulnerability you get when hit.
         healthLevel -= damage;
 
         if (isDead)
         {
             damageTimer = 99999999;
-            PlayAudiClipFromArray(Death);
+            PlayAudioClipFromArray(Death, audioSource);
         }
         else
-            PlayAudiClipFromArray(Hurt);
+            PlayAudioClipFromArray(Hurt, audioSource);
 
         velocity = knockBack;
 
@@ -241,7 +224,7 @@ public class PlayerController : MonoBehaviour
         Debug.Log("SLAP! A Zombie hit the player.");
     }
 
-    void PlayAudiClipFromArray(AudioClip[] audioArray)
+    static public void PlayAudioClipFromArray(AudioClip[] audioArray, AudioSource audioSource)
     {
         if (audioArray.Length == 0)
             return;

@@ -60,7 +60,6 @@ MonoBehaviour:
   moveSpeed: 2
   friction: 10
   sprintSpeedModifier: 2
-  damageCooldown: 1
   controlType: 0
   deadZone: 0.2
   healthLevel: 100
@@ -72,7 +71,7 @@ MonoBehaviour:
   haveParkKey: 0
   weapons:
   - name: Unarmed
-    isUnlocked: 0
+    isUnlocked: 1
     damage: 34
     knockBack: 4
     attacksPerSecond: 1
