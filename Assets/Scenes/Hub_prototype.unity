@@ -234,6 +234,18 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: -2
       objectReference: {fileID: 0}
+    - target: {fileID: 1749013897523034607, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749013897523034607, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1749013897523034607, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1749013897534380721, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
       propertyPath: m_LocalPosition.z
       value: -2
@@ -368,6 +380,54 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
+--- !u!1 &31710741 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1749013897523034605, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
+  m_PrefabInstance: {fileID: 31710740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &31710742 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1749013897488416449, guid: 16be2648c89e09443a6e7809aeadfb4c, type: 3}
+  m_PrefabInstance: {fileID: 31710740}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &31710743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31710741}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bdc61fd39e8f94b8ffe82475e5948f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPickup: 1
+  isObstacle: 0
+  despawnTime: 1
+  DoorIndexToUnlock: -1
+  manager_DoorWay: {fileID: 0}
+  breakCrate: {fileID: 0}
+  itemName: Prison Key
+--- !u!114 &31710744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 31710742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39bdc61fd39e8f94b8ffe82475e5948f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isPickup: 1
+  isObstacle: 0
+  despawnTime: 1
+  DoorIndexToUnlock: -1
+  manager_DoorWay: {fileID: 0}
+  breakCrate: {fileID: 0}
+  itemName: Pistol
 --- !u!1001 &37353019
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5772,7 +5832,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 8300000, guid: 9c33d8aaef8b7a24bb6c158176ab2f1f, type: 3}
   itemName: ParkDoor
-  endTheme: {fileID: 0}
 --- !u!1 &829040106 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6867791208309870306, guid: b0e4a4837199f51409911609ced366e9, type: 3}
@@ -5797,7 +5856,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: ParkKey
-  endTheme: {fileID: 0}
 --- !u!1001 &829351295
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14777,7 +14835,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1266031191}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -19.52, y: 3.44, z: 0}
+  m_LocalPosition: {x: -42.1, y: 22.8, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1385831530}
