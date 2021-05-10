@@ -60,8 +60,10 @@ MonoBehaviour:
   moveSpeed: 2
   friction: 10
   sprintSpeedModifier: 2
+  damageTimer: 0
   controlType: 0
   deadZone: 0.2
+  isInCutscene: 0
   healthLevel: 100
   hungerLevel: 100
   thirstLevel: 100
@@ -87,8 +89,8 @@ MonoBehaviour:
     sound: {fileID: 8300000, guid: b3490de7b22e0c64e95c1600700affe7, type: 3}
     cooldown: 0
   - name: Pistol
-    isUnlocked: 1
-    damage: 100
+    isUnlocked: 0
+    damage: 75
     knockBack: 1
     attacksPerSecond: 1
     range: 99

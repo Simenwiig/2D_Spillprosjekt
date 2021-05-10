@@ -106,12 +106,6 @@ public class Item : MonoBehaviour
 
 
             gameObject.AddComponent<AudioSource>().PlayOneShot(breakCrate);
-
-            if (itemName == "ParkDoor")
-            {
-                manager_UI.GameOver(true);
-                manager_UI.gameOverFadeDuration *= 5;
-            }
          }
     }
 

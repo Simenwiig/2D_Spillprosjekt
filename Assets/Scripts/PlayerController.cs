@@ -38,9 +38,11 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 2f;
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
-    float damageTimer;
+    [HideInInspector]
+    public float damageTimer;
     public ControlType controlType = ControlType.Mouse;
     public float deadZone = 0.10f;
+    public bool isInCutscene;
 
     [Header("Attributes")]
     public float healthLevel = 100;
@@ -70,10 +72,17 @@ public class PlayerController : MonoBehaviour
         collider = GetComponent<Collider2D>();
 
         currentWeapon = weapons[0];
+
+
+        if (!Application.isEditor)
+            controlType = ControlType.TouchScreen;
     }
 
     void FixedUpdate()
     {
+        if (isInCutscene)
+            return;
+
         Vector2 leftStick = Vector2.zero;
         Vector2 rightStick = Vector2.zero;
    
@@ -90,8 +99,18 @@ public class PlayerController : MonoBehaviour
         }
         else if (controlType == ControlType.TouchScreen)
         {
-            rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
-            leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
+
+            for (int i = 0; i < Input.touchCount; i++)
+            {
+                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, true, camera);
+                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, true, camera);
+            }
+
+            if (Application.isEditor)
+            {
+                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
+                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
+            }
         }
 
         collider.enabled = false;
