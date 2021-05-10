@@ -59,6 +59,8 @@ public class Event_Victory : MonoBehaviour
 
             player.damageTimer = 999999999;
             player.isInCutscene = true;
+
+            audioSource.PlayOneShot(endTheme);
         }
 
         playerCamera.transform.localPosition += Vector3.up * Time.fixedDeltaTime * cameraPanSpeed;
