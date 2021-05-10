@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
     AudioSource audioSource;
     Animator animator;
     Camera camera;
+    Collider2D collider;
     float footStepCooldown;
 
     [HideInInspector]
@@ -66,6 +67,7 @@ public class PlayerController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         camera = GetComponentInChildren<Camera>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+        collider = GetComponent<Collider2D>();
 
         currentWeapon = weapons[0];
     }
@@ -80,7 +82,6 @@ public class PlayerController : MonoBehaviour
             rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
             // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
 
-
             leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
             leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
             leftStick.Normalize();
@@ -93,6 +94,8 @@ public class PlayerController : MonoBehaviour
             leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
         }
 
+        collider.enabled = false;
+
         Walk(leftStick);
         Aim(rightStick);
         Animations(leftStick, rightStick);
@@ -101,6 +104,7 @@ public class PlayerController : MonoBehaviour
 
         transform.position += velocity * Time.fixedDeltaTime;
         damageTimer -= Time.fixedDeltaTime;
+        collider.enabled = true;
     }
 
     void Walk(Vector2 moveDirection)
@@ -187,9 +191,6 @@ public class PlayerController : MonoBehaviour
         if (isAttacking)
             moveDirection = attackDiretion;
 
-      //  if (!isAttacking)
-      //      return;  // If I stop attacking, I won't automatically transition back to the correct idle animation. This hack makes it registrer as not attacking before it registrer as not moving, fixing the problem.
-
         bool isMoving = moveDirection.magnitude > deadZone;
         bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
 
@@ -201,10 +202,10 @@ public class PlayerController : MonoBehaviour
             GetComponentInChildren<SpriteRenderer>().flipX = moveDirection.x < 0;
     }
 
-    public void HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
+    public bool HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
     {
         if (isDead || damageTimer > 0)
-            return;
+            return false;
 
         damageTimer = 0.5f; // The brief invulnerability you get when hit.
         healthLevel -= damage;
@@ -222,6 +223,8 @@ public class PlayerController : MonoBehaviour
        
 
         Debug.Log("SLAP! A Zombie hit the player.");
+
+        return true;
     }
 
     static public void PlayAudioClipFromArray(AudioClip[] audioArray, AudioSource audioSource)

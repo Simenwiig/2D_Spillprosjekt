@@ -101,7 +101,7 @@ public class Manager_UI : MonoBehaviour
         else
             player.currentWeapon = player.weapons[0];
 
-        player.currentWeapon.cooldown = 0.5f;
+        player.currentWeapon.cooldown = 0.25f;
     }
 
     void SwitchingToFireArm()
@@ -113,5 +113,6 @@ public class Manager_UI : MonoBehaviour
         Button_Ranged.interactable = false;
 
         player.currentWeapon = player.weapons[2];
+        player.currentWeapon.cooldown = 0.25f;
     }
 }

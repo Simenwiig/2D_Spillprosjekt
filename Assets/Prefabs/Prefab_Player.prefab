@@ -89,7 +89,7 @@ MonoBehaviour:
   - name: Pistol
     isUnlocked: 1
     damage: 100
-    knockBack: 4
+    knockBack: 1
     attacksPerSecond: 1
     range: 99
     sound: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}

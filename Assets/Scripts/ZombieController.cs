@@ -11,25 +11,22 @@ public class ZombieController : MonoBehaviour
 
     Animator animator;
     Vector3 moveDirection;
-
-    public List<PlayerPathNode> playerTrail = new List<PlayerPathNode>();
+    Collider2D collider;
 
     [Header("Settings")]
     public float moveSpeed = 0.25f;
     public float chaseSpeed = 5;
     public float friction = 15f;
-
     public float attackReach = 0.5f;
-
-    public float detection_HearingRadius = 10f;
     public float detection_SightRadius = 10f;
 
     /// How long will the zombie investigate the player?
-    public float investigationDuration = 10;
     public float trackLostChance = 5;
 
     [Header("Status")]
-    public BehaviorState behavior = BehaviorState.Idle;
+    public BehaviorState behaviorState = BehaviorState.Idle;
+    public List<Vector3> validLocations = new List<Vector3>();
+    Vector2 previousPlayerPosition;
     public float healthLevel;
     public Vector3 velocity;
 
@@ -48,20 +45,6 @@ public class ZombieController : MonoBehaviour
     bool isDead = false;
     float damageTimer;
 
-
-    [System.Serializable]
-    public struct PlayerPathNode
-    {
-       public bool couldSeePlayer;
-       public Vector2 playerLocation;
-
-        public PlayerPathNode(Transform player, bool canSee)
-        {
-            couldSeePlayer = canSee;
-            playerLocation = player.position;
-        }
-    }
-
     void Start()
     {
         transform.tag = "GameController";
@@ -69,6 +52,7 @@ public class ZombieController : MonoBehaviour
 
         animator = GetComponentInChildren<Animator>();
         audioSource = GetComponent<AudioSource>();
+        collider = GetComponent<Collider2D>();
 
         HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
     }
@@ -86,105 +70,15 @@ public class ZombieController : MonoBehaviour
         if (isDead)
             return;
 
-
         Vector3 directionToPlayer = (player.transform.position - transform.position);
         float distanceToPlayer = directionToPlayer.magnitude;
 
-        bool isWithinRange = distanceToPlayer < Mathf.Max(detection_SightRadius, detection_SightRadius);
-
-        if (!isWithinRange)
-            return;
-
-        damageTimer -= Time.fixedDeltaTime;
-
-        bool canSeeYou = Physics2D.Raycast(transform.position, directionToPlayer.normalized, detection_SightRadius).transform == player.transform;
-
-
-
-
-        if (canSeeYou && behavior != BehaviorState.Chasing)
-            behavior = BehaviorState.Chasing;
-
-        if (behavior == BehaviorState.Idle)
-        {
-            if (Random.Range(0, 3 / Time.fixedDeltaTime) < 1)
-            {
-                velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
-
-                PlayerController.PlayAudioClipFromArray(Idle, audioSource);
-            }
-            
-
-            if (canSeeYou)
-                behavior = BehaviorState.Chasing;
-        }
-
-        if (behavior == BehaviorState.Chasing)
-        {
-            playerTrail.Add(new PlayerPathNode(player.transform, canSeeYou));
-
-            // I start tracking the player.
-            // If I have only briefly seen the player, I won't chase for long.
-
-            if (canSeeYou)
-            {
-                MoveTowardsLocation(player.transform.position);
-            }
-            else if (!canSeeYou) // Reduant statement, but makes it more readable
-            {
-                // I just lost track of the player.
-                // So I go back to see when I most recently saw the player.
-
-                for(int i = 0; i < playerTrail.Count; i++)
-                {
-                    int index = playerTrail.Count - 1 - i;
-
-                    if(playerTrail[index].couldSeePlayer)
-																				{
-                        playerTrail.RemoveRange(0, index);
-
-                        break;
-																				}
-                }
-
-
-                MoveTowardsLocation(playerTrail[0].playerLocation);
-
-                if(Vector2.Distance(playerTrail[0].playerLocation, transform.position) < 0.1f)
-                    behavior = BehaviorState.Searching;
-            }
-        }
-
-        if (behavior == BehaviorState.Searching)
-        {
-            /// Add a new behavior "tracking" where the zombies track recently known positions, starting (but not ending) at last seen positions.
-            /// The zombies then forget about you, based on [variable] + Smell. Add some randomoness to not have all the zombies give up at once.
-
-            playerTrail.Add(new PlayerPathNode(player.transform, canSeeYou));
-
-
-            MoveTowardsLocation(playerTrail[0].playerLocation);
-            playerTrail.RemoveAt(0);
-
-            bool lostTrack = Random.Range(0, trackLostChance / Time.fixedDeltaTime) < 1;
-            if (lostTrack)
-            {
-                playerTrail.Clear();
-                behavior = BehaviorState.Idle;
-                Debug.Log("Lost Track of Player.");
-            }
-
-            if(canSeeYou)
-												{
-                playerTrail.Clear();
-                behavior = BehaviorState.Chasing;
-            }
-        }
+        ZombieBehvior();
 
         if (distanceToPlayer <= attackReach)
         {
-            player.HurtPlayer(35, directionToPlayer.normalized * 5);
-            PlayerController.PlayAudioClipFromArray(Attack, audioSource);
+            if(player.HurtPlayer(35, directionToPlayer.normalized * 5))
+                PlayerController.PlayAudioClipFromArray(Attack, audioSource);
         }
 				}
 
@@ -193,15 +87,13 @@ public class ZombieController : MonoBehaviour
         moveDirection = (targetPosition - transform.position).normalized * moveSpeed;
     }
 
-
-
     public void MovePosition()
     {
         float frictionStep = friction * Time.fixedDeltaTime;
         velocity -= velocity * frictionStep;
         
         if(!isDead)
-          velocity += moveDirection.normalized * (behavior == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
+          velocity += moveDirection.normalized * (behaviorState == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
 
         transform.position += velocity * Time.fixedDeltaTime;
 
@@ -217,6 +109,8 @@ public class ZombieController : MonoBehaviour
             if (isMoving)
                 GetComponentInChildren<SpriteRenderer>().flipX = velocity.x < 0;
         }
+
+        moveDirection = Vector2.zero;
     }
 
     public void HurtZombie(float damage, Vector3 knockBack)
@@ -249,5 +143,101 @@ public class ZombieController : MonoBehaviour
 
         if(damage > 0)
             PlayerController.PlayAudioClipFromArray( isDead ? Death : Hurt, audioSource);
+    }
+
+    void ZombieBehvior()
+    {
+        Vector3 currentPlayerPosition = player.transform.position;
+        Vector3 directionToPlayer = currentPlayerPosition - transform.position;
+        float distanceToPlayer = directionToPlayer.magnitude;
+        float rayThickness = 0.2f;
+
+        collider.enabled = false;
+
+        if (distanceToPlayer < detection_SightRadius) // The player is simply too far away.
+        {
+            bool canSeePlayer = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius).transform == player.transform;
+
+            /// Can I see the player?
+            /// Then I will follow you until I no longer see them.
+            /// I will always start tracking them.
+
+            if (canSeePlayer)
+            {
+                behaviorState = BehaviorState.Chasing;
+                MoveTowardsLocation(player.transform.position);
+            }
+
+            /// If I can not see the player?
+            if (!canSeePlayer)
+            {
+                /// If I can not see the player, but I haven't seen them recently either, I will just wander.
+                if (behaviorState == BehaviorState.Idle && Random.Range(0, (int)(3 / Time.fixedDeltaTime)) == 0)
+                {
+                    velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
+                    PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                }
+
+                /// I am now searching.
+                if (behaviorState == BehaviorState.Searching) 
+                {
+                    /// Have I lost interest in tracking the player?
+                    if (Random.Range(0, (int)(trackLostChance / Time.fixedDeltaTime)) == 0 || validLocations.Count == 0)
+                    {
+                        behaviorState = BehaviorState.Idle;
+                        PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                        validLocations.Clear();
+
+                        Debug.Log("I lost track of the Player.");
+                    }
+                    /// If not:
+                    else
+                    {
+                        // Do I need to create a new valid location since the player broke LoS to the last one?
+
+                        Vector3 validLocation = validLocations[validLocations.Count - 1];
+
+                        Vector3 directionFromPointToPlayer = currentPlayerPosition - validLocation;
+
+                        bool canStillSeeOldPoint = directionFromPointToPlayer.magnitude < rayThickness || Physics2D.CircleCast(validLocation, rayThickness, directionFromPointToPlayer, detection_SightRadius).transform == player.transform;
+
+                        if (!canStillSeeOldPoint)
+                        {
+                            validLocations.Add(previousPlayerPosition);
+
+                            Debug.DrawRay(validLocation, directionFromPointToPlayer, Color.red, 3);
+                        }
+
+
+                        // If I still can not see the player, I will move thowards the oldest valid location
+                        MoveTowardsLocation(validLocations[0]);
+
+                        float distanceToOldestLocation = (validLocations[0] - transform.position).magnitude;
+
+                        if (distanceToOldestLocation < 0.1f)
+                            validLocations.RemoveAt(0);
+                    }
+                }
+
+                /// If I just lost track of the player, I will start searching, beginning where I last saw the player.
+                if (behaviorState == BehaviorState.Chasing) // OnLosingTrack
+                {
+                    behaviorState = BehaviorState.Searching;
+
+                    validLocations.Clear();
+                    validLocations.Add(previousPlayerPosition);
+
+                    PlayerController.PlayAudioClipFromArray(Idle, audioSource); // Might aswell play a sound on the zombie losing you?
+
+                    Debug.Log("The player broke LoS.");
+                }
+
+            }
+
+            damageTimer -= Time.fixedDeltaTime;
+            previousPlayerPosition = player.transform.position;
+        }
+
+        collider.enabled = true;
     }
 }
