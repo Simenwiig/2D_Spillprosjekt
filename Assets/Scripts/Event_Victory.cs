@@ -17,12 +17,20 @@ public class Event_Victory : MonoBehaviour
     public float endCreditFlowSpeed = 100;
     public float endCreditDuration = 10;
 
-				void Start()
+
+    public AudioClip endTheme;
+
+    AudioSource audioSource;
+
+
+    void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         playerCamera = player.GetComponentInChildren<Camera>();
 
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+
+        audioSource = GetComponent<AudioSource>();
     }
 
 

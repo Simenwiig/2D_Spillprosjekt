@@ -89,7 +89,7 @@ public class Manager_UI : MonoBehaviour
 
 
 
-    void SwitchingToMelee()
+    public void SwitchingToMelee()
     {
         Button_Melee.interactable = false;
         Button_Ranged.interactable = true;
@@ -103,7 +103,7 @@ public class Manager_UI : MonoBehaviour
         player.currentWeapon.cooldown = 0.25f;
     }
 
-    void SwitchingToFireArm()
+    public void SwitchingToFireArm()
     {
         if (!player.weapons[2].isUnlocked)
             return;

@@ -21,12 +21,13 @@ public class Item : MonoBehaviour
 
     public string itemName = "";
 
-    public Manager_UI manager_UI;
+    Manager_UI manager_UI;
 
     PlayerController player;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
+        manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
     }
 
     bool isCarried;
@@ -69,12 +70,30 @@ public class Item : MonoBehaviour
                 player.weapons[1].isUnlocked = true;
                 player.currentWeapon = player.weapons[1];
 
+                manager_UI.SwitchingToMelee();
+
                 return;
             }
 
             if (itemName == "ParkKey")
             {
                 player.haveParkKey = true;
+
+                return;
+            }
+
+            if (itemName == "Prison Key")
+            {
+                player.havePrisonKey = true;
+
+                return;
+            }
+
+            if (itemName == "Pistol")
+            {
+                player.weapons[2].isUnlocked = true;
+                player.currentWeapon = player.weapons[2];
+                manager_UI.SwitchingToFireArm();
 
                 return;
             }

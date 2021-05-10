@@ -55,6 +55,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Inventory")]
     public bool haveParkKey = false;
+    public bool havePrisonKey = false;
     public WeaponStat[] weapons;
 
     [Header("Audio Clips")]

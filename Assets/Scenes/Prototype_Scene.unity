@@ -160,7 +160,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: 
-  manager_UI: {fileID: 0}
 --- !u!212 &2387893
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1027,7 +1026,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: 
-  manager_UI: {fileID: 0}
 --- !u!212 &780433238
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1581,7 +1579,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: 
-  manager_UI: {fileID: 0}
 --- !u!212 &1119997769
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1684,7 +1681,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: 
-  manager_UI: {fileID: 0}
 --- !u!212 &1249335924
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1895,7 +1891,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: 
-  manager_UI: {fileID: 0}
 --- !u!212 &1277906194
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2430,7 +2425,6 @@ MonoBehaviour:
   manager_DoorWay: {fileID: 0}
   breakCrate: {fileID: 0}
   itemName: 
-  manager_UI: {fileID: 0}
 --- !u!212 &1483091888
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2894,8 +2888,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cameraPanSpeed: 0.5
   helicopter: {fileID: 107852456}
-  endCreditFlowSpeed: 50
-  endCreditDuration: 30
+  endCreditFlowSpeed: 20
+  endCreditDuration: 110
 --- !u!4 &1695658446
 Transform:
   m_ObjectHideFlags: 0
