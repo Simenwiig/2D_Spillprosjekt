@@ -2890,6 +2890,7 @@ MonoBehaviour:
   helicopter: {fileID: 107852456}
   endCreditFlowSpeed: 20
   endCreditDuration: 110
+  endTheme: {fileID: 0}
 --- !u!4 &1695658446
 Transform:
   m_ObjectHideFlags: 0
