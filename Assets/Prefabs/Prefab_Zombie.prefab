@@ -107,7 +107,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5573631873114715644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.6, z: 0}
+  m_LocalPosition: {x: 0, y: 0.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5941266381222974837}
@@ -177,7 +177,8 @@ GameObject:
   - component: {fileID: 7195067311785230322}
   - component: {fileID: 1942765494898771893}
   - component: {fileID: 1848497884}
-  - component: {fileID: 1700917444}
+  - component: {fileID: 4634504334240223137}
+  - component: {fileID: 1423598844066946034}
   m_Layer: 0
   m_Name: Prefab_Zombie
   m_TagString: Untagged
@@ -238,9 +239,7 @@ MonoBehaviour:
   chaseSpeed: 1.7
   friction: 8
   attackReach: 0.7
-  detection_HearingRadius: 10
   detection_SightRadius: 10
-  investigationDuration: 10
   trackLostChance: 15
   behaviorState: 0
   validLocations: []
@@ -250,13 +249,11 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a5d4551a3b80d6b4bb534f7ae6aa26ea, type: 3}
   - {fileID: 8300000, guid: 1e1e91f7afa0fcd4eb404ebdcd583866, type: 3}
   Footstep: []
-  Attack:
-  - {fileID: 8300000, guid: 085dd60eb924aed4aadc8223f71f6153, type: 3}
+  Attack: []
   Hurt:
   - {fileID: 8300000, guid: c789d619111d46e47bc668f64adaa7fa, type: 3}
   - {fileID: 8300000, guid: 34454f365cc27984f80afe0a214395f0, type: 3}
-  Death:
-  - {fileID: 8300000, guid: 18c4642905cf5dc4a93f8583ae06268b, type: 3}
+  Death: []
   HealthBar_Full: {fileID: 5620093422360564554}
 --- !u!82 &1848497884
 AudioSource:
@@ -354,8 +351,8 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!70 &1700917444
-CapsuleCollider2D:
+--- !u!58 &4634504334240223137
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -368,8 +365,24 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  m_Size: {x: 0.5, y: 1}
-  m_Direction: 0
+  serializedVersion: 2
+  m_Radius: 0.2
+--- !u!58 &1423598844066946034
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7195067311785230327}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0.5158341}
+  serializedVersion: 2
+  m_Radius: 0.27871513
 --- !u!1 &7510445949573038303
 GameObject:
   m_ObjectHideFlags: 0
@@ -396,7 +409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7510445949573038303}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.5, z: 0}
+  m_LocalPosition: {x: 0, y: -0.2, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7195067311785230320}
@@ -441,7 +454,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: -1
   m_Sprite: {fileID: 7688278189759717761, guid: 0788c3e4c0b352040bad73dd02d986b8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

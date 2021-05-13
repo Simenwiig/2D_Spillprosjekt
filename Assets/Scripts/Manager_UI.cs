@@ -78,7 +78,7 @@ public class Manager_UI : MonoBehaviour
     /// returns the relative direction from the controlPad to pixelCordinates
    public static Vector3 StickController(Image stick, Image stickCircle, Vector2 pixelCordinates, bool isHeldDown, Camera camera)
     {
-        float stickRange = 100;
+        float stickRange = 200;
 
         Vector3 position = pixelCordinates - (Vector2)stick.rectTransform.position;
 

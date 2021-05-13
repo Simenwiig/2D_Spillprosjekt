@@ -40,7 +40,7 @@ public class Event_Victory : MonoBehaviour
         if (hasStarted)
             Sequence(false);
 
-        if ((player.transform.position - transform.position).magnitude < 0.5f && !player.isDead)
+        if ((player.transform.position - transform.position).magnitude < 0.5f && !player.isDead && !hasStarted)
         {
             hasStarted = true;
             Sequence(true);
@@ -61,22 +61,24 @@ public class Event_Victory : MonoBehaviour
             player.isInCutscene = true;
 
             audioSource.PlayOneShot(endTheme);
+
+            manager_UI.isPaused = true;
         }
 
         playerCamera.transform.localPosition += Vector3.up * Time.fixedDeltaTime * cameraPanSpeed;
 
-        if (sequenceProgress > 5)
+        if (sequenceProgress > 2.5f)
             player.GetComponentInChildren<SpriteRenderer>().enabled = false;
 
-       manager_UI.UI_Screen_GameOver.color = new Color(0, 0, 0, (sequenceProgress / helicopter.clip.length/2));
+       manager_UI.UI_Screen_GameOver.color = new Color(0, 0, 0, (sequenceProgress / helicopter.clip.length));
 
 
-        if (sequenceProgress > helicopter.clip.length * 2)
+        if (sequenceProgress > helicopter.clip.length)
         {
             manager_UI.UI_Victory.rectTransform.position += new Vector3(0, Time.fixedDeltaTime * endCreditFlowSpeed);
         }
 
-        if (sequenceProgress > helicopter.clip.length * 2 + endCreditDuration)
+        if (sequenceProgress > helicopter.clip.length + endCreditDuration)
             manager_UI.GameOver();
     }
 }

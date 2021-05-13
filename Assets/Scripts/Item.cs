@@ -41,8 +41,8 @@ public class Item : MonoBehaviour
 
             if (hasCutScene)
             {
+                transform.localScale = Vector3.zero;
                 cutsceneImage.color = new Color(1, 1, 1,  1 - shrinkagePercentage);
-                print(cutsceneImage.name);  
             }
 
             return;
@@ -54,7 +54,7 @@ public class Item : MonoBehaviour
 
     void OnPickup()
 				{
-        bool pickup = true;
+        bool isPickup = true;
 
         if (itemName.Length > 0) // It has a name
         {
@@ -66,7 +66,7 @@ public class Item : MonoBehaviour
                     return;
 
                 GetComponent<Collider2D>().isTrigger = true;
-                pickup = false;
+                isPickup = false;
             }
 
             if (itemName == "park door")
@@ -75,22 +75,24 @@ public class Item : MonoBehaviour
                     return;
 
                 GetComponent<Collider2D>().isTrigger = true;
-                pickup = false;
+                isPickup = false;
             }
 
             if (itemName == "key_prison")
             {
                 player.havePrisonKey = true;
+
+                isPickup = false;
+                hasCutScene = true;
+                manager_UI.OnSelectingBlueprint();
+                manager_UI.Button_Blueprint_Close.transform.GetChild(2).gameObject.SetActive(true);
+                cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(2).GetComponent<Image>();
             }
 
             if (itemName == "key_park")
             {
-                hasCutScene = true;
-                manager_UI.OnSelectingBlueprint();
 
                 player.haveParkKey = true;
-                manager_UI.Button_Blueprint_Close.transform.GetChild(2).gameObject.SetActive(true);
-                cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(2).GetComponent<Image>();
             }
 
             if (itemName == "crowbar")
@@ -98,7 +100,8 @@ public class Item : MonoBehaviour
                 player.weapons[1].isUnlocked = true;
                 player.currentWeapon = player.weapons[1];
 
-                manager_UI.SwitchingToMelee();
+                if(player.weapons[2].isUnlocked)
+                    manager_UI.SwitchingToMelee();
             }
 
             if (itemName == "pistol")
@@ -111,6 +114,7 @@ public class Item : MonoBehaviour
 
             if (itemName == "battery")
             {
+                isPickup = false;
                 hasCutScene = true;
                 manager_UI.OnSelectingBlueprint();
 
@@ -122,7 +126,7 @@ public class Item : MonoBehaviour
         hasBeenActivated = true;
         GameObject.Destroy(gameObject, despawnTime);
 
-        if (pickup)
+        if (isPickup)
         {
             transform.parent = player.transform;
             transform.localPosition = Vector2.up * 1;

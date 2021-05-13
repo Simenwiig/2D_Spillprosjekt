@@ -136,6 +136,8 @@ public class ZombieController : MonoBehaviour
             GetComponent<Collider2D>().enabled = false;
 
             animator.SetBool("isDead", true);
+
+            GetComponentInChildren<SpriteRenderer>().sortingOrder = -1;
         }
 
         if (HealthBar_Full != null)
