@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
@@ -8,6 +9,8 @@ public class Item : MonoBehaviour
     PlayerController player;
 
     bool hasBeenActivated;
+    bool hasCutScene;
+    Image cutsceneImage;
 
     [Header("Item Specific Settings.")]
     public string itemName = "";
@@ -35,6 +38,12 @@ public class Item : MonoBehaviour
         {
             transform.localScale = Vector3.one * shrinkagePercentage;
             shrinkagePercentage -= Time.deltaTime / despawnTime;
+
+            if (hasCutScene)
+            {
+                cutsceneImage.color = new Color(1, 1, 1,  1 - shrinkagePercentage);
+                print(cutsceneImage.name);  
+            }
 
             return;
         }
@@ -76,7 +85,12 @@ public class Item : MonoBehaviour
 
             if (itemName == "key_park")
             {
+                hasCutScene = true;
+                manager_UI.OnSelectingBlueprint();
+
                 player.haveParkKey = true;
+                manager_UI.Button_Blueprint_Close.transform.GetChild(2).gameObject.SetActive(true);
+                cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(2).GetComponent<Image>();
             }
 
             if (itemName == "crowbar")
@@ -93,6 +107,15 @@ public class Item : MonoBehaviour
                 player.currentWeapon = player.weapons[2];
 
                 manager_UI.SwitchingToFireArm();
+            }
+
+            if (itemName == "battery")
+            {
+                hasCutScene = true;
+                manager_UI.OnSelectingBlueprint();
+
+                manager_UI.Button_Blueprint_Close.transform.GetChild(1).gameObject.SetActive(true);
+                cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(1).GetComponent<Image>();
             }
         }
 
