@@ -12,6 +12,7 @@ public class Manager_UI : MonoBehaviour
     [Header("Settings")]
     public float gameOverFadeDuration = 3f;
     float gameOverFadeTimer = 3f;
+    public bool isPaused;
 
     [Header("UI Elements")]
     public Image UI_Bar_Health;
@@ -125,10 +126,14 @@ public class Manager_UI : MonoBehaviour
         Button_Blueprint_Close.gameObject.SetActive(true);
         Button_Blueprint.gameObject.SetActive(false);
 
+        isPaused = true;
+
     }
     public void OnClosingBlueprint()
     {
         Button_Blueprint_Close.gameObject.SetActive(false);
         Button_Blueprint.gameObject.SetActive(true);
+
+        isPaused = false;
     }
 }

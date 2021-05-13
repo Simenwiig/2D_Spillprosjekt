@@ -43,6 +43,7 @@ public class PlayerController : MonoBehaviour
     public ControlType controlType = ControlType.Mouse;
     public float deadZone = 0.10f;
     public bool isInCutscene;
+    public bool isPaused { get { return manager_UI.isPaused; } }
 
     [Header("Attributes")]
     public float healthLevel = 100;
@@ -81,7 +82,7 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if (isInCutscene)
+        if (isInCutscene || isPaused)
             return;
 
         Vector2 leftStick = Vector2.zero;

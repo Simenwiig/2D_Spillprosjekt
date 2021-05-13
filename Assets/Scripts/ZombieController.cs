@@ -59,7 +59,14 @@ public class ZombieController : MonoBehaviour
 
     void FixedUpdate()
     {
-        if(player == null)
+								#region Pausing
+								animator.speed = player.isPaused ? 0 : 1;
+
+        if (player.isPaused)
+            return;
+								#endregion
+
+								if (player == null)
 								{
             Debug.LogError("Advarsel: Zombiene kan ikke finne spilleren, når det ikke er noen spiller i Scenen.");
             return;
