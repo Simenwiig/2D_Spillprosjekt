@@ -100,7 +100,8 @@ public class Item : MonoBehaviour
                 player.weapons[1].isUnlocked = true;
                 player.currentWeapon = player.weapons[1];
 
-                manager_UI.SwitchingToMelee();
+                if(player.weapons[2].isUnlocked)
+                    manager_UI.SwitchingToMelee();
             }
 
             if (itemName == "pistol")
