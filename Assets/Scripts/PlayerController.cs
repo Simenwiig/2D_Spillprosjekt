@@ -16,10 +16,46 @@ public class PlayerController : MonoBehaviour
         public float knockBack = 1;
         public float attacksPerSecond = 1;
         public float range = 10;
+        public bool visibleBullet;
         public AudioClip sound;
 
         [HideInInspector]
         public float cooldown;
+    }
+
+    public class Weapon_Bullet
+    {
+        public Vector2 position;
+        public Vector2 direction;
+
+        public float speed;
+        
+        float lifeTime;
+
+        public bool isDead { get { return lifeTime < 0; } }
+
+        public Weapon_Bullet (Vector2 bulletPosition, Vector2 fireDirection, float projectileSpeed, float distance)
+        {
+            if (distance == 0)
+                distance = 99;
+
+            position = bulletPosition;
+            direction = fireDirection;
+
+            speed = projectileSpeed;
+            lifeTime = distance / projectileSpeed;
+        }
+
+        public Vector3 UpdateBullet(float timeStep)
+        {
+            position += direction * speed * timeStep;
+            lifeTime -= timeStep;
+
+            if (isDead)
+                position = Vector3.one * 99999;
+
+            return position;
+        }
     }
 
     AudioSource audioSource;
@@ -30,6 +66,9 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public WeaponStat currentWeapon;
+    List<Weapon_Bullet> bullets = new List<Weapon_Bullet>();
+
+    public Transform bullet;
 
     Manager_UI manager_UI;
     public bool isDead { get { return healthLevel <= 0; } }
@@ -74,7 +113,7 @@ public class PlayerController : MonoBehaviour
         collider = GetComponent<Collider2D>();
 
         currentWeapon = weapons[0];
-
+        bullet.parent = null;
 
         if (!Application.isEditor)
             controlType = ControlType.TouchScreen;
@@ -115,7 +154,17 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        collider.enabled = false;
+        for (int i = 0; i < bullets.Count; i++)
+        {
+            bullet.position = bullets[i].UpdateBullet(Time.fixedDeltaTime);
+
+
+
+            if (bullets[i].isDead)
+                bullets.RemoveAt(i);
+        }
+
+            collider.enabled = false;
 
         Walk(leftStick);
         Aim(rightStick);
@@ -165,6 +214,11 @@ public class PlayerController : MonoBehaviour
             RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, currentWeapon.range);
             if (hit.transform != null && hit.transform.tag == "GameController")
                 hit.transform.GetComponent<ZombieController>().HurtZombie(currentWeapon.damage, attackDiretion.normalized * currentWeapon.knockBack);
+
+            if (currentWeapon.visibleBullet)
+            {
+                bullets.Add(new Weapon_Bullet(transform.position, attackDiretion.normalized, 50, hit.distance));
+            }
         }
     }
 
