@@ -14,6 +14,12 @@ TextureImporter:
   - first:
       213: 5795352451748509576
     second: police stairs_3
+  - first:
+      213: 7220168366856729671
+    second: police stairs_4
+  - first:
+      213: -3300378298248426040
+    second: police stairs_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,10 +124,10 @@ TextureImporter:
       name: police stairs_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 37
-        width: 26
-        height: 32
+        x: 3
+        y: 67
+        width: 25
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,10 +145,10 @@ TextureImporter:
       name: police stairs_1
       rect:
         serializedVersion: 2
-        x: 34
-        y: 38
-        width: 23
-        height: 31
+        x: 33
+        y: 67
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,10 +166,10 @@ TextureImporter:
       name: police stairs_2
       rect:
         serializedVersion: 2
-        x: 35
-        y: 4
-        width: 23
-        height: 31
+        x: 1
+        y: 33
+        width: 28
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,10 +187,10 @@ TextureImporter:
       name: police stairs_3
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
+        x: 33
+        y: 34
         width: 27
-        height: 32
+        height: 30
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,6 +200,48 @@ TextureImporter:
       bones: []
       spriteID: 887b8aa895a3d6050800000000000000
       internalID: 5795352451748509576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police stairs_4
+      rect:
+        serializedVersion: 2
+        x: 34
+        y: 1
+        width: 25
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 744f10520e0333460800000000000000
+      internalID: 7220168366856729671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: police stairs_5
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 28
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cd8e748c63b232d0800000000000000
+      internalID: -3300378298248426040
       vertices: []
       indices: 
       edges: []
