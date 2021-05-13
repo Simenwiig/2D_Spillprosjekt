@@ -28,6 +28,8 @@ public class Manager_UI : MonoBehaviour
     public Image RightStick_Dot;
     public Button Button_Melee;
     public Button Button_Ranged;
+    public Button Button_Blueprint;
+    public Button Button_Blueprint_Close;
 
     void Start()
     {
@@ -38,6 +40,9 @@ public class Manager_UI : MonoBehaviour
 
         Button_Melee.onClick.AddListener(SwitchingToMelee);
         Button_Ranged.onClick.AddListener(SwitchingToFireArm);
+
+        Button_Blueprint.onClick.AddListener(OnSelectingBlueprint);
+        Button_Blueprint_Close.onClick.AddListener(OnClosingBlueprint);
     }
 
     // Update is called once per frame
@@ -113,5 +118,17 @@ public class Manager_UI : MonoBehaviour
 
         player.currentWeapon = player.weapons[2];
         player.currentWeapon.cooldown = 0.25f;
+    }
+
+    public void OnSelectingBlueprint()
+    {
+        Button_Blueprint_Close.gameObject.SetActive(true);
+        Button_Blueprint.gameObject.SetActive(false);
+
+    }
+    public void OnClosingBlueprint()
+    {
+        Button_Blueprint_Close.gameObject.SetActive(false);
+        Button_Blueprint.gameObject.SetActive(true);
     }
 }
