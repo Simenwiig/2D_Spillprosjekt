@@ -200,6 +200,7 @@ public class PlayerController : MonoBehaviour
 
     void Aim(Vector2 attackDiretion)
     {
+        Vector3 playerPosition = transform.position - Vector3.up * transform.GetChild(0).localPosition.y / 2;
         bool isAttacking = attackDiretion.magnitude > deadZone;
         currentWeapon.cooldown += Time.fixedDeltaTime;
 
@@ -209,16 +210,14 @@ public class PlayerController : MonoBehaviour
 
             audioSource.PlayOneShot(currentWeapon.sound);
 
-            Debug.DrawRay(transform.position - Vector3.forward, attackDiretion.normalized * currentWeapon.range, Color.yellow, 0.1f);
+            Debug.DrawRay(playerPosition, attackDiretion.normalized * currentWeapon.range, Color.yellow, 0.1f);
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, attackDiretion.normalized, currentWeapon.range);
+            RaycastHit2D hit = Physics2D.Raycast(playerPosition, attackDiretion.normalized, currentWeapon.range);
             if (hit.transform != null && hit.transform.tag == "GameController")
                 hit.transform.GetComponent<ZombieController>().HurtZombie(currentWeapon.damage, attackDiretion.normalized * currentWeapon.knockBack);
 
             if (currentWeapon.visibleBullet)
-            {
-                bullets.Add(new Weapon_Bullet(transform.position, attackDiretion.normalized, 50, hit.distance));
-            }
+                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance));
         }
     }
 

@@ -5216,7 +5216,7 @@ SpriteRenderer:
   m_Size: {x: 8, y: 10}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &912003709
@@ -37513,26 +37513,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1942765494898771893, guid: b718a41b641041d4ba2aabff98906410, type: 3}
-      propertyPath: Death.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942765494898771893, guid: b718a41b641041d4ba2aabff98906410, type: 3}
-      propertyPath: Attack.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942765494898771893, guid: b718a41b641041d4ba2aabff98906410, type: 3}
-      propertyPath: Footstep.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942765494898771893, guid: b718a41b641041d4ba2aabff98906410, type: 3}
-      propertyPath: IdleArray.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1942765494898771893, guid: b718a41b641041d4ba2aabff98906410, type: 3}
-      propertyPath: playerTrail.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7195067311785230320, guid: b718a41b641041d4ba2aabff98906410, type: 3}
       propertyPath: m_RootOrder
       value: 4
