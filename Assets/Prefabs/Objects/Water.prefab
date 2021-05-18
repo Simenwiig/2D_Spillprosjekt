@@ -72,7 +72,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -1
-  m_Sprite: {fileID: -2661974200124337585, guid: 1da78b00f9eb88445820c0e07fd20ad4, type: 3}
+  m_Sprite: {fileID: 4564899823668317575, guid: b907abb8afb50b44ca906fb9caf010f8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -96,7 +96,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemName: Water
-  optionalPickupSound: {fileID: 0}
+  optionalPickupSound: {fileID: 8300000, guid: 722b27aa9bdeea342871d1e053cded98, type: 3}
   DoorIndexToUnlock: -1
   despawnTime: 1
   pickUpDistance: 0.5

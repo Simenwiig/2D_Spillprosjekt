@@ -91,7 +91,6 @@ public class Item : MonoBehaviour
 
             if (itemName == "key_park")
             {
-
                 player.haveParkKey = true;
             }
 
@@ -120,6 +119,26 @@ public class Item : MonoBehaviour
 
                 manager_UI.Button_Blueprint_Close.transform.GetChild(1).gameObject.SetActive(true);
                 cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(1).GetComponent<Image>();
+            }
+
+            if (itemName == "food")
+            {
+                float value = 33f;
+
+                if (player.hungerLevel > 100 - value * 0.1f) // If only 10% of the water would be spent, you ignore the water.
+                    return;
+
+                player.hungerLevel += Mathf.Min(value, 100 - player.hungerLevel);
+            }
+
+            if (itemName == "water")
+            {
+                float value = 33f;
+
+                if (player.thirstLevel > 100 - value * 0.1f) // If only 10% of the water would be spent, you ignore the water.
+                    return;
+
+                player.thirstLevel += Mathf.Min(value, 100 - player.thirstLevel);
             }
         }
 

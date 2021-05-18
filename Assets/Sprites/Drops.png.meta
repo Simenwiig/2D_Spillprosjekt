@@ -4,16 +4,16 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 4564899823668317575
-    second: Drops_0
+    second: Water
   - first:
       213: 6749907094918187561
-    second: Drops_1
+    second: Food
   - first:
       213: -2040057753640575754
     second: Drops_2
   - first:
       213: 5622005364771165601
-    second: Drops_3
+    second: Blueprint
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -103,7 +103,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Drops_0
+      name: Water
       rect:
         serializedVersion: 2
         x: 10
@@ -124,7 +124,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drops_1
+      name: Food
       rect:
         serializedVersion: 2
         x: 39
@@ -166,7 +166,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Drops_3
+      name: Blueprint
       rect:
         serializedVersion: 2
         x: 100

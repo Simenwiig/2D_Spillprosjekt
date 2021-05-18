@@ -228,22 +228,14 @@ public class PlayerController : MonoBehaviour
     void Resources()
     {
         bool isWalking = speedLevel > 0;
-        bool isRunning = speedLevel > moveSpeed;
+        float drainRate = 0.5f * (isWalking ? 2 : 1) * Time.fixedDeltaTime;
+        float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.fixedDeltaTime;
 
-        float drainRate = 1f/20 * Time.fixedDeltaTime * (isWalking ? 2 : 1);
-        float healthRegenRate = 1f/20 * Time.fixedDeltaTime * (isWalking ? 0.66f : 1);
+        hungerLevel -= hungerLevel > 0 ? drainRate : 0;
+        thirstLevel -= thirstLevel > 0 ? drainRate : 0;
+        healthLevel -= (hungerLevel > 0 ? 0 : drainRate) + (thirstLevel > 0 ? 0 : drainRate);
 
-        if (hungerLevel > 0)
-            hungerLevel -= drainRate;
-        else
-            healthLevel -= drainRate;
-
-        if (thirstLevel > 0)
-            thirstLevel -= drainRate * 1.33f;
-        else
-            healthLevel -= drainRate * 1.33f;
-
-        if (damageTimer < 0 && hungerLevel > 0 && thirstLevel > 0 && healthLevel < 100)
+        if (damageTimer < -5 && hungerLevel > 0 && thirstLevel > 0 && healthLevel < 100)
         {
             healthLevel += healthRegenRate;
             hungerLevel -= healthRegenRate;
@@ -252,9 +244,12 @@ public class PlayerController : MonoBehaviour
 
     void Animations(Vector2 moveDirection, Vector2 attackDiretion)
     {
-        spriteRenderer.color = damageTimer > 0 ? new Color(1, 0.5f, 0.5f) : Color.white;
+        #region Damage Blink
+        float redBlink = 1 - damageTimer * 2;
+        spriteRenderer.color = damageTimer > Time.fixedDeltaTime ? new Color(1, redBlink, redBlink) : Color.white;
+								#endregion
 
-        if (animator == null)
+								if (animator == null)
         {
             Debug.LogError("There is no Animator attached to this object.");
             return;
@@ -292,6 +287,7 @@ public class PlayerController : MonoBehaviour
 
         if (isDead)
         {
+            damageTimer = 0;
             manager_UI.isPaused = true;
             healthLevel = 0;
         }
