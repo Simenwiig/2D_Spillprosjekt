@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Android;
 
 public class PlayerController : MonoBehaviour
 {
@@ -62,6 +63,7 @@ public class PlayerController : MonoBehaviour
     Animator animator;
     Camera camera;
     Collider2D collider;
+    SpriteRenderer spriteRenderer;
     float footStepCooldown;
 
     [HideInInspector]
@@ -111,14 +113,13 @@ public class PlayerController : MonoBehaviour
         camera = GetComponentInChildren<Camera>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
         collider = GetComponent<Collider2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         currentWeapon = weapons[0];
         bullet.parent = null;
 
         if (!Application.isEditor)
             controlType = ControlType.TouchScreen;
-
-        Input.multiTouchEnabled = true;
     }
 
     void FixedUpdate()
@@ -129,9 +130,6 @@ public class PlayerController : MonoBehaviour
 
         if (isInCutscene || isPaused)
             return;
-
-        if(!Application.isEditor)
-            GetComponentInChildren<SpriteRenderer>().color = Color.red;
 
         Vector2 leftStick = Vector2.zero;
         Vector2 rightStick = Vector2.zero;
@@ -146,6 +144,8 @@ public class PlayerController : MonoBehaviour
         }
         else if (controlType == ControlType.TouchScreen)
         {
+            Input.multiTouchEnabled = true;
+
             for (int i = 0; i < Input.touches.Length; i++)
             {
                 rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
@@ -187,7 +187,8 @@ public class PlayerController : MonoBehaviour
 
         float frictionStep = friction * Time.fixedDeltaTime;
         velocity -= velocity * frictionStep;
-        velocity += (Vector3)moveDirection * moveSpeed * frictionStep;
+        if(!isDead)
+            velocity += (Vector3)moveDirection * moveSpeed * frictionStep;
 
         float speed = velocity.magnitude;
 
@@ -251,6 +252,8 @@ public class PlayerController : MonoBehaviour
 
     void Animations(Vector2 moveDirection, Vector2 attackDiretion)
     {
+        spriteRenderer.color = damageTimer > 0 ? new Color(1, 0.5f, 0.5f) : Color.white;
+
         if (animator == null)
         {
             Debug.LogError("There is no Animator attached to this object.");
@@ -276,7 +279,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
 
         if (isMoving)
-            GetComponentInChildren<SpriteRenderer>().flipX = moveDirection.x < 0;
+            spriteRenderer.flipX = moveDirection.x < 0;
     }
 
     public bool HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
@@ -289,11 +292,11 @@ public class PlayerController : MonoBehaviour
 
         if (isDead)
         {
-            damageTimer = 99999999;
-            PlayAudioClipFromArray(Death, audioSource);
+            manager_UI.isPaused = true;
+            healthLevel = 0;
         }
-        else
-            PlayAudioClipFromArray(Hurt, audioSource);
+
+        PlayAudioClipFromArray((isDead && Death.Length != 0) ? Death : Hurt, audioSource);
 
         velocity = knockBack;
 

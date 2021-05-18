@@ -52,9 +52,9 @@ public class Manager_UI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        UI_Bar_Health.fillAmount = player.healthLevel / 100;
-        UI_Bar_Hunger.fillAmount = player.hungerLevel / 100;
-        UI_Bar_Thirst.fillAmount = player.thirstLevel / 100;
+        UI_Bar_Health.transform.localScale = new Vector3(player.healthLevel / 100, 1, 1);
+        UI_Bar_Hunger.transform.localScale = new Vector3(player.hungerLevel / 100, 1, 1);
+        UI_Bar_Thirst.transform.localScale = new Vector3(player.thirstLevel / 100, 1, 1);
 
         if (gameIsOver || player.isDead)
             GameOver();
@@ -100,6 +100,9 @@ public class Manager_UI : MonoBehaviour
 
     public void SwitchingToMelee()
     {
+        if (isPaused)
+            return;
+
         Button_Melee.interactable = false;
         Button_Ranged.interactable = true;
 
@@ -114,7 +117,7 @@ public class Manager_UI : MonoBehaviour
 
     public void SwitchingToFireArm()
     {
-        if (!player.weapons[2].isUnlocked)
+        if (isPaused || !player.weapons[2].isUnlocked)
             return;
 
         Button_Melee.interactable = true;
@@ -126,6 +129,9 @@ public class Manager_UI : MonoBehaviour
 
     public void OnSelectingBlueprint()
     {
+        if (isPaused)
+            return;
+
         Button_Blueprint_Close.gameObject.SetActive(true);
         Button_Blueprint.gameObject.SetActive(false);
 
@@ -134,6 +140,9 @@ public class Manager_UI : MonoBehaviour
     }
     public void OnClosingBlueprint()
     {
+        if (!isPaused)
+            return;
+
         Button_Blueprint_Close.gameObject.SetActive(false);
         Button_Blueprint.gameObject.SetActive(true);
 
@@ -142,6 +151,9 @@ public class Manager_UI : MonoBehaviour
 
     public void OpenSettings()
     {
+        if (isPaused)
+            return;
+
         Application.Quit();
     }
 }
