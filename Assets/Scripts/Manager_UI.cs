@@ -31,6 +31,7 @@ public class Manager_UI : MonoBehaviour
     public Button Button_Ranged;
     public Button Button_Blueprint;
     public Button Button_Blueprint_Close;
+    public Button Button_Settings;
 
     void Start()
     {
@@ -44,6 +45,8 @@ public class Manager_UI : MonoBehaviour
 
         Button_Blueprint.onClick.AddListener(OnSelectingBlueprint);
         Button_Blueprint_Close.onClick.AddListener(OnClosingBlueprint);
+
+       Button_Settings.onClick.AddListener(OpenSettings);
     }
 
     // Update is called once per frame
@@ -82,7 +85,7 @@ public class Manager_UI : MonoBehaviour
 
         Vector3 position = pixelCordinates - (Vector2)stick.rectTransform.position;
 
-        if (position.magnitude > stickRange * 2)
+        if (position.magnitude > stickRange)
             position = Vector3.zero;
 
 
@@ -135,5 +138,10 @@ public class Manager_UI : MonoBehaviour
         Button_Blueprint.gameObject.SetActive(true);
 
         isPaused = false;
+    }
+
+    public void OpenSettings()
+    {
+        Application.Quit();
     }
 }

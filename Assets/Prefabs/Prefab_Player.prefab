@@ -64,7 +64,7 @@ MonoBehaviour:
   friction: 10
   sprintSpeedModifier: 2
   damageTimer: 0
-  controlType: 0
+  controlType: 1
   deadZone: 0.2
   isInCutscene: 0
   healthLevel: 100

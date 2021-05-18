@@ -117,6 +117,8 @@ public class PlayerController : MonoBehaviour
 
         if (!Application.isEditor)
             controlType = ControlType.TouchScreen;
+
+        Input.multiTouchEnabled = true;
     }
 
     void FixedUpdate()
@@ -128,23 +130,22 @@ public class PlayerController : MonoBehaviour
         if (isInCutscene || isPaused)
             return;
 
+        if(!Application.isEditor)
+            GetComponentInChildren<SpriteRenderer>().color = Color.red;
+
         Vector2 leftStick = Vector2.zero;
         Vector2 rightStick = Vector2.zero;
    
         if (controlType == ControlType.Mouse)
         {
             rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
-            // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
 
             leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
             leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
             leftStick.Normalize();
-
-            Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
         }
         else if (controlType == ControlType.TouchScreen)
         {
-
             for (int i = 0; i < Input.touches.Length; i++)
             {
                 rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
@@ -161,8 +162,6 @@ public class PlayerController : MonoBehaviour
         for (int i = 0; i < bullets.Count; i++)
         {
             bullet.position = bullets[i].UpdateBullet(Time.fixedDeltaTime);
-
-
 
             if (bullets[i].isDead)
                 bullets.RemoveAt(i);
