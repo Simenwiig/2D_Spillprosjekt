@@ -121,6 +121,10 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
+        #region Pausing
+        animator.speed = isPaused ? 0 : 1;
+        #endregion
+
         if (isInCutscene || isPaused)
             return;
 
@@ -129,28 +133,28 @@ public class PlayerController : MonoBehaviour
    
         if (controlType == ControlType.Mouse)
         {
-            rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
+            rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
             // leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
 
             leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
             leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
             leftStick.Normalize();
 
-            Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
+            Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
         }
         else if (controlType == ControlType.TouchScreen)
         {
 
-            for (int i = 0; i < Input.touchCount; i++)
+            for (int i = 0; i < Input.touches.Length; i++)
             {
-                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, true, camera);
-                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, true, camera);
+                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
+                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, camera);
             }
 
             if (Application.isEditor)
             {
-                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, true, camera);
-                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, true, camera);
+                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
+                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
             }
         }
 
