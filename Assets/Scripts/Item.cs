@@ -28,6 +28,8 @@ public class Item : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+
+        
     }
 
 
@@ -101,6 +103,10 @@ public class Item : MonoBehaviour
 
                 if(player.weapons[2].isUnlocked)
                     manager_UI.SwitchingToMelee();
+
+                GameObject godray = GameObject.Find("GOD RAY CROWBAR");
+                if (godray != null)
+                    godray.SetActive(false);
             }
 
             if (itemName == "pistol")
@@ -119,6 +125,10 @@ public class Item : MonoBehaviour
 
                 manager_UI.Button_Blueprint_Close.transform.GetChild(1).gameObject.SetActive(true);
                 cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(1).GetComponent<Image>();
+
+                GameObject godray = GameObject.Find("GOD RAY BATTERY");
+                if (godray != null)
+                    godray.SetActive(false);
             }
 
             if (itemName == "food")
