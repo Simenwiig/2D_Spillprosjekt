@@ -36,12 +36,15 @@ public class Event_Victory : MonoBehaviour
 
     void FixedUpdate()
     {
+        float playerDistance = (player.transform.position - transform.position).magnitude;
+
 
         if (hasStarted)
             Sequence(false);
 
-        if ((player.transform.position - transform.position).magnitude < 0.5f && !player.isDead && !hasStarted)
+        if (playerDistance < 50f && player.transform.position.y > transform.position.y && !player.isDead && !hasStarted)
         {
+            transform.position = player.transform.position;
             hasStarted = true;
             Sequence(true);
         }

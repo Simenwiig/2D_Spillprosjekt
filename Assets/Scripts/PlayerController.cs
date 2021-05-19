@@ -122,14 +122,30 @@ public class PlayerController : MonoBehaviour
             controlType = ControlType.TouchScreen;
     }
 
+    int testTouchCount = -1;
+
     void FixedUpdate()
     {
         #region Pausing
-        animator.speed = isPaused ? 0 : 1;
+
+        animator.speed = (isPaused && !isFalling) ? 0 : 1;
         #endregion
+
+        if (isFalling)
+            Falling(false);
 
         if (isInCutscene || isPaused)
             return;
+
+        if (Input.GetKey(KeyCode.Space))
+            Falling(true);
+
+
+        if (testTouchCount != Input.touchCount)
+        {
+            Debug.Log("Unity detected " + Input.touchCount + " fingers.");
+            testTouchCount = Input.touchCount;
+        }
 
         Vector2 leftStick = Vector2.zero;
         Vector2 rightStick = Vector2.zero;
@@ -141,12 +157,13 @@ public class PlayerController : MonoBehaviour
             leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
             leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
             leftStick.Normalize();
+
         }
         else if (controlType == ControlType.TouchScreen)
         {
             Input.multiTouchEnabled = true;
 
-            for (int i = 0; i < Input.touches.Length; i++)
+            for (int i = 0; i < Input.touchCount; i++)
             {
                 rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
                 leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, camera);
@@ -228,7 +245,7 @@ public class PlayerController : MonoBehaviour
     void Resources()
     {
         bool isWalking = speedLevel > 0;
-        float drainRate = 0.5f * (isWalking ? 2 : 1) * Time.fixedDeltaTime;
+        float drainRate = 1 * (isWalking ? 1 : 0.5f) * Time.fixedDeltaTime;
         float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.fixedDeltaTime;
 
         hungerLevel -= hungerLevel > 0 ? drainRate : 0;
@@ -311,5 +328,35 @@ public class PlayerController : MonoBehaviour
         int index = Random.Range(0, audioArray.Length);
 
         audioSource.PlayOneShot(audioArray[index]);
+    }
+
+    float fallingDuration = -1;
+    bool isFalling { get { return fallingDuration != -1; } }
+    public void Falling(bool onFalling)
+    {
+        fallingDuration -= Time.fixedDeltaTime;
+
+        
+
+        if (onFalling)
+        {
+            manager_UI.isPaused = true;
+            fallingDuration = 2f;
+
+            animator.SetBool("isWalkingUp", false);
+            animator.SetBool("isWalkingDown", false);
+            animator.SetBool("isWalkingSideways", false);
+
+            animator.SetBool("isFalling", true);
+        }
+
+
+        if (isFalling && fallingDuration < 0)
+        {
+            fallingDuration = -1;
+            manager_UI.isPaused = false;
+            animator.SetBool("isFalling", false);
+        }
+
     }
 }
