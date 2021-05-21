@@ -9,6 +9,7 @@ public class Manager_Door : MonoBehaviour
     {
         /// This is mostly just to make it easier to remember, but certain items also look for door names.
         public string name = "Name Me Something";
+       
         [Header("Doorway One")]
         public BoxCollider2D Doorway1;
 
@@ -21,37 +22,49 @@ public class Manager_Door : MonoBehaviour
         /// The door can only be entered from "Doorway One".
         public bool isOneWay;
         /// The "door" is actually a hole in the floor.
-        public bool isAFall;
+        public bool isFloorHole;
 
         [Header("Optional Sounds")]
-        public AudioClip lockedSound;
         public AudioClip enteringSound;
 
+        bool isHorizontalDoor { get { return Doorway1.size.x > Doorway1.size.y; } }
 
         public void EnterDoor(PlayerController player)
         {
             for (int i = 0; i < 2; i++)
             {
-                    BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;
-                    BoxCollider2D doorWayOut = i == 0 ? Doorway2 : Doorway1;
+                if (isLocked || (i == 1 && isOneWay))
+                    continue;
 
-                    Vector2 playerPosition = player.transform.position;
+                BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;
+                BoxCollider2D doorWayOut = i == 0 ? Doorway2 : Doorway1;
 
-                    Vector2 doorwayPosition = doorWayIn.transform.position + (Vector3)doorWayIn.offset;
+                Vector2 playerPosition = player.transform.position;
 
-                    bool isWithinX = Mathf.Abs(doorwayPosition.x - playerPosition.x) < doorWayIn.size.x / 2;
-                    bool isWithinY = Mathf.Abs(doorwayPosition.y - playerPosition.y) < doorWayIn.size.y / 2;
+                Vector2 doorwayPosition = doorWayIn.transform.position + (Vector3)doorWayIn.offset;
 
-                    bool isMovingThowards = Vector3.Dot((doorwayPosition - playerPosition).normalized, player.velocity.normalized) > 0f;
+                bool isWithinX = Mathf.Abs(doorwayPosition.x - playerPosition.x) < doorWayIn.size.x / 2;
+                bool isWithinY = Mathf.Abs(doorwayPosition.y - playerPosition.y) < doorWayIn.size.y / 2;
 
-                    if (isWithinX && isWithinY && isMovingThowards)
-                    {
-                        Debug.Log("isWorking");
+                bool isMovingThowards = Vector3.Dot((doorwayPosition - playerPosition).normalized, player.velocity.normalized) > 0f;
 
-                        player.transform.position = doorWayOut.transform.position + (Vector3)doorWayOut.offset;
+                if (isWithinX && isWithinY && (isMovingThowards || isFloorHole))
+                {
+                    Vector3 deltaPosition = playerPosition - doorwayPosition;
+                    Vector3 deltaScale = doorWayOut.size / doorWayIn.size;
 
-                    }
-              }
+                    deltaPosition.x = deltaPosition.x * deltaScale.x * (isHorizontalDoor ? -1 : 1);
+                    deltaPosition.y = deltaPosition.y * deltaScale.y * (isHorizontalDoor ? 1 : -1);
+
+                    player.transform.position = doorWayOut.transform.position + (Vector3)doorWayOut.offset - deltaPosition * (!isFloorHole ? 1 : -1);
+
+                    if (isFloorHole)
+                        player.Falling(true);
+
+                    if (enteringSound != null)
+                        player.GetComponent<AudioSource>().PlayOneShot(enteringSound);
+                }
+            }
         }
 
         public static DoorSet GetDoor(DoorSet[] doors, string name, Collider2D coll)
@@ -97,11 +110,4 @@ public class Manager_Door : MonoBehaviour
             door.EnterDoor(player);
         }
     }
-
-				void OnTriggerEnter(Collider2D other)
-				{
-        DoorSet door = DoorSet.GetDoor(Doors, "", other);
-
-       
-				}
 }

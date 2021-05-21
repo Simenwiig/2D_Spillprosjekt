@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
     public AudioClip optionalPickupSound;
 
     [Header("Optional Door Settings")]
-    public int DoorIndexToUnlock = -1;
+    public string nameOfDoorIUnlock = "None";
 
     [Header("Misc. Settings you probably won't need to change.")]
     public float despawnTime = 1f;
@@ -29,8 +29,10 @@ public class Item : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
 
-        
-    }
+        if (itemName == "door_helipad")
+            name = itemName;   
+
+        }
 
 
     // Update is called once per frame
@@ -71,19 +73,19 @@ public class Item : MonoBehaviour
                 isPickup = false;
             }
 
-            if (itemName == "park door")
+            if (itemName == "door_openable")
             {
-                if (!player.haveParkKey) // The crowbar
-                    return;
-
                 GetComponent<Collider2D>().isTrigger = true;
                 isPickup = false;
             }
 
-            if (itemName == "key_prison")
+            if (itemName == "door_helipad")
             {
-                player.havePrisonKey = true;
+                return;
+            }
 
+            if (itemName == "key_unlockpark")
+            {
                 isPickup = false;
                 hasCutScene = true;
                 manager_UI.OnSelectingBlueprint();
@@ -91,9 +93,14 @@ public class Item : MonoBehaviour
                 cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(2).GetComponent<Image>();
             }
 
-            if (itemName == "key_park")
+            if (itemName == "key_generic")
             {
-                player.haveParkKey = true;
+                
+            }
+
+            if (itemName == "key_helipad")
+            {
+                GameObject.Find("door_helipad").GetComponent<Item>().itemName = "door_openable";
             }
 
             if (itemName == "crowbar")
@@ -166,12 +173,12 @@ public class Item : MonoBehaviour
         if (optionalPickupSound != null)
             gameObject.AddComponent<AudioSource>().PlayOneShot(optionalPickupSound);
 
-            if (DoorIndexToUnlock != -1)
-            {
-                Manager_Doorways manager_Doorways = GameObject.Find("_ScriptManager").GetComponent<Manager_Doorways>();
+        if (nameOfDoorIUnlock != "None")
+        {
+            Manager_Door manager_Door = GameObject.Find("_ScriptManager").GetComponent<Manager_Door>();
 
-                manager_Doorways.doorways[DoorIndexToUnlock].isLocked = false;
-            }  
+            Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock, null).isLocked = false;
+        } 
 				}
 }
 

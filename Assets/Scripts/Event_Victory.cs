@@ -42,7 +42,7 @@ public class Event_Victory : MonoBehaviour
         if (hasStarted)
             Sequence(false);
 
-        if (playerDistance < 50f && player.transform.position.y > transform.position.y && !player.isDead && !hasStarted)
+        if (playerDistance < 10f && player.transform.position.y > transform.position.y && !player.isDead && !hasStarted)
         {
             transform.position = player.transform.position;
             hasStarted = true;
