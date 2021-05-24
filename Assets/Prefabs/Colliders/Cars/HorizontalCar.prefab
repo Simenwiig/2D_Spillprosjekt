@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8026091892479793806
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6674865404572378291}
+  - component: {fileID: 1137872338140086593}
+  m_Layer: 0
+  m_Name: HorizontalCar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6674865404572378291
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026091892479793806}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!68 &1137872338140086593
+EdgeCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8026091892479793806}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_EdgeRadius: 0
+  m_Points:
+  - {x: 1.3275399, y: -0.21776032}
+  - {x: 2.497035, y: -0.21957612}
+  - {x: 2.7172956, y: 0.0016350746}
+  - {x: 2.716888, y: 0.65590954}
+  - {x: 2.5911336, y: 0.7793493}
+  - {x: 2.0205188, y: 0.7796526}
+  - {x: 1.9360447, y: 0.87601376}
+  - {x: 1.7460041, y: 0.9696474}
+  - {x: 1.6542864, y: 1.0025964}
+  - {x: 1.0616493, y: 1.0018916}
+  - {x: 0.9667301, y: 0.9675269}
+  - {x: 0.62281895, y: 0.7195339}
+  - {x: 0.1245327, y: 0.7195835}
+  - {x: -0.0045776367, y: 0.5948899}
+  - {x: -0.0018339157, y: 0.0019497871}
+  - {x: 0.21569538, y: -0.21546793}
+  - {x: 1.329401, y: -0.21777582}
+  m_AdjacentStartPoint: {x: 0, y: 0}
+  m_AdjacentEndPoint: {x: 0, y: 0}
+  m_UseAdjacentStartPoint: 0
+  m_UseAdjacentEndPoint: 0
