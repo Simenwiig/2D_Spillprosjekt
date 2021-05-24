@@ -12,11 +12,13 @@ public class ZombieController : MonoBehaviour
     Animator animator;
     Vector3 moveDirection;
     Collider2D collider;
+    SpriteRenderer spriteRenderer;
 
     [Header("Settings")]
     public float moveSpeed = 0.25f;
     public float chaseSpeed = 5;
     public float friction = 15f;
+    public int damage = 10;
     public float attackReach = 0.5f;
     public float detection_SightRadius = 10f;
 
@@ -53,6 +55,7 @@ public class ZombieController : MonoBehaviour
         animator = GetComponentInChildren<Animator>();
         audioSource = GetComponent<AudioSource>();
         collider = GetComponent<Collider2D>();
+        spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
     }
@@ -64,9 +67,14 @@ public class ZombieController : MonoBehaviour
 
         if (player.isPaused)
             return;
-								#endregion
+        #endregion
 
-								if (player == null)
+        #region Damage Blink
+        float redBlink = 1 - damageTimer * 2;
+        spriteRenderer.color = damageTimer > Time.fixedDeltaTime ? new Color(1, redBlink, redBlink) : Color.white;
+        #endregion
+
+        if (player == null)
 								{
             Debug.LogError("Advarsel: Zombiene kan ikke finne spilleren, når det ikke er noen spiller i Scenen.");
             return;
@@ -84,8 +92,12 @@ public class ZombieController : MonoBehaviour
 
         if (distanceToPlayer <= attackReach)
         {
-            if(player.HurtPlayer(35, directionToPlayer.normalized * 5))
+            if (player.HurtPlayer(damage, directionToPlayer.normalized * 10))
+            {
                 PlayerController.PlayAudioClipFromArray(Attack, audioSource);
+                velocity -= directionToPlayer.normalized * 5;
+                damageTimer = 0.15f;
+            }
         }
 				}
 
@@ -122,7 +134,7 @@ public class ZombieController : MonoBehaviour
 
     public void HurtZombie(float damage, Vector3 knockBack)
     {
-        if (damageTimer > 0)
+        if (damageTimer > 0 || isDead)
             return;
 
         healthLevel -= damage;
@@ -133,6 +145,7 @@ public class ZombieController : MonoBehaviour
         if (healthLevel <= 0)
         {
             isDead = true;
+            damageTimer = 0;
             GetComponent<Collider2D>().enabled = false;
 
             animator.SetBool("isDead", true);

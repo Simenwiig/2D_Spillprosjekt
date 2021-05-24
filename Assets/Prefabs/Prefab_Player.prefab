@@ -49,17 +49,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7558f945e8a2b54bb9555ea58157e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentWeapon:
-    name: unnamed
-    isUnlocked: 0
-    damage: 34
-    knockBack: 1
-    attacksPerSecond: 1
-    range: 10
-    visibleBullet: 0
-    sound: {fileID: 0}
-    cooldown: 0
-  bullet: {fileID: 5401467158730200362}
   moveSpeed: 2
   friction: 10
   sprintSpeedModifier: 2
@@ -73,8 +62,6 @@ MonoBehaviour:
   smellLevel: 0
   velocity: {x: 0, y: 0, z: 0}
   truePosition: {x: 0, y: 0, z: 0}
-  haveParkKey: 0
-  havePrisonKey: 0
   weapons:
   - name: Unarmed
     isUnlocked: 1
@@ -103,6 +90,17 @@ MonoBehaviour:
     visibleBullet: 1
     sound: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
     cooldown: 0
+  currentWeapon:
+    name: unnamed
+    isUnlocked: 0
+    damage: 34
+    knockBack: 1
+    attacksPerSecond: 1
+    range: 10
+    visibleBullet: 0
+    sound: {fileID: 0}
+    cooldown: 0
+  bullet: {fileID: 5401467158730200362}
   Footsteps: []
   Hurt:
   - {fileID: 8300000, guid: f4c4d004b3eb8be4c97a0123d7a2b364, type: 3}
@@ -427,7 +425,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 10
   m_Sprite: {fileID: 21300000, guid: 09947059a97c8b64bb9fabafbdc4c0ff, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
