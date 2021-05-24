@@ -5020,7 +5020,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: ParkDoor
   optionalPickupSound: {fileID: 0}
-  DoorIndexToUnlock: -1
+  nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 0.5
 --- !u!1 &829040106 stripped
@@ -5042,7 +5042,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: ParkKey
   optionalPickupSound: {fileID: 0}
-  DoorIndexToUnlock: -1
+  nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 0.5
 --- !u!1001 &829351295
@@ -39436,11 +39436,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6209105078859176002, guid: 1a91633789a357149be6543e51c9d317, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -45.62
+      value: -17.13
       objectReference: {fileID: 0}
     - target: {fileID: 6209105078859176002, guid: 1a91633789a357149be6543e51c9d317, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 6.68
+      value: 63.64
       objectReference: {fileID: 0}
     - target: {fileID: 6209105078859176002, guid: 1a91633789a357149be6543e51c9d317, type: 3}
       propertyPath: m_LocalPosition.z

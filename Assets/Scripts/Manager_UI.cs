@@ -88,12 +88,15 @@ public class Manager_UI : MonoBehaviour
         if (position.magnitude > stickRange)
             position = Vector3.zero;
 
-
         stickCircle.rectTransform.position = stick.rectTransform.position + position.normalized * Mathf.Min(position.magnitude, stickRange);
 
         Debug.DrawRay(stick.rectTransform.position, position, Color.red, Time.fixedDeltaTime);
 
         return position.normalized * Mathf.Min(position.magnitude, stickRange) / stickRange;
+    }
+    public static void StickReset(Image stick, Image stickCircle)
+    {
+        stickCircle.rectTransform.position = stick.rectTransform.position;
     }
 
 

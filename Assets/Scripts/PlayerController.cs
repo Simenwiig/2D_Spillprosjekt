@@ -5,7 +5,8 @@ using UnityEngine.Android;
 
 public class PlayerController : MonoBehaviour
 {
-    public enum ControlType
+				#region Enums & Classes
+				public enum ControlType
     {Mouse, TouchScreen }
 
     [System.Serializable]
@@ -58,29 +59,25 @@ public class PlayerController : MonoBehaviour
             return position;
         }
     }
+				#endregion
 
-    AudioSource audioSource;
+				AudioSource audioSource;
+    Collider2D collider;
+    Rigidbody2D rigid;
+ 
     Animator animator;
     Camera camera;
-    Collider2D collider;
     SpriteRenderer spriteRenderer;
-    float footStepCooldown;
-
-    [HideInInspector]
-    public WeaponStat currentWeapon;
-    List<Weapon_Bullet> bullets = new List<Weapon_Bullet>();
-
-    public Transform bullet;
 
     Manager_UI manager_UI;
-    public bool isDead { get { return healthLevel <= 0; } }
+
+
 
 				[Header("Settings")]
     public float moveSpeed = 2f;
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
-    [HideInInspector]
-    public float damageTimer;
+    [HideInInspector] public float damageTimer;
     public ControlType controlType = ControlType.Mouse;
     public float deadZone = 0.10f;
     public bool isInCutscene;
@@ -97,74 +94,78 @@ public class PlayerController : MonoBehaviour
 
     [Header("Inventory")]
     public WeaponStat[] weapons;
+    [HideInInspector] public WeaponStat currentWeapon;
+    public Transform bullet;
+    List<Weapon_Bullet> bullets = new List<Weapon_Bullet>();
 
     [Header("Audio Clips")]
     public AudioClip[] Footsteps;
     public AudioClip[] Hurt;
     public AudioClip[] Death;
 
+    public bool isDead { get { return healthLevel <= 0; } }
+    float footStepCooldown;
+
     void Awake()
     {
-        transform.tag = "Player";
         audioSource = GetComponent<AudioSource>();
+        collider = GetComponent<Collider2D>();
+        rigid = GetComponent<Rigidbody2D>();
+
         animator = GetComponentInChildren<Animator>();
         camera = GetComponentInChildren<Camera>();
-        manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
-        collider = GetComponent<Collider2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
+        manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+
+        transform.tag = "Player";
         currentWeapon = weapons[0];
         bullet.parent = null;
 
         if (!Application.isEditor)
+        {
             controlType = ControlType.TouchScreen;
+            Input.multiTouchEnabled = true;
+        }
     }
-
-    int testTouchCount = -1;
 
     void FixedUpdate()
     {
-        #region Pausing
-
         animator.speed = (isPaused && !isFalling) ? 0 : 1;
-        #endregion
 
-        if (isFalling)
-            Falling(false);
-
-        if (isInCutscene || isPaused)
-            return;
-
-        if (Input.GetKey(KeyCode.Space))
-            Falling(true);
-
-
-        if (testTouchCount != Input.touchCount)
+        if (isInCutscene || isPaused || isFalling)
         {
-            Debug.Log("Unity detected " + Input.touchCount + " fingers.");
-            testTouchCount = Input.touchCount;
+            if (isFalling)
+                Falling(false);
+
+            return;
         }
 
         Vector2 leftStick = Vector2.zero;
         Vector2 rightStick = Vector2.zero;
-   
-        if (controlType == ControlType.Mouse)
+
+        Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
+        Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
+
+								#region User Inputs
+								if (controlType == ControlType.Mouse)
         {
             rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
 
             leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
             leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
             leftStick.Normalize();
-
         }
         else if (controlType == ControlType.TouchScreen)
         {
-            Input.multiTouchEnabled = true;
-
             for (int i = 0; i < Input.touchCount; i++)
             {
-                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
-                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, camera);
+                bool rightFinger = camera.ScreenToWorldPoint(Input.GetTouch(i).position).x > camera.transform.position.x;
+
+                if(rightFinger)
+                    rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
+                else
+                    leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, camera);
             }
 
             if (Application.isEditor)
@@ -173,6 +174,21 @@ public class PlayerController : MonoBehaviour
                 leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
             }
         }
+								#endregion
+
+        collider.enabled = false;
+
+        Walk(leftStick);
+        Aim(rightStick);
+        Animations(leftStick, rightStick);
+        Resources();
+
+        collider.enabled = true;
+
+        GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
+        damageTimer -= Time.fixedDeltaTime;
+
+     
 
         for (int i = 0; i < bullets.Count; i++)
         {
@@ -182,17 +198,9 @@ public class PlayerController : MonoBehaviour
                 bullets.RemoveAt(i);
         }
 
-            collider.enabled = false;
 
-        Walk(leftStick);
-        Aim(rightStick);
-        Animations(leftStick, rightStick);
-
-        Resources();
-
-        transform.position += velocity * Time.fixedDeltaTime;
-        damageTimer -= Time.fixedDeltaTime;
-        collider.enabled = true;
+        if (Input.GetKey(KeyCode.Space))
+            Falling(true);
     }
 
     void Walk(Vector2 moveDirection)
