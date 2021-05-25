@@ -238,6 +238,7 @@ MonoBehaviour:
   moveSpeed: 1.7
   chaseSpeed: 1.7
   friction: 8
+  damage: 10
   attackReach: 0.7
   detection_SightRadius: 10
   trackLostChance: 15
@@ -380,9 +381,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.5158341}
+  m_Offset: {x: 0, y: 0.28878736}
   serializedVersion: 2
-  m_Radius: 0.27871513
+  m_Radius: 0.50576186
 --- !u!1 &7510445949573038303
 GameObject:
   m_ObjectHideFlags: 0

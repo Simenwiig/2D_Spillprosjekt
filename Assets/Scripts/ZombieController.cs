@@ -11,7 +11,7 @@ public class ZombieController : MonoBehaviour
 
     Animator animator;
     Vector3 moveDirection;
-    Collider2D collider;
+    Collider2D[] colliders;
     SpriteRenderer spriteRenderer;
 
     [Header("Settings")]
@@ -47,6 +47,8 @@ public class ZombieController : MonoBehaviour
     bool isDead = false;
     float damageTimer;
 
+
+
     void Start()
     {
         transform.tag = "GameController";
@@ -54,7 +56,7 @@ public class ZombieController : MonoBehaviour
 
         animator = GetComponentInChildren<Animator>();
         audioSource = GetComponent<AudioSource>();
-        collider = GetComponent<Collider2D>();
+        colliders = GetComponents<Collider2D>();
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
@@ -76,7 +78,7 @@ public class ZombieController : MonoBehaviour
 
         if (player == null)
 								{
-            Debug.LogError("Advarsel: Zombiene kan ikke finne spilleren, når det ikke er noen spiller i Scenen.");
+            Debug.LogError("Advarsel: Zombiene kan ikke finne spilleren, nï¿½r det ikke er noen spiller i Scenen.");
             return;
 								}
 
@@ -84,6 +86,8 @@ public class ZombieController : MonoBehaviour
 
         if (isDead)
             return;
+
+        ToggleColliders(false);
 
         Vector3 directionToPlayer = (player.transform.position - transform.position);
         float distanceToPlayer = directionToPlayer.magnitude;
@@ -95,11 +99,16 @@ public class ZombieController : MonoBehaviour
             if (player.HurtPlayer(damage, directionToPlayer.normalized * 10))
             {
                 PlayerController.PlayAudioClipFromArray(Attack, audioSource);
+                
                 velocity -= directionToPlayer.normalized * 5;
                 damageTimer = 0.15f;
+
+                HurtZombie(100, Vector3.zero);
             }
         }
-				}
+
+        ToggleColliders(true);
+    }
 
 				public void MoveTowardsLocation(Vector3 targetPosition)
     {
@@ -146,7 +155,7 @@ public class ZombieController : MonoBehaviour
         {
             isDead = true;
             damageTimer = 0;
-            GetComponent<Collider2D>().enabled = false;
+            ToggleColliders(false);
 
             animator.SetBool("isDead", true);
 
@@ -173,8 +182,6 @@ public class ZombieController : MonoBehaviour
         Vector3 directionToPlayer = currentPlayerPosition - transform.position;
         float distanceToPlayer = directionToPlayer.magnitude;
         float rayThickness = 0.2f;
-
-        collider.enabled = false;
 
         if (distanceToPlayer < detection_SightRadius) // The player is simply too far away.
         {
@@ -259,7 +266,11 @@ public class ZombieController : MonoBehaviour
             damageTimer -= Time.fixedDeltaTime;
             previousPlayerPosition = player.transform.position;
         }
+    }
 
-        collider.enabled = true;
+    void ToggleColliders(bool enabled) // Amazingly you are not allowed to make induvidual raycasts ignore Triggers. Crazy.
+    {
+        for (int i = 0; i < colliders.Length; i++)
+            colliders[i].enabled = enabled && !isDead;
     }
 }

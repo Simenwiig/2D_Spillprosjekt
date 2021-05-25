@@ -106,6 +106,9 @@ public class PlayerController : MonoBehaviour
     public bool isDead { get { return healthLevel <= 0; } }
     float footStepCooldown;
 
+    int thumb_Right = -1;
+    int thumb_Left = -1;
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -131,7 +134,8 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate()
     {
-        animator.speed = (isPaused && !isFalling) ? 0 : 1;
+								#region Pause, Cutscene & Falling
+								animator.speed = (isPaused && !isFalling) ? 0 : 1;
 
         if (isInCutscene || isPaused || isFalling)
         {
@@ -140,41 +144,72 @@ public class PlayerController : MonoBehaviour
 
             return;
         }
-
-        Vector2 leftStick = Vector2.zero;
-        Vector2 rightStick = Vector2.zero;
-
-        Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
-        Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
+								#endregion
 
 								#region User Inputs
-								if (controlType == ControlType.Mouse)
-        {
-            rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
 
-            leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
-            leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
-            leftStick.Normalize();
-        }
-        else if (controlType == ControlType.TouchScreen)
+								Vector2 leftStick = Vector2.zero;
+        Vector2 rightStick = Vector2.zero;
+
+        #region PC (Editor) controls
+        if (Application.isEditor)
         {
-            for (int i = 0; i < Input.touchCount; i++)
+            if (controlType == ControlType.Mouse)
             {
-                bool rightFinger = camera.ScreenToWorldPoint(Input.GetTouch(i).position).x > camera.transform.position.x;
+                Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
+                Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
 
-                if(rightFinger)
-                    rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(i).position, camera);
-                else
-                    leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(i).position, camera);
+                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
+
+                leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
+                leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
+                leftStick.Normalize();
             }
-
-            if (Application.isEditor)
+            else if (controlType == ControlType.TouchScreen)
             {
                 rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
                 leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
             }
         }
+        #endregion
+
+        #region Phone controls
+        if (!Application.isEditor)
+        {
+            #region Thumb Definining
+            for (int i = 0; i < Input.touchCount; i++)  // The oldest touch is checked first. Touching a second finger at the same side will not changed the designated thumb.
+            {
+                Vector2 touchPosition = Input.GetTouch(i).position;
+
+                if (thumb_Right == -1 && Manager_UI.IsInRangeOfStick(manager_UI.RightStick, touchPosition, camera))
+                    thumb_Right = i;
+
+                if (thumb_Left == -1 && Manager_UI.IsInRangeOfStick(manager_UI.LeftStick, touchPosition, camera))
+                    thumb_Left = i;
+            }
+
+            if (Input.GetTouch(thumb_Right).phase == TouchPhase.Ended)
+            {
+                thumb_Right = -1;
+                Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
+            }
+
+            if (Input.GetTouch(thumb_Left).phase == TouchPhase.Ended)
+            {
+                thumb_Left = -1;
+                Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
+            }
+            #endregion
+
+            if (thumb_Right != -1)
+                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(thumb_Right).position, camera);
+   
+            if (thumb_Left != -1)
+                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(thumb_Left).position, camera);
+        }
 								#endregion
+
+        #endregion
 
         collider.enabled = false;
 
@@ -316,12 +351,7 @@ public class PlayerController : MonoBehaviour
         }
 
         PlayAudioClipFromArray((isDead && Death.Length != 0) ? Death : Hurt, audioSource);
-
         velocity = knockBack;
-
-       
-
-        Debug.Log("SLAP! A Zombie hit the player.");
 
         return true;
     }
@@ -365,4 +395,6 @@ public class PlayerController : MonoBehaviour
         }
 
     }
+
+   
 }

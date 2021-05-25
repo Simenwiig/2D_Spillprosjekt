@@ -78,11 +78,11 @@ public class Manager_UI : MonoBehaviour
 
     }
 
-    /// returns the relative direction from the controlPad to pixelCordinates
-   public static Vector3 StickController(Image stick, Image stickCircle, Vector2 pixelCordinates, Camera camera)
-    {
-        float stickRange = 200 * 0.75f;
+    static float stickRange = 200 * 0.75f;
 
+    /// returns the relative direction from the controlPad to pixelCordinates
+    public static Vector3 StickController(Image stick, Image stickCircle, Vector2 pixelCordinates, Camera camera)
+    {
         Vector3 position = pixelCordinates - (Vector2)stick.rectTransform.position;
 
         if (position.magnitude > stickRange * 2f)
@@ -94,9 +94,17 @@ public class Manager_UI : MonoBehaviour
 
         return position.normalized * Mathf.Min(position.magnitude, stickRange) / stickRange;
     }
+
     public static void StickReset(Image stick, Image stickCircle)
     {
         stickCircle.rectTransform.position = stick.rectTransform.position;
+    }
+
+    public static bool IsInRangeOfStick(Image stick, Vector2 pixelCordinates, Camera camera)
+    {
+        Vector3 position = pixelCordinates - (Vector2)stick.rectTransform.position;
+
+        return position.magnitude < stickRange;
     }
 
 
