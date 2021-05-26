@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5941266381222974837}
   - component: {fileID: 5620093422360564554}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Healthbar_Zombie_Full
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +92,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4460989571198690256}
   - component: {fileID: 3708888002353376698}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Healthbar_Zombie_Empty
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -179,7 +179,7 @@ GameObject:
   - component: {fileID: 1848497884}
   - component: {fileID: 4634504334240223137}
   - component: {fileID: 1423598844066946034}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prefab_Zombie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -246,6 +246,9 @@ MonoBehaviour:
   validLocations: []
   healthLevel: 100
   velocity: {x: 0, y: 0, z: 0}
+  zombieLayer:
+    serializedVersion: 2
+    m_Bits: 256
   Idle:
   - {fileID: 8300000, guid: a5d4551a3b80d6b4bb534f7ae6aa26ea, type: 3}
   - {fileID: 8300000, guid: 1e1e91f7afa0fcd4eb404ebdcd583866, type: 3}
@@ -395,7 +398,7 @@ GameObject:
   - component: {fileID: 8737553332629839134}
   - component: {fileID: 6834506456650771477}
   - component: {fileID: 3066699410307775266}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}

@@ -108,6 +108,8 @@ public class PlayerController : MonoBehaviour
     int thumb_Right = -1;
     int thumb_Left = -1;
 
+    public bool playingOnPC;
+
     void Awake()
     {
         audioSource = GetComponent<AudioSource>();
@@ -125,7 +127,10 @@ public class PlayerController : MonoBehaviour
         bullet.parent = null;
 
         if (!Application.isEditor)
+        {
             Input.multiTouchEnabled = true;
+            playingOnPC = false;
+        }
     }
     void Update()
     {
@@ -145,7 +150,7 @@ public class PlayerController : MonoBehaviour
         Vector2 rightStick = Vector2.zero;
 
         #region PC (Editor) controls
-        if (Application.isEditor)
+        if (playingOnPC)
         {
             if (Input.GetKey(KeyCode.Mouse0))
             {
@@ -181,7 +186,7 @@ public class PlayerController : MonoBehaviour
         #endregion
 
         #region Phone controls
-        if (!Application.isEditor)
+        if (!playingOnPC)
         {
             for (int i = 0; i < Input.touchCount; i++)  // The oldest touch is checked first. Touching a second finger at the same side will not changed the designated thumb.
             {
@@ -228,9 +233,6 @@ public class PlayerController : MonoBehaviour
 
         collider.enabled = true;
 
-        //GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
-
-        transform.position += velocity * Time.deltaTime;
         damageTimer -= Time.deltaTime;
 
         for (int i = 0; i < bullets.Count; i++)
@@ -244,6 +246,11 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
             Falling(true);
+    }
+
+				private void FixedUpdate()
+				{
+        GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
     }
 
     void Walk(Vector2 moveDirection)

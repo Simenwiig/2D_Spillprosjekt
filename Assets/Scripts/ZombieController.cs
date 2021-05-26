@@ -31,6 +31,7 @@ public class ZombieController : MonoBehaviour
     Vector2 previousPlayerPosition;
     public float healthLevel;
     public Vector3 velocity;
+    public LayerMask zombieLayer;
 
     [Header("Audio Clips")]
     public AudioClip[] Idle;
@@ -44,10 +45,9 @@ public class ZombieController : MonoBehaviour
 
     PlayerController player;
     AudioSource audioSource;
+    
     bool isDead = false;
     float damageTimer;
-
-
 
     void Start()
     {
@@ -123,7 +123,7 @@ public class ZombieController : MonoBehaviour
         float frictionStep = friction * Time.deltaTime;
         velocity -= velocity * frictionStep;
         
-        if(!isDead)
+        if(!isDead && damageTimer < 0)
           velocity += moveDirection.normalized * (behaviorState == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
 
         if (animator != null && damageTimer < 0 && !isDead)
@@ -189,7 +189,8 @@ public class ZombieController : MonoBehaviour
 
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
-            bool canSeePlayer = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius * (playerUsedLoudWeapon ? 20 : 1)).transform == player.transform;
+            RaycastHit2D hit = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius * (playerUsedLoudWeapon ? 20 : 1), ~zombieLayer, 0);
+            bool canSeePlayer = hit.transform == player.transform;
 
             /// Can I see the player?
             /// Then I will follow you until I no longer see them.
