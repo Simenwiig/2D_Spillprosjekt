@@ -46,8 +46,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isShootingPistol
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isTrulyWalking
+  - m_ConditionMode: 1
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 3101438776940172732}
@@ -457,8 +457,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isShootingPistol
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isTrulyWalking
+  - m_ConditionMode: 1
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -1860516223295876310}
@@ -494,8 +494,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isShootingPistol
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isTrulyWalking
+  - m_ConditionMode: 2
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -3483860300154236032}
@@ -658,8 +658,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWalkingDown
+  - m_ConditionMode: 1
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -9093110342101362086}
@@ -721,8 +721,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isShootingPistol
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isTrulyWalking
+  - m_ConditionMode: 2
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -2244728933753010139}
@@ -852,49 +852,49 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isWalkingDown
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isWalkingSideways
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isShootingPistol
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isSwingingCrowbar
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isSwingingUnarmed
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
-  - m_Name: isTrulyWalking
+    m_Controller: {fileID: 0}
+  - m_Name: isStandingStill
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   - m_Name: isFalling
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 9100000}
+    m_Controller: {fileID: 0}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -1132,8 +1132,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWalkingUp
+  - m_ConditionMode: 1
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: -719815509135117544}
@@ -1203,8 +1203,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isShootingPistol
     m_EventTreshold: 0
-  - m_ConditionMode: 1
-    m_ConditionEvent: isTrulyWalking
+  - m_ConditionMode: 2
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 5599117347682832938}
@@ -1359,8 +1359,8 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: isShootingPistol
     m_EventTreshold: 0
-  - m_ConditionMode: 2
-    m_ConditionEvent: isTrulyWalking
+  - m_ConditionMode: 1
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 7787482338527055519}
@@ -1436,8 +1436,8 @@ AnimatorStateTransition:
   m_PrefabAsset: {fileID: 0}
   m_Name: 
   m_Conditions:
-  - m_ConditionMode: 2
-    m_ConditionEvent: isWalkingSideways
+  - m_ConditionMode: 1
+    m_ConditionEvent: isStandingStill
     m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 2040332646113888572}

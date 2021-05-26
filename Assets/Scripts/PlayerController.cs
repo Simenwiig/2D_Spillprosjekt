@@ -5,10 +5,7 @@ using UnityEngine.Android;
 
 public class PlayerController : MonoBehaviour
 {
-				#region Enums & Classes
-				public enum ControlType
-    {Mouse, TouchScreen }
-
+				#region Classes
     [System.Serializable]
     public class WeaponStat
     {
@@ -19,10 +16,13 @@ public class PlayerController : MonoBehaviour
         public float attacksPerSecond = 1;
         public float range = 10;
         public bool visibleBullet;
+        public bool alertsZombies;
         public AudioClip sound;
 
         [HideInInspector]
         public float cooldown;
+
+        public bool readyToFire { get { return cooldown > (1f / attacksPerSecond); } }
     }
 
     public class Weapon_Bullet
@@ -78,7 +78,6 @@ public class PlayerController : MonoBehaviour
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
     [HideInInspector] public float damageTimer;
-    public ControlType controlType = ControlType.Mouse;
     public float deadZone = 0.10f;
     public bool isInCutscene;
     public bool isPaused { get { return manager_UI.isPaused; } }
@@ -126,13 +125,9 @@ public class PlayerController : MonoBehaviour
         bullet.parent = null;
 
         if (!Application.isEditor)
-        {
-            controlType = ControlType.TouchScreen;
             Input.multiTouchEnabled = true;
-        }
     }
-
-    void FixedUpdate()
+    void Update()
     {
 								#region Pause, Cutscene & Falling
 								animator.speed = (isPaused && !isFalling) ? 0 : 1;
@@ -146,29 +141,41 @@ public class PlayerController : MonoBehaviour
         }
 								#endregion
 
-								#region User Inputs
-
 								Vector2 leftStick = Vector2.zero;
         Vector2 rightStick = Vector2.zero;
 
         #region PC (Editor) controls
         if (Application.isEditor)
         {
-            if (controlType == ControlType.Mouse)
+            if (Input.GetKey(KeyCode.Mouse0))
             {
-                Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
-                Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
+                if (Manager_UI.IsInRangeOfStick(manager_UI.RightStick, Input.mousePosition, camera))
+                    thumb_Right = 1;
 
+                if (Manager_UI.IsInRangeOfStick(manager_UI.LeftStick, Input.mousePosition, camera))
+                    thumb_Left = 1;
+
+            }
+
+            if (thumb_Right == 1)
                 rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
 
+            if (thumb_Left == 1)
+                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
+            else
+            {
                 leftStick.y = (Input.GetKey(KeyCode.W) ? 1 : 0) + (Input.GetKey(KeyCode.S) ? -1 : 0);
                 leftStick.x = (Input.GetKey(KeyCode.D) ? 1 : 0) + (Input.GetKey(KeyCode.A) ? -1 : 0);
                 leftStick.Normalize();
             }
-            else if (controlType == ControlType.TouchScreen)
+
+            if (Input.GetKeyUp(KeyCode.Mouse0))
             {
-                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.mousePosition, camera);
-                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.mousePosition, camera);
+                thumb_Right = -1;
+                thumb_Left = -1;
+
+                Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
+                Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
             }
         }
         #endregion
@@ -176,38 +183,39 @@ public class PlayerController : MonoBehaviour
         #region Phone controls
         if (!Application.isEditor)
         {
-            #region Thumb Definining
             for (int i = 0; i < Input.touchCount; i++)  // The oldest touch is checked first. Touching a second finger at the same side will not changed the designated thumb.
             {
-                Vector2 touchPosition = Input.GetTouch(i).position;
+                Touch currentTouch = Input.GetTouch(i);
 
-                if (thumb_Right == -1 && Manager_UI.IsInRangeOfStick(manager_UI.RightStick, touchPosition, camera))
-                    thumb_Right = i;
+                if (thumb_Right == -1 && Manager_UI.IsInRangeOfStick(manager_UI.RightStick, currentTouch.position, camera))
+                    thumb_Right = currentTouch.fingerId;
 
-                if (thumb_Left == -1 && Manager_UI.IsInRangeOfStick(manager_UI.LeftStick, touchPosition, camera))
-                    thumb_Left = i;
+                if (thumb_Left == -1 && Manager_UI.IsInRangeOfStick(manager_UI.LeftStick, currentTouch.position, camera))
+                    thumb_Left = currentTouch.fingerId;
+
+                if(currentTouch.fingerId == thumb_Right)
+																{
+                    rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, currentTouch.position, camera);
+
+                    if (currentTouch.phase == TouchPhase.Ended)
+                    {
+                        thumb_Right = -1;
+                        Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
+                    }
+                }
+
+                if (currentTouch.fingerId == thumb_Left)
+                {
+                    leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, currentTouch.position, camera);
+
+                    if (currentTouch.phase == TouchPhase.Ended)
+                    {
+                        thumb_Left = -1;
+                        Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
+                    }
+                }
             }
-
-            if (Input.GetTouch(thumb_Right).phase == TouchPhase.Ended)
-            {
-                thumb_Right = -1;
-                Manager_UI.StickReset(manager_UI.RightStick, manager_UI.RightStick_Dot);
-            }
-
-            if (Input.GetTouch(thumb_Left).phase == TouchPhase.Ended)
-            {
-                thumb_Left = -1;
-                Manager_UI.StickReset(manager_UI.LeftStick, manager_UI.LeftStick_Dot);
-            }
-            #endregion
-
-            if (thumb_Right != -1)
-                rightStick = Manager_UI.StickController(manager_UI.RightStick, manager_UI.RightStick_Dot, Input.GetTouch(thumb_Right).position, camera);
-   
-            if (thumb_Left != -1)
-                leftStick = Manager_UI.StickController(manager_UI.LeftStick, manager_UI.LeftStick_Dot, Input.GetTouch(thumb_Left).position, camera);
         }
-								#endregion
 
         #endregion
 
@@ -220,21 +228,21 @@ public class PlayerController : MonoBehaviour
 
         collider.enabled = true;
 
-        GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
-        damageTimer -= Time.fixedDeltaTime;
+        //GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
 
-     
+        transform.position += velocity * Time.deltaTime;
+        damageTimer -= Time.deltaTime;
 
         for (int i = 0; i < bullets.Count; i++)
         {
-            bullet.position = bullets[i].UpdateBullet(Time.fixedDeltaTime);
+            bullet.position = bullets[i].UpdateBullet(Time.deltaTime);
 
             if (bullets[i].isDead)
                 bullets.RemoveAt(i);
         }
 
 
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space))
             Falling(true);
     }
 
@@ -243,14 +251,14 @@ public class PlayerController : MonoBehaviour
         if (moveDirection.magnitude < deadZone)
             moveDirection = Vector2.zero;
 
-        float frictionStep = friction * Time.fixedDeltaTime;
+        float frictionStep = friction * Time.deltaTime;
         velocity -= velocity * frictionStep;
         if(!isDead)
             velocity += (Vector3)moveDirection * moveSpeed * frictionStep;
 
         float speed = velocity.magnitude;
 
-        footStepCooldown -= Time.fixedDeltaTime;
+        footStepCooldown -= Time.deltaTime;
 
         if (speed > 0.1f && footStepCooldown < 0)
         {
@@ -264,9 +272,9 @@ public class PlayerController : MonoBehaviour
     {
         Vector3 playerPosition = transform.position - Vector3.up * transform.GetChild(0).localPosition.y / 2;
         bool isAttacking = attackDiretion.magnitude > deadZone;
-        currentWeapon.cooldown += Time.fixedDeltaTime;
+        currentWeapon.cooldown += Time.deltaTime;
 
-        if (isAttacking && currentWeapon.cooldown > (1f / currentWeapon.attacksPerSecond))
+        if (isAttacking && currentWeapon.readyToFire)
         {
             currentWeapon.cooldown = 0;
 
@@ -286,8 +294,8 @@ public class PlayerController : MonoBehaviour
     void Resources()
     {
         bool isWalking = speedLevel > 0;
-        float drainRate = 1 * (isWalking ? 1 : 0.5f) * Time.fixedDeltaTime;
-        float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.fixedDeltaTime;
+        float drainRate = 1 * (isWalking ? 1 : 0.5f) * Time.deltaTime;
+        float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.deltaTime;
 
         hungerLevel -= hungerLevel > 0 ? drainRate : 0;
         thirstLevel -= thirstLevel > 0 ? drainRate : 0;
@@ -300,11 +308,12 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+
     void Animations(Vector2 moveDirection, Vector2 attackDiretion)
     {
         #region Damage Blink
         float redBlink = 1 - damageTimer * 2;
-        spriteRenderer.color = damageTimer > Time.fixedDeltaTime ? new Color(1, redBlink, redBlink) : Color.white;
+        spriteRenderer.color = damageTimer > Time.deltaTime ? new Color(1, redBlink, redBlink) : Color.white;
 								#endregion
 
 								if (animator == null)
@@ -313,26 +322,40 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        animator.SetBool("isTrulyWalking", moveDirection.magnitude > deadZone);
+       
 
         bool isAttacking = attackDiretion.magnitude > deadZone;
+        bool isMoving = moveDirection.magnitude > deadZone;
+
+        animator.SetBool("isStandingStill", !isMoving);
 
         animator.SetBool("isShootingPistol", isAttacking && currentWeapon.name == "Pistol");
         animator.SetBool("isSwingingCrowbar", isAttacking && currentWeapon.name == "Crowbar");
         animator.SetBool("isSwingingUnarmed", isAttacking && currentWeapon.name == "Unarmed");
 
-        if (isAttacking)
-            moveDirection = attackDiretion;
+    
 
-        bool isMoving = moveDirection.magnitude > deadZone;
+        if (!isMoving && !isAttacking && !currentWeapon.readyToFire)
+        {
+            return;
+        }
+
+        if (isAttacking)
+        {
+            isMoving = true;
+            moveDirection = attackDiretion;
+        }
+
+        
+
         bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
 
         animator.SetBool("isWalkingUp", isMoving && isMovingVertically && moveDirection.y > 0);
         animator.SetBool("isWalkingDown", isMoving && isMovingVertically && moveDirection.y < 0);
         animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
 
-        if (isMoving)
-            spriteRenderer.flipX = moveDirection.x < 0;
+        if(isMoving || isAttacking) // If I am idle, this will never need to be updated.
+            spriteRenderer.flipX = moveDirection.x < 0 && !isMovingVertically;
     }
 
     public bool HurtPlayer(int damage, Vector3 knockBack = default(Vector3))
@@ -370,7 +393,7 @@ public class PlayerController : MonoBehaviour
     bool isFalling { get { return fallingDuration != -1; } }
     public void Falling(bool onFalling)
     {
-        fallingDuration -= Time.fixedDeltaTime;
+        fallingDuration -= Time.deltaTime;
 
         
 

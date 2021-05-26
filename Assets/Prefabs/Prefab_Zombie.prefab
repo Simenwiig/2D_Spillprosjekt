@@ -240,7 +240,7 @@ MonoBehaviour:
   friction: 8
   damage: 10
   attackReach: 0.7
-  detection_SightRadius: 10
+  detection_SightRadius: 5
   trackLostChance: 15
   behaviorState: 0
   validLocations: []

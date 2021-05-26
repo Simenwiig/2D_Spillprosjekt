@@ -60,9 +60,10 @@ public class ZombieController : MonoBehaviour
         spriteRenderer = GetComponentInChildren<SpriteRenderer>();
 
         HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
+        damageTimer = 0; // Stops them from flashing from taking "damage".
     }
 
-    void FixedUpdate()
+    void Update()
     {
 								#region Pausing
 								animator.speed = player.isPaused ? 0 : 1;
@@ -73,7 +74,7 @@ public class ZombieController : MonoBehaviour
 
         #region Damage Blink
         float redBlink = 1 - damageTimer * 2;
-        spriteRenderer.color = damageTimer > Time.fixedDeltaTime ? new Color(1, redBlink, redBlink) : Color.white;
+        spriteRenderer.color = damageTimer > Time.deltaTime ? new Color(1, redBlink, redBlink) : Color.white;
         #endregion
 
         if (player == null)
@@ -83,6 +84,10 @@ public class ZombieController : MonoBehaviour
 								}
 
         MovePosition();
+
+        transform.position += velocity * Time.deltaTime;
+
+        damageTimer -= Time.deltaTime;
 
         if (isDead)
             return;
@@ -100,10 +105,8 @@ public class ZombieController : MonoBehaviour
             {
                 PlayerController.PlayAudioClipFromArray(Attack, audioSource);
                 
-                velocity -= directionToPlayer.normalized * 5;
+                velocity -= directionToPlayer.normalized * 2;
                 damageTimer = 0.15f;
-
-                HurtZombie(100, Vector3.zero);
             }
         }
 
@@ -117,15 +120,13 @@ public class ZombieController : MonoBehaviour
 
     public void MovePosition()
     {
-        float frictionStep = friction * Time.fixedDeltaTime;
+        float frictionStep = friction * Time.deltaTime;
         velocity -= velocity * frictionStep;
         
         if(!isDead)
           velocity += moveDirection.normalized * (behaviorState == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
 
-        transform.position += velocity * Time.fixedDeltaTime;
-
-        if (animator != null && damageTimer < 0)
+        if (animator != null && damageTimer < 0 && !isDead)
         {
             bool isMoving = velocity.magnitude > 0.1f;
             bool isMovingVertically = Mathf.Abs(velocity.y) >= Mathf.Abs(velocity.x);
@@ -135,7 +136,7 @@ public class ZombieController : MonoBehaviour
             animator.SetBool("isWalkingSideways", isMoving && !isMovingVertically);
 
             if (isMoving)
-                GetComponentInChildren<SpriteRenderer>().flipX = velocity.x < 0;
+                spriteRenderer.flipX = velocity.x < 0 && !isMovingVertically;
         }
 
         moveDirection = Vector2.zero;
@@ -154,8 +155,9 @@ public class ZombieController : MonoBehaviour
         if (healthLevel <= 0)
         {
             isDead = true;
-            damageTimer = 0;
+            damageTimer = 0.25f; // The red flash is a bit short when they die.
             ToggleColliders(false);
+            GetComponent<Rigidbody2D>().isKinematic = true;
 
             animator.SetBool("isDead", true);
 
@@ -183,9 +185,11 @@ public class ZombieController : MonoBehaviour
         float distanceToPlayer = directionToPlayer.magnitude;
         float rayThickness = 0.2f;
 
-        if (distanceToPlayer < detection_SightRadius) // The player is simply too far away.
+        bool playerUsedLoudWeapon = player.currentWeapon.alertsZombies && player.currentWeapon.cooldown == 0;
+
+        if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
-            bool canSeePlayer = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius).transform == player.transform;
+            bool canSeePlayer = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius * (playerUsedLoudWeapon ? 20 : 1)).transform == player.transform;
 
             /// Can I see the player?
             /// Then I will follow you until I no longer see them.
@@ -201,17 +205,17 @@ public class ZombieController : MonoBehaviour
             if (!canSeePlayer)
             {
                 /// If I can not see the player, but I haven't seen them recently either, I will just wander.
-                if (behaviorState == BehaviorState.Idle && Random.Range(0, (int)(3 / Time.fixedDeltaTime)) == 0)
+                if (behaviorState == BehaviorState.Idle && Random.Range(0, (int)(3 / Time.deltaTime)) == 0)
                 {
                     velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
-                    PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                 //   PlayerController.PlayAudioClipFromArray(Idle, audioSource);
                 }
 
                 /// I am now searching.
                 if (behaviorState == BehaviorState.Searching) 
                 {
                     /// Have I lost interest in tracking the player?
-                    if (Random.Range(0, (int)(trackLostChance / Time.fixedDeltaTime)) == 0 || validLocations.Count == 0)
+                    if (Random.Range(0, (int)(trackLostChance / Time.deltaTime)) == 0 || validLocations.Count == 0)
                     {
                         behaviorState = BehaviorState.Idle;
                         PlayerController.PlayAudioClipFromArray(Idle, audioSource);
@@ -262,8 +266,6 @@ public class ZombieController : MonoBehaviour
                 }
 
             }
-
-            damageTimer -= Time.fixedDeltaTime;
             previousPlayerPosition = player.transform.position;
         }
     }

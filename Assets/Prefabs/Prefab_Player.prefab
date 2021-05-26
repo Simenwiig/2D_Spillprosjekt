@@ -70,6 +70,7 @@ MonoBehaviour:
     attacksPerSecond: 1.3
     range: 1.2
     visibleBullet: 0
+    alertsZombies: 0
     sound: {fileID: 8300000, guid: fd4b485b4d348b24f9bd06489e030a76, type: 3}
     cooldown: 0
   - name: Crowbar
@@ -79,6 +80,7 @@ MonoBehaviour:
     attacksPerSecond: 1
     range: 1.5
     visibleBullet: 0
+    alertsZombies: 0
     sound: {fileID: 8300000, guid: b3490de7b22e0c64e95c1600700affe7, type: 3}
     cooldown: 0
   - name: Pistol
@@ -88,6 +90,7 @@ MonoBehaviour:
     attacksPerSecond: 1
     range: 99
     visibleBullet: 1
+    alertsZombies: 1
     sound: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
     cooldown: 0
   currentWeapon:
@@ -98,6 +101,7 @@ MonoBehaviour:
     attacksPerSecond: 1
     range: 10
     visibleBullet: 0
+    alertsZombies: 0
     sound: {fileID: 0}
     cooldown: 0
   bullet: {fileID: 5401467158730200362}
