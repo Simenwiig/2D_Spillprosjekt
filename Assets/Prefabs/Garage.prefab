@@ -6736,7 +6736,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -6746,7 +6746,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -6756,7 +6756,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -6766,7 +6766,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -6776,7 +6776,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7166,7 +7166,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7176,7 +7176,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7186,7 +7186,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7196,7 +7196,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7396,7 +7396,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7406,7 +7406,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7416,7 +7416,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7426,7 +7426,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7436,7 +7436,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -7446,7 +7446,7 @@ Tilemap:
     second:
       serializedVersion: 2
       m_TileIndex: 0
-      m_TileSpriteIndex: 15
+      m_TileSpriteIndex: 7
       m_TileMatrixIndex: 0
       m_TileColorIndex: 3
       m_TileObjectToInstantiateIndex: 65535
@@ -10413,7 +10413,7 @@ Tilemap:
     m_Data: {fileID: -1302087491579405202, guid: c74cf5e9ec7f70246acd8bfccc38df7c, type: 3}
   - m_RefCount: 10
     m_Data: {fileID: 2422574871285361239, guid: c74cf5e9ec7f70246acd8bfccc38df7c, type: 3}
-  - m_RefCount: 6
+  - m_RefCount: 15
     m_Data: {fileID: 0}
   - m_RefCount: 13
     m_Data: {fileID: -5188122193270944808, guid: c74cf5e9ec7f70246acd8bfccc38df7c, type: 3}
@@ -10429,7 +10429,7 @@ Tilemap:
     m_Data: {fileID: 0}
   - m_RefCount: 9
     m_Data: {fileID: 0}
-  - m_RefCount: 15
+  - m_RefCount: 0
     m_Data: {fileID: 0}
   - m_RefCount: 268
     m_Data: {fileID: 1019389167968142099, guid: c74cf5e9ec7f70246acd8bfccc38df7c, type: 3}
@@ -10460,7 +10460,7 @@ Tilemap:
   - m_RefCount: 0
     m_Data: {r: 0, g: 0, b: 0, a: 0}
   - m_RefCount: 15
-    m_Data: {r: 0.7864984, g: 0.43515906, b: 0.51407385, a: 1}
+    m_Data: {r: 0.94878584, g: 0.4889531, b: 0.53177387, a: 1}
   - m_RefCount: 793
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_TileObjectToInstantiateArray: []
@@ -13528,6 +13528,7 @@ GameObject:
   - component: {fileID: 7929087991244507993}
   - component: {fileID: 2611790364660476227}
   - component: {fileID: 1294201103889876840}
+  - component: {fileID: 6271114836949199373}
   m_Layer: 0
   m_Name: Cars Back
   m_TagString: Untagged
@@ -13851,6 +13852,22 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &6271114836949199373
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1663162165633378108}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &2019077253954207707
 GameObject:
   m_ObjectHideFlags: 0
@@ -13899,6 +13916,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8200987332816216922}
   - component: {fileID: 963404130466520116}
+  - component: {fileID: 6271114836949199315}
   m_Layer: 0
   m_Name: Big Rock (4)
   m_TagString: Untagged
@@ -13971,6 +13989,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199315
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2543589497651949202}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &2889772357313177240
 GameObject:
   m_ObjectHideFlags: 0
@@ -14135,6 +14188,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2656840825383739997}
   - component: {fileID: 932227255887946384}
+  - component: {fileID: 6271114836949199317}
   m_Layer: 0
   m_Name: Big Rock (2)
   m_TagString: Untagged
@@ -14207,6 +14261,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199317
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3709090261197748500}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &4626653082242360530
 GameObject:
   m_ObjectHideFlags: 0
@@ -14217,6 +14306,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1215044238402203524}
   - component: {fileID: 8171480722716161958}
+  - component: {fileID: 6271114836949199318}
   m_Layer: 0
   m_Name: Big Rock (1)
   m_TagString: Untagged
@@ -14289,6 +14379,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199318
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4626653082242360530}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &5033205352097836237
 GameObject:
   m_ObjectHideFlags: 0
@@ -14579,6 +14704,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6312119756764801272}
   - component: {fileID: 4835731014924959491}
+  - component: {fileID: 6271114836949199316}
   m_Layer: 0
   m_Name: Big Rock (3)
   m_TagString: Untagged
@@ -14651,6 +14777,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199316
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6222724905997917641}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835183686628
 GameObject:
   m_ObjectHideFlags: 0
@@ -14691,6 +14852,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835193721102}
   - component: {fileID: 6271114835193721097}
+  - component: {fileID: 6271114836949199362}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -14763,6 +14925,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199362
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835193721103}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835235431695
 GameObject:
   m_ObjectHideFlags: 0
@@ -14855,6 +15052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835250878350}
   - component: {fileID: 6271114835250878345}
+  - component: {fileID: 6271114836949199347}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -14927,6 +15125,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199347
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835250878351}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835270222224
 GameObject:
   m_ObjectHideFlags: 0
@@ -15101,6 +15334,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835308879715}
   - component: {fileID: 6271114835308879714}
+  - component: {fileID: 6271114836949199332}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15173,6 +15407,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199332
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835308879712}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835318028109
 GameObject:
   m_ObjectHideFlags: 0
@@ -15183,6 +15452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835318028108}
   - component: {fileID: 6271114835318028111}
+  - component: {fileID: 6271114836949199322}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15255,6 +15525,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199322
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835318028109}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835398115357
 GameObject:
   m_ObjectHideFlags: 0
@@ -15265,6 +15570,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835398115356}
   - component: {fileID: 6271114835398115359}
+  - component: {fileID: 6271114836949199345}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15337,6 +15643,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199345
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835398115357}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835399780955
 GameObject:
   m_ObjectHideFlags: 0
@@ -15347,6 +15688,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835399780954}
   - component: {fileID: 6271114835399780949}
+  - component: {fileID: 6271114836949199367}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15419,6 +15761,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199367
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835399780955}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835424608957
 GameObject:
   m_ObjectHideFlags: 0
@@ -15429,6 +15806,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835424608956}
   - component: {fileID: 6271114835424608959}
+  - component: {fileID: 6271114836949199340}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15501,6 +15879,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199340
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835424608957}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835445552640
 GameObject:
   m_ObjectHideFlags: 0
@@ -15511,6 +15924,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835445552643}
   - component: {fileID: 6271114835445552642}
+  - component: {fileID: 6271114836949199368}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15583,6 +15997,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199368
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835445552640}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835463704355
 GameObject:
   m_ObjectHideFlags: 0
@@ -15625,6 +16074,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835471406410}
   - component: {fileID: 6271114835471406405}
+  - component: {fileID: 6271114836949199344}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15697,6 +16147,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199344
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835471406411}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835485852945
 GameObject:
   m_ObjectHideFlags: 0
@@ -15707,6 +16192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835485852944}
   - component: {fileID: 6271114835485852947}
+  - component: {fileID: 6271114836949199351}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15779,6 +16265,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199351
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835485852945}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835536295991
 GameObject:
   m_ObjectHideFlags: 0
@@ -15789,6 +16310,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835536295990}
   - component: {fileID: 6271114835536295985}
+  - component: {fileID: 6271114836949199350}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15861,6 +16383,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199350
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835536295991}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835545279468
 GameObject:
   m_ObjectHideFlags: 0
@@ -15871,6 +16428,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835545279471}
   - component: {fileID: 6271114835545279470}
+  - component: {fileID: 6271114836949199346}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -15943,6 +16501,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199346
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835545279468}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835593831390
 GameObject:
   m_ObjectHideFlags: 0
@@ -16041,6 +16634,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835602295246}
   - component: {fileID: 6271114835602295241}
+  - component: {fileID: 6271114836949199323}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -16113,6 +16707,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199323
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835602295247}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835625810369
 GameObject:
   m_ObjectHideFlags: 0
@@ -16123,6 +16752,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835625810368}
   - component: {fileID: 6271114835625810371}
+  - component: {fileID: 6271114836949199371}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -16195,6 +16825,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199371
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835625810369}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835638081453
 GameObject:
   m_ObjectHideFlags: 0
@@ -16205,6 +16870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835638081452}
   - component: {fileID: 6271114835638081455}
+  - component: {fileID: 6271114836949199349}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -16277,6 +16943,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199349
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835638081453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835648875849
 GameObject:
   m_ObjectHideFlags: 0
@@ -16287,10 +16988,10 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835648875850}
   - component: {fileID: 6271114835648875851}
-  - component: {fileID: 6271114835648875847}
-  - component: {fileID: 6271114835648875844}
-  - component: {fileID: 6271114835648875845}
-  - component: {fileID: 6271114835648875848}
+  - component: {fileID: 6271114836949199311}
+  - component: {fileID: 6271114836949199312}
+  - component: {fileID: 6271114836949199313}
+  - component: {fileID: 6271114836949199314}
   m_Layer: 0
   m_Name: ParkeringsHus- collider 2
   m_TagString: Untagged
@@ -16319,7 +17020,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6271114835648875849}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -16348,7 +17049,7 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
---- !u!61 &6271114835648875847
+--- !u!61 &6271114836949199311
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16361,7 +17062,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -30.5, y: -13.201767}
+  m_Offset: {x: -34.250576, y: -9.391407}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16372,9 +17073,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.71, y: 2.4469633}
+  m_Size: {x: 22.662758, y: 5.095115}
   m_EdgeRadius: 0
---- !u!61 &6271114835648875844
+--- !u!61 &6271114836949199312
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16387,7 +17088,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -26.5, y: -13.212114}
+  m_Offset: {x: -44.30963, y: -15.780428}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16398,9 +17099,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6800003, y: 2.4262686}
+  m_Size: {x: 2.6277924, y: 13.818871}
   m_EdgeRadius: 0
---- !u!61 &6271114835648875845
+--- !u!61 &6271114836949199313
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16413,7 +17114,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -36.493126, y: -13.201767}
+  m_Offset: {x: -23.97874, y: -7.275406}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16424,9 +17125,9 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6564636, y: 2.4469633}
+  m_Size: {x: 2.0169754, y: 30.860107}
   m_EdgeRadius: 0
---- !u!61 &6271114835648875848
+--- !u!61 &6271114836949199314
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -16439,7 +17140,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -33.49, y: -18}
+  m_Offset: {x: -33.868805, y: -21.339226}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -16450,7 +17151,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1.6771545, y: 2.6}
+  m_Size: {x: 21.42771, y: 2.7302322}
   m_EdgeRadius: 0
 --- !u!1 &6271114835687352863
 GameObject:
@@ -16544,6 +17245,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835727543318}
   - component: {fileID: 6271114835727543313}
+  - component: {fileID: 6271114836949199352}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -16616,6 +17318,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199352
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835727543319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835737367300
 GameObject:
   m_ObjectHideFlags: 0
@@ -16626,6 +17363,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835737367303}
   - component: {fileID: 6271114835737367302}
+  - component: {fileID: 6271114836949199330}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -16698,6 +17436,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199330
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835737367300}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835776744980
 GameObject:
   m_ObjectHideFlags: 0
@@ -16708,6 +17481,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835776744983}
   - component: {fileID: 6271114835776744982}
+  - component: {fileID: 6271114836949199370}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -16780,6 +17554,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199370
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835776744980}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835788824481
 GameObject:
   m_ObjectHideFlags: 0
@@ -16984,6 +17793,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835838267330}
   - component: {fileID: 6271114835838267357}
+  - component: {fileID: 6271114836949199358}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -17056,6 +17866,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199358
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835838267331}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835886548417
 GameObject:
   m_ObjectHideFlags: 0
@@ -17525,6 +18370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835987394573}
   - component: {fileID: 6271114835987394572}
+  - component: {fileID: 6271114836949199357}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -17597,6 +18443,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199357
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835987394802}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114835996554288
 GameObject:
   m_ObjectHideFlags: 0
@@ -17607,6 +18488,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114835996554291}
   - component: {fileID: 6271114835996554290}
+  - component: {fileID: 6271114836949199363}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -17679,6 +18561,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199363
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114835996554288}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836024187954
 GameObject:
   m_ObjectHideFlags: 0
@@ -17853,6 +18770,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836064234725}
   - component: {fileID: 6271114836064234724}
+  - component: {fileID: 6271114836949199364}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -17925,6 +18843,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199364
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836064234730}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836105573700
 GameObject:
   m_ObjectHideFlags: 0
@@ -17935,6 +18888,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836105573703}
   - component: {fileID: 6271114836105573702}
+  - component: {fileID: 6271114836949199359}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18007,6 +18961,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199359
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836105573700}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836108488424
 GameObject:
   m_ObjectHideFlags: 0
@@ -18017,6 +19006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836108488427}
   - component: {fileID: 6271114836108488426}
+  - component: {fileID: 6271114836949199337}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18089,6 +19079,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199337
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836108488424}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836111360808
 GameObject:
   m_ObjectHideFlags: 0
@@ -18181,6 +19206,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836126944663}
   - component: {fileID: 6271114836126944662}
+  - component: {fileID: 6271114836949199327}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18253,6 +19279,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199327
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836126944660}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836155858221
 GameObject:
   m_ObjectHideFlags: 0
@@ -18263,6 +19324,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836155858220}
   - component: {fileID: 6271114836155858223}
+  - component: {fileID: 6271114836949199342}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18335,6 +19397,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199342
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836155858221}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836170032592
 GameObject:
   m_ObjectHideFlags: 0
@@ -18345,6 +19442,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836170032595}
   - component: {fileID: 6271114836170032594}
+  - component: {fileID: 6271114836949199369}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18417,6 +19515,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199369
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836170032592}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836213377543
 GameObject:
   m_ObjectHideFlags: 0
@@ -18509,6 +19642,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836227391254}
   - component: {fileID: 6271114836227391249}
+  - component: {fileID: 6271114836949199334}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18581,6 +19715,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199334
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836227391255}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836232756136
 GameObject:
   m_ObjectHideFlags: 0
@@ -18704,6 +19873,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836264698540}
   - component: {fileID: 6271114836264698543}
+  - component: {fileID: 6271114836949199355}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18776,6 +19946,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199355
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836264698541}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836277994315
 GameObject:
   m_ObjectHideFlags: 0
@@ -18786,6 +19991,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836277994314}
   - component: {fileID: 6271114836277994309}
+  - component: {fileID: 6271114836949199365}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18858,6 +20064,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199365
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836277994315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836303439532
 GameObject:
   m_ObjectHideFlags: 0
@@ -18868,6 +20109,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836303439535}
   - component: {fileID: 6271114836303439534}
+  - component: {fileID: 6271114836949199329}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -18940,6 +20182,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199329
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836303439532}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836318734780
 GameObject:
   m_ObjectHideFlags: 0
@@ -19160,6 +20437,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836340287597}
   - component: {fileID: 6271114836340287596}
+  - component: {fileID: 6271114836949199331}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -19232,6 +20510,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199331
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836340287570}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836353260660
 GameObject:
   m_ObjectHideFlags: 0
@@ -19242,6 +20555,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836353260663}
   - component: {fileID: 6271114836353260662}
+  - component: {fileID: 6271114836949199333}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -19314,6 +20628,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199333
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836353260660}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836388621558
 GameObject:
   m_ObjectHideFlags: 0
@@ -19520,6 +20869,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836418033693}
   - component: {fileID: 6271114836418033692}
+  - component: {fileID: 6271114836949199335}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -19592,6 +20942,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199335
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836418033666}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836431806318
 GameObject:
   m_ObjectHideFlags: 0
@@ -19684,6 +21069,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836453494193}
   - component: {fileID: 6271114836453494192}
+  - component: {fileID: 6271114836949199326}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -19756,6 +21142,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199326
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836453494198}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836455276069
 GameObject:
   m_ObjectHideFlags: 0
@@ -19766,6 +21187,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836455276068}
   - component: {fileID: 6271114836455276071}
+  - component: {fileID: 6271114836949199328}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -19838,6 +21260,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199328
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836455276069}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836484950715
 GameObject:
   m_ObjectHideFlags: 0
@@ -19848,6 +21305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836484950714}
   - component: {fileID: 6271114836484950709}
+  - component: {fileID: 6271114836949199348}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -19920,6 +21378,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199348
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836484950715}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836500552826
 GameObject:
   m_ObjectHideFlags: 0
@@ -19930,6 +21423,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836500552821}
   - component: {fileID: 6271114836500552820}
+  - component: {fileID: 6271114836949199321}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20002,6 +21496,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199321
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836500552826}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836504534757
 GameObject:
   m_ObjectHideFlags: 0
@@ -20012,6 +21541,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836504534756}
   - component: {fileID: 6271114836504534759}
+  - component: {fileID: 6271114836949199360}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20084,6 +21614,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199360
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836504534757}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836512510020
 GameObject:
   m_ObjectHideFlags: 0
@@ -20258,6 +21823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836647219692}
   - component: {fileID: 6271114836647219695}
+  - component: {fileID: 6271114836949199353}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20330,6 +21896,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199353
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836647219693}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836647757695
 GameObject:
   m_ObjectHideFlags: 0
@@ -20504,6 +22105,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836717659459}
   - component: {fileID: 6271114836717659458}
+  - component: {fileID: 6271114836949199361}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20576,6 +22178,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199361
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836717659456}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836721986837
 GameObject:
   m_ObjectHideFlags: 0
@@ -20586,6 +22223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836721986836}
   - component: {fileID: 6271114836721986839}
+  - component: {fileID: 6271114836949199336}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20658,6 +22296,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199336
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836721986837}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836730990677
 GameObject:
   m_ObjectHideFlags: 0
@@ -20832,6 +22505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836772886607}
   - component: {fileID: 6271114836772886606}
+  - component: {fileID: 6271114836949199324}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20904,6 +22578,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199324
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836772886604}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836832549060
 GameObject:
   m_ObjectHideFlags: 0
@@ -20914,6 +22623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836832549063}
   - component: {fileID: 6271114836832549062}
+  - component: {fileID: 6271114836949199354}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -20986,6 +22696,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199354
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836832549060}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836882931666
 GameObject:
   m_ObjectHideFlags: 0
@@ -21078,6 +22823,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836939749421}
   - component: {fileID: 6271114836939749420}
+  - component: {fileID: 6271114836949199338}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -21150,6 +22896,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199338
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836939749394}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114836972719307
 GameObject:
   m_ObjectHideFlags: 0
@@ -21160,6 +22941,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114836972719306}
   - component: {fileID: 6271114836972719301}
+  - component: {fileID: 6271114836949199343}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -21232,6 +23014,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199343
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114836972719307}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837001124468
 GameObject:
   m_ObjectHideFlags: 0
@@ -21242,6 +23059,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837001124471}
   - component: {fileID: 6271114837001124470}
+  - component: {fileID: 6271114836949199339}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -21314,6 +23132,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199339
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837001124468}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837031493382
 GameObject:
   m_ObjectHideFlags: 0
@@ -21652,6 +23505,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837061779911}
   - component: {fileID: 6271114837061779910}
+  - component: {fileID: 6271114836949199320}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -21724,6 +23578,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199320
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837061779908}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837078047406
 GameObject:
   m_ObjectHideFlags: 0
@@ -21898,6 +23787,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837122306805}
   - component: {fileID: 6271114837122306804}
+  - component: {fileID: 6271114836949199366}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -21970,6 +23860,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199366
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837122306810}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837130929856
 GameObject:
   m_ObjectHideFlags: 0
@@ -21980,6 +23905,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837130929859}
   - component: {fileID: 6271114837130929858}
+  - component: {fileID: 6271114836949199356}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -22052,6 +23978,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199356
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837130929856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837142026664
 GameObject:
   m_ObjectHideFlags: 0
@@ -22062,6 +24023,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837142026667}
   - component: {fileID: 6271114837142026666}
+  - component: {fileID: 6271114836949199341}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -22134,6 +24096,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199341
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837142026664}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837225086924
 GameObject:
   m_ObjectHideFlags: 0
@@ -22144,6 +24141,9 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837225086922}
   - component: {fileID: 6271114837225086923}
+  - component: {fileID: 6271114836949199308}
+  - component: {fileID: 6271114836949199309}
+  - component: {fileID: 6271114836949199310}
   m_Layer: 0
   m_Name: ParkeringsHus- collider 3
   m_TagString: Untagged
@@ -22172,7 +24172,7 @@ EdgeCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6271114837225086924}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
@@ -22280,6 +24280,84 @@ EdgeCollider2D:
   m_AdjacentEndPoint: {x: 0, y: 0}
   m_UseAdjacentStartPoint: 0
   m_UseAdjacentEndPoint: 0
+--- !u!61 &6271114836949199308
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837225086924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -5.8278694, y: -6.2341814}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 38.55121, y: 2.4565597}
+  m_EdgeRadius: 0
+--- !u!61 &6271114836949199309
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837225086924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 12.184308, y: 0.21289062}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.404707, y: 15.354181}
+  m_EdgeRadius: 0
+--- !u!61 &6271114836949199310
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837225086924}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -6.038248, y: 5.4966803}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 38.88223, y: 4.786602}
+  m_EdgeRadius: 0
 --- !u!1 &6271114837229787030
 GameObject:
   m_ObjectHideFlags: 0
@@ -22484,6 +24562,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837306867143}
   - component: {fileID: 6271114837306867142}
+  - component: {fileID: 6271114836949199319}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -22556,6 +24635,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199319
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837306867140}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6271114837307136831
 GameObject:
   m_ObjectHideFlags: 0
@@ -22566,6 +24680,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6271114837307136830}
   - component: {fileID: 6271114837307136825}
+  - component: {fileID: 6271114836949199325}
   m_Layer: 0
   m_Name: Big Rock
   m_TagString: Untagged
@@ -22638,6 +24753,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &6271114836949199325
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6271114837307136831}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &6381908591233234054
 GameObject:
   m_ObjectHideFlags: 0
@@ -22721,6 +24871,7 @@ GameObject:
   - component: {fileID: 6060129681781266234}
   - component: {fileID: 3635427088873596825}
   - component: {fileID: 1484172455171679506}
+  - component: {fileID: 6271114836949199372}
   m_Layer: 0
   m_Name: Cars Front
   m_TagString: Untagged
@@ -23044,6 +25195,22 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &6271114836949199372
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6530494573452126736}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &7448831815848551835
 GameObject:
   m_ObjectHideFlags: 0
