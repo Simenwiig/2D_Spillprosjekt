@@ -401,13 +401,14 @@ public class PlayerController : MonoBehaviour
 
     float fallingDuration = -1;
     public bool isFalling { get { return fallingDuration != -1; } }
-    public bool isHalfDoneFalling { get { return fallingDuration < 0.3f; } }
+    public bool isHalfDoneFalling { get { return fallingDuration < 0.8f; } }
     public void Falling(bool onFalling)
     {
         fallingDuration -= Time.deltaTime;
 
         if (onFalling)
         {
+            velocity = Vector2.zero;
             manager_UI.isPaused = true;
             fallingDuration = 2f;
 
