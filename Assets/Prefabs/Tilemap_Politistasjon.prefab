@@ -4735,6 +4735,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453347272438}
   - component: {fileID: 3297004453347272437}
+  - component: {fileID: 243121564}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7
   m_TagString: Untagged
@@ -4807,6 +4808,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121564
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453347272439}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004453350487746
 GameObject:
   m_ObjectHideFlags: 0
@@ -4899,6 +4935,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453357440843}
   - component: {fileID: 3297004453357440842}
+  - component: {fileID: 243121574}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (15)
   m_TagString: Untagged
@@ -4971,6 +5008,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121574
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453357440844}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004453375895590
 GameObject:
   m_ObjectHideFlags: 0
@@ -5309,6 +5381,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453402566040}
   - component: {fileID: 3297004453402566039}
+  - component: {fileID: 243121591}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (6)
   m_TagString: Untagged
@@ -5381,6 +5454,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121591
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453402566041}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004453408372227
 GameObject:
   m_ObjectHideFlags: 0
@@ -5391,6 +5499,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453408372226}
   - component: {fileID: 3297004453408372225}
+  - component: {fileID: 243121575}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (13)
   m_TagString: Untagged
@@ -5463,6 +5572,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121575
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453408372227}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453414584842
 GameObject:
   m_ObjectHideFlags: 0
@@ -5719,6 +5862,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453471236408}
   - component: {fileID: 3297004453471236407}
+  - component: {fileID: 243121593}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (5)
   m_TagString: Untagged
@@ -5791,6 +5935,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121593
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453471236409}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453471566725
 GameObject:
   m_ObjectHideFlags: 0
@@ -6572,6 +6750,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453521288930}
   - component: {fileID: 3297004453521288929}
+  - component: {fileID: 243121596}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (2)
   m_TagString: Untagged
@@ -6644,6 +6823,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121596
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453521288931}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453522107383
 GameObject:
   m_ObjectHideFlags: 0
@@ -6654,6 +6867,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453522107382}
   - component: {fileID: 3297004453522107381}
+  - component: {fileID: 243121572}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (15)
   m_TagString: Untagged
@@ -6726,6 +6940,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121572
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453522107383}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453546816668
 GameObject:
   m_ObjectHideFlags: 0
@@ -6934,6 +7182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453550992394}
   - component: {fileID: 3297004453550992393}
+  - component: {fileID: 243121549}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (33)
   m_TagString: Untagged
@@ -7006,6 +7255,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121549
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453550992395}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453556546278
 GameObject:
   m_ObjectHideFlags: 0
@@ -7015,6 +7298,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3297004453556546277}
+  - component: {fileID: 243121607}
+  - component: {fileID: 243121606}
   m_Layer: 0
   m_Name: Stair_Space 1
   m_TagString: Untagged
@@ -7038,6 +7323,58 @@ Transform:
   m_Father: {fileID: 5617674386147144281}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &243121607
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453556546278}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -7.727169, y: 9.612293}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.4890976, y: 5.925728}
+  m_EdgeRadius: 0
+--- !u!61 &243121606
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453556546278}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -9.2294445, y: 6.91755}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5077095, y: 1.8522282}
+  m_EdgeRadius: 0
 --- !u!1 &3297004453556990560
 GameObject:
   m_ObjectHideFlags: 0
@@ -7294,6 +7631,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453583540039}
   - component: {fileID: 3297004453583540038}
+  - component: {fileID: 243121563}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12
   m_TagString: Untagged
@@ -7366,6 +7704,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121563
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453583540040}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453588592409
 GameObject:
   m_ObjectHideFlags: 0
@@ -7458,6 +7830,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453605008208}
   - component: {fileID: 3297004453605008207}
+  - component: {fileID: 243121570}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (17)
   m_TagString: Untagged
@@ -7530,6 +7903,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121570
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453605008209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453612327250
 GameObject:
   m_ObjectHideFlags: 0
@@ -7868,6 +8275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453639328902}
   - component: {fileID: 3297004453639328901}
+  - component: {fileID: 243121552}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (30)
   m_TagString: Untagged
@@ -7940,6 +8348,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121552
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453639328903}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453647111392
 GameObject:
   m_ObjectHideFlags: 0
@@ -7950,6 +8392,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453647111391}
   - component: {fileID: 3297004453647111390}
+  - component: {fileID: 243121588}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (7)
   m_TagString: Untagged
@@ -8022,6 +8465,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121588
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453647111392}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453650563632
 GameObject:
   m_ObjectHideFlags: 0
@@ -8196,6 +8673,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453657089477}
   - component: {fileID: 3297004453657089476}
+  - component: {fileID: 243121568}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (19)
   m_TagString: Untagged
@@ -8268,6 +8746,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121568
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453657089478}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453657305284
 GameObject:
   m_ObjectHideFlags: 0
@@ -8443,6 +8955,7 @@ GameObject:
   - component: {fileID: 3297004453701936414}
   - component: {fileID: 3297004453701936412}
   - component: {fileID: 3297004453701936413}
+  - component: {fileID: 243121608}
   m_Layer: 0
   m_Name: Desk
   m_TagString: Untagged
@@ -9032,6 +9545,22 @@ TilemapRenderer:
   m_Mode: 0
   m_DetectChunkCullingBounds: 0
   m_MaskInteraction: 0
+--- !u!19719996 &243121608
+TilemapCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453701936415}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_MaximumTileChangeCount: 1000
+  m_ExtrusionFactor: 0.00001
 --- !u!1 &3297004453705525668
 GameObject:
   m_ObjectHideFlags: 0
@@ -9782,6 +10311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453788231042}
   - component: {fileID: 3297004453788231041}
+  - component: {fileID: 243121567}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (20)
   m_TagString: Untagged
@@ -9854,6 +10384,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121567
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453788231043}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453794310393
 GameObject:
   m_ObjectHideFlags: 0
@@ -10438,6 +11002,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453875809815}
   - component: {fileID: 3297004453875809814}
+  - component: {fileID: 243121565}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (22)
   m_TagString: Untagged
@@ -10510,6 +11075,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121565
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453875809816}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453884570641
 GameObject:
   m_ObjectHideFlags: 0
@@ -10847,6 +11446,28 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3297004453924821201}
+  - component: {fileID: 243121544}
+  - component: {fileID: 243121543}
+  - component: {fileID: 243121542}
+  - component: {fileID: 243121541}
+  - component: {fileID: 243121540}
+  - component: {fileID: 243121539}
+  - component: {fileID: 243121538}
+  - component: {fileID: 243121537}
+  - component: {fileID: 243121536}
+  - component: {fileID: 243121535}
+  - component: {fileID: 243121534}
+  - component: {fileID: 243121533}
+  - component: {fileID: 243121532}
+  - component: {fileID: 243121531}
+  - component: {fileID: 243121530}
+  - component: {fileID: 243121529}
+  - component: {fileID: 243121528}
+  - component: {fileID: 243121527}
+  - component: {fileID: 243121526}
+  - component: {fileID: 243121525}
+  - component: {fileID: 243121524}
+  - component: {fileID: 243121523}
   m_Layer: 0
   m_Name: Tilemap_Politistasjon
   m_TagString: Untagged
@@ -10889,6 +11510,292 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &243121544
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 10.255035, y: 2.983471, z: 1}
+  m_Center: {x: 7.7933006, y: -6.4927254, z: 0}
+--- !u!65 &243121543
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.663521, y: 24.28057, z: 1}
+  m_Center: {x: 12.398071, y: 4.15582, z: 0}
+--- !u!65 &243121542
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 18.642303, y: 6.889309, z: 1}
+  m_Center: {x: -4.294235, y: -4.5398064, z: 0}
+--- !u!65 &243121541
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 26.988464, y: 5.326973, z: 1}
+  m_Center: {x: -0.57341385, y: 13.632616, z: 0}
+--- !u!65 &243121540
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 5.5269165, y: 8.451643, z: 1}
+  m_Center: {x: -11.304188, y: 12.070281, z: 0}
+--- !u!65 &243121539
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.087921, y: 12.357479, z: 1}
+  m_Center: {x: -12.023685, y: 1.6889763, z: 0}
+--- !u!65 &243121538
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.445427, y: 18.72308, z: 1}
+  m_Center: {x: -18.23447, y: 4.871777, z: 0}
+--- !u!65 &243121537
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.2848053, y: 8.550257, z: 1}
+  m_Center: {x: -38.660446, y: 9.958189, z: 0}
+--- !u!65 &243121536
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.1743355, y: 4.433382, z: 1}
+  m_Center: {x: -22.544542, y: -2.273076, z: 0}
+--- !u!65 &243121535
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 12.654518, y: 8.448975, z: 1}
+  m_Center: {x: -31.244991, y: -0.26527977, z: 0}
+--- !u!65 &243121534
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4454231, y: 5.557749, z: 1}
+  m_Center: {x: -36.81328, y: 4.125102, z: 0}
+--- !u!65 &243121533
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 19.539913, y: 4.2732134, z: 1}
+  m_Center: {x: -28.766031, y: 12.0967865, z: 0}
+--- !u!65 &243121532
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28.110191, y: 3.4467926, z: 1}
+  m_Center: {x: -21.940418, y: 18.601723, z: 0}
+--- !u!65 &243121531
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.7360458, y: 13.516869, z: 1}
+  m_Center: {x: -8.610577, y: 24.310139, z: 0}
+--- !u!65 &243121530
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 29.671207, y: 4.1238155, z: 1}
+  m_Center: {x: -22.078154, y: 30.139164, z: 0}
+--- !u!65 &243121529
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8564682, y: 13.917856, z: 1}
+  m_Center: {x: -35.485523, y: 25.242146, z: 0}
+--- !u!65 &243121528
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27644348, y: 3.2316952, z: 1}
+  m_Center: {x: -12.714592, y: 26.614044, z: 0}
+--- !u!65 &243121527
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27644348, y: 3.2316952, z: 1}
+  m_Center: {x: -15.29, y: 26.614044, z: 0}
+--- !u!65 &243121526
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27644348, y: 3.2316952, z: 1}
+  m_Center: {x: -17.9, y: 26.614044, z: 0}
+--- !u!65 &243121525
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27644348, y: 3.2316952, z: 1}
+  m_Center: {x: -22, y: 26.614044, z: 0}
+--- !u!65 &243121524
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27644348, y: 3.2316952, z: 1}
+  m_Center: {x: -24.6, y: 26.614044, z: 0}
+--- !u!65 &243121523
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453924821202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.27644348, y: 3.2316952, z: 1}
+  m_Center: {x: -27.1, y: 26.614044, z: 0}
 --- !u!1 &3297004453927639857
 GameObject:
   m_ObjectHideFlags: 0
@@ -11145,6 +12052,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453931590098}
   - component: {fileID: 3297004453931590097}
+  - component: {fileID: 243121559}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (25)
   m_TagString: Untagged
@@ -11217,6 +12125,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121559
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453931590099}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004453933627968
 GameObject:
   m_ObjectHideFlags: 0
@@ -11391,6 +12333,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004453963486783}
   - component: {fileID: 3297004453963486782}
+  - component: {fileID: 243121598}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (3)
   m_TagString: Untagged
@@ -11463,6 +12406,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121598
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004453963486784}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004453963583206
 GameObject:
   m_ObjectHideFlags: 0
@@ -11883,6 +12861,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454043452010}
   - component: {fileID: 3297004454043452009}
+  - component: {fileID: 243121550}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (32)
   m_TagString: Untagged
@@ -11955,6 +12934,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121550
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454043452011}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454043901935
 GameObject:
   m_ObjectHideFlags: 0
@@ -12165,7 +13178,7 @@ Grid:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3297004454068358493}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CellSize: {x: 1, y: 1, z: 0}
   m_CellGap: {x: 0, y: 0, z: 0}
   m_CellLayout: 0
@@ -12262,6 +13275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454083011432}
   - component: {fileID: 3297004454083011431}
+  - component: {fileID: 243121571}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (16)
   m_TagString: Untagged
@@ -12334,6 +13348,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121571
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454083011433}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454084306050
 GameObject:
   m_ObjectHideFlags: 0
@@ -12508,6 +13556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454120748186}
   - component: {fileID: 3297004454120748185}
+  - component: {fileID: 243121589}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (7)
   m_TagString: Untagged
@@ -12580,6 +13629,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121589
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454120748187}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454132250689
 GameObject:
   m_ObjectHideFlags: 0
@@ -12671,6 +13755,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3297004454135675233}
+  - component: {fileID: 243121604}
   m_Layer: 0
   m_Name: Stair_Thing 3
   m_TagString: Untagged
@@ -12712,6 +13797,32 @@ Transform:
   m_Father: {fileID: 5617674386147144281}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &243121604
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454135675234}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -33.00396, y: 22.699196}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.000595, y: 4.7118607}
+  m_EdgeRadius: 0
 --- !u!1 &3297004454146215504
 GameObject:
   m_ObjectHideFlags: 0
@@ -12722,6 +13833,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454146215503}
   - component: {fileID: 3297004454146215502}
+  - component: {fileID: 243121545}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (35)
   m_TagString: Untagged
@@ -12794,6 +13906,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121545
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454146215504}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454168654058
 GameObject:
   m_ObjectHideFlags: 0
@@ -12804,6 +13950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454168654057}
   - component: {fileID: 3297004454168654056}
+  - component: {fileID: 243121557}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (27)
   m_TagString: Untagged
@@ -12876,6 +14023,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121557
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454168654058}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454170894461
 GameObject:
   m_ObjectHideFlags: 0
@@ -12968,6 +14149,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454200173853}
   - component: {fileID: 3297004454200173852}
+  - component: {fileID: 243121569}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (18)
   m_TagString: Untagged
@@ -13040,6 +14222,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121569
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454200173854}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454206085833
 GameObject:
   m_ObjectHideFlags: 0
@@ -13460,6 +14676,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454238398214}
   - component: {fileID: 3297004454238398213}
+  - component: {fileID: 243121581}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (10)
   m_TagString: Untagged
@@ -13532,6 +14749,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121581
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454238398215}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454241623024
 GameObject:
   m_ObjectHideFlags: 0
@@ -13706,6 +14957,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454250070454}
   - component: {fileID: 3297004454250070453}
+  - component: {fileID: 243121561}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (16)
   m_TagString: Untagged
@@ -13778,6 +15030,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121561
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454250070455}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454255297127
 GameObject:
   m_ObjectHideFlags: 0
@@ -14362,6 +15649,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454339187441}
   - component: {fileID: 3297004454339187440}
+  - component: {fileID: 243121582}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (9)
   m_TagString: Untagged
@@ -14434,6 +15722,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121582
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454339187442}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454343244558
 GameObject:
   m_ObjectHideFlags: 0
@@ -16442,6 +17764,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454506979460}
   - component: {fileID: 3297004454506979459}
+  - component: {fileID: 243121573}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (14)
   m_TagString: Untagged
@@ -16514,6 +17837,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121573
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454506979461}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454521644310
 GameObject:
   m_ObjectHideFlags: 0
@@ -16606,6 +17963,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454533060544}
   - component: {fileID: 3297004454533060543}
+  - component: {fileID: 243121600}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (1)
   m_TagString: Untagged
@@ -16678,6 +18036,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121600
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454533060545}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454533281317
 GameObject:
   m_ObjectHideFlags: 0
@@ -17508,6 +18901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454605191635}
   - component: {fileID: 3297004454605191634}
+  - component: {fileID: 243121558}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (26)
   m_TagString: Untagged
@@ -17580,6 +18974,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121558
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454605191636}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454618997949
 GameObject:
   m_ObjectHideFlags: 0
@@ -17590,6 +19018,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454618997948}
   - component: {fileID: 3297004454618997947}
+  - component: {fileID: 243121590}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (6)
   m_TagString: Untagged
@@ -17662,6 +19091,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121590
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454618997949}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454623095950
 GameObject:
   m_ObjectHideFlags: 0
@@ -17672,6 +19135,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454623095949}
   - component: {fileID: 3297004454623095948}
+  - component: {fileID: 243121547}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (34)
   m_TagString: Untagged
@@ -17744,6 +19208,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121547
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454623095950}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454624685069
 GameObject:
   m_ObjectHideFlags: 0
@@ -17754,6 +19252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454624685068}
   - component: {fileID: 3297004454624685067}
+  - component: {fileID: 243121595}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (3)
   m_TagString: Untagged
@@ -17826,6 +19325,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121595
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454624685069}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454628084948
 GameObject:
   m_ObjectHideFlags: 0
@@ -18246,6 +19779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454669262448}
   - component: {fileID: 3297004454669262447}
+  - component: {fileID: 243121599}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (2)
   m_TagString: Untagged
@@ -18318,6 +19852,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121599
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454669262449}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454673994464
 GameObject:
   m_ObjectHideFlags: 0
@@ -18328,6 +19897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454673994463}
   - component: {fileID: 3297004454673994462}
+  - component: {fileID: 243121546}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (20)
   m_TagString: Untagged
@@ -18400,6 +19970,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121546
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454673994464}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454678084974
 GameObject:
   m_ObjectHideFlags: 0
@@ -18574,6 +20179,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454680765208}
   - component: {fileID: 3297004454680765207}
+  - component: {fileID: 243121592}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (5)
   m_TagString: Untagged
@@ -18646,6 +20252,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121592
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454680765209}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454681110485
 GameObject:
   m_ObjectHideFlags: 0
@@ -24962,6 +26603,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454697103183}
   - component: {fileID: 3297004454697103182}
+  - component: {fileID: 243121578}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (13)
   m_TagString: Untagged
@@ -25034,6 +26676,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121578
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454697103184}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454702590742
 GameObject:
   m_ObjectHideFlags: 0
@@ -25126,6 +26803,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454703350857}
   - component: {fileID: 3297004454703350856}
+  - component: {fileID: 243121548}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (19)
   m_TagString: Untagged
@@ -25198,6 +26876,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121548
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454703350858}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454708546115
 GameObject:
   m_ObjectHideFlags: 0
@@ -25536,6 +27249,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454727585500}
   - component: {fileID: 3297004454727585499}
+  - component: {fileID: 243121579}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (12)
   m_TagString: Untagged
@@ -25608,6 +27322,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121579
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454727585501}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454727800583
 GameObject:
   m_ObjectHideFlags: 0
@@ -25908,6 +27657,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454752810090}
   - component: {fileID: 3297004454752810089}
+  - component: {fileID: 243121555}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (18)
   m_TagString: Untagged
@@ -25980,6 +27730,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121555
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454752810091}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454753818944
 GameObject:
   m_ObjectHideFlags: 0
@@ -26154,6 +27939,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454772367451}
   - component: {fileID: 3297004454772367450}
+  - component: {fileID: 243121560}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (24)
   m_TagString: Untagged
@@ -26226,6 +28012,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121560
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454772367452}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454773816185
 GameObject:
   m_ObjectHideFlags: 0
@@ -26482,6 +28302,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454819427185}
   - component: {fileID: 3297004454819427184}
+  - component: {fileID: 243121566}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (21)
   m_TagString: Untagged
@@ -26554,6 +28375,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121566
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454819427186}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454824811709
 GameObject:
   m_ObjectHideFlags: 0
@@ -26679,6 +28534,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454838568852}
   - component: {fileID: 3297004454838568851}
+  - component: {fileID: 243121597}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (4)
   m_TagString: Untagged
@@ -26751,6 +28607,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121597
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454838568853}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004454839873388
 GameObject:
   m_ObjectHideFlags: 0
@@ -27335,6 +29226,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454878373452}
   - component: {fileID: 3297004454878373451}
+  - component: {fileID: 243121580}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (11)
   m_TagString: Untagged
@@ -27407,6 +29299,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121580
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454878373453}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004454879733622
 GameObject:
   m_ObjectHideFlags: 0
@@ -28483,6 +30409,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004454980806517}
   - component: {fileID: 3297004454980806516}
+  - component: {fileID: 243121577}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (14)
   m_TagString: Untagged
@@ -28555,6 +30482,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121577
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004454980806518}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455003515565
 GameObject:
   m_ObjectHideFlags: 0
@@ -28685,6 +30647,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455020106690}
   - component: {fileID: 3297004455020106689}
+  - component: {fileID: 243121584}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (11)
   m_TagString: Untagged
@@ -28757,6 +30720,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121584
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455020106691}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455020451809
 GameObject:
   m_ObjectHideFlags: 0
@@ -29456,6 +31454,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455087569043}
   - component: {fileID: 3297004455087569042}
+  - component: {fileID: 243121576}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (12)
   m_TagString: Untagged
@@ -29528,6 +31527,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121576
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455087569044}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455090843267
 GameObject:
   m_ObjectHideFlags: 0
@@ -29784,6 +31817,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455099291855}
   - component: {fileID: 3297004455099291854}
+  - component: {fileID: 243121553}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (29)
   m_TagString: Untagged
@@ -29856,6 +31890,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121553
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455099291856}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455112982800
 GameObject:
   m_ObjectHideFlags: 0
@@ -29948,6 +32016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455119559314}
   - component: {fileID: 3297004455119559313}
+  - component: {fileID: 243121586}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (9)
   m_TagString: Untagged
@@ -30020,6 +32089,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121586
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455119559315}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455130858061
 GameObject:
   m_ObjectHideFlags: 0
@@ -30030,6 +32134,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455130858060}
   - component: {fileID: 3297004455130858059}
+  - component: {fileID: 243121556}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (17)
   m_TagString: Untagged
@@ -30102,6 +32207,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121556
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455130858061}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455135076172
 GameObject:
   m_ObjectHideFlags: 0
@@ -30112,6 +32252,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455135076171}
   - component: {fileID: 3297004455135076170}
+  - component: {fileID: 243121603}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12
   m_TagString: Untagged
@@ -30184,6 +32325,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121603
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455135076172}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455142221672
 GameObject:
   m_ObjectHideFlags: 0
@@ -30522,6 +32697,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455182786736}
   - component: {fileID: 3297004455182786735}
+  - component: {fileID: 243121601}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (1)
   m_TagString: Untagged
@@ -30594,6 +32770,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121601
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455182786737}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455198030079
 GameObject:
   m_ObjectHideFlags: 0
@@ -30768,6 +32978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455209529270}
   - component: {fileID: 3297004455209529269}
+  - component: {fileID: 243121585}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (10)
   m_TagString: Untagged
@@ -30840,6 +33051,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121585
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455209529271}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455216958336
 GameObject:
   m_ObjectHideFlags: 0
@@ -30850,6 +33096,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455216958335}
   - component: {fileID: 3297004455216958334}
+  - component: {fileID: 243121554}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (28)
   m_TagString: Untagged
@@ -30922,6 +33169,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121554
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455216958336}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455223322555
 GameObject:
   m_ObjectHideFlags: 0
@@ -31424,6 +33705,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455251482774}
   - component: {fileID: 3297004455251482773}
+  - component: {fileID: 243121562}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (23)
   m_TagString: Untagged
@@ -31496,6 +33778,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121562
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455251482775}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455254686819
 GameObject:
   m_ObjectHideFlags: 0
@@ -31670,6 +33986,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455260397353}
   - component: {fileID: 3297004455260397352}
+  - component: {fileID: 243121583}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (8)
   m_TagString: Untagged
@@ -31742,6 +34059,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121583
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455260397354}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455264484686
 GameObject:
   m_ObjectHideFlags: 0
@@ -31916,6 +34267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455277780630}
   - component: {fileID: 3297004455277780629}
+  - component: {fileID: 243121551}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (31)
   m_TagString: Untagged
@@ -31988,6 +34340,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121551
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455277780631}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455289476175
 GameObject:
   m_ObjectHideFlags: 0
@@ -32687,6 +35073,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455356739842}
   - component: {fileID: 3297004455356739841}
+  - component: {fileID: 243121587}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7 (8)
   m_TagString: Untagged
@@ -32759,6 +35146,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121587
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455356739843}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455362295341
 GameObject:
   m_ObjectHideFlags: 0
@@ -32851,6 +35273,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455374112413}
   - component: {fileID: 3297004455374112412}
+  - component: {fileID: 243121594}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_12 (4)
   m_TagString: Untagged
@@ -32923,6 +35346,40 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121594
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455374112414}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.46875, y: 0.5}
+    newSize: {x: 0.46875, y: 0.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: -0.046016693, y: 0.24339962}
+      - {x: -0.19807053, y: 0.11664724}
+      - {x: -0.234375, y: -0.0064344406}
+      - {x: -0.23392487, y: -0.15649319}
+      - {x: -0.10909653, y: -0.24779987}
+      - {x: 0.07816315, y: -0.24865723}
+      - {x: 0.23107529, y: -0.090819836}
+      - {x: 0.23537064, y: 0.061779022}
+      - {x: 0.078365326, y: 0.24669981}
 --- !u!1 &3297004455377819404
 GameObject:
   m_ObjectHideFlags: 0
@@ -33507,6 +35964,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3297004455428973544}
   - component: {fileID: 3297004455428973543}
+  - component: {fileID: 243121602}
   m_Layer: 0
   m_Name: Parking_Lot_sprites_7
   m_TagString: Untagged
@@ -33579,6 +36037,41 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &243121602
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455428973545}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.78125, y: 0.84375}
+    newSize: {x: 0.78125, y: 0.84375}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.296875, y: 0.23869514}
+      - {x: 0.10266113, y: 0.42850494}
+      - {x: -0.17031097, y: 0.41854477}
+      - {x: -0.390625, y: 0.20078468}
+      - {x: -0.38396454, y: -0.21077728}
+      - {x: -0.16492844, y: -0.4118824}
+      - {x: 0.16953659, y: -0.40855217}
+      - {x: 0.37064362, y: -0.19823456}
+      - {x: 0.37730408, y: 0.015338898}
+      - {x: 0.32606888, y: 0.06246376}
 --- !u!1 &3297004455439013720
 GameObject:
   m_ObjectHideFlags: 0
@@ -33670,6 +36163,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3297004455470878034}
+  - component: {fileID: 243121605}
   m_Layer: 0
   m_Name: Stair_Area 2
   m_TagString: Untagged
@@ -33718,6 +36212,32 @@ Transform:
   m_Father: {fileID: 5617674386147144281}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &243121605
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3297004455470878035}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -35.977413, y: 7.358676}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.0093918, y: 3.2573528}
+  m_EdgeRadius: 0
 --- !u!1 &3297004455480673230
 GameObject:
   m_ObjectHideFlags: 0
