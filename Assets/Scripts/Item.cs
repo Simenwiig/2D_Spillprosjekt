@@ -69,7 +69,8 @@ public class Item : MonoBehaviour
                 if (player.currentWeapon.name != "Crowbar" || player.currentWeapon.cooldown > 0)
                     return;
 
-                GetComponent<Collider2D>().isTrigger = true;
+                GetComponent<Collider2D>().enabled = false;
+                GetComponent<Animation>().Play();
                 isPickup = false;
             }
 
@@ -177,7 +178,7 @@ public class Item : MonoBehaviour
         {
             Manager_Door manager_Door = GameObject.Find("_ScriptManager").GetComponent<Manager_Door>();
 
-            Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock, null).isLocked = false;
+            Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock.ToLower(), null).isLocked = false;
         } 
 				}
 }
