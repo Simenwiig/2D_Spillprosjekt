@@ -158,6 +158,16 @@ public class Item : MonoBehaviour
 
                 player.thirstLevel += Mathf.Min(value, 100 - player.thirstLevel);
             }
+
+
+            if (itemName == "god water")
+            {
+                player.healthLevel = 100;
+                player.thirstLevel = 100;
+                player.hungerLevel = 100;
+
+                player.isInGodmode = true;
+            }
         }
 
         hasBeenActivated = true;

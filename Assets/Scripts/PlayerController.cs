@@ -81,6 +81,7 @@ public class PlayerController : MonoBehaviour
     public float deadZone = 0.10f;
     public bool isInCutscene;
     public bool isPaused { get { return manager_UI.isPaused; } }
+    public bool isInGodmode;
 
     [Header("Attributes")]
     public float healthLevel = 100;
@@ -108,7 +109,7 @@ public class PlayerController : MonoBehaviour
     int thumb_Right = -1;
     int thumb_Left = -1;
 
-    public bool playingOnPC;
+    bool playingOnPC = true;
 
     void Awake()
     {
@@ -129,11 +130,13 @@ public class PlayerController : MonoBehaviour
         if (!Application.isEditor)
         {
             Input.multiTouchEnabled = true;
-            playingOnPC = false;
         }
     }
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.P))
+            playingOnPC = !playingOnPC;
+
 								#region Pause, Cutscene & Falling
 								animator.speed = (isPaused && !isFalling) ? 0 : 1;
 
@@ -303,6 +306,9 @@ public class PlayerController : MonoBehaviour
 
     void Resources()
     {
+        if (isInGodmode)
+            return;
+
         bool isWalking = speedLevel > 0;
         float drainRate = 1 * (isWalking ? 1 : 0.5f) * Time.deltaTime;
         float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.deltaTime;
@@ -374,7 +380,7 @@ public class PlayerController : MonoBehaviour
             return false;
 
         damageTimer = 0.5f; // The brief invulnerability you get when hit.
-        healthLevel -= damage;
+        healthLevel -= isInGodmode ? 0 : damage;
 
         if (isDead)
         {
