@@ -250,6 +250,9 @@ public class PlayerController : MonoBehaviour
 
 				private void FixedUpdate()
 				{
+        if (isInCutscene || isPaused || isFalling)
+            return;
+
         GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
     }
 
@@ -397,12 +400,11 @@ public class PlayerController : MonoBehaviour
     }
 
     float fallingDuration = -1;
-    bool isFalling { get { return fallingDuration != -1; } }
+    public bool isFalling { get { return fallingDuration != -1; } }
+    public bool isHalfDoneFalling { get { return fallingDuration < 0.3f; } }
     public void Falling(bool onFalling)
     {
         fallingDuration -= Time.deltaTime;
-
-        
 
         if (onFalling)
         {
@@ -416,15 +418,11 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFalling", true);
         }
 
-
         if (isFalling && fallingDuration < 0)
         {
             fallingDuration = -1;
             manager_UI.isPaused = false;
             animator.SetBool("isFalling", false);
         }
-
     }
-
-   
 }

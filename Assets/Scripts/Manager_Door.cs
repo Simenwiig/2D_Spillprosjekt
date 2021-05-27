@@ -36,6 +36,9 @@ public class Manager_Door : MonoBehaviour
                 if (isLocked || (i == 1 && isOneWay))
                     continue;
 
+                
+
+
                 BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;
                 BoxCollider2D doorWayOut = i == 0 ? Doorway2 : Doorway1;
 
@@ -50,6 +53,15 @@ public class Manager_Door : MonoBehaviour
 
                 if (isWithinX && isWithinY && (isMovingThowards || isFloorHole))
                 {
+                    if (isFloorHole)
+                    {
+                        if (!player.isFalling)
+                            player.Falling(true);
+
+                        if (!player.isHalfDoneFalling)
+                            continue;
+                    }
+
                     Vector3 deltaPosition = playerPosition - doorwayPosition;
                     Vector3 deltaScale = doorWayOut.size / doorWayIn.size;
 
