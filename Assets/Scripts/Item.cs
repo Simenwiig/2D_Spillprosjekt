@@ -59,11 +59,11 @@ public class Item : MonoBehaviour
     void OnPickup()
 				{
         bool isPickup = true;
+        itemName = itemName.ToLower();
 
         if (itemName.Length > 0) // It has a name
         {
-            itemName = itemName.ToLower();
-
+            
             if (itemName == "crate")
             {
                 if (player.currentWeapon.name != "Crowbar" || player.currentWeapon.cooldown > 0)
@@ -192,7 +192,7 @@ public class Item : MonoBehaviour
         if (optionalPickupSound != null)
             gameObject.AddComponent<AudioSource>().PlayOneShot(optionalPickupSound);
 
-        if (nameOfDoorIUnlock != "None")
+        if (nameOfDoorIUnlock != "none")
         {
             Manager_Door manager_Door = GameObject.Find("_ScriptManager").GetComponent<Manager_Door>();
 

@@ -138,7 +138,7 @@ public class PlayerController : MonoBehaviour
         {
             playingOnPC = !playingOnPC;
             damageTimer = 0.5f;
-            Debug.Log("Changing playmode to " + (playingOnPC ? " PC mode." : " touch screen mode."));
+            Debug.Log("Changing playmode to " + (playingOnPC ? "PC mode." : "Touch Screen mode."));
         }
 
 								#region Pause, Cutscene & Falling
