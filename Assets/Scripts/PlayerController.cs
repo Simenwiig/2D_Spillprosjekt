@@ -109,7 +109,8 @@ public class PlayerController : MonoBehaviour
     int thumb_Right = -1;
     int thumb_Left = -1;
 
-    bool playingOnPC = true;
+    [HideInInspector]
+    public bool playingOnPC = true;
 
     void Awake()
     {
@@ -134,12 +135,6 @@ public class PlayerController : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            playingOnPC = !playingOnPC;
-            damageTimer = 0.5f;
-            Debug.Log("Changing playmode to " + (playingOnPC ? "PC mode." : "Touch Screen mode."));
-        }
 
 								#region Pause, Cutscene & Falling
 								animator.speed = (isPaused && !isFalling) ? 0 : 1;

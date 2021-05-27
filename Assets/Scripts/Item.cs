@@ -59,7 +59,7 @@ public class Item : MonoBehaviour
     void OnPickup()
 				{
         bool isPickup = true;
-      
+
 
         if (itemName.Length > 0) // It has a name
         {
@@ -173,9 +173,15 @@ public class Item : MonoBehaviour
             {
                 player.hungerLevel = 100;
 
-
                 player.GetComponentInChildren<Rigidbody2D>().isKinematic = true;
                 player.moveSpeed *= 3;
+            }
+
+            if (itemName == "phone controller")
+            {
+                player.playingOnPC = !player.playingOnPC;
+                player.damageTimer = 0.25f;
+                Debug.Log("Changing control scheme to " + (player.playingOnPC ? "Mouse & Keyboard mode." : "Touch Screen mode."));
             }
         }
         hasBeenActivated = true;
@@ -196,7 +202,9 @@ public class Item : MonoBehaviour
         {
             Manager_Door manager_Door = GameObject.Find("_ScriptManager").GetComponent<Manager_Door>();
 
-            Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock, null).isLocked = false;
+            Manager_Door.DoorSet doorToUnlock = Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock, null);
+            if(doorToUnlock != null)
+                doorToUnlock.isLocked = false;
         } 
 				}
 }
