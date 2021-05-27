@@ -96,7 +96,7 @@ public class Item : MonoBehaviour
 
             if (itemName == "key_generic")
             {
-                
+
             }
 
             if (itemName == "key_helipad")
@@ -109,7 +109,7 @@ public class Item : MonoBehaviour
                 player.weapons[1].isUnlocked = true;
                 player.currentWeapon = player.weapons[1];
 
-                if(player.weapons[2].isUnlocked)
+                if (player.weapons[2].isUnlocked)
                     manager_UI.SwitchingToMelee();
 
                 GameObject godray = GameObject.Find("GOD RAY CROWBAR");
@@ -168,8 +168,16 @@ public class Item : MonoBehaviour
 
                 player.isInGodmode = true;
             }
-        }
 
+            if (itemName == "noclip beans")
+            {
+                player.hungerLevel = 100;
+
+
+                player.GetComponentInChildren<Rigidbody2D>().isKinematic = true;
+                player.moveSpeed *= 3;
+            }
+        }
         hasBeenActivated = true;
         GameObject.Destroy(gameObject, despawnTime);
 

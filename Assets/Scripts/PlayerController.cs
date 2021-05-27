@@ -135,7 +135,11 @@ public class PlayerController : MonoBehaviour
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.P))
+        {
             playingOnPC = !playingOnPC;
+            damageTimer = 0.5f;
+            Debug.Log("Changing playmode to " + (playingOnPC ? " PC mode." : " touch screen mode."));
+        }
 
 								#region Pause, Cutscene & Falling
 								animator.speed = (isPaused && !isFalling) ? 0 : 1;
@@ -162,7 +166,6 @@ public class PlayerController : MonoBehaviour
 
                 if (Manager_UI.IsInRangeOfStick(manager_UI.LeftStick, Input.mousePosition, camera))
                     thumb_Left = 1;
-
             }
 
             if (thumb_Right == 1)
