@@ -39,7 +39,7 @@ public class Manager_Door : MonoBehaviour
 
         bool isHorizontalDoor { get { return Doorway1.size.x > Doorway1.size.y; } }
 
-        public void EnterDoor(PlayerController player)
+        public bool EnterDoor(PlayerController player)
         {
             for (int i = 0; i < 2; i++)
             {
@@ -80,8 +80,11 @@ public class Manager_Door : MonoBehaviour
 
                     if (enteringSound != null)
                         player.GetComponent<AudioSource>().PlayOneShot(enteringSound);
+
+                    return true;
                 }
             }
+          return false;
         }
 
         public static DoorSet GetDoor(DoorSet[] doors, string name, Collider2D coll)
@@ -99,6 +102,7 @@ public class Manager_Door : MonoBehaviour
     }
 
     public DoorSet[] Doors;
+    bool hasRecentlyFallen;
 
     PlayerController player;
 
@@ -117,7 +121,7 @@ public class Manager_Door : MonoBehaviour
 
                 if (doorObjectColliders.Length != 2)
                 {
-                    Debug.Log("HEY! " + door.name + " requires TWO Boxcolliders.");
+                    Debug.Log("HEY! " + door.name + " requires 2 (two) Boxcolliders, not " + doorObjectColliders.Length + ".");
                     continue;
                 }
                 door.Doorway1 = doorObjectColliders[0];
@@ -130,15 +134,30 @@ public class Manager_Door : MonoBehaviour
         }
     }
 
-    private void FixedUpdate()
+    void Update()
     {
         Vector2 playerPosition = player.transform.position;
+
+        if (hasRecentlyFallen)
+            hasRecentlyFallen = player.isFalling;
+
 
         for (int i = 0; i < Doors.Length; i++)
         {
             DoorSet door = Doors[i];
 
-            door.EnterDoor(player);
+
+            if (door.isFloorHole && hasRecentlyFallen)
+                return;
+
+
+            bool playerWasTeleported = door.EnterDoor(player);
+
+            if (door.isFloorHole && playerWasTeleported)
+                hasRecentlyFallen = true;
+
         }
+
+        
     }
 }
