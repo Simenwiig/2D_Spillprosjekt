@@ -29,10 +29,10 @@ public class Item : MonoBehaviour
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
 
-        if (itemName == "door_helipad")
+        if (itemName.ToLower() == "door_helipad")
             name = itemName;   
 
-        }
+    }
 
 
     // Update is called once per frame

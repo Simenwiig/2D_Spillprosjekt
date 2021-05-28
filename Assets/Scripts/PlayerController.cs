@@ -406,6 +406,8 @@ public class PlayerController : MonoBehaviour
     float fallingDuration = -1;
     public bool isFalling { get { return fallingDuration != -1; } }
     public bool isHalfDoneFalling { get { return fallingDuration < 0.8f; } }
+
+    public bool justFellGraceperiod { get { return fallingDuration < 0.1f; } }
     public void Falling(bool onFalling)
     {
         fallingDuration -= Time.deltaTime;
@@ -428,6 +430,11 @@ public class PlayerController : MonoBehaviour
             fallingDuration = -1;
             manager_UI.isPaused = false;
             animator.SetBool("isFalling", false);
+            animator.SetBool("isStandingStill", true);
+
+            animator.SetBool("isWalkingDown", true);
+
+            animator.Update(Time.deltaTime);
         }
     }
 }
