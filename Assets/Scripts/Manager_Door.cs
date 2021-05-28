@@ -9,11 +9,17 @@ public class Manager_Door : MonoBehaviour
     {
         /// This is mostly just to make it easier to remember, but certain items also look for door names.
         public string name = "Name Me Something";
-       
-        [Header("Doorway One")]
+
+
+
+        [Header("Doorway Gameobject (Remember, use two Boxcollider2D)")]
+        public GameObject DoorObject;
+        public bool UseTheNewSystem = false;
+
+        [Header("Doorway One (Legacy)")]
         public BoxCollider2D Doorway1;
 
-        [Header("Doorway Two")]
+        [Header("Doorway Two (Legacy)")]
         public BoxCollider2D Doorway2;
 
         [Header("Settings")]
@@ -23,6 +29,10 @@ public class Manager_Door : MonoBehaviour
         public bool isOneWay;
         /// The "door" is actually a hole in the floor.
         public bool isFloorHole;
+
+   
+
+
 
         [Header("Optional Sounds")]
         public AudioClip enteringSound;
@@ -35,9 +45,6 @@ public class Manager_Door : MonoBehaviour
             {
                 if (isLocked || (i == 1 && isOneWay))
                     continue;
-
-                
-
 
                 BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;
                 BoxCollider2D doorWayOut = i == 0 ? Doorway2 : Doorway1;
@@ -58,6 +65,7 @@ public class Manager_Door : MonoBehaviour
                         if (!player.isFalling)
                             player.Falling(true);
 
+
                         if (!player.isHalfDoneFalling)
                             continue;
                     }
@@ -69,9 +77,6 @@ public class Manager_Door : MonoBehaviour
                     deltaPosition.y = deltaPosition.y * deltaScale.y * (isHorizontalDoor ? 1 : -1);
 
                     player.transform.position = doorWayOut.transform.position + (Vector3)doorWayOut.offset - deltaPosition * (!isFloorHole ? 1 : -1);
-
-                    if (isFloorHole)
-                        player.Falling(true);
 
                     if (enteringSound != null)
                         player.GetComponent<AudioSource>().PlayOneShot(enteringSound);
@@ -105,6 +110,20 @@ public class Manager_Door : MonoBehaviour
         for (int i = 0; i < Doors.Length; i++)
         {
             DoorSet door = Doors[i];
+
+            if (door.UseTheNewSystem)
+            {
+                BoxCollider2D[] doorObjectColliders = door.DoorObject.GetComponents<BoxCollider2D>();
+
+                if (doorObjectColliders.Length != 2)
+                {
+                    Debug.Log("HEY! " + door.name + " requires TWO Boxcolliders.");
+                    continue;
+                }
+                door.Doorway1 = doorObjectColliders[0];
+                door.Doorway2 = doorObjectColliders[1];
+            }
+
 
             door.Doorway1.isTrigger = true;
             door.Doorway2.isTrigger = true;
