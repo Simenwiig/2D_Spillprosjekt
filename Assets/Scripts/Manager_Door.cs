@@ -46,9 +46,6 @@ public class Manager_Door : MonoBehaviour
                 if (isLocked || (i == 1 && isOneWay))
                     continue;
 
-                
-
-
                 BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;
                 BoxCollider2D doorWayOut = i == 0 ? Doorway2 : Doorway1;
 
@@ -114,7 +111,7 @@ public class Manager_Door : MonoBehaviour
         {
             DoorSet door = Doors[i];
 
-            if (!door.UseTheNewSystem)
+            if (door.UseTheNewSystem)
             {
                 BoxCollider2D[] doorObjectColliders = door.DoorObject.GetComponents<BoxCollider2D>();
 
