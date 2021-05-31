@@ -1,61 +1,61 @@
 fileFormatVersion: 2
-guid: e31f8546963b57741b3636464b1f5f1b
+guid: 60856b6a49e9695489cb7d0b1e6305d4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2446508313254601741
-    second: Slash run and crowbar spritesheet_0
+      213: 9103069049193829744
+    second: Shoot animantion sheet_0
   - first:
-      213: -8543893539277252343
-    second: Slash run and crowbar spritesheet_3
+      213: 791227912126573402
+    second: Shoot animantion sheet_1
   - first:
-      213: 4096650221280149882
-    second: Slash run and crowbar spritesheet_4
+      213: -6135662644293946198
+    second: Shoot animantion sheet_2
   - first:
-      213: -2660139998542462723
-    second: Slash run and crowbar spritesheet_5
+      213: -6499651230541116445
+    second: Shoot animantion sheet_3
   - first:
-      213: -3404853897784114488
-    second: Slash run and crowbar spritesheet_7
+      213: -6462876551181248363
+    second: Shoot animantion sheet_4
   - first:
-      213: -6304814238049863400
-    second: Slash run and crowbar spritesheet_9
+      213: -6443774028996872184
+    second: Shoot animantion sheet_5
   - first:
-      213: -8178655680432752801
-    second: Slash run and crowbar spritesheet_11
+      213: -5114516529562703858
+    second: Shoot animantion sheet_6
   - first:
-      213: 7057527301779076902
-    second: Slash run and crowbar spritesheet_13
+      213: -5003561007632796739
+    second: Shoot animantion sheet_7
   - first:
-      213: -8958130268506743916
-    second: Slash run and crowbar spritesheet_14
+      213: -7547335511713579482
+    second: Shoot animantion sheet_8
   - first:
-      213: 1240474768730106443
-    second: Slash run and crowbar spritesheet_15
+      213: 6251309978072411536
+    second: Shoot animantion sheet_9
   - first:
-      213: 821058726415874905
-    second: Slash run and crowbar spritesheet_19
+      213: -3125714858535582525
+    second: Shoot animantion sheet_10
   - first:
-      213: 5523441005340000867
-    second: Slash run and crowbar spritesheet_21
+      213: 4412119550918836702
+    second: Shoot animantion sheet_11
   - first:
-      213: -4063116655112005277
-    second: Slash run and crowbar spritesheet_23
+      213: 9182741308213886703
+    second: Shoot animantion sheet_12
   - first:
-      213: -1283487364208361317
-    second: Slash run and crowbar spritesheet_28
+      213: 2451233041728246475
+    second: Shoot animantion sheet_13
   - first:
-      213: 7057017547703463464
-    second: Slash run and crowbar spritesheet_29
+      213: 7889231455296147544
+    second: Shoot animantion sheet_14
   - first:
-      213: -1485053581152338063
-    second: Slash run and crowbar spritesheet_30
+      213: 2952522910302151451
+    second: Shoot animantion sheet_15
   - first:
-      213: -1590292032984584189
-    second: Slash run and crowbar spritesheet_31
+      213: 8900357718520223995
+    second: Shoot animantion sheet_16
   - first:
-      213: -2286431030888031725
-    second: Slash_Simple
+      213: -2492627526684155182
+    second: Shoot animantion sheet_17
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -141,70 +141,16 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_0
+      name: Shoot animantion sheet_0
       rect:
         serializedVersion: 2
-        x: 16
-        y: 344
-        width: 31
-        height: 40
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d04a497495eb3f120800000000000000
-      internalID: 2446508313254601741
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_3
-      rect:
-        serializedVersion: 2
-        x: 97
-        y: 344
-        width: 30
-        height: 40
-      alignment: 9
-      pivot: {x: 0.5, y: 0.2}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 909df90f71efd6980800000000000000
-      internalID: -8543893539277252343
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_4
-      rect:
-        serializedVersion: 2
-        x: 165
-        y: 352
-        width: 22
+        x: 7
+        y: 99
+        width: 18
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -213,19 +159,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a71cd68dba93ad830800000000000000
-      internalID: 4096650221280149882
+      spriteID: 0751d03f119945e70800000000000000
+      internalID: 9103069049193829744
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_5
+      name: Shoot animantion sheet_1
       rect:
         serializedVersion: 2
-        x: 12
-        y: 288
-        width: 40
+        x: 39
+        y: 99
+        width: 18
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -234,19 +180,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: df0811ee3c8451bd0800000000000000
-      internalID: -2660139998542462723
+      spriteID: a5badae08910bfa00800000000000000
+      internalID: 791227912126573402
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_7
+      name: Shoot animantion sheet_2
       rect:
         serializedVersion: 2
-        x: 84
-        y: 288
-        width: 40
+        x: 71
+        y: 99
+        width: 18
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -255,124 +201,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c2497e6b678fb0d0800000000000000
-      internalID: -3404853897784114488
+      spriteID: aa4b939455fb9daa0800000000000000
+      internalID: -6135662644293946198
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_9
+      name: Shoot animantion sheet_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 224
-        width: 30
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8197636dadcc088a0800000000000000
-      internalID: -6304814238049863400
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_11
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 224
-        width: 30
-        height: 40
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f573393bdf39f7e80800000000000000
-      internalID: -8178655680432752801
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_13
-      rect:
-        serializedVersion: 2
-        x: 16
-        y: 144
-        width: 32
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 627b92740bf51f160800000000000000
-      internalID: 7057527301779076902
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_14
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 144
-        width: 32
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 49b1bf5abf35ea380800000000000000
-      internalID: -8958130268506743916
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_15
-      rect:
-        serializedVersion: 2
-        x: 176
-        y: 144
-        width: 32
-        height: 48
-      alignment: 9
-      pivot: {x: 0.5, y: 0.33}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b4a2ef6da3d073110800000000000000
-      internalID: 1240474768730106443
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_19
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 80
-        width: 54
+        x: 103
+        y: 99
+        width: 18
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -381,19 +222,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 95bb0cfbf8cf46b00800000000000000
-      internalID: 821058726415874905
+      spriteID: 3eb8aa774a99cc5a0800000000000000
+      internalID: -6499651230541116445
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_21
+      name: Shoot animantion sheet_4
       rect:
         serializedVersion: 2
-        x: 86
-        y: 80
-        width: 53
+        x: 135
+        y: 99
+        width: 18
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -402,19 +243,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3620e15745437ac40800000000000000
-      internalID: 5523441005340000867
+      spriteID: 598d3abb4004f46a0800000000000000
+      internalID: -6462876551181248363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_23
+      name: Shoot animantion sheet_5
       rect:
         serializedVersion: 2
-        x: 165
-        y: 80
-        width: 54
+        x: 167
+        y: 99
+        width: 18
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -423,19 +264,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3695313fde8ec97c0800000000000000
-      internalID: -4063116655112005277
+      spriteID: 808f0c449ad1396a0800000000000000
+      internalID: -6443774028996872184
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_28
+      name: Shoot animantion sheet_6
       rect:
         serializedVersion: 2
-        x: 16
-        y: 16
-        width: 32
+        x: 4
+        y: 51
+        width: 24
         height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
@@ -444,20 +285,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9088aeda03203ee0800000000000000
-      internalID: -1283487364208361317
+      spriteID: e082d8170569509b0800000000000000
+      internalID: -5114516529562703858
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_29
+      name: Shoot animantion sheet_7
       rect:
         serializedVersion: 2
-        x: 80
-        y: 16
-        width: 32
-        height: 42
+        x: 36
+        y: 51
+        width: 24
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -465,20 +306,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82e2098e1109fe160800000000000000
-      internalID: 7057017547703463464
+      spriteID: db33d0806c7cf8ab0800000000000000
+      internalID: -5003561007632796739
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_30
+      name: Shoot animantion sheet_8
       rect:
         serializedVersion: 2
-        x: 144
-        y: 16
-        width: 32
-        height: 42
+        x: 68
+        y: 51
+        width: 24
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -486,20 +327,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 17f3ef6d2a7046be0800000000000000
-      internalID: -1485053581152338063
+      spriteID: 62efe9fe65a724790800000000000000
+      internalID: -7547335511713579482
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash run and crowbar spritesheet_31
+      name: Shoot animantion sheet_9
       rect:
         serializedVersion: 2
-        x: 208
-        y: 16
-        width: 32
-        height: 43
+        x: 100
+        y: 51
+        width: 24
+        height: 32
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -507,29 +348,176 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 300f1dc52d52ee9e0800000000000000
-      internalID: -1590292032984584189
+      spriteID: 09d6cdfdd4d11c650800000000000000
+      internalID: 6251309978072411536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Slash_Simple
+      name: Shoot animantion sheet_10
       rect:
         serializedVersion: 2
-        x: 87
-        y: 49
-        width: 21
-        height: 9
-      alignment: 9
-      pivot: {x: 0.25778052, y: 0.9164471}
+        x: 132
+        y: 51
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 31a1d786717f440e0800000000000000
-      internalID: -2286431030888031725
+      spriteID: 3c483db95ea3f94d0800000000000000
+      internalID: -3125714858535582525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_11
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 51
+        width: 24
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed1c21bea5ffa3d30800000000000000
+      internalID: 4412119550918836702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_12
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feef46c4196af6f70800000000000000
+      internalID: 9182741308213886703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_13
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 3
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc299e9d677840220800000000000000
+      internalID: 2451233041728246475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_14
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 3
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 850d3cba53e2c7d60800000000000000
+      internalID: 7889231455296147544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_15
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 3
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1323cb91f779f820800000000000000
+      internalID: 2952522910302151451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_16
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 3
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf8dd4a503c648b70800000000000000
+      internalID: 8900357718520223995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Shoot animantion sheet_17
+      rect:
+        serializedVersion: 2
+        x: 167
+        y: 3
+        width: 18
+        height: 32
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d261a29878686dd0800000000000000
+      internalID: -2492627526684155182
       vertices: []
       indices: 
       edges: []

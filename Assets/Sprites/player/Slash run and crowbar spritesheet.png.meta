@@ -53,9 +53,6 @@ TextureImporter:
   - first:
       213: -1590292032984584189
     second: Slash run and crowbar spritesheet_31
-  - first:
-      213: -2286431030888031725
-    second: Slash_Simple
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -509,27 +506,6 @@ TextureImporter:
       bones: []
       spriteID: 300f1dc52d52ee9e0800000000000000
       internalID: -1590292032984584189
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Slash_Simple
-      rect:
-        serializedVersion: 2
-        x: 87
-        y: 49
-        width: 21
-        height: 9
-      alignment: 9
-      pivot: {x: 0.25778052, y: 0.9164471}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 31a1d786717f440e0800000000000000
-      internalID: -2286431030888031725
       vertices: []
       indices: 
       edges: []

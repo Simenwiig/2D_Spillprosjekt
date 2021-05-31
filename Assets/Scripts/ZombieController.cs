@@ -107,6 +107,8 @@ public class ZombieController : MonoBehaviour
                 
                 velocity -= directionToPlayer.normalized * 2;
                 damageTimer = 0.15f;
+
+                Debug.DrawRay(transform.position, player.transform.position, Color.red);
             }
         }
 
@@ -190,6 +192,9 @@ public class ZombieController : MonoBehaviour
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
             RaycastHit2D hit = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius * (playerUsedLoudWeapon ? 20 : 1), ~zombieLayer, 0);
+
+            
+
             bool canSeePlayer = hit.transform == player.transform;
 
             /// Can I see the player?
@@ -200,6 +205,8 @@ public class ZombieController : MonoBehaviour
             {
                 behaviorState = BehaviorState.Chasing;
                 MoveTowardsLocation(player.transform.position);
+
+                Debug.DrawLine(transform.position, player.transform.position, Color.blue);
             }
 
             /// If I can not see the player?
@@ -239,12 +246,14 @@ public class ZombieController : MonoBehaviour
                         {
                             validLocations.Add(previousPlayerPosition);
 
-                            Debug.DrawRay(validLocation, directionFromPointToPlayer, Color.red, 3);
+                            Debug.DrawRay(validLocation, directionFromPointToPlayer, Color.cyan, 3);
                         }
-
+                      
 
                         // If I still can not see the player, I will move thowards the oldest valid location
                         MoveTowardsLocation(validLocations[0]);
+
+                        Debug.DrawLine(transform.position, validLocations[0], Color.blue);
 
                         float distanceToOldestLocation = (validLocations[0] - transform.position).magnitude;
 
@@ -260,8 +269,6 @@ public class ZombieController : MonoBehaviour
 
                     validLocations.Clear();
                     validLocations.Add(previousPlayerPosition);
-
-                    PlayerController.PlayAudioClipFromArray(Idle, audioSource); // Might aswell play a sound on the zombie losing you?
 
                     Debug.Log("The player broke LoS.");
                 }
