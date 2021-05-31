@@ -1548,7 +1548,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 9.436536, y: 3.053387}
+  m_Offset: {x: 9.46, y: 3.0703242}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1559,7 +1559,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.8021908, y: 0.73041487}
+  m_Size: {x: 1.0028362, y: 1.0202403}
   m_EdgeRadius: 0
 --- !u!61 &1971737695
 BoxCollider2D:
@@ -1601,13 +1601,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Doors:
   - name: Fall To Hell
+    DoorObject: {fileID: 0}
+    UseTheNewSystem: 0
     Doorway1: {fileID: 1971737695}
     Doorway2: {fileID: 1971737694}
     isLocked: 1
-    isOneWay: 1
+    isOneWay: 0
     isFloorHole: 1
     enteringSound: {fileID: 0}
   - name: Random Hole
+    DoorObject: {fileID: 0}
+    UseTheNewSystem: 0
     Doorway1: {fileID: 1971737699}
     Doorway2: {fileID: 1971737698}
     isLocked: 0
@@ -1641,7 +1645,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -16.69, y: -7.1}
+  m_Offset: {x: -19.4, y: -7.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}

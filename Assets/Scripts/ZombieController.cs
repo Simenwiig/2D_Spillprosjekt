@@ -177,7 +177,7 @@ public class ZombieController : MonoBehaviour
         }
 
         if(damage > 0)
-            PlayerController.PlayAudioClipFromArray( isDead ? Death : Hurt, audioSource);
+            PlayerController.PlayAudioClipFromArray( (isDead && Death.Length != 0) ? Death : Hurt, audioSource);
     }
 
     void ZombieBehvior()
@@ -216,7 +216,7 @@ public class ZombieController : MonoBehaviour
                 if (behaviorState == BehaviorState.Idle && Random.Range(0, (int)(3 / Time.deltaTime)) == 0)
                 {
                     velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
-                 //   PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                    PlayerController.PlayAudioClipFromArray(Idle, audioSource);
                 }
 
                 /// I am now searching.
@@ -229,6 +229,7 @@ public class ZombieController : MonoBehaviour
                         PlayerController.PlayAudioClipFromArray(Idle, audioSource);
                         validLocations.Clear();
 
+                        PlayerController.PlayAudioClipFromArray(Idle, audioSource);
                         Debug.Log("I lost track of the Player.");
                     }
                     /// If not:
