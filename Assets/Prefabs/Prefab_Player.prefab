@@ -55,6 +55,7 @@ MonoBehaviour:
   damageTimer: 0
   deadZone: 0.2
   isInCutscene: 0
+  isInGodmode: 0
   healthLevel: 100
   hungerLevel: 100
   thirstLevel: 100
@@ -104,6 +105,7 @@ MonoBehaviour:
     sound: {fileID: 0}
     cooldown: 0
   bullet: {fileID: 5401467158730200362}
+  Melee_Slash: {fileID: -2286431030888031725, guid: e31f8546963b57741b3636464b1f5f1b, type: 3}
   Footsteps: []
   Hurt:
   - {fileID: 8300000, guid: f4c4d004b3eb8be4c97a0123d7a2b364, type: 3}
@@ -612,12 +614,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 9117694719037400086, guid: 7395b95a895564a4db77a65eaad54c72, type: 3}
+  m_Sprite: {fileID: 620102992772201619, guid: 22ec3f768dfbd6747a5958bf2172fa4f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.625, y: 1}
+  m_Size: {x: 0.75, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
