@@ -2230,10 +2230,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tilemap_Politistasjon
       objectReference: {fileID: 0}
-    - target: {fileID: 3297004454068358491, guid: 04893c41b5af89d488622fa7a12a9c8e, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 04893c41b5af89d488622fa7a12a9c8e, type: 3}
 --- !u!1001 &249262725
