@@ -97,7 +97,6 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public WeaponStat currentWeapon;
     public Transform bullet;
     List<Weapon_Bullet> bullets = new List<Weapon_Bullet>();
-    public Sprite Melee_Slash;
 
     [Header("Audio Clips")]
     public AudioClip[] Footsteps;
@@ -302,12 +301,6 @@ public class PlayerController : MonoBehaviour
                 bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance));
 
 
-
-
-
-
-
-
             if (currentWeapon.visibleBullet)
             {
                 GameObject tempBullet = new GameObject();
@@ -316,7 +309,7 @@ public class PlayerController : MonoBehaviour
 
                 tempBullet_rend.sprite = spriteRenderer.sprite;
                 tempBullet_rend.color = Color.red;
-
+                
 
                 tempBullet.transform.right = attackDiretion;
 
@@ -325,25 +318,6 @@ public class PlayerController : MonoBehaviour
 
 
                 Destroy(tempBullet, 0.1f);
-            }
-
-            else
-
-            {
-                GameObject tempBullet = new GameObject();
-                SpriteRenderer tempBullet_rend = tempBullet.AddComponent<SpriteRenderer>();
-
-
-                tempBullet_rend.sprite = Melee_Slash;
-
-                tempBullet.transform.parent = transform;
-
-                tempBullet.transform.up = attackDiretion;
-
-                tempBullet.transform.position = transform.position + (Vector3)attackDiretion.normalized * (currentWeapon.range);
-
-
-                Destroy(tempBullet, 0.3f);
             }
         }
     }
@@ -483,5 +457,4 @@ public class PlayerController : MonoBehaviour
             animator.Update(Time.deltaTime);
         }
     }
-
 }
