@@ -299,6 +299,26 @@ public class PlayerController : MonoBehaviour
 
             if (currentWeapon.visibleBullet)
                 bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance));
+
+
+            if (currentWeapon.visibleBullet)
+            {
+                GameObject tempBullet = new GameObject();
+                SpriteRenderer tempBullet_rend = tempBullet.AddComponent<SpriteRenderer>();
+
+
+                tempBullet_rend.sprite = spriteRenderer.sprite;
+                tempBullet_rend.color = Color.red;
+                
+
+                tempBullet.transform.right = attackDiretion;
+
+                tempBullet.transform.localScale = new Vector3(99, 0.1f, 0.1f);
+                tempBullet.transform.position = transform.position + (Vector3)attackDiretion.normalized * 28;
+
+
+                Destroy(tempBullet, 0.1f);
+            }
         }
     }
 
