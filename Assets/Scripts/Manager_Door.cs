@@ -14,13 +14,7 @@ public class Manager_Door : MonoBehaviour
 
         [Header("Doorway Gameobject (Remember, use two Boxcollider2D)")]
         public GameObject DoorObject;
-        public bool UseTheNewSystem = false;
 
-        [Header("Doorway One (Legacy)")]
-        public BoxCollider2D Doorway1;
-
-        [Header("Doorway Two (Legacy)")]
-        public BoxCollider2D Doorway2;
 
         [Header("Settings")]
         /// The door does not teleport you.
@@ -30,16 +24,39 @@ public class Manager_Door : MonoBehaviour
         /// The "door" is actually a hole in the floor.
         public bool isFloorHole;
 
-   
 
-
+        BoxCollider2D Doorway1;
+        BoxCollider2D Doorway2;
 
         [Header("Optional Sounds")]
         public AudioClip enteringSound;
 
         bool isHorizontalDoor { get { return Doorway1.size.x > Doorway1.size.y; } }
 
-        public bool EnterDoor(PlayerController player)
+
+        public static void StartDoor(DoorSet[] Doors)
+        {
+            for (int i = 0; i < Doors.Length; i++)
+            {
+                DoorSet door = Doors[i];
+
+                BoxCollider2D[] doorObjectColliders = door.DoorObject.GetComponents<BoxCollider2D>();
+
+                if (doorObjectColliders.Length != 2)
+                {
+                    Debug.Log("HEY! " + door.name + " requires 2 (two) Boxcolliders, not " + doorObjectColliders.Length + ".");
+                    continue;
+                }
+                door.Doorway1 = doorObjectColliders[0];
+                door.Doorway2 = doorObjectColliders[1];
+
+                door.Doorway1.isTrigger = true;
+                door.Doorway2.isTrigger = true;
+            }
+        }
+
+
+            public bool EnterDoor(PlayerController player)
         {
             for (int i = 0; i < 2; i++)
             {
@@ -56,7 +73,9 @@ public class Manager_Door : MonoBehaviour
                 bool isWithinX = Mathf.Abs(doorwayPosition.x - playerPosition.x) < doorWayIn.size.x / 2;
                 bool isWithinY = Mathf.Abs(doorwayPosition.y - playerPosition.y) < doorWayIn.size.y / 2;
 
-                bool isMovingThowards = Vector3.Dot((doorwayPosition - playerPosition).normalized, player.leftStick.normalized) > 0f;
+                bool isMovingThowards_Old = Vector3.Dot((doorwayPosition - playerPosition).normalized, player.leftStick.normalized) > 0f;
+
+                bool isMovingThowards = Vector3.Dot( (doorwayPosition - playerPosition).normalized * new Vector2(isHorizontalDoor ? 0 : 1, isHorizontalDoor ? 1 : 0), player.leftStick.normalized) > 0f;
 
                 if (isWithinX && isWithinY && (isMovingThowards || isFloorHole))
                 {
@@ -111,27 +130,7 @@ public class Manager_Door : MonoBehaviour
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
-        for (int i = 0; i < Doors.Length; i++)
-        {
-            DoorSet door = Doors[i];
-
-            if (door.UseTheNewSystem)
-            {
-                BoxCollider2D[] doorObjectColliders = door.DoorObject.GetComponents<BoxCollider2D>();
-
-                if (doorObjectColliders.Length != 2)
-                {
-                    Debug.Log("HEY! " + door.name + " requires 2 (two) Boxcolliders, not " + doorObjectColliders.Length + ".");
-                    continue;
-                }
-                door.Doorway1 = doorObjectColliders[0];
-                door.Doorway2 = doorObjectColliders[1];
-            }
-
-
-            door.Doorway1.isTrigger = true;
-            door.Doorway2.isTrigger = true;
-        }
+        DoorSet.StartDoor(Doors);
     }
 
     void Update()
