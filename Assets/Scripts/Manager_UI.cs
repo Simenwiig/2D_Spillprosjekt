@@ -33,6 +33,9 @@ public class Manager_UI : MonoBehaviour
     public Button Button_Blueprint_Close;
     public Button Button_Settings;
 
+    public Image[] Tutorial_Elements;
+
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
@@ -145,6 +148,9 @@ public class Manager_UI : MonoBehaviour
 
         isPaused = true;
 
+
+        Button_Blueprint_Close.transform.GetChild(0).gameObject.SetActive(true);
+
     }
     public void OnClosingBlueprint()
     {
@@ -155,6 +161,11 @@ public class Manager_UI : MonoBehaviour
         Button_Blueprint.gameObject.SetActive(true);
 
         isPaused = false;
+
+
+        for (int i = 0; i < Tutorial_Elements.Length; i++)
+            Tutorial_Elements[i].gameObject.SetActive(false);
+        
     }
 
     public void OpenSettings()
@@ -163,5 +174,26 @@ public class Manager_UI : MonoBehaviour
             return;
 
         Application.Quit();
+    }
+
+    public void ActivateTutorialElement(int index)
+    {
+        isPaused = true;
+        for (int i = 0; i < Tutorial_Elements.Length; i++)
+            Tutorial_Elements[i].gameObject.SetActive(false);
+
+        Tutorial_Elements[index].gameObject.SetActive(true);
+
+        Button_Blueprint_Close.gameObject.SetActive(true);
+        Button_Blueprint_Close.transform.GetChild(0).gameObject.SetActive(false);
+
+
+
+
+    }
+
+    public static Manager_UI GetManager()
+    {
+        return GameObject.Find("_Canvas").GetComponent<Manager_UI>();
     }
 }
