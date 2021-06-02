@@ -148,7 +148,13 @@ public class PlayerController : MonoBehaviour
             Input.multiTouchEnabled = true;
         }
     }
-    void Update()
+
+				private void Start()
+				{
+        manager_UI.ActivateTutorialElement(0);
+				}
+
+				void Update()
     {
 
 								#region Pause, Cutscene & Falling

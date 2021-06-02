@@ -30,8 +30,10 @@ public class Item : MonoBehaviour
         manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
 
         if (itemName.ToLower() == "door_helipad")
-            name = itemName;   
+            name = itemName;
 
+        if (itemName.Contains("tutorial_"))
+            GetComponentInChildren<SpriteRenderer>().enabled = false;
     }
 
 
@@ -182,6 +184,16 @@ public class Item : MonoBehaviour
                 player.playingOnPC = !player.playingOnPC;
                 player.damageTimer = 0.25f;
                 Debug.Log("Changing control scheme to " + (player.playingOnPC ? "Mouse & Keyboard mode." : "Touch Screen mode."));
+
+                
+            }
+
+
+            if (itemName.Contains("tutorial_"))
+            {
+                int index = int.Parse(itemName.Remove(0, 9));
+
+                Manager_UI.GetManager().ActivateTutorialElement(index);
             }
         }
         hasBeenActivated = true;

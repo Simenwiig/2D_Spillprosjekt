@@ -95,8 +95,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 39bdc61fd39e8f94b8ffe82475e5948f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: Phone Controller
-  optionalPickupSound: {fileID: 8300000, guid: a6c9ad495830a0b418c8c1d4f2c889a0, type: 3}
+  itemName: phone controller
+  optionalPickupSound: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 0.5
+  pickUpDistance: 5
