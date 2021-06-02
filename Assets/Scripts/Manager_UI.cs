@@ -164,8 +164,7 @@ public class Manager_UI : MonoBehaviour
 
 
         for (int i = 0; i < Tutorial_Elements.Length; i++)
-            Tutorial_Elements[i].gameObject.SetActive(false);
-        
+            Tutorial_Elements[i].gameObject.SetActive(false);   
     }
 
     public void OpenSettings()
@@ -186,10 +185,6 @@ public class Manager_UI : MonoBehaviour
 
         Button_Blueprint_Close.gameObject.SetActive(true);
         Button_Blueprint_Close.transform.GetChild(0).gameObject.SetActive(false);
-
-
-
-
     }
 
     public static Manager_UI GetManager()

@@ -164,6 +164,9 @@ public class ZombieController : MonoBehaviour
             animator.SetBool("isDead", true);
 
             GetComponentInChildren<SpriteRenderer>().sortingOrder = -1;
+
+
+            Manager_UI.GetManager().ActivateTutorialElement(0);
         }
 
         if (HealthBar_Full != null)
@@ -192,8 +195,6 @@ public class ZombieController : MonoBehaviour
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
             RaycastHit2D hit = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius * (playerUsedLoudWeapon ? 20 : 1), ~zombieLayer, 0);
-
-            
 
             bool canSeePlayer = hit.transform == player.transform;
 
