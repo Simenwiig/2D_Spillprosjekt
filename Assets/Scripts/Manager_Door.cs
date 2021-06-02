@@ -56,7 +56,7 @@ public class Manager_Door : MonoBehaviour
                 bool isWithinX = Mathf.Abs(doorwayPosition.x - playerPosition.x) < doorWayIn.size.x / 2;
                 bool isWithinY = Mathf.Abs(doorwayPosition.y - playerPosition.y) < doorWayIn.size.y / 2;
 
-                bool isMovingThowards = Vector3.Dot((doorwayPosition - playerPosition).normalized, player.velocity.normalized) > 0f;
+                bool isMovingThowards = Vector3.Dot((doorwayPosition - playerPosition).normalized, player.leftStick.normalized) > 0f;
 
                 if (isWithinX && isWithinY && (isMovingThowards || isFloorHole))
                 {

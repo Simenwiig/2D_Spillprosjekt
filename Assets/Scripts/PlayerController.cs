@@ -79,26 +79,27 @@ public class PlayerController : MonoBehaviour
     Manager_UI manager_UI;
 
 
-
-				[Header("Settings")]
+    [Header("Movement")]
     public float moveSpeed = 2f;
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
+    public float speedLevel { get { return velocity.magnitude; } }
+    public Vector3 velocity;
+
+    [Header("Settings")]
+    public DifficultyOptions currentDifficulty = DifficultyOptions.Medium;
+
     [HideInInspector] public float damageTimer;
-    public float deadZone = 0.10f;
     public bool isInCutscene;
     public bool isPaused { get { return manager_UI.isPaused; } }
     public bool isInGodmode;
-    public DifficultyOptions currentDifficulty = DifficultyOptions.Medium;
-
-    [Header("Attributes")]
+  
+    [Header("Resources")]
     public float healthLevel = 100;
     public float hungerLevel = 100;
     public float thirstLevel = 100;
     public float smellLevel;
-    public float speedLevel { get { return velocity.magnitude; } }
-    public Vector3 velocity;
-    public Vector3 truePosition;
+
 
     [Header("Inventory")]
     public WeaponStat[] weapons;
@@ -110,6 +111,12 @@ public class PlayerController : MonoBehaviour
     public AudioClip[] Footsteps;
     public AudioClip[] Hurt;
     public AudioClip[] Death;
+
+
+    [Header("Input")]
+    public float deadZone = 0.10f;
+    public Vector2 rightStick;
+    public Vector2 leftStick;
 
     public bool isDead { get { return healthLevel <= 0; } }
     float footStepCooldown;
@@ -155,9 +162,6 @@ public class PlayerController : MonoBehaviour
             return;
         }
 								#endregion
-
-								Vector2 leftStick = Vector2.zero;
-        Vector2 rightStick = Vector2.zero;
 
         #region PC (Editor) controls
         if (playingOnPC)
