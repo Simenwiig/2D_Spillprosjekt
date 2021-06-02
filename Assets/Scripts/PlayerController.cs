@@ -5,7 +5,14 @@ using UnityEngine.Android;
 
 public class PlayerController : MonoBehaviour
 {
-				#region Classes
+    #region Classes
+
+    public enum DifficultyOptions
+    {
+        Easy = 3, Medium = 2, Hard = 1,
+    }
+
+
     [System.Serializable]
     public class WeaponStat
     {
@@ -82,6 +89,7 @@ public class PlayerController : MonoBehaviour
     public bool isInCutscene;
     public bool isPaused { get { return manager_UI.isPaused; } }
     public bool isInGodmode;
+    public DifficultyOptions currentDifficulty = DifficultyOptions.Medium;
 
     [Header("Attributes")]
     public float healthLevel = 100;
@@ -396,6 +404,8 @@ public class PlayerController : MonoBehaviour
     {
         if (isDead || damageTimer > 0)
             return false;
+
+        damage = damage / (int)currentDifficulty;
 
         damageTimer = 0.5f; // The brief invulnerability you get when hit.
         healthLevel -= isInGodmode ? 0 : damage;

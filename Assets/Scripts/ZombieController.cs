@@ -149,7 +149,7 @@ public class ZombieController : MonoBehaviour
         if (damageTimer > 0 || isDead)
             return;
 
-        healthLevel -= damage;
+        healthLevel -= damage * (int)player.currentDifficulty;
         velocity = knockBack;
 
         damageTimer = 0.5f;
