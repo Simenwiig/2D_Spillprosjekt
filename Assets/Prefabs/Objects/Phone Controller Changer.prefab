@@ -99,4 +99,4 @@ MonoBehaviour:
   optionalPickupSound: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 5
+  pickUpDistance: 0.5
