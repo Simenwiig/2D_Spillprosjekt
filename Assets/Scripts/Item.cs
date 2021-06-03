@@ -34,7 +34,11 @@ public class Item : MonoBehaviour
 
         if (itemName.ToLower().Contains("tutorial_"))
             GetComponentInChildren<SpriteRenderer>().enabled = false;
-    }
+
+        if (itemName == "phone controller" && !Application.isEditor)
+            gameObject.SetActive(false);
+        
+      }
 
 
     // Update is called once per frame

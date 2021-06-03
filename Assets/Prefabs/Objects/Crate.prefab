@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 799641000232564372}
   - component: {fileID: 833754378917306324}
   - component: {fileID: 9057898114440790252}
+  - component: {fileID: 1756135857}
   m_Layer: 0
   m_Name: Crate
   m_TagString: Untagged
@@ -98,7 +99,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Crate
   optionalPickupSound: {fileID: 8300000, guid: ed6803f8b8489b644be5096c153c1cfe, type: 3}
-  DoorIndexToUnlock: -1
+  nameOfDoorIUnlock: None
   despawnTime: 0.5
   pickUpDistance: 1
 --- !u!61 &9057898114440790252
@@ -114,7 +115,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.18}
+  m_Offset: {x: 0, y: -0.013555855}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -125,5 +126,21 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.71875, y: 0.52}
+  m_Size: {x: 0.71875, y: 0.9071117}
   m_EdgeRadius: 0
+--- !u!111 &1756135857
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1421733272622640131}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: efb381496e2744f45a9479545203f373, type: 2}
+  m_Animations:
+  - {fileID: 7400000, guid: efb381496e2744f45a9479545203f373, type: 2}
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0

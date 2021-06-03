@@ -123,6 +123,7 @@ public class ZombieController : MonoBehaviour
     public void MovePosition()
     {
         float frictionStep = friction * Time.deltaTime;
+
         velocity -= velocity * frictionStep;
         
         if(!isDead && damageTimer < 0)
@@ -160,6 +161,7 @@ public class ZombieController : MonoBehaviour
             damageTimer = 0.25f; // The red flash is a bit short when they die.
             ToggleColliders(false);
             GetComponent<Rigidbody2D>().isKinematic = true;
+            GetComponent<Rigidbody2D>().velocity = Vector3.zero;
 
             animator.SetBool("isDead", true);
 
