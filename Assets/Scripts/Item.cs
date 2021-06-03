@@ -92,8 +92,8 @@ public class Item : MonoBehaviour
                 isPickup = false;
                 hasCutScene = true;
                 manager_UI.OnSelectingBlueprint();
-                manager_UI.Button_Blueprint_Close.transform.GetChild(2).gameObject.SetActive(true);
-                cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(2).GetComponent<Image>();
+                manager_UI.UI_Blueprints.transform.GetChild(1).gameObject.SetActive(true);
+                cutsceneImage = manager_UI.UI_Blueprints.transform.GetChild(1).GetComponent<Image>();
             }
 
             if (itemName == "key_generic")
@@ -133,39 +133,28 @@ public class Item : MonoBehaviour
                 hasCutScene = true;
                 manager_UI.OnSelectingBlueprint();
 
-                manager_UI.Button_Blueprint_Close.transform.GetChild(1).gameObject.SetActive(true);
-                cutsceneImage = manager_UI.Button_Blueprint_Close.transform.GetChild(1).GetComponent<Image>();
+                manager_UI.UI_Blueprints.transform.GetChild(0).gameObject.SetActive(true);
+                cutsceneImage = manager_UI.UI_Blueprints.transform.GetChild(0).GetComponent<Image>();
 
                 GameObject godray = GameObject.Find("GOD RAY BATTERY");
                 if (godray != null)
                     godray.SetActive(false);
             }
 
-            if (itemName == "food")
+            if (itemName == "food" || itemName == "water")
             {
-                float value = 33f;
+                float value = itemName == "food" ? 33f : 10f;
 
-                if (player.hungerLevel > 100 - value * 0.1f) // If only 10% of the water would be spent, you ignore the water.
+                if (player.hungerLevel > 100 - value * 0.1f) // If only 10% of the food would be spent, you ignore the water.
                     return;
 
                 player.hungerLevel += Mathf.Min(value, 100 - player.hungerLevel);
-            }
-
-            if (itemName == "water")
-            {
-                float value = 33f;
-
-                if (player.thirstLevel > 100 - value * 0.1f) // If only 10% of the water would be spent, you ignore the water.
-                    return;
-
-                player.thirstLevel += Mathf.Min(value, 100 - player.thirstLevel);
             }
 
 
             if (itemName == "god water")
             {
                 player.healthLevel = 100;
-                player.thirstLevel = 100;
                 player.hungerLevel = 100;
 
                 player.isInGodmode = true;

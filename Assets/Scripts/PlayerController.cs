@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     public enum DifficultyOptions
     {
-        Easy = 3, Medium = 2, Hard = 1,
+        ZoomerMode = 3, Medium = 2, Hard = 1,
     }
 
 
@@ -97,7 +97,6 @@ public class PlayerController : MonoBehaviour
     [Header("Resources")]
     public float healthLevel = 100;
     public float hungerLevel = 100;
-    public float thirstLevel = 100;
     public float smellLevel;
 
 
@@ -156,6 +155,9 @@ public class PlayerController : MonoBehaviour
 
 				void Update()
     {
+
+        rightStick = Vector2.zero;
+        leftStick = Vector2.zero;
 
 								#region Pause, Cutscene & Falling
 								animator.speed = (isPaused && !isFalling) ? 0 : 1;
@@ -350,10 +352,9 @@ public class PlayerController : MonoBehaviour
         float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.deltaTime;
 
         hungerLevel -= hungerLevel > 0 ? drainRate : 0;
-        thirstLevel -= thirstLevel > 0 ? drainRate : 0;
-        healthLevel -= (hungerLevel > 0 ? 0 : drainRate) + (thirstLevel > 0 ? 0 : drainRate);
+        healthLevel -= (hungerLevel > 0 ? 0 : drainRate);
 
-        if (damageTimer < -5 && hungerLevel > 0 && thirstLevel > 0 && healthLevel < 100)
+        if (damageTimer < -5 && hungerLevel > 0 && healthLevel < 100)
         {
             healthLevel += healthRegenRate;
             hungerLevel -= healthRegenRate;

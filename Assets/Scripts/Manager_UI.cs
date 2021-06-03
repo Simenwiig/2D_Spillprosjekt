@@ -17,10 +17,11 @@ public class Manager_UI : MonoBehaviour
     [Header("UI Elements")]
     public Image UI_Bar_Health;
     public Image UI_Bar_Hunger;
-    public Image UI_Bar_Thirst;
 
     public Image UI_Screen_GameOver;
     public Image UI_Victory;
+    public Image UI_Blueprints;
+    public Image UI_Options;
 
     [Header("Interface Elements")]
     public Image LeftStick;
@@ -30,10 +31,12 @@ public class Manager_UI : MonoBehaviour
     public Button Button_Melee;
     public Button Button_Ranged;
     public Button Button_Blueprint;
-    public Button Button_Blueprint_Close;
+    public Button Button_Unpause;
     public Button Button_Settings;
 
     public Image[] Tutorial_Elements;
+
+
 
 
     void Start()
@@ -47,7 +50,7 @@ public class Manager_UI : MonoBehaviour
         Button_Ranged.onClick.AddListener(SwitchingToFireArm);
 
         Button_Blueprint.onClick.AddListener(OnSelectingBlueprint);
-        Button_Blueprint_Close.onClick.AddListener(OnClosingBlueprint);
+        Button_Unpause.onClick.AddListener(OnUnpausing);
 
        Button_Settings.onClick.AddListener(OpenSettings);
     }
@@ -57,7 +60,6 @@ public class Manager_UI : MonoBehaviour
     {
         UI_Bar_Health.transform.localScale = new Vector3(player.healthLevel / 100, 1, 1);
         UI_Bar_Hunger.transform.localScale = new Vector3(player.hungerLevel / 100, 1, 1);
-        UI_Bar_Thirst.transform.localScale = new Vector3(player.thirstLevel / 100, 1, 1);
 
         if (gameIsOver || player.isDead)
             GameOver();
@@ -77,8 +79,6 @@ public class Manager_UI : MonoBehaviour
         UI_Screen_GameOver.color = new Color(0, 0, 0,  1f - (gameOverFadeTimer / gameOverFadeDuration));
 
         //  UI_Screen_GameOver.CrossFadeColor(new Color(1,1,1,255), gameOverFadeDuration, false, true);
-
-
     }
 
     static float stickRange = 160;
@@ -143,37 +143,31 @@ public class Manager_UI : MonoBehaviour
         if (isPaused)
             return;
 
-        Button_Blueprint_Close.gameObject.SetActive(true);
+        Button_Unpause.gameObject.SetActive(true);
+        UI_Blueprints.gameObject.SetActive(true);
         Button_Blueprint.gameObject.SetActive(false);
 
         isPaused = true;
 
-
-        Button_Blueprint_Close.transform.GetChild(0).gameObject.SetActive(true);
-
     }
-    public void OnClosingBlueprint()
+    public void OnUnpausing()
     {
         if (!isPaused)
             return;
 
-        Button_Blueprint_Close.gameObject.SetActive(false);
-        Button_Blueprint.gameObject.SetActive(true);
-
         isPaused = false;
+        Button_Blueprint.gameObject.SetActive(true);
+        Button_Settings.gameObject.SetActive(true);
 
+        UI_Blueprints.gameObject.SetActive(false);
+        Button_Unpause.gameObject.SetActive(false);
+        UI_Options.gameObject.SetActive(false);
 
         for (int i = 0; i < Tutorial_Elements.Length; i++)
             Tutorial_Elements[i].gameObject.SetActive(false);   
     }
 
-    public void OpenSettings()
-    {
-        if (isPaused)
-            return;
-
-        Application.Quit();
-    }
+   
 
     public void ActivateTutorialElement(int index)
     {
@@ -183,8 +177,19 @@ public class Manager_UI : MonoBehaviour
 
         Tutorial_Elements[index].gameObject.SetActive(true);
 
-        Button_Blueprint_Close.gameObject.SetActive(true);
-        Button_Blueprint_Close.transform.GetChild(0).gameObject.SetActive(false);
+        Button_Unpause.gameObject.SetActive(true);
+    }
+
+    public void OpenSettings()
+    {
+        isPaused = true;
+
+        Button_Unpause.gameObject.SetActive(true);
+        UI_Options.gameObject.SetActive(true);
+
+        Button_Settings.gameObject.SetActive(false);
+
+        //Application.Quit();
     }
 
     public static Manager_UI GetManager()
