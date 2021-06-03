@@ -65,6 +65,7 @@ public class ZombieController : MonoBehaviour
 
     void Update()
     {
+
 								#region Pausing
 								animator.speed = player.isPaused ? 0 : 1;
 
@@ -113,6 +114,8 @@ public class ZombieController : MonoBehaviour
         }
 
         ToggleColliders(true);
+
+        GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 
 				public void MoveTowardsLocation(Vector3 targetPosition)

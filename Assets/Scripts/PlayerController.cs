@@ -145,7 +145,9 @@ public class PlayerController : MonoBehaviour
         if (!Application.isEditor)
         {
             Input.multiTouchEnabled = true;
+            playingOnPC = false;
         }
+
     }
 
 				private void Start()
@@ -348,7 +350,7 @@ public class PlayerController : MonoBehaviour
             return;
 
         bool isWalking = speedLevel > 0;
-        float drainRate = 1 * (isWalking ? 1 : 0.5f) * Time.deltaTime;
+        float drainRate = 1 / (int)currentDifficulty * (isWalking ? 1 : 0.5f) * Time.deltaTime;
         float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.deltaTime;
 
         hungerLevel -= hungerLevel > 0 ? drainRate : 0;
@@ -418,7 +420,7 @@ public class PlayerController : MonoBehaviour
 
         damage = damage / (int)currentDifficulty;
 
-        damageTimer = 0.5f; // The brief invulnerability you get when hit.
+        damageTimer = 1f; // The brief invulnerability you get when hit.
         healthLevel -= isInGodmode ? 0 : damage;
 
         if (isDead)

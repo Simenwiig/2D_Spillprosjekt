@@ -37,6 +37,7 @@ public class Item : MonoBehaviour
 
         if (itemName == "phone controller" && !Application.isEditor)
             gameObject.SetActive(false);
+
         
       }
 
@@ -58,7 +59,7 @@ public class Item : MonoBehaviour
             return;
         }
 
-        if (Vector2.Distance(transform.position, player.transform.position) < pickUpDistance)
+        if (Vector2.Distance(transform.position, player.transform.position) < pickUpDistance && !player.isFalling)
             OnPickup();
     }
 
@@ -147,7 +148,7 @@ public class Item : MonoBehaviour
 
             if (itemName == "food" || itemName == "water")
             {
-                float value = itemName == "food" ? 33f : 10f;
+                float value = itemName == "food" ? 50f : 33f;
 
                 if (player.hungerLevel > 100 - value * 0.1f) // If only 10% of the food would be spent, you ignore the water.
                     return;

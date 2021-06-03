@@ -49,20 +49,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7558f945e8a2b54bb9555ea58157e2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 2
+  moveSpeed: 1.2
   friction: 10
   sprintSpeedModifier: 2
+  velocity: {x: 0, y: 0, z: 0}
+  currentDifficulty: 2
   damageTimer: 0
-  deadZone: 0.2
   isInCutscene: 0
   isInGodmode: 0
-  currentDifficulty: 2
   healthLevel: 100
   hungerLevel: 100
-  thirstLevel: 100
   smellLevel: 0
-  velocity: {x: 0, y: 0, z: 0}
-  truePosition: {x: 0, y: 0, z: 0}
   weapons:
   - name: Unarmed
     isUnlocked: 1
@@ -111,6 +108,9 @@ MonoBehaviour:
   - {fileID: 8300000, guid: f4c4d004b3eb8be4c97a0123d7a2b364, type: 3}
   - {fileID: 8300000, guid: 9b69f19b8eb02a447a3474f80f9e90d3, type: 3}
   Death: []
+  deadZone: 0.2
+  rightStick: {x: 0, y: 0}
+  leftStick: {x: 0, y: 0}
   playingOnPC: 1
 --- !u!50 &4593550359035177618
 Rigidbody2D:
