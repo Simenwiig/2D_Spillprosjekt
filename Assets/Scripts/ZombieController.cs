@@ -163,10 +163,7 @@ public class ZombieController : MonoBehaviour
 
             animator.SetBool("isDead", true);
 
-            GetComponentInChildren<SpriteRenderer>().sortingOrder = -1;
-
-
-            Manager_UI.GetManager().ActivateTutorialElement(0);
+            GetComponentInChildren<SpriteRenderer>().sortingOrder = -1
         }
 
         if (HealthBar_Full != null)

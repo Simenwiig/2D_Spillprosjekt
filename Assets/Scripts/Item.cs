@@ -27,12 +27,12 @@ public class Item : MonoBehaviour
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
-        manager_UI = GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+        manager_UI = Manager_UI.GetManager();
 
         if (itemName.ToLower() == "door_helipad")
             name = itemName;
 
-        if (itemName.Contains("tutorial_"))
+        if (itemName.ToLower().Contains("tutorial_"))
             GetComponentInChildren<SpriteRenderer>().enabled = false;
     }
 
