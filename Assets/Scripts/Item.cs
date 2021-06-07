@@ -15,6 +15,7 @@ public class Item : MonoBehaviour
     [Header("Item Specific Settings.")]
     public string itemName = "";
     public AudioClip optionalPickupSound;
+    public GameObject optionalGodray;
 
     [Header("Optional Door Settings")]
     public string nameOfDoorIUnlock = "None";
