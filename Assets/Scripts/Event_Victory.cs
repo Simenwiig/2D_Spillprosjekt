@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Event_Victory : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class Event_Victory : MonoBehaviour
     public AudioClip endTheme;
 
     AudioSource audioSource;
+
+    public int creditSpeedModifier = 1;
 
 
     void Start()
@@ -52,7 +55,7 @@ public class Event_Victory : MonoBehaviour
 
     void Sequence(bool onActivation)
     {
-        sequenceProgress += Time.fixedDeltaTime;
+        
         if (onActivation)
         {
             player.moveSpeed = 0;
@@ -66,22 +69,52 @@ public class Event_Victory : MonoBehaviour
             audioSource.PlayOneShot(endTheme);
 
             manager_UI.isPaused = true;
+
+            manager_UI.UI_Screen_GameOver.gameObject.SetActive(true);
+            manager_UI.UI_Victory.gameObject.SetActive(true);
+
         }
 
+        sequenceProgress += Time.fixedDeltaTime * creditSpeedModifier;
         playerCamera.transform.localPosition += Vector3.up * Time.fixedDeltaTime * cameraPanSpeed;
+        manager_UI.UI_Screen_GameOver.color = new Color(0, 0, 0, (sequenceProgress / helicopter.clip.length));
+
+        if (sequenceProgress > 1f)
+        {
+            player.GetComponentInChildren<SpriteRenderer>().enabled = false;
+
+            manager_UI.UI_Screen_GameOver.GetComponent<Button>().onClick.RemoveAllListeners();
+            manager_UI.UI_Screen_GameOver.GetComponent<Button>().onClick.AddListener(FastForwardToggle);
+        }
 
         if (sequenceProgress > 2.5f)
             player.GetComponentInChildren<SpriteRenderer>().enabled = false;
 
-       manager_UI.UI_Screen_GameOver.color = new Color(0, 0, 0, (sequenceProgress / helicopter.clip.length));
 
-
-        if (sequenceProgress > helicopter.clip.length)
+            if (sequenceProgress > helicopter.clip.length)
         {
-            manager_UI.UI_Victory.rectTransform.position += new Vector3(0, Time.fixedDeltaTime * endCreditFlowSpeed);
+            manager_UI.UI_Victory.rectTransform.position += new Vector3(0, Time.fixedDeltaTime * endCreditFlowSpeed * creditSpeedModifier);
         }
+
+      
 
         if (sequenceProgress > helicopter.clip.length + endCreditDuration)
             manager_UI.GameOver();
+    }
+
+
+    void FastForwardToggle()
+    {
+        if (creditSpeedModifier == 1)
+            creditSpeedModifier = 5;
+        else
+            creditSpeedModifier = 1;
+
+        helicopter["Helicopter_EndSequence"].speed = creditSpeedModifier;
+
+        if (creditSpeedModifier == 1)
+            audioSource.pitch = 1;
+        else
+            audioSource.pitch = 2f;
     }
 }
