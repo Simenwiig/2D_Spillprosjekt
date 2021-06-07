@@ -52,7 +52,9 @@ public class Manager_UI : MonoBehaviour
         Button_Blueprint.onClick.AddListener(OnSelectingBlueprint);
         Button_Unpause.onClick.AddListener(OnUnpausing);
 
-       Button_Settings.onClick.AddListener(OpenSettings);
+        Button_Settings.onClick.AddListener(OpenSettings);
+
+        UI_Options.GetComponentInChildren<Button>().onClick.AddListener(OnUnpausing);
     }
 
     // Update is called once per frame
