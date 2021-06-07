@@ -7787,7 +7787,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7184277189101070844}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 7184277188862034452}
@@ -19886,7 +19886,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7184277189792752059}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -108.97, y: -14.8957, z: -0.2}
+  m_LocalPosition: {x: -108.97, y: -14.8957, z: 0}
   m_LocalScale: {x: 19.923862, y: 10.945106, z: 1}
   m_Children: []
   m_Father: {fileID: 7184277189101070843}
@@ -21854,7 +21854,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7184277190080090030}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -24.42, y: -11.4, z: -0.2}
+  m_LocalPosition: {x: -22.56, y: -11.4, z: -0.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 7184277190181448917}
@@ -26223,6 +26223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Tutorial_1
   optionalPickupSound: {fileID: 0}
+  optionalGodray: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 3
@@ -26323,6 +26324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Tutorial_2
   optionalPickupSound: {fileID: 0}
+  optionalGodray: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 3
@@ -26454,6 +26456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: Tutorial_3
   optionalPickupSound: {fileID: 0}
+  optionalGodray: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 5
