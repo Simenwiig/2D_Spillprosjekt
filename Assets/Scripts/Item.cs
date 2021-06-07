@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Experimental.Rendering.Universal;
 
 public class Item : MonoBehaviour
 {
@@ -38,8 +39,6 @@ public class Item : MonoBehaviour
 
         if (itemName == "phone controller" && !Application.isEditor)
             gameObject.SetActive(false);
-
-        
       }
 
 
@@ -50,6 +49,15 @@ public class Item : MonoBehaviour
         {
             transform.localScale = Vector3.one * shrinkagePercentage;
             shrinkagePercentage -= Time.deltaTime / despawnTime;
+
+
+
+            if (optionalGodray != null)
+            {
+                optionalGodray.GetComponent<Light2D>().intensity = shrinkagePercentage;
+                optionalGodray.transform.GetChild(0).GetComponent<Light2D>().intensity = shrinkagePercentage;
+            }
+
 
             if (hasCutScene)
             {
@@ -194,7 +202,12 @@ public class Item : MonoBehaviour
         hasBeenActivated = true;
         GameObject.Destroy(gameObject, despawnTime);
 
-        if (isPickup)
+        if (optionalGodray != null)
+        {
+            GameObject.Destroy(optionalGodray, despawnTime);
+        }
+
+            if (isPickup)
         {
             transform.parent = player.transform;
             transform.localPosition = Vector2.up * 1;
@@ -212,7 +225,10 @@ public class Item : MonoBehaviour
             Manager_Door.DoorSet doorToUnlock = Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock, null);
             if(doorToUnlock != null)
                 doorToUnlock.isLocked = false;
-        } 
+        }
+
+
+        
 				}
 }
 
