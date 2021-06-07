@@ -105,6 +105,7 @@ public class PlayerController : MonoBehaviour
     [HideInInspector] public WeaponStat currentWeapon;
     public Transform bullet;
     List<Weapon_Bullet> bullets = new List<Weapon_Bullet>();
+    public Sprite effect_Slash;
 
     [Header("Audio Clips")]
     public AudioClip[] Footsteps;
@@ -323,23 +324,28 @@ public class PlayerController : MonoBehaviour
                 bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance));
 
 
-            if (currentWeapon.visibleBullet)
+            GameObject weaponEffect = new GameObject();
+            SpriteRenderer weaponEffect_Renderer = weaponEffect.AddComponent<SpriteRenderer>();
+
+            Destroy(weaponEffect, 0.1f);
+
+            if (!currentWeapon.visibleBullet)
             {
-                GameObject tempBullet = new GameObject();
-                SpriteRenderer tempBullet_rend = tempBullet.AddComponent<SpriteRenderer>();
+                weaponEffect_Renderer.sprite = effect_Slash;
+                weaponEffect.transform.up = -attackDiretion;
 
-
-                tempBullet_rend.sprite = spriteRenderer.sprite;
-                tempBullet_rend.color = Color.red;
+                weaponEffect.transform.position = transform.position + (Vector3)attackDiretion.normalized * (currentWeapon.range - 0.3125f); // this seemingly random number being the width of the effect (10 pixels) / 32 (pixels per unit).
+                weaponEffect.transform.parent = transform;
+            }
+            else
+            {
+                weaponEffect_Renderer.sprite = spriteRenderer.sprite;
+                weaponEffect_Renderer.color = Color.red;
                 
+                weaponEffect.transform.right = attackDiretion;
 
-                tempBullet.transform.right = attackDiretion;
-
-                tempBullet.transform.localScale = new Vector3(99, 0.1f, 0.1f);
-                tempBullet.transform.position = transform.position + (Vector3)attackDiretion.normalized * 28;
-
-
-                Destroy(tempBullet, 0.1f);
+                weaponEffect.transform.localScale = new Vector3(99, 0.1f, 0.1f);
+                weaponEffect.transform.position = transform.position + (Vector3)attackDiretion.normalized * 28;
             }
         }
     }

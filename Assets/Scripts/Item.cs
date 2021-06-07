@@ -12,11 +12,14 @@ public class Item : MonoBehaviour
     bool hasBeenActivated;
     bool hasCutScene;
     Image cutsceneImage;
+    AudioSource audioSource;
 
     [Header("Item Specific Settings.")]
     public string itemName = "";
     public AudioClip optionalPickupSound;
+    public AudioClip optionalPickupSound_2;
     public GameObject optionalGodray;
+    public Sprite optionalSprite;
 
     [Header("Optional Door Settings")]
     public string nameOfDoorIUnlock = "None";
@@ -39,6 +42,10 @@ public class Item : MonoBehaviour
 
         if (itemName == "phone controller" && !Application.isEditor)
             gameObject.SetActive(false);
+
+
+        if (optionalPickupSound != null || optionalPickupSound_2 != null)
+            audioSource = gameObject.AddComponent<AudioSource>();
       }
 
 
@@ -80,13 +87,21 @@ public class Item : MonoBehaviour
         if (itemName.Length > 0) // It has a name
         {
             itemName = itemName.ToLower();
+
             if (itemName == "crate")
             {
-                if (player.currentWeapon.name != "Crowbar" || player.currentWeapon.cooldown > 0)
+                bool usingWrongTool = player.currentWeapon.name != "Crowbar";
+                bool isSwinging = !player.currentWeapon.readyToFire;
+
+                if (usingWrongTool || !isSwinging)
+                {
+                    if (usingWrongTool && isSwinging && optionalPickupSound_2 != null)
+                        audioSource.PlayOneShot(optionalPickupSound_2);
+
                     return;
+                }
 
                 GetComponent<Collider2D>().enabled = false;
-                GetComponent<Animation>().Play();
                 isPickup = false;
             }
 
@@ -200,7 +215,7 @@ public class Item : MonoBehaviour
             GameObject.Destroy(optionalGodray, despawnTime);
         }
 
-            if (isPickup)
+        if (isPickup)
         {
             transform.parent = player.transform;
             transform.localPosition = Vector2.up * 1;
@@ -208,8 +223,11 @@ public class Item : MonoBehaviour
         else
             GetComponent<SpriteRenderer>().sortingOrder = -1;
 
+        if (optionalSprite != null)
+            GetComponent<SpriteRenderer>().sprite = optionalSprite;
+
         if (optionalPickupSound != null)
-            gameObject.AddComponent<AudioSource>().PlayOneShot(optionalPickupSound);
+            audioSource.PlayOneShot(optionalPickupSound);
 
         if (nameOfDoorIUnlock != "none")
         {

@@ -103,6 +103,7 @@ MonoBehaviour:
     sound: {fileID: 0}
     cooldown: 0
   bullet: {fileID: 5401467158730200362}
+  effect_Slash: {fileID: -2286431030888031725, guid: e31f8546963b57741b3636464b1f5f1b, type: 3}
   Footsteps: []
   Hurt:
   - {fileID: 8300000, guid: f4c4d004b3eb8be4c97a0123d7a2b364, type: 3}
