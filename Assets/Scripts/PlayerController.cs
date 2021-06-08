@@ -34,31 +34,73 @@ public class PlayerController : MonoBehaviour
 
     public class Weapon_Bullet
     {
+        public Transform transform;
         public Vector2 position;
-        public Vector2 direction;
+        public Vector2 velocity;
 
-        public float speed;
-        
+        public bool doOrbit;
+
+        static float orbitStrength = 5;
+
         float lifeTime;
 
         public bool isDead { get { return lifeTime < 0; } }
 
-        public Weapon_Bullet (Vector2 bulletPosition, Vector2 fireDirection, float projectileSpeed, float distance)
+        public Weapon_Bullet (Vector2 bulletPosition, Vector2 fireDirection, float projectileSpeed, float distance, bool isMeleeSwipe = false)
         {
             if (distance == 0)
                 distance = 99;
 
-            position = bulletPosition;
-            direction = fireDirection;
+            transform = new GameObject().transform;
+            transform.position = bulletPosition;
+            transform.up = fireDirection;
 
-            speed = projectileSpeed;
+            TrailRenderer trail = transform.gameObject.AddComponent<TrailRenderer>();
+
+            trail.startWidth = 0.1f;
+            trail.endWidth = 0;
+
+            trail.minVertexDistance = 0;
+
+            if (!isMeleeSwipe)
+            {
+                trail.startColor = Color.yellow;
+                trail.endColor = Color.white;
+            }
+
+
+          
+          
+            
+
+            trail.material = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpriteRenderer>().material;
+
+            doOrbit = isMeleeSwipe;
+
+
+            position = bulletPosition;
+            velocity += fireDirection * projectileSpeed;
+
             lifeTime = distance / projectileSpeed;
+
+            if (doOrbit)
+            {
+                velocity += (Vector2)transform.right * orbitStrength;
+                
+            }
         }
 
         public Vector3 UpdateBullet(float timeStep)
         {
-            position += direction * speed * timeStep;
+
+            if (doOrbit)
+                velocity -= (Vector2)transform.right * (orbitStrength / lifeTime) * timeStep;
+
+            position += velocity * timeStep;
             lifeTime -= timeStep;
+
+            transform.position = position;
+
 
             if (isDead)
                 position = Vector3.one * 99999;
@@ -103,9 +145,7 @@ public class PlayerController : MonoBehaviour
     [Header("Inventory")]
     public WeaponStat[] weapons;
     [HideInInspector] public WeaponStat currentWeapon;
-    public Transform bullet;
     List<Weapon_Bullet> bullets = new List<Weapon_Bullet>();
-    public Sprite effect_Slash;
 
     [Header("Audio Clips")]
     public AudioClip[] Footsteps;
@@ -141,7 +181,6 @@ public class PlayerController : MonoBehaviour
 
         transform.tag = "Player";
         currentWeapon = weapons[0];
-        bullet.parent = null;
 
         if (!Application.isEditor)
         {
@@ -261,10 +300,13 @@ public class PlayerController : MonoBehaviour
 
         for (int i = 0; i < bullets.Count; i++)
         {
-            bullet.position = bullets[i].UpdateBullet(Time.deltaTime);
+            bullets[i].UpdateBullet(Time.deltaTime);
 
             if (bullets[i].isDead)
+            {
+                Destroy(bullets[i].transform.gameObject);
                 bullets.RemoveAt(i);
+            }
         }
 
 
@@ -320,32 +362,17 @@ public class PlayerController : MonoBehaviour
             if (hit.transform != null && hit.transform.tag == "GameController")
                 hit.transform.GetComponent<ZombieController>().HurtZombie(currentWeapon.damage, attackDiretion.normalized * currentWeapon.knockBack);
 
+            if (hit.transform == null)
+                hit.distance = 99f;
+
             if (currentWeapon.visibleBullet)
-                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance));
-
-
-            GameObject weaponEffect = new GameObject();
-            SpriteRenderer weaponEffect_Renderer = weaponEffect.AddComponent<SpriteRenderer>();
-
-            Destroy(weaponEffect, 0.1f);
-
-            if (!currentWeapon.visibleBullet)
-            {
-                weaponEffect_Renderer.sprite = effect_Slash;
-                weaponEffect.transform.up = -attackDiretion;
-
-                weaponEffect.transform.position = transform.position + (Vector3)attackDiretion.normalized * (currentWeapon.range - 0.3125f); // this seemingly random number being the width of the effect (10 pixels) / 32 (pixels per unit).
-                weaponEffect.transform.parent = transform;
-            }
+                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance + 0.5f));
             else
             {
-                weaponEffect_Renderer.sprite = spriteRenderer.sprite;
-                weaponEffect_Renderer.color = Color.red;
-                
-                weaponEffect.transform.right = attackDiretion;
+                Vector3 playerForward = (Vector3)attackDiretion.normalized * currentWeapon.range;
+                Vector3 playerSide = Vector3.Cross(transform.forward, attackDiretion.normalized);
 
-                weaponEffect.transform.localScale = new Vector3(99, 0.1f, 0.1f);
-                weaponEffect.transform.position = transform.position + (Vector3)attackDiretion.normalized * 28;
+                bullets.Add(new Weapon_Bullet(playerPosition + playerForward - (playerSide / 2) , playerSide, 10, 1, true));
             }
         }
     }
