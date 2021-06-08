@@ -373,7 +373,7 @@ public class PlayerController : MonoBehaviour
                 bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance + 0.5f));
             else
             {
-                Vector3 playerForward = (Vector3)attackDiretion.normalized * currentWeapon.range;
+                Vector3 playerForward = (Vector3)attackDiretion.normalized * (currentWeapon.range - 0.2f);
                 Vector3 playerSide = Vector3.Cross(transform.forward, attackDiretion.normalized);
 
                 bullets.Add(new Weapon_Bullet(playerPosition + playerForward - (playerSide / 2) , playerSide, 10, 1, true));
