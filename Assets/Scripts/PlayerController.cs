@@ -334,13 +334,17 @@ public class PlayerController : MonoBehaviour
 
         float speed = velocity.magnitude;
 
-        footStepCooldown -= Time.deltaTime;
+        footStepCooldown -= Time.deltaTime * (speed / moveSpeed);
 
-        if (speed > 0.1f && footStepCooldown < 0)
+        if (speed > moveSpeed / 2 && footStepCooldown < 0)
         {
-            footStepCooldown = 0.5f;
+            //
 
-            PlayAudioClipFromArray(Footsteps, audioSource);
+            footStepCooldown = 0.833333333f / 2; // The footstep animation is 0.83 seconds long, and you take two steps during it.
+
+            PlayAudioClipFromArray(Footsteps, audioSource, 0.1f);
+
+
         }
     }
 
@@ -468,15 +472,17 @@ public class PlayerController : MonoBehaviour
 
         return true;
     }
-
-    static public void PlayAudioClipFromArray(AudioClip[] audioArray, AudioSource audioSource)
+    /// Returns the length of the clip.
+    static public float PlayAudioClipFromArray(AudioClip[] audioArray, AudioSource audioSource, float volumeScale = 1)
     {
         if (audioArray.Length == 0)
-            return;
+            return 0;
 
         int index = Random.Range(0, audioArray.Length);
 
-        audioSource.PlayOneShot(audioArray[index]);
+        audioSource.PlayOneShot(audioArray[index], volumeScale);
+
+        return audioArray[index].length;
     }
 
     float fallingDuration = -1;
