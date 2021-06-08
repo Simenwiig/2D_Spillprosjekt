@@ -229,7 +229,7 @@ public class Item : MonoBehaviour
         if (optionalPickupSound != null)
             audioSource.PlayOneShot(optionalPickupSound);
 
-        if (nameOfDoorIUnlock != "none")
+        if (nameOfDoorIUnlock != "None")
         {
             Manager_Door manager_Door = GameObject.Find("_ScriptManager").GetComponent<Manager_Door>();
 

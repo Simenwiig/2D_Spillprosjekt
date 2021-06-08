@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
             TrailRenderer trail = transform.gameObject.AddComponent<TrailRenderer>();
 
-            trail.startWidth = 0.1f;
+            trail.startWidth = 0.05f;
             trail.endWidth = 0;
 
             trail.minVertexDistance = 0;
