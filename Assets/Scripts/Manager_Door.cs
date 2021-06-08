@@ -25,11 +25,13 @@ public class Manager_Door : MonoBehaviour
         public bool isFloorHole;
 
 
+
         BoxCollider2D Doorway1;
         BoxCollider2D Doorway2;
 
-        [Header("Optional Sounds")]
+        [Header("Optional Features")]
         public AudioClip enteringSound;
+        public Animation unlockingAnimation;
 
         bool isHorizontalDoor { get { return Doorway1.size.x > Doorway1.size.y; } }
 
@@ -52,6 +54,9 @@ public class Manager_Door : MonoBehaviour
 
                 door.Doorway1.isTrigger = true;
                 door.Doorway2.isTrigger = true;
+
+                if (door.unlockingAnimation != null)
+                    door.unlockingAnimation.playAutomatically = false;
             }
         }
 
