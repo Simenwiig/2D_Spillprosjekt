@@ -84,6 +84,9 @@ public class ZombieController : MonoBehaviour
             return;
 								}
 
+
+        spriteRenderer.sortingOrder = transform.position.y > player.transform.position.y ? -1 : 1;
+
         MovePosition();
 
         transform.position += velocity * Time.deltaTime;
