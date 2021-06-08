@@ -10,11 +10,8 @@ public class Manager_Door : MonoBehaviour
         /// This is mostly just to make it easier to remember, but certain items also look for door names.
         public string name = "Name Me Something";
 
-
-
         [Header("Doorway Gameobject (Remember, use two Boxcollider2D)")]
         public GameObject DoorObject;
-
 
         [Header("Settings")]
         /// The door does not teleport you.
@@ -24,14 +21,13 @@ public class Manager_Door : MonoBehaviour
         /// The "door" is actually a hole in the floor.
         public bool isFloorHole;
 
-
+        [Header("Optional Features")]
+        public AudioClip enteringSound;
+        public AudioClip doorIsLockedSound;
+        public Animation unlockingAnimation;
 
         BoxCollider2D Doorway1;
         BoxCollider2D Doorway2;
-
-        [Header("Optional Features")]
-        public AudioClip enteringSound;
-        public Animation unlockingAnimation;
 
         bool isHorizontalDoor { get { return Doorway1.size.x > Doorway1.size.y; } }
 
@@ -60,12 +56,36 @@ public class Manager_Door : MonoBehaviour
             }
         }
 
+        public void Lock(bool unlock)
+        {
+            bool onDoorChange = isLocked == unlock;
+
+            isLocked = !unlock;
+
+            if (onDoorChange && doorIsLockedSound != null)
+            {
+                AudioClip buffer_LockedSound = doorIsLockedSound;
+
+                doorIsLockedSound = enteringSound;
+                enteringSound = buffer_LockedSound;
+            }
+
+
+            if(unlockingAnimation != null)
+												{
+                unlockingAnimation.Play();
+												}
+        }
+
 
             public bool EnterDoor(PlayerController player)
         {
             for (int i = 0; i < 2; i++)
             {
                 if (isLocked || (i == 1 && isOneWay))
+                    continue;
+
+                if (unlockingAnimation != null && unlockingAnimation.isPlaying)
                     continue;
 
                 BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;
