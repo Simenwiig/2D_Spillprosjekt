@@ -104,6 +104,9 @@ MonoBehaviour:
     cooldown: 0
   Footsteps:
   - {fileID: 8300000, guid: 8c77bad705ee658449f8f6c9f49f2d85, type: 3}
+  - {fileID: 8300000, guid: ad14866dfcb7b4b48a548bf328677d48, type: 3}
+  - {fileID: 8300000, guid: 448f1698a6ff7fd46869a3989d66d0a0, type: 3}
+  - {fileID: 8300000, guid: bc4c12b1f9c48a6418ae185806022ff1, type: 3}
   Hurt:
   - {fileID: 8300000, guid: f4c4d004b3eb8be4c97a0123d7a2b364, type: 3}
   - {fileID: 8300000, guid: 9b69f19b8eb02a447a3474f80f9e90d3, type: 3}
