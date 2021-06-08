@@ -30,16 +30,15 @@ public class PlayerController : MonoBehaviour
         public float cooldown;
 
         public bool readyToFire { get { return cooldown > (1f / attacksPerSecond); } }
+        public bool useBackSwing;
     }
 
     public class Weapon_Bullet
     {
         public Transform transform;
-        public Vector2 position;
         public Vector2 velocity;
 
         public bool doOrbit;
-
         static float orbitStrength = 5;
 
         float lifeTime;
@@ -55,12 +54,14 @@ public class PlayerController : MonoBehaviour
             transform.position = bulletPosition;
             transform.up = fireDirection;
 
+            velocity += fireDirection * projectileSpeed;
+            lifeTime = distance / Mathf.Abs(projectileSpeed); // If the projectile speed is negative, so is the lifetime.
+
             TrailRenderer trail = transform.gameObject.AddComponent<TrailRenderer>();
-
-            trail.startWidth = 0.05f;
+            trail.startWidth = 0.1f;
             trail.endWidth = 0;
-
             trail.minVertexDistance = 0;
+            trail.material = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpriteRenderer>().material;
 
             if (!isMeleeSwipe)
             {
@@ -68,65 +69,41 @@ public class PlayerController : MonoBehaviour
                 trail.endColor = Color.white;
             }
 
-
-          
-          
-            
-
-            trail.material = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<SpriteRenderer>().material;
-
             doOrbit = isMeleeSwipe;
 
-
-            position = bulletPosition;
-            velocity += fireDirection * projectileSpeed;
-
-            lifeTime = distance / projectileSpeed;
-
             if (doOrbit)
-            {
                 velocity += (Vector2)transform.right * orbitStrength;
-                
-            }
         }
 
-        public Vector3 UpdateBullet(float timeStep)
+        public void UpdateBullet(float timeStep)
         {
-
             if (doOrbit)
                 velocity -= (Vector2)transform.right * (orbitStrength / lifeTime) * timeStep;
 
-            position += velocity * timeStep;
+            transform.position += (Vector3)velocity * timeStep;
+
             lifeTime -= timeStep;
 
-            transform.position = position;
-
-
             if (isDead)
-                position = Vector3.one * 99999;
-
-            return position;
+                Destroy(transform.gameObject);
         }
     }
-				#endregion
+    #endregion
 
-				AudioSource audioSource;
+    Animator animator;
+    AudioSource audioSource;
+    Camera camera;
     Collider2D collider;
     Rigidbody2D rigid;
- 
-    Animator animator;
-    Camera camera;
     SpriteRenderer spriteRenderer;
-
     Manager_UI manager_UI;
-
 
     [Header("Movement")]
     public float moveSpeed = 2f;
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
     public float speedLevel { get { return velocity.magnitude; } }
-    public Vector3 velocity;
+    public Vector2 velocity;
 
     [Header("Settings")]
     public DifficultyOptions currentDifficulty = DifficultyOptions.Medium;
@@ -141,7 +118,6 @@ public class PlayerController : MonoBehaviour
     public float hungerLevel = 100;
     public float smellLevel;
 
-
     [Header("Inventory")]
     public WeaponStat[] weapons;
     [HideInInspector] public WeaponStat currentWeapon;
@@ -151,7 +127,6 @@ public class PlayerController : MonoBehaviour
     public AudioClip[] Footsteps;
     public AudioClip[] Hurt;
     public AudioClip[] Death;
-
 
     [Header("Input")]
     public float deadZone = 0.10f;
@@ -166,6 +141,10 @@ public class PlayerController : MonoBehaviour
 
     [HideInInspector]
     public bool playingOnPC = true;
+
+    float fallingDuration = -1;
+    public bool isFalling { get { return fallingDuration != -1; } }
+    public bool isHalfDoneFalling { get { return fallingDuration < 0.8f; } }
 
     void Awake()
     {
@@ -187,7 +166,6 @@ public class PlayerController : MonoBehaviour
             Input.multiTouchEnabled = true;
             playingOnPC = false;
         }
-
     }
 
 				private void Start()
@@ -197,7 +175,6 @@ public class PlayerController : MonoBehaviour
 
 				void Update()
     {
-
         rightStick = Vector2.zero;
         leftStick = Vector2.zero;
 
@@ -295,7 +272,6 @@ public class PlayerController : MonoBehaviour
         Resources();
 
         collider.enabled = true;
-
         damageTimer -= Time.deltaTime;
 
         for (int i = 0; i < bullets.Count; i++)
@@ -303,15 +279,8 @@ public class PlayerController : MonoBehaviour
             bullets[i].UpdateBullet(Time.deltaTime);
 
             if (bullets[i].isDead)
-            {
-                Destroy(bullets[i].transform.gameObject);
                 bullets.RemoveAt(i);
-            }
         }
-
-
-        if (Input.GetKeyDown(KeyCode.Space))
-            Falling(true);
     }
 
 				private void FixedUpdate()
@@ -319,7 +288,7 @@ public class PlayerController : MonoBehaviour
         if (isInCutscene || isPaused || isFalling)
             return;
 
-        GetComponent<Rigidbody2D>().MovePosition ((Vector2)transform.position +  (Vector2)velocity * Time.fixedDeltaTime);
+        rigid.MovePosition ((Vector2)transform.position + velocity * Time.fixedDeltaTime);
     }
 
     void Walk(Vector2 moveDirection)
@@ -330,7 +299,7 @@ public class PlayerController : MonoBehaviour
         float frictionStep = friction * Time.deltaTime;
         velocity -= velocity * frictionStep;
         if(!isDead)
-            velocity += (Vector3)moveDirection * moveSpeed * frictionStep;
+            velocity += moveDirection * moveSpeed * frictionStep;
 
         float speed = velocity.magnitude;
 
@@ -338,13 +307,8 @@ public class PlayerController : MonoBehaviour
 
         if (speed > moveSpeed / 2 && footStepCooldown < 0)
         {
-            //
-
             footStepCooldown = 0.833333333f / 2; // The footstep animation is 0.83 seconds long, and you take two steps during it.
-
             PlayAudioClipFromArray(Footsteps, audioSource, 0.1f);
-
-
         }
     }
 
@@ -370,13 +334,16 @@ public class PlayerController : MonoBehaviour
                 hit.distance = 99f;
 
             if (currentWeapon.visibleBullet)
-                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 50, hit.distance + 0.5f));
+                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 75, hit.distance + 0.5f));
             else
             {
+                int swingDirection = currentWeapon.useBackSwing ? -1 : 1;
                 Vector3 playerForward = (Vector3)attackDiretion.normalized * (currentWeapon.range - 0.2f);
                 Vector3 playerSide = Vector3.Cross(transform.forward, attackDiretion.normalized);
 
-                bullets.Add(new Weapon_Bullet(playerPosition + playerForward - (playerSide / 2) , playerSide, 10, 1, true));
+                bullets.Add(new Weapon_Bullet(playerPosition + playerForward - (playerSide * swingDirection * 0.6f) , playerSide, 10 * swingDirection, 1, true));
+
+                currentWeapon.useBackSwing = !currentWeapon.useBackSwing;
             }
         }
     }
@@ -400,7 +367,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-
     void Animations(Vector2 moveDirection, Vector2 attackDiretion)
     {
         #region Damage Blink
@@ -414,8 +380,7 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-       
-
+  
         bool isAttacking = attackDiretion.magnitude > deadZone;
         bool isMoving = moveDirection.magnitude > deadZone;
 
@@ -425,8 +390,7 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("isSwingingCrowbar", isAttacking && currentWeapon.name == "Crowbar");
         animator.SetBool("isSwingingUnarmed", isAttacking && currentWeapon.name == "Unarmed");
 
-    
-
+  
         if (!isMoving && !isAttacking && !currentWeapon.readyToFire)
         {
             return;
@@ -437,8 +401,6 @@ public class PlayerController : MonoBehaviour
             isMoving = true;
             moveDirection = attackDiretion;
         }
-
-        
 
         bool isMovingVertically = Mathf.Abs(moveDirection.y) >= Mathf.Abs(moveDirection.x);
 
@@ -485,11 +447,6 @@ public class PlayerController : MonoBehaviour
         return audioArray[index].length;
     }
 
-    float fallingDuration = -1;
-    public bool isFalling { get { return fallingDuration != -1; } }
-    public bool isHalfDoneFalling { get { return fallingDuration < 0.8f; } }
-
-    public bool justFellGraceperiod { get { return fallingDuration < 0.1f; } }
     public void Falling(bool onFalling)
     {
         fallingDuration -= Time.deltaTime;
