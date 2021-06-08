@@ -81,13 +81,11 @@ public class Event_Victory : MonoBehaviour
 
         if (sequenceProgress > 1f)
         {
-            player.GetComponentInChildren<SpriteRenderer>().enabled = false;
-
             manager_UI.UI_Screen_GameOver.GetComponent<Button>().onClick.RemoveAllListeners();
             manager_UI.UI_Screen_GameOver.GetComponent<Button>().onClick.AddListener(FastForwardToggle);
         }
 
-        if (sequenceProgress > 2.5f)
+        if (sequenceProgress > 2.3f)
             player.GetComponentInChildren<SpriteRenderer>().enabled = false;
 
 
