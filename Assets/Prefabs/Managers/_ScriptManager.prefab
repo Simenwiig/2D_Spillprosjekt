@@ -239,7 +239,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 55.5083, y: -16.14531}
+  m_Offset: {x: 55.3, y: -15.77}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -618,7 +618,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 7.776664, y: -0.861887}
+  m_Offset: {x: 7.54, y: -0.38}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1110,7 +1110,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 11.782526, y: -9.780273}
+  m_Offset: {x: 11.56, y: -9.5}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -1426,75 +1426,101 @@ MonoBehaviour:
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Tutorial Door to/from Room 2
     DoorObject: {fileID: 1165883420}
     isLocked: 0
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Tutorial Door to/from Room 3
     DoorObject: {fileID: 1594711245}
     isLocked: 0
     isOneWay: 1
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Parking Garage Entrance
     DoorObject: {fileID: 333311634}
     isLocked: 0
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Parking Garage to/from -1f
     DoorObject: {fileID: 2112628231}
     isLocked: 0
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Parking Garage Exit
     DoorObject: {fileID: 2052240883}
     isLocked: 0
     isOneWay: 1
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Police Station Entrance/Exit
     DoorObject: {fileID: 292149770}
     isLocked: 0
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Police Station to/from 2f
     DoorObject: {fileID: 975604536}
     isLocked: 0
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Police Station Hole to -1f
     DoorObject: {fileID: 923523994}
     isLocked: 1
     isOneWay: 1
     isFloorHole: 1
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Police Station to/from -1f
     DoorObject: {fileID: 1915389146}
     isLocked: 0
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Park Entrance
     DoorObject: {fileID: 1252340090}
     isLocked: 1
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Dev Main Entrance
     DoorObject: {fileID: 2070412395}
     isLocked: 1
     isOneWay: 0
     isFloorHole: 0
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}
   - name: Dev Secondary Entrance
     DoorObject: {fileID: 276019621}
     isLocked: 1
     isOneWay: 1
     isFloorHole: 1
     enteringSound: {fileID: 0}
+    doorIsLockedSound: {fileID: 0}
+    animator: {fileID: 0}

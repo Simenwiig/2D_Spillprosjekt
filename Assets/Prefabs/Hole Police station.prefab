@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 864831983777591060}
   - component: {fileID: -887604345178594235}
-  - component: {fileID: -8131071760796079890}
+  - component: {fileID: 163013606}
   m_Layer: 0
   m_Name: Hole Police station
   m_TagString: Untagged
@@ -71,7 +71,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -3
   m_Sprite: {fileID: -5409337391892791467, guid: 5258cd71f7fba004a95003ce9aae8bea, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!95 &-8131071760796079890
+--- !u!95 &163013606
 Animator:
   serializedVersion: 3
   m_ObjectHideFlags: 0

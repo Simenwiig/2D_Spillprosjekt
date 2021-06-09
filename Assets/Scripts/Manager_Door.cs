@@ -24,10 +24,11 @@ public class Manager_Door : MonoBehaviour
         [Header("Optional Features")]
         public AudioClip enteringSound;
         public AudioClip doorIsLockedSound;
-        public Animation unlockingAnimation;
+        public Animator animator;
 
         BoxCollider2D Doorway1;
         BoxCollider2D Doorway2;
+
 
         bool isHorizontalDoor { get { return Doorway1.size.x > Doorway1.size.y; } }
 
@@ -51,8 +52,8 @@ public class Manager_Door : MonoBehaviour
                 door.Doorway1.isTrigger = true;
                 door.Doorway2.isTrigger = true;
 
-                if (door.unlockingAnimation != null)
-                    door.unlockingAnimation.playAutomatically = false;
+                if (door.animator != null)
+                    door.animator.speed = 0;
             }
         }
 
@@ -71,10 +72,11 @@ public class Manager_Door : MonoBehaviour
             }
 
 
-            if(unlockingAnimation != null)
+            if(animator != null)
 												{
-                unlockingAnimation.Play();
-												}
+                animator.speed = 1;
+                Manager_UI.GetManager().isPaused = true;
+            }
         }
 
 
@@ -85,7 +87,8 @@ public class Manager_Door : MonoBehaviour
                 if (isLocked || (i == 1 && isOneWay))
                     continue;
 
-                if (unlockingAnimation != null && unlockingAnimation.isPlaying)
+
+                if (animator != null && animator.GetCurrentAnimatorStateInfo(0).normalizedTime < 0.5f)
                     continue;
 
                 BoxCollider2D doorWayIn = i == 0 ? Doorway1 : Doorway2;

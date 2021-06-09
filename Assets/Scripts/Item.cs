@@ -199,8 +199,15 @@ public class Item : MonoBehaviour
                 
             }
 
+            if (itemName.Contains("blueprint"))
+            {
+                isPickup = false;
+                hasCutScene = true;
+                manager_UI.OnSelectingBlueprint();
+            }
 
-            if (itemName.Contains("tutorial_"))
+
+                if (itemName.Contains("tutorial_"))
             {
                 int index = int.Parse(itemName.Remove(0, 9));
 
@@ -234,8 +241,8 @@ public class Item : MonoBehaviour
             Manager_Door manager_Door = GameObject.Find("_ScriptManager").GetComponent<Manager_Door>();
 
             Manager_Door.DoorSet doorToUnlock = Manager_Door.DoorSet.GetDoor(manager_Door.Doors, nameOfDoorIUnlock, null);
-            if(doorToUnlock != null)
-                doorToUnlock.isLocked = false;
+            if (doorToUnlock != null)
+                doorToUnlock.Lock(true);
         }
 
 
