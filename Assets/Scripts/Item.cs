@@ -202,7 +202,6 @@ public class Item : MonoBehaviour
             if (itemName.Contains("blueprint"))
             {
                 isPickup = false;
-                hasCutScene = true;
                 manager_UI.OnSelectingBlueprint();
             }
 
