@@ -25,6 +25,7 @@ public class PlayerController : MonoBehaviour
         public bool visibleBullet;
         public bool alertsZombies;
         public AudioClip sound;
+        public float attackWalkspeedPenality = 1;
 
         [HideInInspector]
         public float cooldown;
@@ -296,10 +297,12 @@ public class PlayerController : MonoBehaviour
         if (moveDirection.magnitude < deadZone)
             moveDirection = Vector2.zero;
 
+        float attackingSpeedPenality = currentWeapon.readyToFire ? 1 : currentWeapon.attackWalkspeedPenality;
         float frictionStep = friction * Time.deltaTime;
+
         velocity -= velocity * frictionStep;
         if(!isDead)
-            velocity += moveDirection * moveSpeed * frictionStep;
+            velocity += moveDirection * moveSpeed * attackingSpeedPenality * frictionStep;
 
         float speed = velocity.magnitude;
 
@@ -346,6 +349,8 @@ public class PlayerController : MonoBehaviour
                 currentWeapon.useBackSwing = !currentWeapon.useBackSwing;
             }
         }
+        if (currentWeapon.readyToFire)
+            currentWeapon.useBackSwing = false;
     }
 
     void Resources()
