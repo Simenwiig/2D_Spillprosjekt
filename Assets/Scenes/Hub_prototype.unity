@@ -72263,6 +72263,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Park_Final
       objectReference: {fileID: 0}
+    - target: {fileID: 8640295069982677570, guid: 7cedd6569d83db24f9b72950d04a73f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 34.397
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7cedd6569d83db24f9b72950d04a73f6, type: 3}
 --- !u!4 &1606212674 stripped
@@ -73171,11 +73175,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -18.4
+      value: -72.31
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 30.8
+      value: 40.39
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.z
