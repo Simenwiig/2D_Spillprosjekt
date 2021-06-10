@@ -320,8 +320,6 @@ public class ZombieController : MonoBehaviour
         if (moveSpeed == 0 || !canSpawnMoreZombies) // Dummies can't spawn more.
             return;
 
-        print(chance);
-        
         if (Random.Range(0f, 1f) < chance)
         {
             ZombieController newZombie = GameObject.Instantiate(this).GetComponent<ZombieController>();

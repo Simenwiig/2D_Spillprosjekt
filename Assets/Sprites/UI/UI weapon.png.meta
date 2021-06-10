@@ -4,7 +4,7 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -1230172921833557718
-    second: UI weapon_0
+    second: UI_Weapon_Outline
   - first:
       213: -3523045500835238932
     second: UI weapon_1
@@ -115,7 +115,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI weapon_0
+      name: UI_Weapon_Outline
       rect:
         serializedVersion: 2
         x: 16

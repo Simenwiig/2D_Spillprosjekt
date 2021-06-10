@@ -68,6 +68,7 @@ public class Manager_UI : MonoBehaviour
 
         gameOverFadeTimer = gameOverFadeDuration;
 
+        SwitchingToMelee();
 
         Button_Melee.onClick.AddListener(SwitchingToMelee);
         Button_Ranged.onClick.AddListener(SwitchingToFireArm);
@@ -171,7 +172,9 @@ public class Manager_UI : MonoBehaviour
             return;
 
         Button_Melee.interactable = false;
+        Button_Melee.transform.GetChild(0).gameObject.SetActive(true);
         Button_Ranged.interactable = true;
+        Button_Ranged.transform.GetChild(0).gameObject.SetActive(false);
 
         if (player.weapons[1].isUnlocked)
 
@@ -188,7 +191,9 @@ public class Manager_UI : MonoBehaviour
             return;
 
         Button_Melee.interactable = true;
+        Button_Melee.transform.GetChild(0).gameObject.SetActive(false);
         Button_Ranged.interactable = false;
+        Button_Ranged.transform.GetChild(0).gameObject.SetActive(true);
 
         player.currentWeapon = player.weapons[2];
         player.currentWeapon.cooldown = 0.25f;
