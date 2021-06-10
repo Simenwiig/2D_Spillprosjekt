@@ -224,10 +224,6 @@ public class Item : MonoBehaviour
 
                     if (!hasBattery)
                         return;
-
-
-
-
                 }
 
                 
