@@ -218,7 +218,7 @@ public class ZombieController : MonoBehaviour
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
             if (!playerEnterRangeOnce)
-                SpawnMoreZombies( -15f + (int)player.currentDifficulty * 0.3f);
+                SpawnMoreZombies( -30f + (int)player.currentDifficulty * 0.3f);
 
 
 
@@ -319,7 +319,7 @@ public class ZombieController : MonoBehaviour
     {
         if (moveSpeed == 0 || !canSpawnMoreZombies) // Dummies can't spawn more.
             return;
-
+        
         if (Random.Range(0f, 1f) > chance)
         {
             ZombieController newZombie = GameObject.Instantiate(this).GetComponent<ZombieController>();
