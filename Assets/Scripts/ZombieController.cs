@@ -49,6 +49,9 @@ public class ZombieController : MonoBehaviour
     bool isDead = false;
     float damageTimer;
 
+    bool canSpawnMoreZombies = true;
+    bool playerEnterRangeOnce= false;
+
     void Start()
     {
         transform.tag = "GameController";
@@ -62,6 +65,7 @@ public class ZombieController : MonoBehaviour
         HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
         damageTimer = 0; // Stops them from flashing from taking "damage".
     }
+
 
     void Update()
     {
@@ -128,12 +132,15 @@ public class ZombieController : MonoBehaviour
 
     public void MovePosition()
     {
+        float difficultyBasedSpeedBoost = player.currentDifficulty == PlayerController.DifficultyOptions.ZoomerMode ? 1.00f : player.currentDifficulty == PlayerController.DifficultyOptions.Medium ? 1.20f : 1.5f;
+
+
         float frictionStep = friction * Time.deltaTime;
 
         velocity -= velocity * frictionStep;
         
         if(!isDead && damageTimer < 0)
-          velocity += moveDirection.normalized * (behaviorState == BehaviorState.Chasing ? chaseSpeed : moveSpeed) * frictionStep;
+          velocity += moveDirection.normalized * chaseSpeed * difficultyBasedSpeedBoost * frictionStep;
 
         if (animator != null && damageTimer < 0 && !isDead)
         {
@@ -156,9 +163,9 @@ public class ZombieController : MonoBehaviour
         if (damageTimer > 0 || isDead)
             return;
 
-        healthLevel -= damage / (int)player.currentDifficulty;
+        healthLevel -= damage;
 
-        velocity = knockBack * (moveSpeed == 0 ? 0 : 1);
+        velocity = knockBack * (moveSpeed == 0 ? 0 : 1) / (int)player.currentDifficulty;
 
         damageTimer = 0.5f;
        
@@ -198,8 +205,20 @@ public class ZombieController : MonoBehaviour
 
         bool playerUsedLoudWeapon = player.currentWeapon.alertsZombies && player.currentWeapon.cooldown == 0;
 
+
+        if (playerUsedLoudWeapon && distanceToPlayer > detection_SightRadius && canSpawnMoreZombies)
+            SpawnMoreZombies(0.2f * (int)player.currentDifficulty);
+
+       
+
+
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
+            if (!playerEnterRangeOnce)
+                SpawnMoreZombies((int)player.currentDifficulty * 0.2f);
+
+
+
             RaycastHit2D hit = Physics2D.CircleCast(transform.position, rayThickness, directionToPlayer.normalized, detection_SightRadius * (playerUsedLoudWeapon ? 20 : 1), ~zombieLayer, 0);
 
             bool canSeePlayer = hit.transform == player.transform;
@@ -283,6 +302,7 @@ public class ZombieController : MonoBehaviour
 
             }
             previousPlayerPosition = player.transform.position;
+            playerEnterRangeOnce = true;
         }
     }
 
@@ -290,5 +310,28 @@ public class ZombieController : MonoBehaviour
     {
         for (int i = 0; i < colliders.Length; i++)
             colliders[i].enabled = enabled && !isDead;
+    }
+
+    public void SpawnMoreZombies(float chance)
+    {
+        if (moveSpeed == 0) // Dummies can't spawn more.
+            return;
+
+        if (Random.Range(0f, 1f) > chance)
+        {
+            ZombieController newZombie = GameObject.Instantiate(this).GetComponent<ZombieController>();
+
+            newZombie.canSpawnMoreZombies = false;
+            newZombie.transform.position = transform.position;
+            newZombie.velocity = player.transform.position - transform.position * 0.3f;
+            newZombie.name = "Zombie Minion";
+           
+
+            newZombie.Start();
+            newZombie.Update();
+
+        }
+
+        canSpawnMoreZombies = false;
     }
 }
