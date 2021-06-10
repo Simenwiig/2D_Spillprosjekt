@@ -103,7 +103,7 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 2f;
     public float friction = 1f;
     public float sprintSpeedModifier = 2f;
-    public float speedLevel { get { return velocity.magnitude; } }
+    public float speedLevel { get { return Mathf.Round(velocity.magnitude* 10) / 10; } }
     public Vector2 velocity;
 
     [Header("Settings")]
@@ -360,11 +360,15 @@ public class PlayerController : MonoBehaviour
             return;
 
         bool isWalking = speedLevel > 0;
-        float drainRate = 1f / (int)currentDifficulty * (isWalking ? 1 : 0.5f) * Time.deltaTime;
+
+        print(isWalking);
+        float drainRate = 0.5f * (isWalking ? 1 : 0) * Time.deltaTime * (int)currentDifficulty;
         float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.deltaTime;
 
         hungerLevel -= hungerLevel > 0 ? drainRate : 0;
-        healthLevel -= (hungerLevel > 0 ? 0 : drainRate);
+
+        if(currentDifficulty != DifficultyOptions.ZoomerMode)
+            healthLevel -= (hungerLevel > 0 ? 0 : drainRate);
 
         if (damageTimer < -5 && hungerLevel > 0 && healthLevel < 100)
         {
