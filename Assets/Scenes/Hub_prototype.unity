@@ -22590,6 +22590,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2390766843095436244, guid: 83c62962cf0258f46a3e6d7046a7354f, type: 3}
+      propertyPath: m_Name
+      value: GOD RAY BATTERY
+      objectReference: {fileID: 0}
     - target: {fileID: 3940893697163387856, guid: 83c62962cf0258f46a3e6d7046a7354f, type: 3}
       propertyPath: m_RootOrder
       value: 11
@@ -73820,6 +73824,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1947397161, guid: 9e4af0a345f388e42bacf918436f370e, type: 3}
+      propertyPath: m_Name
+      value: GOD RAY CROWBAR
+      objectReference: {fileID: 0}
     - target: {fileID: 7692437022658975033, guid: 9e4af0a345f388e42bacf918436f370e, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -74252,11 +74260,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -73.05
+      value: -72
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 40.91
+      value: 40.1
       objectReference: {fileID: 0}
     - target: {fileID: 4593550359035177619, guid: a9a242facfa457147942b6df082ddf13, type: 3}
       propertyPath: m_LocalPosition.z
