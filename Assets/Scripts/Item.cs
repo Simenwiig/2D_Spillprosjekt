@@ -252,7 +252,7 @@ public class Item : MonoBehaviour
         GameObject.Destroy(gameObject, despawnTime);
 
 
-        if (hadRequiredItem && optionalRequiredItem == null)
+        if (hadRequiredItem && optionalGameObject == null)
         {
             GetComponent<Collider2D>().isTrigger = true;
             isPickup = false;

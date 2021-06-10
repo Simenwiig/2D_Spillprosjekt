@@ -2584,6 +2584,7 @@ MonoBehaviour:
   optionalGodray: {fileID: 0}
   optionalSprite: {fileID: 0}
   optionalGameObject: {fileID: 0}
+  optionalRequiredObject: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 3
@@ -10067,6 +10068,7 @@ MonoBehaviour:
   optionalGodray: {fileID: 0}
   optionalSprite: {fileID: 0}
   optionalGameObject: {fileID: 0}
+  optionalRequiredObject: {fileID: 3114557075531305200}
   nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 0.5
@@ -13141,6 +13143,7 @@ MonoBehaviour:
   optionalGodray: {fileID: 0}
   optionalSprite: {fileID: 0}
   optionalGameObject: {fileID: 1659586890}
+  optionalRequiredObject: {fileID: 0}
   nameOfDoorIUnlock: None
   despawnTime: 1
   pickUpDistance: 2
@@ -24968,7 +24971,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7692437022658975033, guid: 9e4af0a345f388e42bacf918436f370e, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7692437022658975033, guid: 9e4af0a345f388e42bacf918436f370e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -79191,6 +79194,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 08aebb146f971d44782ef3b8e920add8, type: 3}
+--- !u!1 &3114557075531305200 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4387797057181667876, guid: 08aebb146f971d44782ef3b8e920add8, type: 3}
+  m_PrefabInstance: {fileID: 3114557075531305199}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4490343779497969893
 PrefabInstance:
   m_ObjectHideFlags: 0
