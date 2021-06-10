@@ -54,10 +54,13 @@ public class Manager_UI : MonoBehaviour
     public GameObject Options_Gameplay_Tab;
     public Slider Options_Gameplay_Difficulty;
 
+    AudioManager audioManager;
 
 
     void Start()
     {
+        audioManager = FindObjectOfType<AudioManager>();
+
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
 
         gameOverFadeTimer = gameOverFadeDuration;
@@ -308,6 +311,8 @@ public class Manager_UI : MonoBehaviour
         PlayerPrefs.SetFloat("MusicVolume", Options_Sound_MusicVolume.value);
         PlayerPrefs.SetFloat("SFXVolume", Options_Sound_SFXVolume.value);
         PlayerPrefs.SetFloat("ZombieVolume", Options_Sound_ZombieVolume.value);
+
+        audioManager.BGM.volume = Options_Sound_MainVolume.value * Options_Sound_MusicVolume.value;
     }
 
         public void Options_Gameplay_MenuFeedback()
