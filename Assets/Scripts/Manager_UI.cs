@@ -88,18 +88,8 @@ public class Manager_UI : MonoBehaviour
         Options_ChangeTab(0);
 
         if (PlayerPrefs.GetInt("Difficulty") == 0) //  Reset settings to default
-        {
-            PlayerPrefs.SetFloat("MainVolume", 0.5f);
-            PlayerPrefs.SetFloat("MusicVolume", 1f);
-            PlayerPrefs.SetFloat("SFXVolume", 1f);
-            PlayerPrefs.SetFloat("ZombieVolume", 0.5f);
-
-            PlayerPrefs.SetFloat("DeadZone", 0.10f);
-            PlayerPrefs.SetInt("TwinStick_X", (int)LeftStick.rectTransform.position.x);
-            PlayerPrefs.SetInt("TwinStick_Y", (int)LeftStick.rectTransform.position.y);
-
-            PlayerPrefs.SetInt("Difficulty", (int)player.currentDifficulty); // The default difficulty set in the inspector
-        }
+            Options_FactorySettings();
+        
 
 								{ // Assigning bars correctly.
 
@@ -125,6 +115,10 @@ public class Manager_UI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+
+        if (Input.GetKey(KeyCode.Space))
+            Options_FactorySettings();
+
         UI_Bar_Health.transform.localScale = new Vector3(player.healthLevel / 100, 1, 1);
         UI_Bar_Hunger.transform.localScale = new Vector3(player.hungerLevel / 100, 1, 1);
 
@@ -354,6 +348,40 @@ public class Manager_UI : MonoBehaviour
 
             player.currentDifficulty = (PlayerController.DifficultyOptions)value;
             PlayerPrefs.SetInt("Difficulty", value);
+        }
+    }
+
+
+    public void Options_FactorySettings()
+    {
+        PlayerPrefs.SetFloat("MainVolume", 0.5f);
+        PlayerPrefs.SetFloat("MusicVolume", 1f);
+        PlayerPrefs.SetFloat("SFXVolume", 1f);
+        PlayerPrefs.SetFloat("ZombieVolume", 0.5f);
+
+        PlayerPrefs.SetFloat("DeadZone", 0.10f);
+        PlayerPrefs.SetInt("TwinStick_X", (int)LeftStick.rectTransform.position.x);
+        PlayerPrefs.SetInt("TwinStick_Y", (int)LeftStick.rectTransform.position.y);
+
+        PlayerPrefs.SetInt("Difficulty", (int)player.currentDifficulty); // The default difficulty set in the inspector
+
+
+        { // Assigning bars correctly.
+
+            Options_Sound_MainVolume.value = PlayerPrefs.GetFloat("MainVolume");
+            Options_Sound_MusicVolume.value = PlayerPrefs.GetFloat("MusicVolume");
+            Options_Sound_SFXVolume.value = PlayerPrefs.GetFloat("SFXVolume");
+            Options_Sound_ZombieVolume.value = PlayerPrefs.GetFloat("ZombieVolume");
+
+            Options_Controls_DeadZone.value = PlayerPrefs.GetFloat("DeadZone");
+            Options_Controls_TwinstickX.value = PlayerPrefs.GetInt("TwinStick_X");
+            Options_Controls_TwinstickY.value = PlayerPrefs.GetInt("TwinStick_Y");
+
+            Options_Gameplay_Difficulty.value = PlayerPrefs.GetInt("Difficulty");
+
+            Options_Volume_MenuFeedback();
+            Options_Controls_MenuFeedback();
+            Options_Gameplay_MenuFeedback();
         }
     }
 				#endregion
