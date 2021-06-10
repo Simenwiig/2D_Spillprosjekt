@@ -163,12 +163,12 @@ TextureImporter:
       name: Option Menu Sprites_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 33
         y: 130
-        width: 114
+        width: 112
         height: 8
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 4
+      pivot: {x: 0, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

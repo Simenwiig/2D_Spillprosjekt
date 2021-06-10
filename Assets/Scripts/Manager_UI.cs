@@ -37,6 +37,17 @@ public class Manager_UI : MonoBehaviour
     public Image[] Tutorial_Elements;
 
 
+    [Header("The Options Menu")]
+    public Button Options_ExitGame;
+    public Button Options_Sound;
+    public GameObject Options_Sound_Tab;
+
+    public Button Options_Controls;
+    public GameObject Options_Controls_Tab;
+
+    public Button Options_Gameplay;
+    public GameObject Options_Gameplay_Tab;
+
 
 
     void Start()
@@ -55,6 +66,14 @@ public class Manager_UI : MonoBehaviour
         Button_Settings.onClick.AddListener(OpenSettings);
 
         UI_Options.GetComponentInChildren<Button>().onClick.AddListener(OnUnpausing);
+
+        Options_ExitGame.onClick.AddListener(CloseGame);
+
+        Options_Sound.onClick.AddListener(Option_Click_Sound);
+        Options_Controls.onClick.AddListener(Option_Click_Controls);
+        Options_Gameplay.onClick.AddListener(Option_Click_Gameplay);
+
+        Options_ChangeTab(0);
     }
 
     // Update is called once per frame
@@ -190,12 +209,56 @@ public class Manager_UI : MonoBehaviour
         UI_Options.gameObject.SetActive(true);
 
         Button_Settings.gameObject.SetActive(false);
-
-        //Application.Quit();
     }
 
     public static Manager_UI GetManager()
     {
         return GameObject.Find("_Canvas").GetComponent<Manager_UI>();
+    }
+
+    public void CloseGame()
+    {
+        Application.Quit();
+    }
+
+
+
+
+
+
+    void Option_Click_Sound()
+    {
+        Options_ChangeTab(0);
+    }
+
+    void Option_Click_Controls()
+    {
+        Options_ChangeTab(1);
+    }
+
+    void Option_Click_Gameplay()
+    {
+        Options_ChangeTab(2);
+    }
+
+    int options_index = 0;
+
+    public void Options_ChangeTab(int index)
+    {
+        if (options_index == index)
+            return;
+
+        options_index = index;
+
+        Options_Sound.interactable = index != 0;
+        Options_Sound_Tab.SetActive(index == 0);
+
+        Options_Controls.interactable = index != 1;
+        Options_Controls_Tab.SetActive(index == 1);
+
+        Options_Gameplay.interactable = index != 2;
+        Options_Gameplay_Tab.SetActive(index == 2);
+
+
     }
 }
