@@ -209,7 +209,7 @@ public class ZombieController : MonoBehaviour
         bool playerUsedLoudWeapon = player.currentWeapon.alertsZombies && player.currentWeapon.cooldown == 0;
 
 
-        if (playerUsedLoudWeapon && distanceToPlayer > detection_SightRadius && canSpawnMoreZombies)
+        if (playerUsedLoudWeapon && distanceToPlayer > detection_SightRadius * 2 && distanceToPlayer < detection_SightRadius * 3 && canSpawnMoreZombies)
             SpawnMoreZombies(0.2f * (int)player.currentDifficulty);
 
        
@@ -319,8 +319,10 @@ public class ZombieController : MonoBehaviour
     {
         if (moveSpeed == 0 || !canSpawnMoreZombies) // Dummies can't spawn more.
             return;
+
+        print(chance);
         
-        if (Random.Range(0f, 1f) > chance)
+        if (Random.Range(0f, 1f) < chance)
         {
             ZombieController newZombie = GameObject.Instantiate(this).GetComponent<ZombieController>();
 
