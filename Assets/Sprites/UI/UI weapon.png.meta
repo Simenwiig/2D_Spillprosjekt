@@ -118,10 +118,10 @@ TextureImporter:
       name: UI weapon_0
       rect:
         serializedVersion: 2
-        x: 13
-        y: 84
-        width: 31
-        height: 31
+        x: 16
+        y: 87
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -139,10 +139,10 @@ TextureImporter:
       name: UI weapon_1
       rect:
         serializedVersion: 2
-        x: 84
-        y: 84
-        width: 31
-        height: 31
+        x: 87
+        y: 87
+        width: 25
+        height: 25
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
