@@ -638,8 +638,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -103, y: -152}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 269.7, y: -152.66}
+  m_SizeDelta: {x: 390.99, y: 71.856}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &701189173
 CanvasRenderer:
@@ -1145,8 +1145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -14, y: -104}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: -7.9583, y: -2.1764}
+  m_SizeDelta: {x: 713.8618, y: 219.3552}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &949515305
 CanvasRenderer:
@@ -1189,8 +1189,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "There are 2 joysticks, \nthe left is for moving the player around the
-    map\r"
+  m_Text: 'There are two joysticks on the screen,
+
+    you can use the one on the
+    left hand side to move the character around.'
 --- !u!1 &1081554712
 GameObject:
   m_ObjectHideFlags: 0
@@ -2156,8 +2158,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -160.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 262, y: -150.1918}
+  m_SizeDelta: {x: 390.99, y: 57.8326}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5088560791916112988
 CanvasRenderer:
@@ -2237,8 +2239,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 354}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &9052346611647585299
 CanvasRenderer:
@@ -2312,8 +2314,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.9, y: -118.2}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: -7.0742, y: -4.7822}
+  m_SizeDelta: {x: 680.8417, y: 216.5544}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6223856737749995339
 CanvasRenderer:
@@ -2356,7 +2358,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Maybe there\u2019s a key in the labyrinth."
+  m_Text: 'The door is locked.
+
+
+    "Maybe I''ll find a key hidden somewhere in
+    this maze"'
 --- !u!1 &836356321528739478
 GameObject:
   m_ObjectHideFlags: 0
@@ -2391,8 +2397,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -160.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 258, y: -152.86}
+  m_SizeDelta: {x: 390.99, y: 71.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2243534307209026596
 CanvasRenderer:
@@ -2473,8 +2479,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 355}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6322579884733082717
 CanvasRenderer:
@@ -2666,8 +2672,8 @@ RectTransform:
   m_Father: {fileID: 5734432294845521815}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.655, y: 0}
-  m_AnchorMax: {x: 0.655, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3209,8 +3215,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.9, y: -118.2}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: -5.0809, y: -4.6332}
+  m_SizeDelta: {x: 696.2328, y: 217.2996}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1704350786454367201
 CanvasRenderer:
@@ -3253,8 +3259,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: This seems to be someone's plan to escape the town, i might just use it
-    for myself
+  m_Text: '"It seems that someone has left their plan to escape the city behind,
+    i should pick that up before i leave this house."'
 --- !u!1 &1961573494178696757
 GameObject:
   m_ObjectHideFlags: 0
@@ -3286,13 +3292,14 @@ RectTransform:
   m_Children:
   - {fileID: 949515303}
   - {fileID: 701189171}
+  - {fileID: 2105532503768594962}
   m_Father: {fileID: 8745504342322993660}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 465}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6913120236603510167
 CanvasRenderer:
@@ -3477,8 +3484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.9, y: -118.2}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 0.1501, y: -4.0955048}
+  m_SizeDelta: {x: 708.384, y: 215.2429}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2531179899878471430
 CanvasRenderer:
@@ -3521,7 +3528,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: The radio tower is now activated, I can now get a signal to the helicopter.
+  m_Text: 'The radio tower seems to be powering up, your SOS signal is being transmitted.
+
+    "...kzzt...
+    message recieved ...kzzt... make your way to the helipad in the park ...kzzt..."'
 --- !u!1 &2168065971070927773
 GameObject:
   m_ObjectHideFlags: 0
@@ -3907,8 +3917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -160.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 252, y: -152.86}
+  m_SizeDelta: {x: 390.99, y: 71.13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6097319422830702010
 CanvasRenderer:
@@ -4288,8 +4298,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 354}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4056090472400448743
 CanvasRenderer:
@@ -4362,7 +4372,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.655, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4474,8 +4484,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.9, y: -118.2}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 2.7732, y: -6.0629}
+  m_SizeDelta: {x: 695.2685, y: 208.6852}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4399704762706197572
 CanvasRenderer:
@@ -4518,7 +4528,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'The Park door is locked, I need the park key to go through here. '
+  m_Text: 'The Park door seems to be locked.
+
+    "That key is bound to be somewhere
+    in this godforsaken town."'
 --- !u!1 &3442443529993532877
 GameObject:
   m_ObjectHideFlags: 0
@@ -4704,7 +4717,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.427, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -4997,8 +5010,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 353}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6169257163979439633
 CanvasRenderer:
@@ -5604,8 +5617,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -160.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 265, y: -151.86}
+  m_SizeDelta: {x: 390.99, y: 74.759}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1676383402826865316
 CanvasRenderer:
@@ -5719,8 +5732,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.9, y: -118.2}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: -2.6799, y: -3.8149}
+  m_SizeDelta: {x: 713.6301, y: 212.6198}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3955326377118723427
 CanvasRenderer:
@@ -5763,7 +5776,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: I need to find the battery and activate the radio tower to go through here.
+  m_Text: '"I should probably power up the radio tower and send an SOS signal before
+    heading to the helipad"'
 --- !u!1 &6051518400482139956
 GameObject:
   m_ObjectHideFlags: 0
@@ -5997,8 +6011,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -160.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 260.75388, y: -154.54}
+  m_SizeDelta: {x: 410.0275, y: 65.003}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3525282655864945428
 CanvasRenderer:
@@ -6075,7 +6089,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.427, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6227,7 +6241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -182.81, y: -141}
+  m_AnchoredPosition: {x: -182.75, y: -141}
   m_SizeDelta: {x: 65.625, y: 65.625}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8380355809744205201
@@ -6346,8 +6360,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -97, y: -160.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 258, y: -153.86}
+  m_SizeDelta: {x: 390.99, y: 67.501}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7673536466011514702
 CanvasRenderer:
@@ -6408,7 +6422,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &4192596113369777007
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6427,8 +6441,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 354}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8795244095300344633
 CanvasRenderer:
@@ -6702,7 +6716,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0.275, y: 1}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -6778,8 +6792,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -106, y: -156.5}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: 278.2, y: -153.56}
+  m_SizeDelta: {x: 390.99, y: 68.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &3614148492776767536
 CanvasRenderer:
@@ -6857,8 +6871,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: -118}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: -12.2702, y: -3.1903}
+  m_SizeDelta: {x: 707.6873, y: 226.5494}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8938699666980801577
 CanvasRenderer:
@@ -6901,7 +6915,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use right joystick to attack enemies
+  m_Text: You can use the right hand joystick to attack enemies within range
 --- !u!1 &7653179334466476112
 GameObject:
   m_ObjectHideFlags: 0
@@ -7013,8 +7027,8 @@ RectTransform:
   m_Father: {fileID: 3505724385281552859}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.427, y: 0}
-  m_AnchorMax: {x: 0.427, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -7229,7 +7243,7 @@ MonoBehaviour:
   m_ReferencePixelsPerUnit: 32
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
-  m_ScreenMatchMode: 0
+  m_ScreenMatchMode: 1
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
@@ -7340,8 +7354,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 354}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8562388735344609520
 CanvasRenderer:
@@ -7453,8 +7467,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 7, y: 354}
-  m_SizeDelta: {x: 450, y: 200}
+  m_AnchoredPosition: {x: 0, y: 557}
+  m_SizeDelta: {x: 776.06, y: 344.915}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5866114463876426540
 CanvasRenderer:
@@ -7650,8 +7664,8 @@ RectTransform:
   m_Father: {fileID: 1199675166791195073}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.427, y: 0}
-  m_AnchorMax: {x: 0.427, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8039,8 +8053,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11, y: -111}
-  m_SizeDelta: {x: 390.99, y: 390.99}
+  m_AnchoredPosition: {x: -7.8332, y: -3.0649}
+  m_SizeDelta: {x: 703.4681, y: 221.4107}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1619494323918452928
 CanvasRenderer:
@@ -8083,8 +8097,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: These items represent food and water. If your food/water bar is empty you
-    will no longer replenish health
+  m_Text: 'There is food and water scattered around the town
+
+    you can pick these
+    up by walking on top of them.
+
+    These items replenishes your food bar, if
+    your food bar is empty you will no longer regenerate health, depending on the
+    difficulty setting you are playing on you may take damage.'
 --- !u!1 &9009423652656589705
 GameObject:
   m_ObjectHideFlags: 0
@@ -8117,8 +8137,8 @@ RectTransform:
   m_Father: {fileID: 206917851389282297}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.275, y: 0}
-  m_AnchorMax: {x: 0.275, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -8280,6 +8300,112 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &2551497306088024414
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 6558179402642967427}
+    m_Modifications:
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 134.8243
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 134.8243
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -178.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -73.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448909, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_Name
+      value: Tutorial Swipe
+      objectReference: {fileID: 0}
+    - target: {fileID: 4490343778159448910, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+--- !u!224 &2105532503768594962 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
+  m_PrefabInstance: {fileID: 2551497306088024414}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &5099740144145003031
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8317,11 +8443,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
       propertyPath: m_SizeDelta.x
-      value: 100
+      value: 174.0825
       objectReference: {fileID: 0}
     - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
       propertyPath: m_SizeDelta.y
-      value: 100
+      value: 174.0825
       objectReference: {fileID: 0}
     - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8353,11 +8479,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 286
       objectReference: {fileID: 0}
     - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0
+      value: -37
       objectReference: {fileID: 0}
     - target: {fileID: 4490343778159448908, guid: 2e1f5eef750939c4389b9b463c276802, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
