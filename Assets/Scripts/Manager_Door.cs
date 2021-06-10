@@ -126,7 +126,7 @@ public class Manager_Door : MonoBehaviour
                     player.transform.position = doorWayOut.transform.position + (Vector3)doorWayOut.offset - deltaPosition * (!isFloorHole ? 1 : -1);
 
                     if (enteringSound != null)
-                        player.GetComponent<AudioSource>().PlayOneShot(enteringSound);
+                        player.GetComponent<AudioSource>().PlayOneShot(enteringSound, PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("SFXVolume"));
 
                     return true;
                 }

@@ -49,6 +49,9 @@ public class Manager_UI : MonoBehaviour
 
     public Button Options_Controls;
     public GameObject Options_Controls_Tab;
+    public Slider Options_Controls_DeadZone;
+    public Slider Options_Controls_TwinstickX;
+    public Slider Options_Controls_TwinstickY;
 
     public Button Options_Gameplay;
     public GameObject Options_Gameplay_Tab;
@@ -93,6 +96,10 @@ public class Manager_UI : MonoBehaviour
             PlayerPrefs.SetFloat("SFXVolume", 1f);
             PlayerPrefs.SetFloat("ZombieVolume", 0.5f);
 
+            PlayerPrefs.SetFloat("DeadZone", 0.10f);
+            PlayerPrefs.SetInt("TwinStick_X", (int)LeftStick.rectTransform.position.x);
+            PlayerPrefs.SetInt("TwinStick_Y", (int)LeftStick.rectTransform.position.y);
+
             PlayerPrefs.SetInt("Difficulty", (int)player.currentDifficulty); // The default difficulty set in the inspector
         }
 
@@ -102,6 +109,11 @@ public class Manager_UI : MonoBehaviour
             Options_Sound_MusicVolume.value = PlayerPrefs.GetFloat("MusicVolume");
             Options_Sound_SFXVolume.value = PlayerPrefs.GetFloat("SFXVolume");
             Options_Sound_ZombieVolume.value = PlayerPrefs.GetFloat("ZombieVolume");
+
+            Options_Controls_DeadZone.value = PlayerPrefs.GetFloat("DeadZone");
+            Options_Controls_TwinstickX.value = PlayerPrefs.GetInt("TwinStick_X");
+            Options_Controls_TwinstickY.value = PlayerPrefs.GetInt("TwinStick_Y");
+
 
             Options_Gameplay_Difficulty.value = PlayerPrefs.GetInt("Difficulty");
         }
@@ -121,31 +133,15 @@ public class Manager_UI : MonoBehaviour
         if (UI_Options.gameObject.activeInHierarchy && options_index == 0)
             Options_Volume_MenuFeedback();
 
+        if (UI_Options.gameObject.activeInHierarchy && options_index == 1)
+            Options_Controls_MenuFeedback();
+
         if (UI_Options.gameObject.activeInHierarchy && options_index == 2)
             Options_Gameplay_MenuFeedback();
-
-
-
-
     }
 
-    public void GameOver(bool playerWon = false)
-    {
-        if (gameOverFadeTimer < 0 || playerWon)
-        {
-            SceneManager.LoadScene("StartMenu");
-            return;
-        }
-        gameIsOver = true;
-
-        gameOverFadeTimer -= Time.fixedDeltaTime;
-
-        UI_Screen_GameOver.color = new Color(0, 0, 0,  1f - (gameOverFadeTimer / gameOverFadeDuration));
-
-        //  UI_Screen_GameOver.CrossFadeColor(new Color(1,1,1,255), gameOverFadeDuration, false, true);
-    }
-
-    static float stickRange = 160;
+				#region Inputs
+				static float stickRange = 160;
 
     /// returns the relative direction from the controlPad to pixelCordinates
     public static Vector3 StickController(Image stick, Image stickCircle, Vector2 pixelCordinates, Camera camera)
@@ -171,9 +167,10 @@ public class Manager_UI : MonoBehaviour
         return position.magnitude < stickRange;
     }
 
+				#endregion
 
-
-    public void SwitchingToMelee()
+				#region UI Buttons
+				public void SwitchingToMelee()
     {
         if (isPaused)
             return;
@@ -244,14 +241,25 @@ public class Manager_UI : MonoBehaviour
         Button_Unpause.gameObject.SetActive(true);
     }
 
-    public void OpenSettings()
+
+
+    #endregion
+
+    #region Misc. & Tools
+    public void GameOver(bool playerWon = false)
     {
-        isPaused = true;
+        if (gameOverFadeTimer < 0 || playerWon)
+        {
+            SceneManager.LoadScene("StartMenu");
+            return;
+        }
+        gameIsOver = true;
 
-        Button_Unpause.gameObject.SetActive(true);
-        UI_Options.gameObject.SetActive(true);
+        gameOverFadeTimer -= Time.fixedDeltaTime;
 
-        Button_Settings.gameObject.SetActive(false);
+        UI_Screen_GameOver.color = new Color(0, 0, 0, 1f - (gameOverFadeTimer / gameOverFadeDuration));
+
+        //  UI_Screen_GameOver.CrossFadeColor(new Color(1,1,1,255), gameOverFadeDuration, false, true);
     }
 
     public static Manager_UI GetManager()
@@ -264,10 +272,19 @@ public class Manager_UI : MonoBehaviour
         Application.Quit();
     }
 
+    #endregion
 
+    #region Options Menu
 
+    public void OpenSettings()
+    {
+        isPaused = true;
 
+        Button_Unpause.gameObject.SetActive(true);
+        UI_Options.gameObject.SetActive(true);
 
+        Button_Settings.gameObject.SetActive(false);
+    }
 
     void Option_Click_Sound()
     {
@@ -301,8 +318,6 @@ public class Manager_UI : MonoBehaviour
 
         Options_Gameplay.interactable = index != 2;
         Options_Gameplay_Tab.SetActive(index == 2);
-
-
     }
 
     public void Options_Volume_MenuFeedback()
@@ -314,8 +329,18 @@ public class Manager_UI : MonoBehaviour
 
         audioManager.BGM.volume = Options_Sound_MainVolume.value * Options_Sound_MusicVolume.value;
     }
+    public void Options_Controls_MenuFeedback()
+    {
+        PlayerPrefs.SetFloat("DeadZone", Options_Controls_DeadZone.value);
 
-        public void Options_Gameplay_MenuFeedback()
+        PlayerPrefs.SetInt("TwinStick_X", (int)Options_Controls_TwinstickX.value);
+        PlayerPrefs.SetInt("TwinStick_Y", (int)Options_Controls_TwinstickY.value);
+
+        LeftStick.rectTransform.anchoredPosition = new Vector3((int)Options_Controls_TwinstickX.value, (int)Options_Controls_TwinstickY.value);
+        RightStick.rectTransform.anchoredPosition = new Vector3(-(int)Options_Controls_TwinstickX.value, (int)Options_Controls_TwinstickY.value);
+    }
+
+    public void Options_Gameplay_MenuFeedback()
     {
         int value = (int)Options_Gameplay_Difficulty.value;
 
@@ -324,10 +349,11 @@ public class Manager_UI : MonoBehaviour
             Vector3 skullScale = Vector3.one * value;
             Image skullImage = Options_Gameplay_Tab.GetComponentInChildren<Image>();
             skullImage.rectTransform.localScale = skullScale;
-            skullImage.color = value == 1 ? Color.red : Color.white;
+            skullImage.color = value == 3 ? Color.red : Color.white;
 
             player.currentDifficulty = (PlayerController.DifficultyOptions)value;
             PlayerPrefs.SetInt("Difficulty", value);
         }
     }
+				#endregion
 }

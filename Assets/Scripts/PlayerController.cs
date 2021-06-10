@@ -130,7 +130,6 @@ public class PlayerController : MonoBehaviour
     public AudioClip[] Death;
 
     [Header("Input")]
-    public float deadZone = 0.10f;
     public Vector2 rightStick;
     public Vector2 leftStick;
 
@@ -294,7 +293,7 @@ public class PlayerController : MonoBehaviour
 
     void Walk(Vector2 moveDirection)
     {
-        if (moveDirection.magnitude < deadZone)
+        if (moveDirection.magnitude < PlayerPrefs.GetFloat("DeadZone"))
             moveDirection = Vector2.zero;
 
         float attackingSpeedPenality = currentWeapon.readyToFire ? 1 : currentWeapon.attackWalkspeedPenality;
@@ -318,7 +317,7 @@ public class PlayerController : MonoBehaviour
     void Aim(Vector2 attackDiretion)
     {
         Vector3 playerPosition = transform.position - Vector3.up * transform.GetChild(0).localPosition.y / 2;
-        bool isAttacking = attackDiretion.magnitude > deadZone;
+        bool isAttacking = attackDiretion.magnitude > PlayerPrefs.GetFloat("DeadZone");
         currentWeapon.cooldown += Time.deltaTime;
 
         if (isAttacking && currentWeapon.readyToFire)
@@ -386,8 +385,8 @@ public class PlayerController : MonoBehaviour
         }
 
   
-        bool isAttacking = attackDiretion.magnitude > deadZone;
-        bool isMoving = moveDirection.magnitude > deadZone;
+        bool isAttacking = attackDiretion.magnitude > PlayerPrefs.GetFloat("DeadZone");
+        bool isMoving = moveDirection.magnitude > PlayerPrefs.GetFloat("DeadZone");
 
         animator.SetBool("isStandingStill", !isMoving);
 

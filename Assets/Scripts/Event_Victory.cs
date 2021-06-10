@@ -89,7 +89,7 @@ public class Event_Victory : MonoBehaviour
             player.GetComponentInChildren<SpriteRenderer>().enabled = false;
 
 
-            if (sequenceProgress > helicopter.clip.length)
+        if (sequenceProgress > helicopter.clip.length)
         {
             manager_UI.UI_Victory.rectTransform.position += new Vector3(0, Time.fixedDeltaTime * endCreditFlowSpeed * creditSpeedModifier);
         }
