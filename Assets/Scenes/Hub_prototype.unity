@@ -9442,7 +9442,7 @@ MonoBehaviour:
   optionalRequiredObject: {fileID: 1716261680}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 0.5
+  pickUpDistance: 1.1
 --- !u!212 &565688398
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9574,7 +9574,7 @@ MonoBehaviour:
   optionalRequiredObject: {fileID: 1716261680}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 0.5
+  pickUpDistance: 1.1
 --- !u!212 &569053067
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -10263,7 +10263,7 @@ MonoBehaviour:
   optionalRequiredObject: {fileID: 3114557075531305200}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 0.5
+  pickUpDistance: 1.1
 --- !u!1001 &624726363
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21534,7 +21534,7 @@ MonoBehaviour:
   optionalRequiredObject: {fileID: 1716261680}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 0.5
+  pickUpDistance: 1.1
 --- !u!212 &971096453
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -75117,7 +75117,7 @@ MonoBehaviour:
   optionalRequiredObject: {fileID: 1716261680}
   nameOfDoorIUnlock: None
   despawnTime: 1
-  pickUpDistance: 0.5
+  pickUpDistance: 1.1
 --- !u!212 &1767421892
 SpriteRenderer:
   m_ObjectHideFlags: 0

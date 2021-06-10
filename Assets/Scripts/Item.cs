@@ -85,7 +85,7 @@ public class Item : MonoBehaviour
     }
 
     void OnPickup()
-				{
+    {
         bool isPickup = true;
 
 
@@ -110,7 +110,7 @@ public class Item : MonoBehaviour
                 isPickup = false;
             }
 
-            
+
 
 
             if (itemName == "key_unlockpark")
@@ -189,7 +189,7 @@ public class Item : MonoBehaviour
                 player.damageTimer = 0.25f;
                 Debug.Log("Changing control scheme to " + (player.playingOnPC ? "Mouse & Keyboard mode." : "Touch Screen mode."));
 
-                
+
             }
 
             if (itemName.Contains("blueprint"))
@@ -202,7 +202,7 @@ public class Item : MonoBehaviour
             }
 
 
-                if (itemName.Contains("tutorial_"))
+            if (itemName.Contains("tutorial_"))
             {
                 int index = int.Parse(itemName.Remove(0, 9));
 
@@ -245,18 +245,22 @@ public class Item : MonoBehaviour
             }
         }
 
+        if (hadRequiredItem)
+        {
+            if (optionalRequiredObject != null)
+                return;
 
+
+            GetComponent<Collider2D>().isTrigger = true;
+            isPickup = false;
+        }
 
 
         hasBeenActivated = true;
         GameObject.Destroy(gameObject, despawnTime);
 
 
-        if (hadRequiredItem && optionalGameObject == null)
-        {
-            GetComponent<Collider2D>().isTrigger = true;
-            isPickup = false;
-        }
+
 
 
 
