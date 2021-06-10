@@ -1676,7 +1676,7 @@ MonoBehaviour:
   trackLostChance: 15
   behaviorState: 0
   validLocations: []
-  healthLevel: 100
+  healthLevel: 50
   velocity: {x: 0, y: 0, z: 0}
   zombieLayer:
     serializedVersion: 2
