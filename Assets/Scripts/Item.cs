@@ -256,6 +256,7 @@ public class Item : MonoBehaviour
 
         if (optionalGodray != null)
         {
+            optionalGodray.transform.parent = null;
             GameObject.Destroy(optionalGodray, despawnTime);
         }
 
