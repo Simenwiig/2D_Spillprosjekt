@@ -338,7 +338,7 @@ public class PlayerController : MonoBehaviour
                 hit.distance = 99f;
 
             if (currentWeapon.visibleBullet)
-                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 75, hit.distance + 0.5f));
+                bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 75f, hit.distance + 0.1f));
             else
             {
                 int swingDirection = currentWeapon.useBackSwing ? -1 : 1;

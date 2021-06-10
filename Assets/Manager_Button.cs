@@ -78,7 +78,8 @@ public class Manager_Button : MonoBehaviour
             if (creditProgress > creditDuration + credit_BootLength * 2)
             {
                 creditProgress = -1;
-   
+                creditProgress_Modifier = 1;
+
                 UI_ScreenTint.gameObject.SetActive(false);
                 UI_CreditReel.rectTransform.anchoredPosition = new Vector3(0,0);
             }
