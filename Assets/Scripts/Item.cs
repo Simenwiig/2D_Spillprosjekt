@@ -203,6 +203,9 @@ public class Item : MonoBehaviour
             {
                 isPickup = false;
                 manager_UI.OnSelectingBlueprint();
+
+                Manager_UI.GetManager().Button_Blueprint.interactable = true;
+                Manager_UI.GetManager().Button_Blueprint.image.enabled = true;
             }
 
 
@@ -211,6 +214,13 @@ public class Item : MonoBehaviour
                 int index = int.Parse(itemName.Remove(0, 9));
 
                 Manager_UI.GetManager().ActivateTutorialElement(index);
+
+
+                if (index == 0)
+                {
+                    Manager_UI.GetManager().Button_Blueprint.interactable = false;
+                    Manager_UI.GetManager().Button_Blueprint.image.enabled = false;
+                }
             }
         }
         hasBeenActivated = true;

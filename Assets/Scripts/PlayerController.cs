@@ -171,7 +171,7 @@ public class PlayerController : MonoBehaviour
 
 				private void Start()
 				{
-        manager_UI.ActivateTutorialElement(0);
+        
 				}
 
 				void Update()
