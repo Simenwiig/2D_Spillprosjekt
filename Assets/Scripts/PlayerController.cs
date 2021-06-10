@@ -51,9 +51,6 @@ public class PlayerController : MonoBehaviour
             if (distance == 0)
                 distance = 99;
 
-            distance = Mathf.Max(distance, 1.3f);
-
-
             transform = new GameObject().transform;
             transform.position = bulletPosition;
             transform.up = fireDirection;
@@ -341,19 +338,14 @@ public class PlayerController : MonoBehaviour
                 hit.distance = 99f;
 
             if (currentWeapon.visibleBullet)
-            {
                 bullets.Add(new Weapon_Bullet(playerPosition, attackDiretion.normalized, 75f, hit.distance + 0.1f));
-
-                if(hit.transform != null)
-                    Debug.DrawLine(playerPosition, hit.point);
-            }
             else
             {
                 int swingDirection = currentWeapon.useBackSwing ? -1 : 1;
                 Vector3 playerForward = (Vector3)attackDiretion.normalized * (currentWeapon.range - 0.2f);
                 Vector3 playerSide = Vector3.Cross(transform.forward, attackDiretion.normalized);
 
-                bullets.Add(new Weapon_Bullet(playerPosition + playerForward - (playerSide * swingDirection * 0.6f), playerSide, 10 * swingDirection, 1, true));
+                bullets.Add(new Weapon_Bullet(playerPosition + playerForward - (playerSide * swingDirection * 0.6f) , playerSide, 10 * swingDirection, 1, true));
 
                 currentWeapon.useBackSwing = !currentWeapon.useBackSwing;
             }
