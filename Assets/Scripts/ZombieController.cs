@@ -314,7 +314,7 @@ public class ZombieController : MonoBehaviour
 
     public void SpawnMoreZombies(float chance)
     {
-        if (moveSpeed == 0) // Dummies can't spawn more.
+        if (moveSpeed == 0 || !canSpawnMoreZombies) // Dummies can't spawn more.
             return;
 
         if (Random.Range(0f, 1f) > chance)
