@@ -19,11 +19,12 @@ public class AudioManager : MonoBehaviour
 
     public void ChangeBGM(AudioClip music)
     {
-        if (BGM.clip.name == music.name)
+        if (BGM.clip != null && BGM.clip.name == music.name)
             return;
 
         BGM.Stop();
         BGM.clip = music;
         BGM.Play();
+        BGM.volume = PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("MusicVolume");
     }
 }

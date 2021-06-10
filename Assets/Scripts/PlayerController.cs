@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
 
     public enum DifficultyOptions
     {
-        ZoomerMode = 3, Medium = 2, Hard = 1,
+        ZoomerMode = 1, Medium = 2, Hard = 3,
     }
 
 
@@ -311,7 +311,7 @@ public class PlayerController : MonoBehaviour
         if (speed > moveSpeed / 2 && footStepCooldown < 0)
         {
             footStepCooldown = 0.833333333f / 2; // The footstep animation is 0.83 seconds long, and you take two steps during it.
-            PlayAudioClipFromArray(Footsteps, audioSource, 0.1f);
+            PlayAudioClipFromArray(Footsteps, audioSource, 0.2f);
         }
     }
 
@@ -325,7 +325,7 @@ public class PlayerController : MonoBehaviour
         {
             currentWeapon.cooldown = 0;
 
-            audioSource.PlayOneShot(currentWeapon.sound);
+            audioSource.PlayOneShot(currentWeapon.sound, PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("SFXVolume"));
 
             Debug.DrawRay(playerPosition, attackDiretion.normalized * currentWeapon.range, Color.yellow, 0.1f);
 
@@ -422,7 +422,7 @@ public class PlayerController : MonoBehaviour
         if (isDead || damageTimer > 0)
             return false;
 
-        damage = damage / (int)currentDifficulty;
+        damage = damage * (int)currentDifficulty;
 
         damageTimer = 1f; // The brief invulnerability you get when hit.
         healthLevel -= isInGodmode ? 0 : damage;
@@ -447,7 +447,7 @@ public class PlayerController : MonoBehaviour
 
         int index = Random.Range(0, audioArray.Length);
 
-        audioSource.PlayOneShot(audioArray[index], volumeScale);
+        audioSource.PlayOneShot(audioArray[index], PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("SFXVolume") * volumeScale);
 
         return audioArray[index].length;
     }

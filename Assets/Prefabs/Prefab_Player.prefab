@@ -52,7 +52,7 @@ MonoBehaviour:
   moveSpeed: 1.2
   friction: 10
   sprintSpeedModifier: 2
-  velocity: {x: 0, y: 0, z: 0}
+  velocity: {x: 0, y: 0}
   currentDifficulty: 2
   damageTimer: 0
   isInCutscene: 0
@@ -70,27 +70,33 @@ MonoBehaviour:
     visibleBullet: 0
     alertsZombies: 0
     sound: {fileID: 8300000, guid: fd4b485b4d348b24f9bd06489e030a76, type: 3}
+    attackWalkspeedPenality: 1
     cooldown: 0
+    useBackSwing: 0
   - name: Crowbar
     isUnlocked: 0
-    damage: 25
+    damage: 34
     knockBack: 5
     attacksPerSecond: 1
     range: 1.5
     visibleBullet: 0
     alertsZombies: 0
     sound: {fileID: 8300000, guid: b3490de7b22e0c64e95c1600700affe7, type: 3}
+    attackWalkspeedPenality: 1
     cooldown: 0
+    useBackSwing: 0
   - name: Pistol
     isUnlocked: 0
-    damage: 40
+    damage: 23
     knockBack: 1
     attacksPerSecond: 1
     range: 99
     visibleBullet: 1
     alertsZombies: 1
     sound: {fileID: 8300000, guid: e3afd5ecde3f2904b91434b76e4972cd, type: 3}
+    attackWalkspeedPenality: 1
     cooldown: 0
+    useBackSwing: 0
   currentWeapon:
     name: unnamed
     isUnlocked: 0
@@ -101,7 +107,9 @@ MonoBehaviour:
     visibleBullet: 0
     alertsZombies: 0
     sound: {fileID: 0}
+    attackWalkspeedPenality: 1
     cooldown: 0
+    useBackSwing: 0
   Footsteps:
   - {fileID: 8300000, guid: 8c77bad705ee658449f8f6c9f49f2d85, type: 3}
   - {fileID: 8300000, guid: ad14866dfcb7b4b48a548bf328677d48, type: 3}

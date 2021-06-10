@@ -39,14 +39,20 @@ public class Manager_UI : MonoBehaviour
 
     [Header("The Options Menu")]
     public Button Options_ExitGame;
+
     public Button Options_Sound;
     public GameObject Options_Sound_Tab;
+    public Slider Options_Sound_MainVolume;
+    public Slider Options_Sound_MusicVolume;
+    public Slider Options_Sound_SFXVolume;
+    public Slider Options_Sound_ZombieVolume;
 
     public Button Options_Controls;
     public GameObject Options_Controls_Tab;
 
     public Button Options_Gameplay;
     public GameObject Options_Gameplay_Tab;
+    public Slider Options_Gameplay_Difficulty;
 
 
 
@@ -74,6 +80,30 @@ public class Manager_UI : MonoBehaviour
         Options_Gameplay.onClick.AddListener(Option_Click_Gameplay);
 
         Options_ChangeTab(0);
+
+        if (true || PlayerPrefs.GetInt("Difficulty") == 0) //  Reset settings to default
+        {
+            print("Remember that I am resetting values every time");
+
+            PlayerPrefs.SetFloat("MainVolume", 0.5f);
+            PlayerPrefs.SetFloat("MusicVolume", 1f);
+            PlayerPrefs.SetFloat("SFXVolume", 1f);
+            PlayerPrefs.SetFloat("ZombieVolume", 0.5f);
+
+            PlayerPrefs.SetInt("Difficulty", (int)player.currentDifficulty); // The default difficulty set in the inspector
+        }
+
+								{ // Assigning bars correctly.
+
+            Options_Sound_MainVolume.value = PlayerPrefs.GetFloat("MainVolume");
+            Options_Sound_MusicVolume.value = PlayerPrefs.GetFloat("MusicVolume");
+            Options_Sound_SFXVolume.value = PlayerPrefs.GetFloat("SFXVolume");
+            Options_Sound_ZombieVolume.value = PlayerPrefs.GetFloat("ZombieVolume");
+
+            Options_Gameplay_Difficulty.value = PlayerPrefs.GetInt("Difficulty");
+        }
+
+
     }
 
     // Update is called once per frame
@@ -84,6 +114,16 @@ public class Manager_UI : MonoBehaviour
 
         if (gameIsOver || player.isDead)
             GameOver();
+
+        if (UI_Options.gameObject.activeInHierarchy && options_index == 0)
+            Options_Volume_MenuFeedback();
+
+        if (UI_Options.gameObject.activeInHierarchy && options_index == 2)
+            Options_Gameplay_MenuFeedback();
+
+
+
+
     }
 
     public void GameOver(bool playerWon = false)
@@ -260,5 +300,29 @@ public class Manager_UI : MonoBehaviour
         Options_Gameplay_Tab.SetActive(index == 2);
 
 
+    }
+
+    public void Options_Volume_MenuFeedback()
+    {
+        PlayerPrefs.SetFloat("MainVolume", Options_Sound_MainVolume.value);
+        PlayerPrefs.SetFloat("MusicVolume", Options_Sound_MusicVolume.value);
+        PlayerPrefs.SetFloat("SFXVolume", Options_Sound_SFXVolume.value);
+        PlayerPrefs.SetFloat("ZombieVolume", Options_Sound_ZombieVolume.value);
+    }
+
+        public void Options_Gameplay_MenuFeedback()
+    {
+        int value = (int)Options_Gameplay_Difficulty.value;
+
+        if (value != (int)player.currentDifficulty)
+        {
+            Vector3 skullScale = Vector3.one * value;
+            Image skullImage = Options_Gameplay_Tab.GetComponentInChildren<Image>();
+            skullImage.rectTransform.localScale = skullScale;
+            skullImage.color = value == 1 ? Color.red : Color.white;
+
+            player.currentDifficulty = (PlayerController.DifficultyOptions)value;
+            PlayerPrefs.SetInt("Difficulty", value);
+        }
     }
 }

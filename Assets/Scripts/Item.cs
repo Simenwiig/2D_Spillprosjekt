@@ -96,7 +96,7 @@ public class Item : MonoBehaviour
                 if (usingWrongTool || !isSwinging)
                 {
                     if (usingWrongTool && isSwinging && optionalPickupSound_2 != null)
-                        audioSource.PlayOneShot(optionalPickupSound_2);
+                        audioSource.PlayOneShot(optionalPickupSound_2, PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("SFXVolume"));
 
                     return;
                 }
@@ -243,7 +243,7 @@ public class Item : MonoBehaviour
             GetComponent<SpriteRenderer>().sprite = optionalSprite;
 
         if (optionalPickupSound != null)
-            audioSource.PlayOneShot(optionalPickupSound);
+            audioSource.PlayOneShot(optionalPickupSound, PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("SFXVolume"));
 
         if (nameOfDoorIUnlock != "None")
         {

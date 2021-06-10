@@ -107,7 +107,7 @@ public class ZombieController : MonoBehaviour
         {
             if (player.HurtPlayer(damage, directionToPlayer.normalized * 10))
             {
-                PlayerController.PlayAudioClipFromArray(Attack, audioSource);
+                PlayerController.PlayAudioClipFromArray(Attack, audioSource, PlayerPrefs.GetFloat("ZombieVolume"));
                 
                 velocity -= directionToPlayer.normalized * 2;
                 damageTimer = 0.15f;
@@ -156,7 +156,7 @@ public class ZombieController : MonoBehaviour
         if (damageTimer > 0 || isDead)
             return;
 
-        healthLevel -= damage * (int)player.currentDifficulty;
+        healthLevel -= damage / (int)player.currentDifficulty;
 
         velocity = knockBack * (moveSpeed == 0 ? 0 : 1);
 
@@ -186,7 +186,7 @@ public class ZombieController : MonoBehaviour
         }
 
         if(damage > 0)
-            PlayerController.PlayAudioClipFromArray( (isDead && Death.Length != 0) ? Death : Hurt, audioSource);
+            PlayerController.PlayAudioClipFromArray( (isDead && Death.Length != 0) ? Death : Hurt, audioSource, PlayerPrefs.GetFloat("ZombieVolume"));
     }
 
     void ZombieBehvior()
@@ -223,7 +223,7 @@ public class ZombieController : MonoBehaviour
                 if (behaviorState == BehaviorState.Idle && Random.Range(0, (int)(3 / Time.deltaTime)) == 0)
                 {
                     velocity += new Vector3(Random.Range(-1f, 1f), Random.Range(-1f, 1f)).normalized * 1.5f;
-                    PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                    PlayerController.PlayAudioClipFromArray(Idle, audioSource, PlayerPrefs.GetFloat("ZombieVolume"));
                 }
 
                 /// I am now searching.
@@ -233,10 +233,10 @@ public class ZombieController : MonoBehaviour
                     if (Random.Range(0, (int)(trackLostChance / Time.deltaTime)) == 0 || validLocations.Count == 0)
                     {
                         behaviorState = BehaviorState.Idle;
-                        PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                        PlayerController.PlayAudioClipFromArray(Idle, audioSource, PlayerPrefs.GetFloat("ZombieVolume"));
                         validLocations.Clear();
 
-                        PlayerController.PlayAudioClipFromArray(Idle, audioSource);
+                        PlayerController.PlayAudioClipFromArray(Idle, audioSource, PlayerPrefs.GetFloat("ZombieVolume"));
                         Debug.Log("I lost track of the Player.");
                     }
                     /// If not:

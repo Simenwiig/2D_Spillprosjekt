@@ -2697,7 +2697,7 @@ RectTransform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 8033489770494133650}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3498,7 +3498,7 @@ RectTransform:
   - {fileID: 6053802740134739518}
   - {fileID: 9179253426743579035}
   m_Father: {fileID: 8033489770494133650}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -3549,9 +3549,9 @@ MonoBehaviour:
   m_FillRect: {fileID: 6297430389673199310}
   m_HandleRect: {fileID: 5641637832922076588}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
-  m_WholeNumbers: 0
+  m_MinValue: 1
+  m_MaxValue: 3
+  m_WholeNumbers: 1
   m_Value: 0.655
   m_OnValueChanged:
     m_PersistentCalls:
@@ -4477,9 +4477,9 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 1185779569383825382}
   - {fileID: 4132393227413950994}
   - {fileID: 5806878917371410548}
-  - {fileID: 1185779569383825382}
   m_Father: {fileID: 2150622320661479517}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -5242,7 +5242,7 @@ RectTransform:
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.6666667}
   m_Children: []
   m_Father: {fileID: 8033489770494133650}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -6499,10 +6499,15 @@ MonoBehaviour:
   Options_ExitGame: {fileID: 1227625846}
   Options_Sound: {fileID: 1081554714}
   Options_Sound_Tab: {fileID: 4023803180119305564}
+  Options_Sound_MainVolume: {fileID: 2097152950951261671}
+  Options_Sound_MusicVolume: {fileID: 1639808543474796577}
+  Options_Sound_SFXVolume: {fileID: 4992296156342866234}
+  Options_Sound_ZombieVolume: {fileID: 1407180568821562675}
   Options_Controls: {fileID: 746543300}
   Options_Controls_Tab: {fileID: 341301915}
   Options_Gameplay: {fileID: 785520255}
   Options_Gameplay_Tab: {fileID: 4777678031553171283}
+  Options_Gameplay_Difficulty: {fileID: 3577533428632456507}
 --- !u!1 &8153730883762825182
 GameObject:
   m_ObjectHideFlags: 0
