@@ -20,6 +20,7 @@ public class Item : MonoBehaviour
     public AudioClip optionalPickupSound_2;
     public GameObject optionalGodray;
     public Sprite optionalSprite;
+    public GameObject optionalGameObject;
 
     [Header("Optional Door Settings")]
     public string nameOfDoorIUnlock = "None";
@@ -213,6 +214,24 @@ public class Item : MonoBehaviour
             {
                 int index = int.Parse(itemName.Remove(0, 9));
 
+
+
+                if (index == 4) // The Radio Tower
+                {
+                    manager_UI.OnSelectingBlueprint();
+                    bool hasBattery = manager_UI.UI_Blueprints.transform.GetChild(0).gameObject.activeInHierarchy;
+                    manager_UI.OnUnpausing();
+
+                    if (!hasBattery)
+                        return;
+
+
+
+
+                }
+
+                
+
                 Manager_UI.GetManager().ActivateTutorialElement(index);
 
 
@@ -230,6 +249,9 @@ public class Item : MonoBehaviour
         {
             GameObject.Destroy(optionalGodray, despawnTime);
         }
+
+        if (optionalGameObject != null)
+            optionalGameObject.SetActive(!optionalGameObject.activeInHierarchy);
 
         if (isPickup)
         {

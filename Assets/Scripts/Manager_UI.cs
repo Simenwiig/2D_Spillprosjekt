@@ -87,10 +87,8 @@ public class Manager_UI : MonoBehaviour
 
         Options_ChangeTab(0);
 
-        if (true || PlayerPrefs.GetInt("Difficulty") == 0) //  Reset settings to default
+        if (PlayerPrefs.GetInt("Difficulty") == 0) //  Reset settings to default
         {
-            print("Remember that I am resetting values every time");
-
             PlayerPrefs.SetFloat("MainVolume", 0.5f);
             PlayerPrefs.SetFloat("MusicVolume", 1f);
             PlayerPrefs.SetFloat("SFXVolume", 1f);
@@ -113,7 +111,6 @@ public class Manager_UI : MonoBehaviour
             Options_Controls_DeadZone.value = PlayerPrefs.GetFloat("DeadZone");
             Options_Controls_TwinstickX.value = PlayerPrefs.GetInt("TwinStick_X");
             Options_Controls_TwinstickY.value = PlayerPrefs.GetInt("TwinStick_Y");
-
 
             Options_Gameplay_Difficulty.value = PlayerPrefs.GetInt("Difficulty");
         }
