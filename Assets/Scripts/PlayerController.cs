@@ -326,9 +326,11 @@ public class PlayerController : MonoBehaviour
 
             audioSource.PlayOneShot(currentWeapon.sound, PlayerPrefs.GetFloat("MainVolume") * PlayerPrefs.GetFloat("SFXVolume"));
 
-            Debug.DrawRay(playerPosition, attackDiretion.normalized * currentWeapon.range, Color.yellow, 0.1f);
+            float reverseStartDistance = 0.1f;
 
-            RaycastHit2D hit = Physics2D.Raycast(playerPosition, attackDiretion.normalized, currentWeapon.range);
+            Debug.DrawRay(playerPosition - (Vector3)attackDiretion.normalized * reverseStartDistance, attackDiretion.normalized * currentWeapon.range, Color.yellow, 0.1f);
+
+            RaycastHit2D hit = Physics2D.Raycast(playerPosition - (Vector3)attackDiretion.normalized * reverseStartDistance, attackDiretion.normalized, currentWeapon.range + reverseStartDistance);
             if (hit.transform != null && hit.transform.tag == "GameController")
                 hit.transform.GetComponent<ZombieController>().HurtZombie(currentWeapon.damage, attackDiretion.normalized * currentWeapon.knockBack);
 

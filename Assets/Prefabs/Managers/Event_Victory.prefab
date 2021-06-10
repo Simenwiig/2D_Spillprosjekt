@@ -48,8 +48,9 @@ MonoBehaviour:
   cameraPanSpeed: 1
   helicopter: {fileID: 6209105080445410084}
   endCreditFlowSpeed: 60
-  endCreditDuration: 45
+  endCreditDuration: 50
   endTheme: {fileID: 8300000, guid: 9ea0358dab902cb4b9fb53559898ab48, type: 3}
+  creditSpeedModifier: 1
 --- !u!82 &6209105078859176003
 AudioSource:
   m_ObjectHideFlags: 0

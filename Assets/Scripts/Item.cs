@@ -245,6 +245,9 @@ public class Item : MonoBehaviour
                 {
                     Manager_UI.GetManager().Button_Blueprint.interactable = false;
                     Manager_UI.GetManager().Button_Blueprint.image.enabled = false;
+
+                    player.healthLevel = 90;
+                    player.hungerLevel = 0;
                 }
             }
         }

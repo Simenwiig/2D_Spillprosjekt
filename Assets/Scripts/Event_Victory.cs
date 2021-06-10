@@ -77,7 +77,7 @@ public class Event_Victory : MonoBehaviour
 
         sequenceProgress += Time.fixedDeltaTime * creditSpeedModifier;
         playerCamera.transform.localPosition += Vector3.up * Time.fixedDeltaTime * cameraPanSpeed;
-        manager_UI.UI_Screen_GameOver.color = new Color(0, 0, 0, (sequenceProgress / helicopter.clip.length));
+        
 
         if (sequenceProgress > 1f)
         {
@@ -93,8 +93,10 @@ public class Event_Victory : MonoBehaviour
         {
             manager_UI.UI_Victory.rectTransform.position += new Vector3(0, Time.fixedDeltaTime * endCreditFlowSpeed * creditSpeedModifier);
         }
+        else
+            manager_UI.UI_Screen_GameOver.color = new Color(0, 0, 0, (sequenceProgress / helicopter.clip.length));
 
-      
+
 
         if (sequenceProgress > helicopter.clip.length + endCreditDuration)
             manager_UI.GameOver();
@@ -111,8 +113,8 @@ public class Event_Victory : MonoBehaviour
         helicopter["Helicopter_EndSequence"].speed = creditSpeedModifier;
 
         if (creditSpeedModifier == 1)
-            audioSource.pitch = 1;
+            FindObjectOfType<AudioManager>().BGM.pitch = 1;
         else
-            audioSource.pitch = 2f;
+            FindObjectOfType<AudioManager>().BGM.pitch = 2f;
     }
 }

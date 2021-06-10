@@ -49,7 +49,7 @@ public class ZombieController : MonoBehaviour
     bool isDead = false;
     float damageTimer;
 
-    bool canSpawnMoreZombies = true;
+    public bool canSpawnMoreZombies = true;
     bool playerEnterRangeOnce= false;
 
     void Start()
@@ -64,6 +64,9 @@ public class ZombieController : MonoBehaviour
 
         HurtZombie(0, Vector3.zero); // Turns the healthbar invisible as I start with full health.
         damageTimer = 0; // Stops them from flashing from taking "damage".
+
+
+        detection_SightRadius = detection_SightRadius * Random.Range(0.9f, 1f);
     }
 
 
@@ -215,7 +218,7 @@ public class ZombieController : MonoBehaviour
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
             if (!playerEnterRangeOnce)
-                SpawnMoreZombies((int)player.currentDifficulty * 0.2f);
+                SpawnMoreZombies((int)player.currentDifficulty * 0.1f);
 
 
 
