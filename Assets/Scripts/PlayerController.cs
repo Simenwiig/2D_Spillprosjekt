@@ -361,7 +361,6 @@ public class PlayerController : MonoBehaviour
 
         bool isWalking = speedLevel > 0;
 
-        print(isWalking);
         float drainRate = 0.5f * (isWalking ? 1 : 0) * Time.deltaTime * (int)currentDifficulty;
         float healthRegenRate = 10f  * (isWalking ? 0.5f : 1) * Time.deltaTime;
 

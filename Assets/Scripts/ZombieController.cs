@@ -218,7 +218,7 @@ public class ZombieController : MonoBehaviour
         if (distanceToPlayer < detection_SightRadius * 3) // The player is simply too far away.
         {
             if (!playerEnterRangeOnce)
-                SpawnMoreZombies((int)player.currentDifficulty * 0.1f);
+                SpawnMoreZombies( -15f + (int)player.currentDifficulty * 0.3f);
 
 
 
