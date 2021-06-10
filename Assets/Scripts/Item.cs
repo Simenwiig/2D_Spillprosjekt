@@ -21,6 +21,8 @@ public class Item : MonoBehaviour
     public GameObject optionalGodray;
     public Sprite optionalSprite;
     public GameObject optionalGameObject;
+    public GameObject optionalRequiredObject;
+
 
     [Header("Optional Door Settings")]
     public string nameOfDoorIUnlock = "None";
@@ -30,13 +32,13 @@ public class Item : MonoBehaviour
     public float pickUpDistance = 0.5f;
     float shrinkagePercentage = 1;
 
+    bool hadRequiredItem;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         manager_UI = Manager_UI.GetManager();
 
-        if (itemName.ToLower() == "door_helipad")
-            name = itemName;
 
         if (itemName.ToLower().Contains("tutorial_"))
             GetComponentInChildren<SpriteRenderer>().enabled = false;
@@ -47,6 +49,8 @@ public class Item : MonoBehaviour
 
         if (optionalPickupSound != null || optionalPickupSound_2 != null)
             audioSource = gameObject.AddComponent<AudioSource>();
+
+            hadRequiredItem = optionalRequiredObject != null;
       }
 
 
@@ -106,16 +110,8 @@ public class Item : MonoBehaviour
                 isPickup = false;
             }
 
-            if (itemName == "door_openable")
-            {
-                GetComponent<Collider2D>().isTrigger = true;
-                isPickup = false;
-            }
+            
 
-            if (itemName == "door_helipad")
-            {
-                return;
-            }
 
             if (itemName == "key_unlockpark")
             {
@@ -126,10 +122,6 @@ public class Item : MonoBehaviour
                 cutsceneImage = manager_UI.UI_Blueprints.transform.GetChild(1).GetComponent<Image>();
             }
 
-            if (itemName == "key_generic")
-            {
-
-            }
 
             if (itemName == "key_helipad")
             {
@@ -238,6 +230,7 @@ public class Item : MonoBehaviour
 
 
 
+
                 Manager_UI.GetManager().ActivateTutorialElement(index);
 
 
@@ -251,8 +244,23 @@ public class Item : MonoBehaviour
                 }
             }
         }
+
+
+
+
         hasBeenActivated = true;
         GameObject.Destroy(gameObject, despawnTime);
+
+
+        if (hadRequiredItem && optionalRequiredItem == null)
+        {
+            GetComponent<Collider2D>().isTrigger = true;
+            isPickup = false;
+        }
+
+
+
+
 
         if (optionalGodray != null)
         {
