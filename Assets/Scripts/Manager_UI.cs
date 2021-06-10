@@ -113,6 +113,10 @@ public class Manager_UI : MonoBehaviour
             Options_Controls_TwinstickY.value = PlayerPrefs.GetInt("TwinStick_Y");
 
             Options_Gameplay_Difficulty.value = PlayerPrefs.GetInt("Difficulty");
+
+            Options_Volume_MenuFeedback();
+            Options_Controls_MenuFeedback();
+            Options_Gameplay_MenuFeedback();
         }
 
 
