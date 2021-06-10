@@ -219,14 +219,24 @@ public class Item : MonoBehaviour
                 if (index == 4) // The Radio Tower
                 {
                     manager_UI.OnSelectingBlueprint();
-                    bool hasBattery = manager_UI.UI_Blueprints.transform.GetChild(0).gameObject.activeInHierarchy;
+                    bool hasItem = manager_UI.UI_Blueprints.transform.GetChild(0).gameObject.activeInHierarchy;
                     manager_UI.OnUnpausing();
 
-                    if (!hasBattery)
+                    if (!hasItem)
                         return;
                 }
 
-                
+                if (index == 5) // The Radio Tower
+                {
+                    manager_UI.OnSelectingBlueprint();
+                    bool hasItem = manager_UI.UI_Blueprints.transform.GetChild(0).gameObject.activeInHierarchy;
+                    manager_UI.OnUnpausing();
+
+                    if (hasItem)
+                        return;
+                }
+
+
 
                 Manager_UI.GetManager().ActivateTutorialElement(index);
 
